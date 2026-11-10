@@ -1320,6 +1320,48 @@ elif page == "Similarity Analysis":
                         f"{match['department']} | {match['urgency']}"
                     )
 
+    st.divider()
+    st.markdown("### Potential Recurring Issues")
+    st.caption(
+        "Submitted complaints are grouped by TF-IDF similarity. "
+        "These are suggestions, so review the complaint text before treating "
+        "reports as the same issue."
+    )
+
+    try:
+        from nlp_pipeline import find_recurring_submitted_complaint_groups
+
+        recurring_groups = find_recurring_submitted_complaint_groups(
+            complaints
+        )
+    except Exception as error:
+        st.error("Could not analyze recurring complaints.")
+        st.exception(error)
+    else:
+        if recurring_groups:
+            for group in recurring_groups:
+                with st.expander(
+                    f"{group['topic_label']} — "
+                    f"{group['count']} potentially related reports"
+                ):
+                    representative = group["complaints"][0]
+                    st.markdown(
+                        f"**Representative complaint CP-"
+                        f"{representative['id']:04d} — "
+                        f"{representative['status']}**"
+                    )
+                    st.write(representative["complaint"])
+
+                    for member in group["complaints"][1:]:
+                        st.markdown(
+                            f"**Complaint CP-{member['id']:04d}** — "
+                            f"{member['similarity']:.2f}% similar "
+                            f"· {member['status']}"
+                        )
+                        st.write(member["complaint"])
+        else:
+            st.info("No recurring complaint groups found yet.")
+
 
 # =====================================================
 # REPORTS
