@@ -764,31 +764,95 @@ elif page == "Submit Complaint":
 
                 with st.spinner("Analysing your complaint..."):
 
-                    from nlp_pipeline import process_complaint
-
-                    result = process_complaint(complaint_text.strip())
-
-                    complaint_id = save_complaint(
-                        complaint_text.strip(),
-                        result
+                    from nlp_pipeline import (
+                        find_similar_submitted_complaints,
+                        process_complaint,
                     )
 
-                    st.session_state["last_submission"] = {
-                        "id": complaint_id,
+                    result = process_complaint(complaint_text.strip())
+                    result["submitted_complaint_matches"] = (
+                        find_similar_submitted_complaints(
+                            complaint_text.strip(),
+                            complaints,
+                        )
+                    )
+
+                    st.session_state["pending_submission"] = {
                         "text": complaint_text.strip(),
                         "result": result
                     }
-
-                st.success(
-                    f"Complaint CP-{complaint_id:04d} submitted successfully!"
-                )
 
             except Exception as error:
 
                 st.error("Unable to process your complaint.")
                 st.exception(error)
 
-    submission = st.session_state.get("last_submission")
+    pending_submission = st.session_state.get("pending_submission")
+
+    if pending_submission:
+        pending_matches = pending_submission["result"].get(
+            "submitted_complaint_matches", []
+        )
+
+        if pending_matches:
+            st.warning(
+                "Some existing complaints look similar. Review them before "
+                "submitting, or continue if your issue is different."
+            )
+
+            for match in pending_matches:
+                with st.container(border=True):
+                    st.markdown(
+                        f"**Complaint CP-{match['id']:04d} — "
+                        f"{match['similarity']:.2f}% similar**"
+                    )
+                    st.write(match["complaint"])
+                    st.caption(f"Current status: {match['status']}")
+
+            submit_col, cancel_col = st.columns(2)
+            if submit_col.button(
+                "Submit as a new complaint",
+                type="primary",
+                key="submit_after_duplicate_check",
+            ):
+                complaint_id = save_complaint(
+                    pending_submission["text"],
+                    pending_submission["result"],
+                )
+                st.session_state["last_submission"] = {
+                    "id": complaint_id,
+                    **pending_submission,
+                }
+                del st.session_state["pending_submission"]
+                st.success(
+                    f"Complaint CP-{complaint_id:04d} submitted successfully!"
+                )
+
+            if cancel_col.button(
+                "Cancel submission",
+                key="cancel_after_duplicate_check",
+            ):
+                del st.session_state["pending_submission"]
+                st.rerun()
+        else:
+            complaint_id = save_complaint(
+                pending_submission["text"],
+                pending_submission["result"],
+            )
+            st.session_state["last_submission"] = {
+                "id": complaint_id,
+                **pending_submission,
+            }
+            del st.session_state["pending_submission"]
+            st.success(
+                f"Complaint CP-{complaint_id:04d} submitted successfully!"
+            )
+
+    submission = (
+        None
+        if pending_submission
+        else st.session_state.get("last_submission")
+    )
 
     if submission:
 
@@ -956,6 +1020,24 @@ elif page == "Submit Complaint":
                 st.info("No entities identified.")
 
         with tab4:
+
+            submitted_matches = result.get(
+                "submitted_complaint_matches", []
+            )
+
+            if submitted_matches:
+                st.markdown("#### Similar Submitted Complaints")
+
+                for match in submitted_matches:
+                    with st.container(border=True):
+                        st.markdown(
+                            f"**Complaint CP-{match['id']:04d} — "
+                            f"{match['similarity']:.2f}% similarity**"
+                        )
+                        st.write(match["complaint"])
+                        st.caption(f"Current status: {match['status']}")
+
+                st.divider()
 
             st.markdown("#### Sentence-BERT Matches")
 
