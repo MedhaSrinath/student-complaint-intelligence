@@ -5,10 +5,11 @@ import html
 from datetime import datetime
 
 from complaint_database import (
+    add_complaint_support,
     create_database,
     get_all_complaints,
     save_complaint,
-    update_complaint_status
+    update_complaint_status,
 )
 
 # =====================================================
@@ -463,23 +464,26 @@ if page == "Dashboard":
 
     st.markdown(
         '<div class="page-subtitle">'
-        'Your central overview of student complaints, priorities and resolutions.'
+        'A quick status overview and the latest student complaints.'
         '</div>',
         unsafe_allow_html=True
     )
 
     # METRICS
 
-    total = len(df)
-
-    pending = len(df[df["status"] == "Pending"]) if total else 0
-    progress = len(df[df["status"] == "In Progress"]) if total else 0
-    resolved = len(df[df["status"] == "Resolved"]) if total else 0
-
-    high_priority = (
-        len(df[df["priority"].isin(["High", "Critical"])])
-        if total else 0
+    report_counts = (
+        1 + df["support_count"].fillna(0).astype(int)
+        if not df.empty
+        else pd.Series(dtype="int64")
     )
+    total = int(report_counts.sum())
+
+    if not df.empty:
+        pending = int(report_counts[df["status"] == "Pending"].sum())
+        progress = int(report_counts[df["status"] == "In Progress"].sum())
+        resolved = int(report_counts[df["status"] == "Resolved"].sum())
+    else:
+        pending = progress = resolved = 0
 
     c1, c2, c3, c4 = st.columns(4)
 
@@ -522,127 +526,7 @@ if page == "Dashboard":
     st.write("")
     st.write("")
 
-    # ANALYTICS
-
-    st.markdown(
-        '<div class="section-heading">Complaint Analytics</div>',
-        unsafe_allow_html=True
-    )
-
-    st.markdown(
-        '<div class="section-description">'
-        'Understand where complaints originate and how urgent they are.'
-        '</div>',
-        unsafe_allow_html=True
-    )
-
     if not df.empty:
-
-        chart1, chart2 = st.columns(2)
-
-        with chart1:
-
-            with st.container(border=True):
-
-                st.markdown("**Department Distribution**")
-
-                department_counts = (
-                    df["department"]
-                    .value_counts()
-                    .rename_axis("Department")
-                    .to_frame("Complaints")
-                )
-
-                st.bar_chart(
-                    department_counts,
-                    color="#4164AD",
-                    horizontal=True
-                )
-
-        with chart2:
-
-            with st.container(border=True):
-
-                st.markdown("**Urgency Breakdown**")
-
-                urgency_order = ["High", "Medium", "Low"]
-
-                urgency_counts = (
-                    df["urgency"]
-                    .value_counts()
-                    .reindex(urgency_order, fill_value=0)
-                    .rename_axis("Urgency")
-                    .to_frame("Complaints")
-                )
-
-                st.bar_chart(
-                    urgency_counts,
-                    color="#E8C96B"
-                )
-
-        st.write("")
-        st.write("")
-
-        # PRIORITY OVERVIEW
-
-        left, right = st.columns([1, 1])
-
-        with left:
-
-            with st.container(border=True):
-
-                st.markdown("**Priority Overview**")
-
-                priority_counts = (
-                    df["priority"]
-                    .value_counts()
-                    .reindex(
-                        ["Critical", "High", "Medium", "Low"],
-                        fill_value=0
-                    )
-                )
-
-                for priority, count in priority_counts.items():
-
-                    percentage = (
-                        count / total * 100 if total else 0
-                    )
-
-                    st.markdown(
-                        f"**{priority}**"
-                        f"<span style='float:right;color:#8290A5'>"
-                        f"{count}</span>",
-                        unsafe_allow_html=True
-                    )
-
-                    st.progress(percentage / 100)
-
-        with right:
-
-            with st.container(border=True):
-
-                st.markdown("**Resolution Progress**")
-
-                resolution_rate = (
-                    resolved / total * 100 if total else 0
-                )
-
-                st.markdown(
-                    f"<div style='font-size:35px;font-weight:800;"
-                    f"color:#203B78'>{resolution_rate:.1f}%</div>",
-                    unsafe_allow_html=True
-                )
-
-                st.caption("Complaints marked as resolved")
-
-                st.progress(resolution_rate / 100)
-
-                st.caption(
-                    f"{resolved} resolved out of {total} total complaints"
-                )
-
-        st.write("")
-        st.write("")
 
         # RECENT COMPLAINTS
 
@@ -669,6 +553,11 @@ if page == "Dashboard":
             department = html.escape(str(row["department"]))
             status = str(row["status"])
             priority = str(row["priority"])
+            support_count = int(row.get("support_count", 0) or 0)
+            support_note = (
+                f" · {support_count} additional +1 report(s)"
+                if support_count else ""
+            )
 
             status_class = {
                 "Pending": "status-pending",
@@ -698,7 +587,7 @@ if page == "Dashboard":
                     </div>
                 </div>
                 <div class="activity-text">{complaint_text}</div>
-                <div class="activity-meta">{department}</div>
+                <div class="activity-meta">{department}{support_note}</div>
             </div>
             """, unsafe_allow_html=True)
 
@@ -1180,6 +1069,13 @@ elif page == "Complaint Management":
                 st.write(
                     f"**Submitted:** {complaint['submitted_at']}"
                 )
+                support_count = int(
+                    complaint.get("support_count", 0) or 0
+                )
+                if support_count:
+                    st.write(
+                        f"**Additional +1 reports:** {support_count}"
+                    )
 
                 current_status = complaint.get("status", "Pending")
 
@@ -1321,11 +1217,10 @@ elif page == "Similarity Analysis":
                     )
 
     st.divider()
-    st.markdown("### Potential Recurring Issues")
+    st.markdown("### Reported Issues")
     st.caption(
-        "Submitted complaints are grouped by TF-IDF similarity. "
-        "These are suggestions, so review the complaint text before treating "
-        "reports as the same issue."
+        "Similar submissions are grouped by TF-IDF. Add a +1 to an issue "
+        "you also experience. One +1 per issue is allowed per browser session."
     )
 
     try:
@@ -1342,7 +1237,7 @@ elif page == "Similarity Analysis":
             for group in recurring_groups:
                 with st.expander(
                     f"{group['topic_label']} — "
-                    f"{group['count']} potentially related reports"
+                    f"{group['count']} reports"
                 ):
                     representative = group["complaints"][0]
                     st.markdown(
@@ -1351,6 +1246,39 @@ elif page == "Similarity Analysis":
                         f"{representative['status']}**"
                     )
                     st.write(representative["complaint"])
+                    st.caption(
+                        f"{representative['support_count']} additional "
+                        f"+1 report(s) on this complaint"
+                    )
+
+                    supported_issue_ids = st.session_state.setdefault(
+                        "supported_issue_ids", set()
+                    )
+                    issue_id = representative["id"]
+                    if issue_id in supported_issue_ids:
+                        st.button(
+                            "I'm affected too (+1)",
+                            key=f"support_{issue_id}",
+                            disabled=True,
+                            help="You already added support in this session.",
+                        )
+                    elif st.button(
+                        "I'm affected too (+1)",
+                        key=f"support_{issue_id}",
+                    ):
+                        try:
+                            if add_complaint_support(int(issue_id)):
+                                supported_issue_ids.add(issue_id)
+                                st.success(
+                                    "Your +1 was counted as an additional "
+                                    "complaint report."
+                                )
+                                st.rerun()
+                            else:
+                                st.error("Could not find that complaint.")
+                        except Exception as error:
+                            st.error("Could not record your +1.")
+                            st.exception(error)
 
                     for member in group["complaints"][1:]:
                         st.markdown(
@@ -1359,8 +1287,13 @@ elif page == "Similarity Analysis":
                             f"· {member['status']}"
                         )
                         st.write(member["complaint"])
+                        if member["support_count"]:
+                            st.caption(
+                                f"{member['support_count']} additional "
+                                f"+1 report(s)"
+                            )
         else:
-            st.info("No recurring complaint groups found yet.")
+            st.info("No submitted complaints yet.")
 
 
 # =====================================================
@@ -1385,11 +1318,9 @@ elif page == "Reports":
 
     else:
 
-        total = len(df)
-
-        resolved = (
-            df["status"].eq("Resolved").sum()
-        )
+        report_counts = 1 + df["support_count"].fillna(0).astype(int)
+        total = int(report_counts.sum())
+        resolved = int(report_counts[df["status"].eq("Resolved")].sum())
 
         resolution_rate = (
             resolved / total * 100 if total else 0
@@ -1433,8 +1364,10 @@ elif page == "Reports":
             st.markdown("### Department Report")
 
             department_report = (
-                df["department"]
-                .value_counts()
+                df.assign(report_count=report_counts)
+                .groupby("department")["report_count"]
+                .sum()
+                .sort_values(ascending=False)
                 .rename_axis("Department")
                 .to_frame("Complaints")
             )
@@ -1450,8 +1383,10 @@ elif page == "Reports":
             st.markdown("### Urgency Report")
 
             urgency_report = (
-                df["urgency"]
-                .value_counts()
+                df.assign(report_count=report_counts)
+                .groupby("urgency")["report_count"]
+                .sum()
+                .sort_values(ascending=False)
                 .rename_axis("Urgency")
                 .to_frame("Complaints")
             )
@@ -1468,8 +1403,9 @@ elif page == "Reports":
             st.markdown("### Status Report")
 
             status_report = (
-                df["status"]
-                .value_counts()
+                df.assign(report_count=report_counts)
+                .groupby("status")["report_count"]
+                .sum()
                 .rename_axis("Status")
                 .to_frame("Complaints")
             )
@@ -1481,8 +1417,10 @@ elif page == "Reports":
             st.markdown("### Priority Report")
 
             priority_report = (
-                df["priority"]
-                .value_counts()
+                df.assign(report_count=report_counts)
+                .groupby("priority")["report_count"]
+                .sum()
+                .sort_values(ascending=False)
                 .rename_axis("Priority")
                 .to_frame("Complaints")
             )

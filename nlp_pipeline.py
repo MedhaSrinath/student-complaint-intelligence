@@ -2,12 +2,21 @@
 import joblib
 import pandas as pd
 import re
-import spacy
+try:
+    import spacy
+    nlp = spacy.load("en_core_web_sm")
+except Exception:
+    nlp = None
 from complaint_database import create_database, save_complaint
 from transformers import pipeline
 from sentence_transformers import SentenceTransformer, util
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
+from duplicate_detection import (
+    find_recurring_complaint_groups as group_submitted_complaints,
+    find_similar_submitted_complaints as match_submitted_complaints,
+)
+from duration_extraction import extract_duration_mentions
 
 
 department_model = joblib.load("models/department_model.pkl")
@@ -21,8 +30,6 @@ sentiment_model = pipeline(
 similarity_model = SentenceTransformer(
     "sentence-transformers/all-MiniLM-L6-v2"
 )
-
-nlp = spacy.load("en_core_web_sm")
 
 df = pd.read_csv("dataset/complaints.csv")
 
@@ -169,37 +176,64 @@ def find_tfidf_similarity(text, top_n=5):
     ]
 
 
+def find_similar_submitted_complaints(text, complaints, top_n=3):
+    return match_submitted_complaints(
+        text,
+        complaints,
+        tfidf_vectorizer,
+        top_n=top_n
+    )
+
+
+def find_recurring_submitted_complaint_groups(complaints):
+    return group_submitted_complaints(
+        complaints,
+        tfidf_vectorizer,
+    )
+
+
 def extract_keywords(text):
 
-    doc = nlp(text)
+    if nlp is not None:
+        try:
+            doc = nlp(text)
+            keywords = []
+            for token in doc:
+                if (
+                    token.pos_ in ["NOUN", "PROPN"]
+                    and not token.is_stop
+                    and len(token.text) > 2
+                ):
+                    keywords.append(token.lemma_.lower())
+            if keywords:
+                return list(dict.fromkeys(keywords))
+        except Exception:
+            pass
 
-    keywords = []
-
-    for token in doc:
-
-        if (
-            token.pos_ in ["NOUN", "PROPN"]
-            and not token.is_stop
-            and len(token.text) > 2
-        ):
-            keywords.append(token.lemma_.lower())
-
-    return list(dict.fromkeys(keywords))
+    from sklearn.feature_extraction.text import ENGLISH_STOP_WORDS
+    words = re.findall(r"\b[a-zA-Z]{3,}\b", text.lower())
+    custom_stops = set(ENGLISH_STOP_WORDS).union({
+        "please", "kindly", "request", "issue", "problem", "complaint"
+    })
+    keywords = [w for w in words if w not in custom_stops]
+    return list(dict.fromkeys(keywords))[:10]
 
 
 def extract_entities(text):
 
-    doc = nlp(text)
-
     entities = []
 
-    for ent in doc.ents:
-
-        entities.append({
-            "entity": ent.text,
-            "type": ent.label_,
-            "description": spacy.explain(ent.label_)
-        })
+    if nlp is not None:
+        try:
+            doc = nlp(text)
+            for ent in doc.ents:
+                entities.append({
+                    "entity": ent.text,
+                    "type": ent.label_,
+                    "description": spacy.explain(ent.label_) if hasattr(spacy, "explain") else ent.label_
+                })
+        except Exception:
+            pass
 
     for location in campus_locations:
 
@@ -212,6 +246,8 @@ def extract_entities(text):
                 "type": "CAMPUS_LOCATION",
                 "description": "Recognised campus location"
             })
+
+    entities.extend(extract_duration_mentions(text))
 
     unique_entities = []
     seen = set()

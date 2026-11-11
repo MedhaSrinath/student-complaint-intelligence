@@ -26,9 +26,18 @@ def create_database():
             entities TEXT,
             semantic_matches TEXT,
             tfidf_matches TEXT,
-            status TEXT DEFAULT 'Pending'
+            status TEXT DEFAULT 'Pending',
+            support_count INTEGER NOT NULL DEFAULT 0
         )
     """)
+
+    cursor.execute("PRAGMA table_info(complaints)")
+    columns = {row[1] for row in cursor.fetchall()}
+    if "support_count" not in columns:
+        cursor.execute(
+            "ALTER TABLE complaints "
+            "ADD COLUMN support_count INTEGER NOT NULL DEFAULT 0"
+        )
 
     connection.commit()
     connection.close()
@@ -105,6 +114,21 @@ def update_complaint_status(complaint_id, status):
         (status, complaint_id)
     )
 
+    connection.commit()
+    updated = cursor.rowcount
+    connection.close()
+
+    return updated > 0
+
+
+def add_complaint_support(complaint_id):
+    connection = sqlite3.connect(DATABASE)
+    cursor = connection.cursor()
+    cursor.execute(
+        "UPDATE complaints "
+        "SET support_count = support_count + 1 WHERE id = ?",
+        (complaint_id,)
+    )
     connection.commit()
     updated = cursor.rowcount
     connection.close()

@@ -147,13 +147,17 @@ def test_groups_similar_complaints_and_keeps_unrelated_reports_separate():
 
     groups = find_recurring_complaint_groups(complaints, build_vectorizer())
 
-    assert len(groups) == 1
-    assert groups[0]["count"] == 2
-    assert groups[0]["topic_label"] == "Hostel Wi-Fi"
-    assert {member["id"] for member in groups[0]["complaints"]} == {1, 2}
+    related_group = next(group for group in groups if group["count"] == 2)
+    individual_group = next(group for group in groups if group["count"] == 1)
+
+    assert related_group["topic_label"] == "Hostel Wi-Fi"
+    assert {
+        member["id"] for member in related_group["complaints"]
+    } == {1, 2}
+    assert individual_group["complaints"][0]["id"] == 3
 
 
-def test_returns_no_groups_without_similar_complaints():
+def test_keeps_individual_issues_available_for_support():
     complaints = [
         {
             "id": 1,
@@ -167,10 +171,41 @@ def test_returns_no_groups_without_similar_complaints():
         },
     ]
 
-    assert find_recurring_complaint_groups(
-        complaints,
-        build_vectorizer(),
-    ) == []
+    groups = find_recurring_complaint_groups(complaints, build_vectorizer())
+
+    assert len(groups) == 2
+    assert all(group["count"] == 1 for group in groups)
+    assert {group["complaints"][0]["id"] for group in groups} == {1, 2}
+
+
+def test_single_submitted_complaint_can_receive_support():
+    complaints = [{
+        "id": 1,
+        "complaint_text": "wi-fi is not working",
+        "status": "Pending",
+        "support_count": 0,
+    }]
+
+    groups = find_recurring_complaint_groups(complaints, build_vectorizer())
+
+    assert len(groups) == 1
+    assert groups[0]["count"] == 1
+    assert groups[0]["topic_label"] == "Wi-Fi"
+
+
+def test_support_votes_add_to_group_count_and_can_create_a_group():
+    complaints = [{
+        "id": 1,
+        "complaint_text": "The hostel Wi-Fi keeps disconnecting and students cannot access internet.",
+        "status": "Pending",
+        "support_count": 2,
+    }]
+
+    groups = find_recurring_complaint_groups(complaints, build_vectorizer())
+
+    assert len(groups) == 1
+    assert groups[0]["count"] == 3
+    assert groups[0]["complaints"][0]["support_count"] == 2
 
 
 def test_evaluates_threshold_precision_recall_and_f1():

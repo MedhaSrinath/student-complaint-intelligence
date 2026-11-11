@@ -1,8 +1,12 @@
 
-import spacy
 import re
+from duration_extraction import extract_duration_mentions
 
-nlp = spacy.load("en_core_web_sm")
+try:
+    import spacy
+    nlp = spacy.load("en_core_web_sm")
+except Exception:
+    nlp = None
 
 campus_locations = [
     "Block A", "Block B", "Block C", "Block D",
@@ -15,16 +19,19 @@ campus_locations = [
 
 def extract_entities(text):
 
-    doc = nlp(text)
-
     entities = []
 
-    for ent in doc.ents:
-        entities.append({
-            "entity": ent.text.strip(),
-            "type": ent.label_,
-            "description": spacy.explain(ent.label_)
-        })
+    if nlp is not None:
+        try:
+            doc = nlp(text)
+            for ent in doc.ents:
+                entities.append({
+                    "entity": ent.text.strip(),
+                    "type": ent.label_,
+                    "description": spacy.explain(ent.label_) if hasattr(spacy, "explain") else ent.label_
+                })
+        except Exception:
+            pass
 
     for location in campus_locations:
 
@@ -39,6 +46,8 @@ def extract_entities(text):
                 "type": "CAMPUS_LOCATION",
                 "description": "Recognised campus location"
             })
+
+    entities.extend(extract_duration_mentions(text))
 
     unique_entities = []
     seen = set()

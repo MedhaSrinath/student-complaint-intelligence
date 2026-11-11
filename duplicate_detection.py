@@ -7,8 +7,9 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 
 _TOPIC_STOP_WORDS = ENGLISH_STOP_WORDS.union({
-    "campus", "complaint", "issue", "need", "please", "problem",
-    "student", "students", "university",
+    "broken", "campus", "complaint", "fail", "fails", "failure",
+    "issue", "need", "please", "problem", "stopped", "student",
+    "students", "university", "work", "working",
 })
 
 
@@ -136,43 +137,47 @@ def find_recurring_complaint_groups(
     while remaining:
         representative = remaining.pop(0)
         representative_text = str(representative["complaint_text"])
-        if not remaining:
-            break
-
-        query_vector = vectorizer.transform([representative_text])
-        candidate_vectors = vectorizer.transform([
-            str(complaint["complaint_text"]) for complaint in remaining
-        ])
-        scores = cosine_similarity(query_vector, candidate_vectors)[0]
-
         members = [{
             "id": representative.get("id"),
             "complaint": representative_text,
             "status": representative.get("status", "Pending"),
+            "support_count": int(representative.get("support_count", 0) or 0),
             "similarity": 100.0,
         }]
         unmatched = []
 
-        for complaint, score in zip(remaining, scores):
-            similarity = round(float(score) * 100, 2)
-            if similarity >= min_similarity:
-                members.append({
-                    "id": complaint.get("id"),
-                    "complaint": complaint["complaint_text"],
-                    "status": complaint.get("status", "Pending"),
-                    "similarity": similarity,
-                })
-            else:
-                unmatched.append(complaint)
+        if remaining:
+            query_vector = vectorizer.transform([representative_text])
+            candidate_vectors = vectorizer.transform([
+                str(complaint["complaint_text"]) for complaint in remaining
+            ])
+            scores = cosine_similarity(query_vector, candidate_vectors)[0]
 
-        if len(members) > 1:
-            member_texts = [member["complaint"] for member in members]
-            groups.append({
-                "representative": representative_text,
-                "topic_label": _build_topic_label(member_texts, vectorizer),
-                "count": len(members),
-                "complaints": members,
-            })
+            for complaint, score in zip(remaining, scores):
+                similarity = round(float(score) * 100, 2)
+                if similarity >= min_similarity:
+                    members.append({
+                        "id": complaint.get("id"),
+                        "complaint": complaint["complaint_text"],
+                        "status": complaint.get("status", "Pending"),
+                        "support_count": int(
+                            complaint.get("support_count", 0) or 0
+                        ),
+                        "similarity": similarity,
+                    })
+                else:
+                    unmatched.append(complaint)
+
+        report_count = sum(
+            1 + member["support_count"] for member in members
+        )
+        member_texts = [member["complaint"] for member in members]
+        groups.append({
+            "representative": representative_text,
+            "topic_label": _build_topic_label(member_texts, vectorizer),
+            "count": report_count,
+            "complaints": members,
+        })
 
         remaining = unmatched
 
