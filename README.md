@@ -1,12 +1,12 @@
 # Student Complaint Intelligence System
 
-An NLP-based system that analyzes student complaints and automatically classifies them based on category, sentiment, emotion, and priority using text-processing and machine-learning techniques. The system also extracts important information and identifies similar or recurring complaints using semantic similarity, helping administrators prioritize issues and resolve student concerns more efficiently.
+An NLP-based system that analyzes student complaints and automatically classifies them by department, sentiment, and priority using text-processing and machine-learning techniques. The system also extracts important information and identifies similar or recurring complaints using semantic similarity, helping administrators prioritize issues and resolve student concerns more efficiently.
 
 ## Problem Statement
 
 Universities receive a large number of student complaints related to academics, hostel facilities, transportation, food, infrastructure, internet services, finance, and other campus services. Since these complaints are usually written in unstructured natural language, manually reading, categorizing, prioritizing, and identifying recurring issues can be time-consuming and inconsistent.
 
-This project aims to develop an NLP-based system that can automatically understand student complaints, classify their category, analyze their sentiment and expressed emotion, determine their priority, extract relevant information, and identify similar or recurring complaints. The system is designed to help administrators better understand common student issues and prioritize complaints that require immediate attention.
+This project aims to develop an NLP-based system that can automatically understand student complaints, classify their category, analyze sentiment, determine priority, extract relevant information, and identify similar or recurring complaints. The system is designed to help administrators better understand common student issues and prioritize complaints that require immediate attention.
 
 ## Key Features
 
@@ -15,9 +15,6 @@ This project aims to develop an NLP-based system that can automatically understa
 
 - **Sentiment Analysis**  
   Identifies whether the expressed sentiment in a complaint is Positive, Neutral, or Negative.
-
-- **Emotion Detection**  
-  Identifies the emotional tone expressed in a complaint, such as Anger, Frustration, Sadness, Fear, or Neutral.
 
 - **Priority Detection**  
   Estimates the urgency of a complaint and classifies it into levels such as Low, Medium, High, or Critical.
@@ -38,7 +35,7 @@ This project aims to develop an NLP-based system that can automatically understa
   Groups similar submitted complaints using TF-IDF, labels each group with its most relevant terms, and shows the number of related reports to help admins spot possible recurring issues.
 
 - **+1 Existing Issue**
-  Students can add one +1 to a recurring issue per browser session. Each +1 is counted as an additional complaint report in dashboard and report totals.
+  Students can endorse an existing issue with +1. Each endorsement is counted as an additional report in dashboard and report totals, while the original submission date is preserved.
 
 - **Recurring Issue Identification**  
   Groups similar complaints to help administrators identify problems affecting multiple students.
@@ -48,6 +45,9 @@ This project aims to develop an NLP-based system that can automatically understa
 
 - **Resolution Suggestions** *(Planned / Optional)*  
   Based on previously handled complaints, the system may suggest basic possible resolutions for common issues.
+
+- **Emotion Detection**
+  Uses a small, explainable set of wording cues to identify Anger, Frustration, Sadness, or Fear. It shows the matched words and returns Neutral when no clear cue is found; this is a lightweight heuristic, not a trained emotion model.
 
 ## Example
 

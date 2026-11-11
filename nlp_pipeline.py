@@ -17,6 +17,7 @@ from duplicate_detection import (
     find_similar_submitted_complaints as match_submitted_complaints,
 )
 from duration_extraction import extract_duration_mentions
+from emotion_detection import detect_emotion
 
 
 department_model = joblib.load("models/department_model.pkl")
@@ -176,12 +177,13 @@ def find_tfidf_similarity(text, top_n=5):
     ]
 
 
-def find_similar_submitted_complaints(text, complaints, top_n=3):
+def find_similar_submitted_complaints(text, complaints, top_n=3, min_similarity=20.0):
     return match_submitted_complaints(
         text,
         complaints,
         tfidf_vectorizer,
-        top_n=top_n
+        top_n=top_n,
+        min_similarity=min_similarity
     )
 
 
@@ -319,6 +321,7 @@ def process_complaint(text):
     departments = classify_department(text)
     urgency = analyze_urgency(text)
     sentiment = analyze_sentiment(text)
+    emotion = detect_emotion(text)
     priority = calculate_priority(text, urgency)
     keywords = extract_keywords(text)
     entities = extract_entities(text)
@@ -329,6 +332,7 @@ def process_complaint(text):
         "department_predictions": departments,
         "urgency": urgency,
         "sentiment": sentiment,
+        "emotion": emotion,
         "priority": priority,
         "keywords": keywords,
         "entities": entities,

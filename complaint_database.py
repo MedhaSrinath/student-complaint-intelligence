@@ -20,6 +20,7 @@ def create_database():
             urgency_confidence REAL,
             sentiment TEXT,
             sentiment_confidence REAL,
+            emotion TEXT,
             priority_score REAL,
             priority TEXT,
             keywords TEXT,
@@ -37,6 +38,11 @@ def create_database():
         cursor.execute(
             "ALTER TABLE complaints "
             "ADD COLUMN support_count INTEGER NOT NULL DEFAULT 0"
+        )
+    if "emotion" not in columns:
+        cursor.execute(
+            "ALTER TABLE complaints "
+            "ADD COLUMN emotion TEXT"
         )
 
     connection.commit()
@@ -57,6 +63,7 @@ def save_complaint(text, result):
             urgency_confidence,
             sentiment,
             sentiment_confidence,
+            emotion,
             priority_score,
             priority,
             keywords,
@@ -64,7 +71,7 @@ def save_complaint(text, result):
             semantic_matches,
             tfidf_matches
         )
-        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
     """, (
         text,
         datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
@@ -73,6 +80,7 @@ def save_complaint(text, result):
         float(result["urgency"]["confidence"]),
         result["sentiment"]["sentiment"],
         float(result["sentiment"]["confidence"]),
+        result.get("emotion", {}).get("emotion", "Neutral"),
         float(result["priority"]["score"]),
         result["priority"]["priority"],
         json.dumps(result["keywords"]),

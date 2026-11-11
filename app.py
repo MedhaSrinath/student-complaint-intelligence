@@ -3,6 +3,7 @@ import pandas as pd
 import json
 import html
 from datetime import datetime
+import re
 
 from complaint_database import (
     add_complaint_support,
@@ -148,9 +149,15 @@ h1, h2, h3 {
     background: #FFFFFF;
     border: 1px solid #E7EAF0;
     border-radius: 16px;
-    padding: 21px;
-    min-height: 140px;
+    padding: 16px 18px;
+    min-height: 130px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     box-shadow: 0 5px 18px rgba(32,59,120,0.035);
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
 .metric-top {
@@ -161,34 +168,40 @@ h1, h2, h3 {
 
 .metric-label {
     color: #8290A5;
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 700;
     letter-spacing: 0.5px;
 }
 
 .metric-icon {
-    width: 37px;
-    height: 37px;
+    width: 32px;
+    height: 32px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 11px;
-    font-size: 17px;
+    border-radius: 9px;
+    font-size: 15px;
 }
 
 .metric-value {
     font-family: 'Manrope', sans-serif;
-    font-size: 34px;
+    font-size: 22px;
     font-weight: 800;
     color: #203B78;
-    margin-top: 13px;
-    line-height: 1.2;
+    line-height: 1.1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    display: block;
 }
 
 .metric-note {
     font-size: 11px;
     color: #9AA5B5;
-    margin-top: 7px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .section-heading {
@@ -367,6 +380,16 @@ def get_department(value):
 
 
 def metric_card(label, value, icon, icon_bg, note):
+    val_str = str(value)
+    if len(val_str) > 10:
+        font_size = "15px"
+    elif len(val_str) > 7:
+        font_size = "18px"
+    elif len(val_str) > 4:
+        font_size = "22px"
+    else:
+        font_size = "26px"
+
     st.markdown(f"""
     <div class="metric-card">
         <div class="metric-top">
@@ -375,8 +398,8 @@ def metric_card(label, value, icon, icon_bg, note):
                 {icon}
             </div>
         </div>
-        <div class="metric-value">{value}</div>
-        <div class="metric-note">{note}</div>
+        <div class="metric-value" style="font-size: {font_size};" title="{val_str}">{value}</div>
+        <div class="metric-note" title="{note}">{note}</div>
     </div>
     """, unsafe_allow_html=True)
 
@@ -420,9 +443,8 @@ with st.sidebar:
         "Navigation",
         [
             "Dashboard",
-            "Submit Complaint",
+            "Submit & Analyze",
             "Complaint Management",
-            "Similarity Analysis",
             "Reports"
         ],
         label_visibility="collapsed"
@@ -449,6 +471,20 @@ with st.sidebar:
         '<div class="sidebar-caption">CampusPulse • Version 1.0</div>',
         unsafe_allow_html=True
     )
+
+
+# =====================================================
+# PAGE-CHANGE STATE CLEANUP
+# Clear submission state when navigating away from Submit & Analyze
+# so the form always starts clean on a fresh visit.
+# =====================================================
+
+_prev_page = st.session_state.get("_active_page", page)
+if _prev_page != page:
+    st.session_state.pop("last_submission", None)
+    st.session_state.pop("pending_submission", None)
+    st.session_state.pop("just_supported_id", None)
+st.session_state["_active_page"] = page
 
 
 # =====================================================
@@ -485,9 +521,9 @@ if page == "Dashboard":
     else:
         pending = progress = resolved = 0
 
-    c1, c2, c3, c4 = st.columns(4)
+    dash_c1, dash_c2, dash_c3, dash_c4 = st.columns(4)
 
-    with c1:
+    with dash_c1:
         metric_card(
             "TOTAL COMPLAINTS",
             total,
@@ -496,7 +532,7 @@ if page == "Dashboard":
             "All recorded submissions"
         )
 
-    with c2:
+    with dash_c2:
         metric_card(
             "PENDING",
             pending,
@@ -505,7 +541,7 @@ if page == "Dashboard":
             "Awaiting attention"
         )
 
-    with c3:
+    with dash_c3:
         metric_card(
             "IN PROGRESS",
             progress,
@@ -514,7 +550,7 @@ if page == "Dashboard":
             "Currently being addressed"
         )
 
-    with c4:
+    with dash_c4:
         metric_card(
             "RESOLVED",
             resolved,
@@ -542,7 +578,7 @@ if page == "Dashboard":
             unsafe_allow_html=True
         )
 
-        recent = df.head(5)
+        recent = df.head(10)
 
         for _, row in recent.iterrows():
 
@@ -607,36 +643,43 @@ if page == "Dashboard":
 # =====================================================
 
 # =====================================================
-# SUBMIT COMPLAINT
+# =====================================================
+# SUBMIT & ANALYZE COMPLAINT
 # =====================================================
 
-elif page == "Submit Complaint":
+elif page in ["Submit & Analyze", "Submit Complaint"]:
 
     st.markdown(
-        '<div class="page-heading">Submit Complaint</div>',
+        '<div class="page-heading">Submit & Analyze Complaint</div>',
         unsafe_allow_html=True
     )
 
     st.markdown(
-        '<div class="page-subtitle">Describe your campus issue and let CampusPulse analyse it.</div>',
+        '<div class="page-subtitle">Report a campus issue, check for recurring duplicates (+1), and view instant AI intelligence classification.</div>',
         unsafe_allow_html=True
     )
+
+    just_supported_id = st.session_state.pop("just_supported_id", None)
+    if just_supported_id:
+        st.success(
+            f"✅ Endorsement recorded! Added your +1 to Complaint CP-{just_supported_id:04d}."
+        )
 
     with st.container(border=True):
 
-        st.markdown("### Complaint Details")
+        st.markdown("### Complaint Submission")
 
         with st.form("complaint_form"):
 
             complaint_text = st.text_area(
                 "Describe your complaint",
-                placeholder="Describe your campus issue in detail...",
-                height=160,
+                placeholder="Describe your campus issue in detail (e.g., Wi-Fi keeps disconnecting in Block C, or water leakage in Hostel 2nd floor)...",
+                height=140,
                 max_chars=2000
             )
 
             submitted = st.form_submit_button(
-                "Analyse & Submit Complaint",
+                "Check & Submit Complaint",
                 type="primary",
                 use_container_width=True
             )
@@ -645,13 +688,13 @@ elif page == "Submit Complaint":
 
         if len(complaint_text.strip()) < 10:
 
-            st.warning("Please enter a more detailed complaint.")
+            st.warning("Please enter a more detailed complaint (at least 10 characters).")
 
         else:
 
             try:
 
-                with st.spinner("Analysing your complaint..."):
+                with st.spinner("Running AI analysis & checking for existing duplicates..."):
 
                     from nlp_pipeline import (
                         find_similar_submitted_complaints,
@@ -685,24 +728,46 @@ elif page == "Submit Complaint":
 
         if pending_matches:
             st.warning(
-                "Some existing complaints look similar. Review them before "
-                "submitting, or continue if your issue is different."
+                "🔍 **Similar complaints already exist in the system!**\n\n"
+                "If one of the issues below matches yours, you can click **'+1 This Issue'** to endorse it instead of filing a duplicate. "
+                "Your endorsement is included in the recurring issue and report totals."
             )
 
             for match in pending_matches:
                 with st.container(border=True):
-                    st.markdown(
-                        f"**Complaint CP-{match['id']:04d} — "
-                        f"{match['similarity']:.2f}% similar**"
-                    )
-                    st.write(match["complaint"])
-                    st.caption(f"Current status: {match['status']}")
+                    col_info, col_btn = st.columns([0.72, 0.28])
+                    with col_info:
+                        st.markdown(
+                            f"**Complaint CP-{match['id']:04d} — "
+                            f"{match['similarity']:.1f}% similar**"
+                        )
+                        st.write(match["complaint"])
+                        st.caption(f"Current Status: **{match['status']}**")
+                    with col_btn:
+                        st.write("")
+                        if st.button(
+                            "👍 +1 This Issue",
+                            key=f"support_match_{match['id']}",
+                            type="primary",
+                            use_container_width=True,
+                            help="Endorse this existing complaint instead of filing a duplicate ticket."
+                        ):
+                            try:
+                                add_complaint_support(int(match["id"]))
+                                st.session_state["just_supported_id"] = match["id"]
+                                del st.session_state["pending_submission"]
+                                st.rerun()
+                            except Exception as e:
+                                st.error(f"Could not add support: {e}")
 
+            st.write("")
+            st.markdown("##### Is your issue different or newly occurring?")
             submit_col, cancel_col = st.columns(2)
             if submit_col.button(
-                "Submit as a new complaint",
-                type="primary",
+                "Submit as a new complaint anyway",
+                type="secondary",
                 key="submit_after_duplicate_check",
+                use_container_width=True
             ):
                 complaint_id = save_complaint(
                     pending_submission["text"],
@@ -716,10 +781,12 @@ elif page == "Submit Complaint":
                 st.success(
                     f"Complaint CP-{complaint_id:04d} submitted successfully!"
                 )
+                st.rerun()
 
             if cancel_col.button(
                 "Cancel submission",
                 key="cancel_after_duplicate_check",
+                use_container_width=True
             ):
                 del st.session_state["pending_submission"]
                 st.rerun()
@@ -736,6 +803,7 @@ elif page == "Submit Complaint":
             st.success(
                 f"Complaint CP-{complaint_id:04d} submitted successfully!"
             )
+            st.rerun()
 
     submission = (
         None
@@ -749,50 +817,72 @@ elif page == "Submit Complaint":
 
         st.divider()
 
-        st.markdown("### Complaint Analysis")
+        col_title, col_reset = st.columns([0.75, 0.25])
+        with col_title:
+            st.markdown(f"### AI Intelligence Analysis — Ticket CP-{submission['id']:04d}")
+        with col_reset:
+            st.write("")
+            if st.button("🔄 Submit Another", key="reset_submission", use_container_width=True):
+                del st.session_state["last_submission"]
+                st.rerun()
 
-        st.caption(f"Complaint ID: CP-{submission['id']:04d}")
-
-        st.markdown("**Submitted Complaint**")
-        st.write(submission["text"])
+        with st.container(border=True):
+            st.markdown("**Submitted Complaint Text:**")
+            st.write(submission["text"])
 
         departments = result["department_predictions"]
         urgency = result["urgency"]
         sentiment = result["sentiment"]
+        emotion = result.get("emotion", {"emotion": "Neutral", "cues": []})
         priority = result["priority"]
 
+        # 4 CORE AI METRIC CARDS
         c1, c2, c3, c4 = st.columns(4)
 
         with c1:
+            dept_name = departments[0]["department"] if departments else "Unknown"
+            dept_conf = departments[0]["confidence"] if departments else 0
             metric_card(
                 "DEPARTMENT",
-                departments[0]["department"] if departments else "Unknown",
-                "🏢", "#E8EDF8", "Predicted department"
+                dept_name,
+                "🏢",
+                "#E8EDF8",
+                f"Confidence: {float(dept_conf):.0f}%"
             )
 
         with c2:
             metric_card(
                 "URGENCY",
                 urgency["urgency"],
-                "⚡", "#FFF4D6", "Predicted urgency"
+                "⚡",
+                "#FFF4D6",
+                f"Score: {float(urgency.get('confidence', 0)):.0f}%"
             )
 
         with c3:
+            sent_label = sentiment.get("sentiment", "Neutral")
+            sent_conf = sentiment.get("confidence", 0)
             metric_card(
                 "SENTIMENT",
-                sentiment["sentiment"],
-                "💬", "#E6EEFF", "Detected sentiment"
+                sent_label,
+                "💬",
+                "#FCE8E7" if sent_label.lower() == "negative" else "#E2F4E9",
+                f"Tone Score: {float(sent_conf):.0f}%"
             )
 
         with c4:
+            prio_label = priority.get("priority", "Medium")
+            prio_score = priority.get("score", 0)
             metric_card(
                 "PRIORITY",
-                priority["priority"],
-                "🚩", "#FCE8E7", "Calculated priority"
+                prio_label,
+                "🚩",
+                "#FCE8E7" if prio_label in ["Critical", "High"] else "#FFF4D6",
+                f"Score: {float(prio_score):.0f}/100"
             )
 
-        if priority["needs_human_review"]:
-            st.warning("This complaint requires human review.")
+        if priority.get("needs_human_review"):
+            st.warning("⚠️ This complaint requires administrative human review.")
 
         tab1, tab2, tab3, tab4 = st.tabs([
             "Department & Urgency",
@@ -802,169 +892,140 @@ elif page == "Submit Complaint":
         ])
 
         with tab1:
-
-            st.markdown("#### Department Predictions")
-
-            if departments:
-
-                department_df = pd.DataFrame(departments)
-
-                department_df["Model Score (%)"] = (
-                    department_df["confidence"].astype(float)
-                )
-
-                department_df.loc[
-                    department_df["Model Score (%)"] <= 1,
-                    "Model Score (%)"
-                ] *= 100
-
-                st.dataframe(
-                    department_df.rename(
-                        columns={"department": "Department"}
-                    )[["Department", "Model Score (%)"]],
-                    use_container_width=True,
-                    hide_index=True
-                )
-
-            st.caption("Model scores are not guaranteed probabilities.")
-
-            st.markdown("#### Urgency Analysis")
-
-            urgency_df = pd.DataFrame(
-                list(urgency["probabilities"].items()),
-                columns=["Urgency", "Score"]
-            )
-
-            urgency_df["Score"] = urgency_df["Score"].astype(float)
-
-            urgency_df.loc[
-                urgency_df["Score"] <= 1,
-                "Score"
-            ] *= 100
-
-            st.bar_chart(
-                urgency_df.set_index("Urgency"),
-                color="#4164AD"
-            )
+            col_d, col_u = st.columns(2)
+            with col_d:
+                st.markdown("#### Department Predictions")
+                if departments:
+                    dept_df = pd.DataFrame(departments)
+                    dept_df["Model Score (%)"] = dept_df["confidence"].astype(float)
+                    dept_df.loc[dept_df["Model Score (%)"] <= 1, "Model Score (%)"] *= 100
+                    st.dataframe(
+                        dept_df.rename(columns={"department": "Department"})[["Department", "Model Score (%)"]],
+                        use_container_width=True,
+                        hide_index=True
+                    )
+                    st.caption("Model scores are not guaranteed probabilities.")
+                else:
+                    st.info("No department predictions available.")
+            with col_u:
+                st.markdown("#### Urgency Breakdown")
+                if "probabilities" in urgency:
+                    urg_df = pd.DataFrame(
+                        list(urgency["probabilities"].items()),
+                        columns=["Urgency Level", "Probability (%)"]
+                    )
+                    urg_df["Probability (%)"] = urg_df["Probability (%)"].astype(float)
+                    urg_df.loc[urg_df["Probability (%)"] <= 1, "Probability (%)"] *= 100
+                    st.dataframe(
+                        urg_df,
+                        use_container_width=True,
+                        hide_index=True
+                    )
+                else:
+                    st.info("Urgency breakdown not available.")
 
         with tab2:
+            sent_label = sentiment.get("sentiment", "Neutral")
+            sent_conf = sentiment.get("confidence", 0)
+            prio_label = priority.get("priority", "Medium")
+            prio_score = priority.get("score", 0)
 
-            c1, c2 = st.columns(2)
-
-            with c1:
-                st.markdown("#### Sentiment")
-                st.metric("Detected Sentiment", sentiment["sentiment"])
-                st.metric(
-                    "Model Score",
-                    f"{float(sentiment['confidence']):.2f}%"
+            col_s, col_e, col_p = st.columns(3)
+            with col_s:
+                st.markdown("#### Sentiment Analysis")
+                sentiment_color = "#FCE8E7" if sent_label.lower() == "negative" else "#E2F4E9"
+                st.markdown(
+                    f'<div style="background:{sentiment_color};border-radius:10px;padding:14px 18px;">'
+                    f'<div style="font-size:13px;color:#8290A5;font-weight:700;">DETECTED TONE</div>'
+                    f'<div style="font-size:28px;font-weight:800;color:#203B78;">{sent_label}</div>'
+                    f'<div style="font-size:12px;color:#9AA5B5;">Confidence: {float(sent_conf):.0f}%</div>'
+                    f'</div>',
+                    unsafe_allow_html=True
                 )
-
-            with c2:
-                st.markdown("#### Priority")
-                st.metric("Priority Level", priority["priority"])
-                st.metric(
-                    "Priority Score",
-                    f"{float(priority['score']):.2f}/100"
+            with col_e:
+                st.markdown("#### Emotion Cues")
+                st.metric("Detected Emotion", emotion["emotion"])
+                if emotion["cues"]:
+                    st.caption(
+                        "Matched wording: "
+                        + ", ".join(f"`{cue}`" for cue in emotion["cues"])
+                    )
+                else:
+                    st.caption("No clear emotion wording detected.")
+            with col_p:
+                st.markdown("#### Priority Score")
+                st.markdown(
+                    f'<div style="background:#FFF4D6;border-radius:10px;padding:14px 18px;">'
+                    f'<div style="font-size:13px;color:#8290A5;font-weight:700;">CALCULATED PRIORITY</div>'
+                    f'<div style="font-size:28px;font-weight:800;color:#203B78;">{prio_label}</div>'
+                    f'<div style="font-size:12px;color:#9AA5B5;">Score: {float(prio_score):.0f}/100</div>'
+                    f'</div>',
+                    unsafe_allow_html=True
                 )
-
-            st.write(
-                "Critical indicator:",
-                "Yes" if priority["critical_indicator"] else "No"
-            )
-
-            st.write(
-                "Time-sensitive:",
-                "Yes" if priority["time_sensitive"] else "No"
-            )
-
-            st.write(
-                "Human review required:",
-                "Yes" if priority["needs_human_review"] else "No"
-            )
 
         with tab3:
+            k_col, e_col = st.columns(2)
+            with k_col:
+                st.markdown("#### Extracted Keywords")
+                keywords = result.get("keywords", [])
+                if keywords:
+                    st.write(" · ".join([f"`{k}`" for k in keywords]))
+                else:
+                    st.info("No distinct keywords identified.")
 
-            st.markdown("#### Extracted Keywords")
-
-            keywords = result.get("keywords", [])
-
-            if keywords:
-                st.write(" · ".join(keywords))
-            else:
-                st.info("No keywords identified.")
-
-            st.divider()
-
-            st.markdown("#### Named Entities")
-
-            entities = result.get("entities", [])
-
-            if entities:
-                st.dataframe(
-                    pd.DataFrame(entities),
-                    use_container_width=True,
-                    hide_index=True
-                )
-            else:
-                st.info("No entities identified.")
+            with e_col:
+                st.markdown("#### Identified Entities & Locations")
+                entities = result.get("entities", [])
+                if entities:
+                    st.dataframe(
+                        pd.DataFrame(entities),
+                        use_container_width=True,
+                        hide_index=True
+                    )
+                else:
+                    st.info("No specific entities or campus locations identified.")
 
         with tab4:
-
-            submitted_matches = result.get(
-                "submitted_complaint_matches", []
-            )
-
-            if submitted_matches:
-                st.markdown("#### Similar Submitted Complaints")
-
-                for match in submitted_matches:
+            st.markdown("#### Semantic Reference Matches (Sentence-BERT)")
+            sem_matches = result.get("semantic_similar_complaints", [])
+            if sem_matches:
+                for index, match in enumerate(sem_matches[:3], 1):
                     with st.container(border=True):
-                        st.markdown(
-                            f"**Complaint CP-{match['id']:04d} — "
-                            f"{match['similarity']:.2f}% similarity**"
-                        )
+                        st.markdown(f"**Match #{index}** — {match['similarity']:.1f}% similarity")
                         st.write(match["complaint"])
-                        st.caption(f"Current status: {match['status']}")
+                        st.caption(f"Department: **{match['department']}** · Urgency: **{match['urgency']}**")
+            else:
+                st.info("No similar past complaints found in the training reference set.")
 
-                st.divider()
-
-            st.markdown("#### Sentence-BERT Matches")
-
-            for index, match in enumerate(
-                result.get("semantic_similar_complaints", []), 1
-            ):
-
-                with st.container(border=True):
-
-                    st.markdown(
-                        f"**Match {index} — {match['similarity']:.2f}% similarity**"
-                    )
-
-                    st.write(match["complaint"])
-
-                    st.caption(
-                        f"{match['department']} | {match['urgency']}"
-                    )
-
-            st.divider()
-
-            st.markdown("#### TF-IDF Matches")
-
-            for index, match in enumerate(
-                result.get("tfidf_similar_complaints", []), 1
-            ):
-
-                with st.container(border=True):
-
-                    st.markdown(
-                        f"**Match {index} — {match['similarity']:.2f}% similarity**"
-                    )
-
-                    st.write(match["complaint"])
-
-                    st.caption(
-                        f"{match['department']} | {match['urgency']}"
-                    )
+    # BROWSE ALL OPEN CAMPUS ISSUES
+    st.write("")
+    st.divider()
+    with st.expander("🔍 Browse Open Recurring Issues on Campus (+1 Endorsements)"):
+        st.caption("Active campus complaints grouped by recurring topics. You can add a +1 to any problem you are also experiencing.")
+        try:
+            from nlp_pipeline import find_recurring_submitted_complaint_groups
+            recurring_groups = find_recurring_submitted_complaint_groups(complaints)
+            if recurring_groups:
+                for group in recurring_groups:
+                    with st.container(border=True):
+                        st.markdown(f"**{group['topic_label']}** — *{group['count']} report(s)*")
+                        representative = group["complaints"][0]
+                        st.write(representative["complaint"])
+                        st.caption(
+                            f"Status: **{representative['status']}** · "
+                            f"{representative['support_count']} additional +1 report(s)"
+                        )
+                        if st.button(
+                            "👍 +1 I'm affected too",
+                            key=f"rec_support_{representative['id']}"
+                        ):
+                            add_complaint_support(int(representative["id"]))
+                            st.session_state["just_supported_id"] = representative["id"]
+                            st.rerun()
+            else:
+                st.info("No open recurring issue clusters found.")
+        except Exception as e:
+            st.caption(f"Recurring clustering unavailable: {e}")
 
 
 # =====================================================
@@ -1108,192 +1169,7 @@ elif page == "Complaint Management":
                         st.error("Could not update the complaint.")
 
 
-# =====================================================
-# SIMILARITY ANALYSIS
-# =====================================================
 
-elif page == "Similarity Analysis":
-
-    st.markdown(
-        '<div class="page-heading">Similarity Analysis</div>',
-        unsafe_allow_html=True
-    )
-
-    st.markdown(
-        '<div class="page-subtitle">Find complaints describing similar campus issues.</div>',
-        unsafe_allow_html=True
-    )
-
-    query = st.text_area(
-        "Enter a complaint",
-        placeholder="Example: The Wi-Fi in the hostel keeps disconnecting.",
-        height=130
-    )
-
-    if st.button(
-        "Find Similar Complaints",
-        type="primary",
-        use_container_width=True
-    ):
-
-        if len(query.strip()) < 10:
-
-            st.warning("Please enter a more detailed complaint.")
-
-        else:
-
-            try:
-
-                with st.spinner("Comparing complaints..."):
-
-                    from nlp_pipeline import (
-                        find_similar_complaints,
-                        find_tfidf_similarity
-                    )
-
-                    semantic = find_similar_complaints(query.strip())
-                    tfidf = find_tfidf_similarity(query.strip())
-
-                    st.session_state["similarity_results"] = {
-                        "semantic": semantic,
-                        "tfidf": tfidf
-                    }
-
-            except Exception as error:
-
-                st.error("Similarity analysis failed.")
-                st.exception(error)
-
-    results = st.session_state.get("similarity_results")
-
-    if results:
-
-        tab1, tab2 = st.tabs(["Sentence-BERT", "TF-IDF"])
-
-        with tab1:
-
-            st.markdown("### Semantic Similarity")
-
-            for index, match in enumerate(results["semantic"], 1):
-
-                with st.container(border=True):
-
-                    st.markdown(f"**Match {index}**")
-                    st.write(match["complaint"])
-
-                    score = min(
-                        max(float(match["similarity"]) / 100, 0),
-                        1
-                    )
-
-                    st.progress(score)
-
-                    st.caption(
-                        f"{match['similarity']:.2f}% similarity | "
-                        f"{match['department']} | {match['urgency']}"
-                    )
-
-        with tab2:
-
-            st.markdown("### TF-IDF Similarity")
-
-            for index, match in enumerate(results["tfidf"], 1):
-
-                with st.container(border=True):
-
-                    st.markdown(f"**Match {index}**")
-                    st.write(match["complaint"])
-
-                    score = min(
-                        max(float(match["similarity"]) / 100, 0),
-                        1
-                    )
-
-                    st.progress(score)
-
-                    st.caption(
-                        f"{match['similarity']:.2f}% similarity | "
-                        f"{match['department']} | {match['urgency']}"
-                    )
-
-    st.divider()
-    st.markdown("### Reported Issues")
-    st.caption(
-        "Similar submissions are grouped by TF-IDF. Add a +1 to an issue "
-        "you also experience. One +1 per issue is allowed per browser session."
-    )
-
-    try:
-        from nlp_pipeline import find_recurring_submitted_complaint_groups
-
-        recurring_groups = find_recurring_submitted_complaint_groups(
-            complaints
-        )
-    except Exception as error:
-        st.error("Could not analyze recurring complaints.")
-        st.exception(error)
-    else:
-        if recurring_groups:
-            for group in recurring_groups:
-                with st.expander(
-                    f"{group['topic_label']} — "
-                    f"{group['count']} reports"
-                ):
-                    representative = group["complaints"][0]
-                    st.markdown(
-                        f"**Representative complaint CP-"
-                        f"{representative['id']:04d} — "
-                        f"{representative['status']}**"
-                    )
-                    st.write(representative["complaint"])
-                    st.caption(
-                        f"{representative['support_count']} additional "
-                        f"+1 report(s) on this complaint"
-                    )
-
-                    supported_issue_ids = st.session_state.setdefault(
-                        "supported_issue_ids", set()
-                    )
-                    issue_id = representative["id"]
-                    if issue_id in supported_issue_ids:
-                        st.button(
-                            "I'm affected too (+1)",
-                            key=f"support_{issue_id}",
-                            disabled=True,
-                            help="You already added support in this session.",
-                        )
-                    elif st.button(
-                        "I'm affected too (+1)",
-                        key=f"support_{issue_id}",
-                    ):
-                        try:
-                            if add_complaint_support(int(issue_id)):
-                                supported_issue_ids.add(issue_id)
-                                st.success(
-                                    "Your +1 was counted as an additional "
-                                    "complaint report."
-                                )
-                                st.rerun()
-                            else:
-                                st.error("Could not find that complaint.")
-                        except Exception as error:
-                            st.error("Could not record your +1.")
-                            st.exception(error)
-
-                    for member in group["complaints"][1:]:
-                        st.markdown(
-                            f"**Complaint CP-{member['id']:04d}** — "
-                            f"{member['similarity']:.2f}% similar "
-                            f"· {member['status']}"
-                        )
-                        st.write(member["complaint"])
-                        if member["support_count"]:
-                            st.caption(
-                                f"{member['support_count']} additional "
-                                f"+1 report(s)"
-                            )
-        else:
-            st.info("No submitted complaints yet.")
 
 
 # =====================================================
@@ -1308,7 +1184,7 @@ elif page == "Reports":
     )
 
     st.markdown(
-        '<div class="page-subtitle">Explore complaint statistics and download reports.</div>',
+        '<div class="page-subtitle">Department performance audit, resolution tracking, and executive briefing.</div>',
         unsafe_allow_html=True
     )
 
@@ -1320,13 +1196,17 @@ elif page == "Reports":
 
         report_counts = 1 + df["support_count"].fillna(0).astype(int)
         total = int(report_counts.sum())
+        pending = int(report_counts[df["status"].eq("Pending")].sum())
+        in_progress = int(report_counts[df["status"].eq("In Progress")].sum())
         resolved = int(report_counts[df["status"].eq("Resolved")].sum())
+        resolution_rate = (resolved / total * 100) if total else 0.0
 
-        resolution_rate = (
-            resolved / total * 100 if total else 0
-        )
+        high_prio_mask = df["priority"].isin(["Critical", "High"]) & df["status"].ne("Resolved")
+        critical_backlog = int(report_counts[high_prio_mask].sum())
+        active_departments = df["department"].nunique()
 
-        c1, c2, c3 = st.columns(3)
+        # 1. KPI CARDS (CLEAN & PRACTICAL)
+        c1, c2, c3, c4 = st.columns(4)
 
         with c1:
             metric_card(
@@ -1334,125 +1214,248 @@ elif page == "Reports":
                 total,
                 "📋",
                 "#E8EDF8",
-                "All recorded submissions"
+                f"{len(df)} distinct submissions"
             )
 
         with c2:
             metric_card(
-                "RESOLVED",
-                resolved,
-                "✓",
-                "#E2F4E9",
-                "Successfully completed"
+                "RESOLUTION RATE",
+                f"{resolution_rate:.0f}%",
+                "📈",
+                "#E2F4E9" if resolution_rate >= 50 else "#FFF4D6",
+                f"{resolved} of {total} resolved"
             )
 
         with c3:
             metric_card(
-                "RESOLUTION RATE",
-                f"{resolution_rate:.1f}%",
-                "📈",
-                "#FFF4D6",
-                "Resolved complaints"
+                "PENDING BACKLOG",
+                pending,
+                "⏳",
+                "#FCE8E7" if pending > 0 else "#E2F4E9",
+                f"{critical_backlog} high priority" if critical_backlog > 0 else "0 high priority"
+            )
+
+        with c4:
+            metric_card(
+                "DEPARTMENTS",
+                active_departments,
+                "🏢",
+                "#E8EDF8",
+                "Units with active reports"
             )
 
         st.divider()
 
-        left, right = st.columns(2)
+        # 2. EXECUTIVE BRIEFING BOX
+        st.markdown("### 📋 Executive Summary")
 
-        with left:
+        department_totals = (
+            df.assign(report_count=report_counts)
+            .groupby("department")["report_count"]
+            .sum()
+            .sort_values(ascending=False)
+        )
+        top_dept = department_totals.index[0] if not department_totals.empty else "N/A"
+        top_dept_count = int(department_totals.iloc[0]) if not department_totals.empty else 0
+        top_dept_pct = (top_dept_count / total * 100) if total else 0
 
-            st.markdown("### Department Report")
+        known_locations = [
+            "Block A", "Block B", "Block C", "Block D", "Block E", "Hostel",
+            "Girls Hostel", "Boys Hostel", "Library", "Cafeteria", "Mess",
+            "Auditorium", "Science Lab", "Computer Lab", "Parking Area", "Admin Block"
+        ]
+        location_counts = {}
+        for text, report_count in zip(
+            df["complaint_text"].fillna(""),
+            report_counts,
+        ):
+            for loc in known_locations:
+                if re.search(r"\b" + re.escape(loc) + r"\b", text, re.IGNORECASE):
+                    location_counts[loc] = (
+                        location_counts.get(loc, 0) + int(report_count)
+                    )
 
-            department_report = (
-                df.assign(report_count=report_counts)
-                .groupby("department")["report_count"]
-                .sum()
-                .sort_values(ascending=False)
-                .rename_axis("Department")
-                .to_frame("Complaints")
-            )
+        top_location = max(location_counts, key=location_counts.get) if location_counts else None
+        top_location_hits = location_counts.get(top_location, 0) if top_location else 0
 
-            st.bar_chart(
-                department_report,
-                color="#4164AD",
-                horizontal=True
-            )
+        crit_pending_depts = [str(d) for d in df[high_prio_mask]["department"].unique() if pd.notna(d)]
+        crit_pending_str = ", ".join(crit_pending_depts) if crit_pending_depts else "None"
 
-        with right:
+        with st.container(border=True):
+            b1, b2 = st.columns(2)
+            with b1:
+                if critical_backlog > 0:
+                    st.markdown(f"🚨 **Urgent Backlog:** **{critical_backlog}** high-priority complaints pending in **{crit_pending_str}**.")
+                else:
+                    st.markdown("✅ **Priority Status:** No critical or high-priority complaints are currently pending.")
 
-            st.markdown("### Urgency Report")
+                st.markdown(f"🏢 **Top Department:** **{top_dept}** represents **{top_dept_pct:.0f}%** of total volume ({top_dept_count} complaints).")
 
-            urgency_report = (
-                df.assign(report_count=report_counts)
-                .groupby("urgency")["report_count"]
-                .sum()
-                .sort_values(ascending=False)
-                .rename_axis("Urgency")
-                .to_frame("Complaints")
-            )
+            with b2:
+                if top_location:
+                    st.markdown(f"📍 **Infrastructure Hotspot:** **{top_location}** ({top_location_hits} incident reports recorded).")
+                else:
+                    st.markdown("📍 **Campus Distribution:** Reports currently span general services with no facility cluster.")
 
-            st.bar_chart(
-                urgency_report,
-                color="#E8C96B"
-            )
-
-        left, right = st.columns(2)
-
-        with left:
-
-            st.markdown("### Status Report")
-
-            status_report = (
-                df.assign(report_count=report_counts)
-                .groupby("status")["report_count"]
-                .sum()
-                .rename_axis("Status")
-                .to_frame("Complaints")
-            )
-
-            st.bar_chart(status_report)
-
-        with right:
-
-            st.markdown("### Priority Report")
-
-            priority_report = (
-                df.assign(report_count=report_counts)
-                .groupby("priority")["report_count"]
-                .sum()
-                .sort_values(ascending=False)
-                .rename_axis("Priority")
-                .to_frame("Complaints")
-            )
-
-            st.bar_chart(priority_report)
+                st.markdown(f"⚡ **Throughput:** Campus-wide resolution sits at **{resolution_rate:.0f}%** ({resolved} closed, {pending} pending).")
 
         st.divider()
 
-        st.markdown("### Download Reports")
+        # 3. DEPARTMENT PERFORMANCE TABLE
+        st.markdown("### 🏢 Department Performance")
 
-        export_df = df.drop(
-            columns=[
-                "department_predictions",
-                "keywords",
-                "entities",
-                "semantic_matches",
-                "tfidf_matches"
-            ],
-            errors="ignore"
+        scorecard_rows = []
+        for dept_name, group in df.groupby("department"):
+            g_counts = 1 + group["support_count"].fillna(0).astype(int)
+            g_total = int(g_counts.sum())
+            g_resolved = int(g_counts[group["status"].eq("Resolved")].sum())
+            g_pending = int(g_counts[group["status"].eq("Pending")].sum())
+            g_in_prog = int(g_counts[group["status"].eq("In Progress")].sum())
+            g_crit = int(g_counts[group["priority"].isin(["Critical", "High"])].sum())
+            g_rate = (g_resolved / g_total * 100) if g_total else 0.0
+
+            if g_rate >= 70:
+                health = "🟢 On Track"
+            elif g_rate >= 40:
+                health = "🟡 Needs Attention"
+            else:
+                health = "🔴 Backlog" if g_pending > 0 else "🟠 In Progress"
+
+            scorecard_rows.append({
+                "Department": dept_name,
+                "Total Complaints": g_total,
+                "Critical / High": g_crit,
+                "Pending": g_pending,
+                "In Progress": g_in_prog,
+                "Resolved": g_resolved,
+                "Resolution Rate": f"{g_rate:.0f}%",
+                "Status": health
+            })
+
+        scorecard_df = pd.DataFrame(scorecard_rows).sort_values("Total Complaints", ascending=False)
+
+        st.dataframe(
+            scorecard_df,
+            use_container_width=True,
+            hide_index=True
         )
 
-        csv = export_df.to_csv(index=False).encode("utf-8")
+        st.divider()
 
-        st.download_button(
-            "Download Complaint Report (CSV)",
-            data=csv,
-            file_name="campuspulse_report.csv",
-            mime="text/csv",
-            type="primary",
-            use_container_width=True
-        )
-        
+        # 4. VISUAL BREAKDOWN (PROPORTIONAL & COMPACT)
+        col_left, col_right = st.columns(2)
+
+        with col_left:
+            with st.container(border=True):
+                st.markdown("**Resolution by Department**")
+                chart_data = scorecard_df.set_index("Department")[["Resolved", "Pending", "In Progress"]]
+                st.bar_chart(
+                    chart_data,
+                    color=["#28734A", "#B43F39", "#4164AD"],
+                    height=200
+                )
+
+        with col_right:
+            with st.container(border=True):
+                st.markdown("**Reported Emotions**")
+                if "emotion" in df.columns:
+                    emotion_counts = (
+                        df.assign(report_count=report_counts)
+                        .dropna(subset=["emotion"])
+                        .groupby("emotion")["report_count"]
+                        .sum()
+                        .sort_values(ascending=False)
+                    )
+                else:
+                    emotion_counts = pd.Series(dtype="int64")
+
+                if not emotion_counts.empty:
+                    st.bar_chart(
+                        emotion_counts,
+                        color="#E8C96B",
+                        horizontal=True,
+                        height=200
+                    )
+                else:
+                    st.info(
+                        "Emotion results will appear as new complaints are analyzed."
+                    )
+
+        st.divider()
+
+        # 5. EXPORT & EXECUTIVE BRIEFING
+        st.markdown("### 📥 Reports & Export")
+
+        current_date = datetime.now().strftime("%B %d, %Y")
+        executive_memo = f"""================================================================================
+CAMPUSPULSE: EXECUTIVE COMPLAINT INTELLIGENCE REPORT
+Date: {current_date}
+================================================================================
+
+1. OVERVIEW
+--------------------------------------------------------------------------------
+- Total Recorded Complaints: {total}
+- Campus Resolution Rate: {resolution_rate:.0f}% ({resolved} resolved, {pending} pending, {in_progress} in progress)
+- High-Priority Backlog: {critical_backlog} complaint(s)
+- Primary Department by Volume: {top_dept} ({top_dept_count} complaints, {top_dept_pct:.0f}%)
+
+2. DEPARTMENT AUDIT
+--------------------------------------------------------------------------------
+"""
+        for _, row in scorecard_df.iterrows():
+            executive_memo += (
+                f"- {row['Department']:<22} | Total: {row['Total Complaints']:<3} | "
+                f"Resolved: {row['Resolved']:<3} ({row['Resolution Rate']:<5}) | "
+                f"Pending: {row['Pending']:<3} | Status: {row['Status']}\n"
+            )
+
+        executive_memo += f"""
+3. RECOMMENDED ACTIONS
+--------------------------------------------------------------------------------
+- Address the {pending} pending issue(s), prioritizing any critical maintenance or safety items.
+- Ensure {top_dept} has sufficient staff allocation to maintain timely turnaround.
+
+================================================================================
+CONFIDENTIAL - CAMPUSPULSE GOVERNANCE REPORT
+================================================================================
+"""
+
+        exp1, exp2 = st.columns(2)
+
+        with exp1:
+            st.download_button(
+                "📄 Download Executive Briefing (.txt)",
+                data=executive_memo,
+                file_name=f"CampusPulse_Executive_Report_{datetime.now().strftime('%Y%m%d')}.txt",
+                mime="text/plain",
+                type="primary",
+                use_container_width=True
+            )
+
+        with exp2:
+            export_df = df.drop(
+                columns=[
+                    "department_predictions",
+                    "keywords",
+                    "entities",
+                    "semantic_matches",
+                    "tfidf_matches"
+                ],
+                errors="ignore"
+            )
+            csv = export_df.to_csv(index=False).encode("utf-8")
+
+            st.download_button(
+                "📊 Download Complaint Data (CSV)",
+                data=csv,
+                file_name="campuspulse_complaints.csv",
+                mime="text/csv",
+                use_container_width=True
+            )
+
+        with st.expander("Preview Executive Briefing Memo"):
+            st.text(executive_memo)
+
 # =====================================================
 # FOOTER
 # =====================================================

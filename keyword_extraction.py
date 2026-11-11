@@ -13,7 +13,7 @@ custom_stopwords = set(ENGLISH_STOP_WORDS).union({
     "could", "should", "get", "got",
     "make", "made", "also", "really",
     "very", "much", "many", "every",
-    "working", "happening", "trying"
+    "working", "happening", "trying",
     "like", "just", "bit", "says", "don", "ve",
     "able", "actually", "really", "small"
 })

@@ -5,6 +5,7 @@ from complaint_database import (
     add_complaint_support,
     create_database,
     get_all_complaints,
+    save_complaint,
 )
 
 
@@ -24,7 +25,9 @@ def test_add_complaint_support_increments_count(tmp_path, monkeypatch):
 
     assert add_complaint_support(1) is True
     assert add_complaint_support(1) is True
-    assert get_all_complaints()[0]["support_count"] == 2
+    complaint = get_all_complaints()[0]
+    assert complaint["support_count"] == 2
+    assert complaint["submitted_at"] == "2026-01-01 10:00:00"
     assert add_complaint_support(999) is False
 
 
@@ -54,3 +57,26 @@ def test_create_database_adds_support_count_to_existing_table(
 
     complaint = get_all_complaints()[0]
     assert complaint["support_count"] == 0
+    assert complaint["emotion"] is None
+
+
+def test_save_complaint_persists_detected_emotion(tmp_path, monkeypatch):
+    database_path = tmp_path / "campuspulse.db"
+    monkeypatch.setattr(complaint_database, "DATABASE", str(database_path))
+    create_database()
+
+    result = {
+        "department_predictions": [{"department": "IT Support"}],
+        "urgency": {"urgency": "Medium", "confidence": 80},
+        "sentiment": {"sentiment": "Negative", "confidence": 90},
+        "emotion": {"emotion": "Frustration", "cues": ["frustrated"]},
+        "priority": {"score": 40, "priority": "Medium"},
+        "keywords": ["wifi"],
+        "entities": [],
+        "semantic_similar_complaints": [],
+        "tfidf_similar_complaints": [],
+    }
+
+    save_complaint("The Wi-Fi is frustrating.", result)
+
+    assert get_all_complaints()[0]["emotion"] == "Frustration"
