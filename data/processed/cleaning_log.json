@@ -1,0 +1,256 @@
+{
+  "datasets": {
+    "1_alaminxpro": {
+      "raw_rows": 332,
+      "cleaned_rows": 327,
+      "removed_exact_duplicates": 5,
+      "duplicate_samples_detail": [
+        {
+          "ID": 20,
+          "cleaned_text": "CSE Dept doesnt have qualified teachers",
+          "Primary_Department": "Department Head",
+          "Severity": "High",
+          "Complaint_Group_ID": 19
+        },
+        {
+          "ID": 21,
+          "cleaned_text": "We need more research facilities in our university and also we need more experienced professors",
+          "Primary_Department": "Department Head",
+          "Severity": "High",
+          "Complaint_Group_ID": 20
+        },
+        {
+          "ID": 23,
+          "cleaned_text": "CSE Dept doesnt have qualified teachers",
+          "Primary_Department": "Department Head",
+          "Severity": "High",
+          "Complaint_Group_ID": 19
+        },
+        {
+          "ID": 24,
+          "cleaned_text": "We need more research facilities in our university and also we need more experienced professors",
+          "Primary_Department": "Department Head",
+          "Severity": "High",
+          "Complaint_Group_ID": 20
+        },
+        {
+          "ID": 94,
+          "cleaned_text": "CSE Dept doesnt have qualified teachers. Please look into it.",
+          "Primary_Department": "Department Head",
+          "Severity": "High",
+          "Complaint_Group_ID": 77
+        },
+        {
+          "ID": 95,
+          "cleaned_text": "We would benefit from more research facilities in our university and also we would benefit from more experienced professors.",
+          "Primary_Department": "Department Head",
+          "Severity": "High",
+          "Complaint_Group_ID": 20
+        },
+        {
+          "ID": 97,
+          "cleaned_text": "CSE Dept doesnt have qualified teachers.",
+          "Primary_Department": "Department Head",
+          "Severity": "High",
+          "Complaint_Group_ID": 19
+        },
+        {
+          "ID": 168,
+          "cleaned_text": "CSE Dept doesnt have qualified teachers.",
+          "Primary_Department": "Department Head",
+          "Severity": "High",
+          "Complaint_Group_ID": 19
+        },
+        {
+          "ID": 171,
+          "cleaned_text": "CSE Dept doesnt have qualified teachers. Please look into it.",
+          "Primary_Department": "Department Head",
+          "Severity": "High",
+          "Complaint_Group_ID": 77
+        },
+        {
+          "ID": 172,
+          "cleaned_text": "We would benefit from more research facilities in our university and also we would benefit from more experienced professors.",
+          "Primary_Department": "Department Head",
+          "Severity": "High",
+          "Complaint_Group_ID": 20
+        }
+      ],
+      "rare_departments_flagged": {
+        "Proctorial": 8,
+        "Examination": 8,
+        "Registrar": 4,
+        "Canteen": 3
+      },
+      "departments_count": {
+        "Maintenance": 98,
+        "IT": 69,
+        "Department Head": 55,
+        "Transport & Parking": 25,
+        "Finance": 25,
+        "Student Welfare": 20,
+        "Library": 12,
+        "Proctorial": 8,
+        "Examination": 8,
+        "Registrar": 4,
+        "Canteen": 3
+      },
+      "severities_count": {
+        "Urgent": 108,
+        "Medium": 99,
+        "High": 93,
+        "Low": 27
+      },
+      "department_head_count": 55
+    },
+    "2_omarsobhy": {
+      "raw_rows": 1005,
+      "cleaned_rows": 999,
+      "removed_exact_duplicates": 6,
+      "duplicate_samples_detail": [
+        {
+          "Genre": "Academic Support and Resources",
+          "cleaned_text": "The limited access to research databases and materials is causing a lot of frustration among students. We need better access to be able to succeed academically."
+        },
+        {
+          "Genre": "Academic Support and Resources",
+          "cleaned_text": "The limited access to research databases and materials is causing a lot of frustration among students. We need better access to be able to succeed academically."
+        },
+        {
+          "Genre": "Academic Support and Resources",
+          "cleaned_text": "The academic workload is causing significant stress and anxiety, and I am finding it hard to cope with the pressure."
+        },
+        {
+          "Genre": "Academic Support and Resources",
+          "cleaned_text": "The academic workload is causing significant stress and anxiety, and I am finding it hard to cope with the pressure."
+        },
+        {
+          "Genre": "Athletics and sports",
+          "cleaned_text": "I'm having trouble meeting the athletic eligibility requirements because of a schedule conflict with one of my classes. I wish there was more flexibility."
+        },
+        {
+          "Genre": "Athletics and sports",
+          "cleaned_text": "I'm having trouble meeting the athletic eligibility requirements because of a schedule conflict with one of my classes. I wish there was more flexibility."
+        },
+        {
+          "Genre": "Career opportunities",
+          "cleaned_text": "There seems to be a scarcity of available internships and job openings in my field of study."
+        },
+        {
+          "Genre": "Career opportunities",
+          "cleaned_text": "There seems to be a scarcity of available internships and job openings in my field of study."
+        },
+        {
+          "Genre": "Financial Support",
+          "cleaned_text": "I'm not sure I'll be able to afford to finish my degree because of how much debt I've already accumulated."
+        },
+        {
+          "Genre": "Financial Support",
+          "cleaned_text": "I'm not sure I'll be able to afford to finish my degree because of how much debt I've already accumulated."
+        },
+        {
+          "Genre": "Health and Well-being Support",
+          "cleaned_text": "It's frustrating that my health insurance doesn't cover all of my medical expenses."
+        },
+        {
+          "Genre": "Health and Well-being Support",
+          "cleaned_text": "It's frustrating that my health insurance doesn't cover all of my medical expenses."
+        }
+      ],
+      "all_11_original_genres": {
+        "Academic Support and Resources": 234,
+        "Food and Cantines": 138,
+        "Financial Support": 90,
+        "Online learning": 90,
+        "Career opportunities": 88,
+        "International student experiences": 86,
+        "Athletics and sports": 84,
+        "Housing and Transportation": 64,
+        "Health and Well-being Support": 52,
+        "Activities and Travelling": 40,
+        "Student Affairs": 33
+      }
+    },
+    "3_nlpc_uom": {
+      "integrity_explanation": "The repository contains 16,631 total lines across 3 subfolder variations. The canonical TOWE recreation benchmark is train.tsv (4,900) and test.tsv (1,520), totaling 6,420 annotations. Because multiple aspect-opinion pairs belong to the same sentence (e.g. both 'lecture series' and 'project'), those 6,420 aspect annotations correspond to 2,615 unique student feedback sentences. Zero annotations were discarded: all 6,420 aspect pairs are preserved in 3_nlpc_uom_aspect_level.csv, and their aggregated annotations are preserved in 3_nlpc_uom_sentence_level.csv.",
+      "total_canonical_aspect_annotations": 6420,
+      "unique_feedback_sentences": 2615,
+      "train_annotations": 4900,
+      "test_annotations": 1520
+    },
+    "4_crowdflower": {
+      "raw_rows": 14640,
+      "cleaned_rows": 14337,
+      "removed_exact_duplicates": 303,
+      "sentiment_distribution": {
+        "negative": 9075,
+        "neutral": 3015,
+        "positive": 2247
+      },
+      "negative_reasons": {
+        "Customer Service Issue": 2881,
+        "Late Flight": 1649,
+        "Can't Tell": 1175,
+        "Cancelled Flight": 829,
+        "Lost Luggage": 719,
+        "Bad Flight": 575,
+        "Flight Booking Problems": 522,
+        "Flight Attendant Complaints": 475,
+        "longlines": 177,
+        "Damaged Luggage": 73
+      }
+    },
+    "5_cfpb": {
+      "raw_rows": 1000,
+      "empty_narratives_filtered": 729,
+      "cleaned_rows": 263,
+      "removed_exact_duplicates": 8,
+      "products": {
+        "Credit reporting or other personal consumer reports": 99,
+        "Credit reporting, credit repair services, or other personal consumer reports": 60,
+        "Debt collection": 31,
+        "Checking or savings account": 16,
+        "Credit card": 10,
+        "Mortgage": 10,
+        "Money transfer, virtual currency, or money service": 10,
+        "Credit card or prepaid card": 9,
+        "Vehicle loan or lease": 5,
+        "Student loan": 4,
+        "Payday loan, title loan, personal loan, or advance loan": 2,
+        "Payday loan, title loan, or personal loan": 2,
+        "Debt or credit management": 1,
+        "Prepaid card": 1,
+        "Credit reporting": 1,
+        "Consumer Loan": 1,
+        "Money transfers": 1
+      }
+    },
+    "6_hblim": {
+      "raw_rows": 1682,
+      "cleaned_rows": 1675,
+      "removed_exact_duplicates": 7,
+      "labels_preserved": {
+        "product": 588,
+        "billing": 552,
+        "delivery": 535
+      }
+    }
+  },
+  "verification_checks": {
+    "duplicate_detection_leakage_check": {
+      "total_samples": 327,
+      "unique_groups": 186,
+      "train_samples": 266,
+      "train_groups": 148,
+      "test_samples": 61,
+      "test_groups": 38,
+      "group_overlap_count": 0,
+      "leak_free_status": true
+    },
+    "raw_files_unaltered_check": {
+      "total_raw_files_verified": 32,
+      "mismatches": [],
+      "raw_files_untouched_status": true
+    }
+  }
+}

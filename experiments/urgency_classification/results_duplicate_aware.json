@@ -1,0 +1,2291 @@
+{
+  "split": "duplicate_aware",
+  "overall_metrics": {
+    "logreg": {
+      "accuracy": 0.5779816513761468,
+      "macro_f1": 0.5255541835694014,
+      "precision": 0.5254936718161611,
+      "recall": 0.5324345606603671,
+      "per_class": {
+        "High": {
+          "precision": 0.5816326530612245,
+          "recall": 0.6129032258064516,
+          "f1": 0.5968586387434555
+        },
+        "Low": {
+          "precision": 0.225,
+          "recall": 0.3333333333333333,
+          "f1": 0.26865671641791045
+        },
+        "Medium": {
+          "precision": 0.6022727272727273,
+          "recall": 0.5353535353535354,
+          "f1": 0.5668449197860963
+        },
+        "Urgent": {
+          "precision": 0.693069306930693,
+          "recall": 0.6481481481481481,
+          "f1": 0.6698564593301436
+        }
+      }
+    },
+    "svm": {
+      "accuracy": 0.5749235474006116,
+      "macro_f1": 0.5138131163904359,
+      "precision": 0.5147126127338808,
+      "recall": 0.5164888128597805,
+      "per_class": {
+        "High": {
+          "precision": 0.6086956521739131,
+          "recall": 0.6021505376344086,
+          "f1": 0.6054054054054054
+        },
+        "Low": {
+          "precision": 0.18421052631578946,
+          "recall": 0.25925925925925924,
+          "f1": 0.2153846153846154
+        },
+        "Medium": {
+          "precision": 0.5894736842105263,
+          "recall": 0.5656565656565656,
+          "f1": 0.5773195876288659
+        },
+        "Urgent": {
+          "precision": 0.6764705882352942,
+          "recall": 0.6388888888888888,
+          "f1": 0.6571428571428571
+        }
+      }
+    }
+  },
+  "mean_fold_metrics": {
+    "logreg": [
+      {
+        "fold": 1,
+        "accuracy": 0.48484848484848486,
+        "macro_f1": 0.4262218045112782,
+        "precision": 0.5010504201680672,
+        "recall": 0.3936684660368871,
+        "per_class": {
+          "High": {
+            "precision": 0.5238095238095238,
+            "recall": 0.5789473684210527,
+            "f1": 0.55
+          },
+          "Low": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "Medium": {
+            "precision": 0.8333333333333334,
+            "recall": 0.38461538461538464,
+            "f1": 0.5263157894736842
+          },
+          "Urgent": {
+            "precision": 0.6470588235294118,
+            "recall": 0.6111111111111112,
+            "f1": 0.6285714285714286
+          }
+        }
+      },
+      {
+        "fold": 2,
+        "accuracy": 0.5606060606060606,
+        "macro_f1": 0.5300643631436315,
+        "precision": 0.5326733954451346,
+        "recall": 0.5457702020202021,
+        "per_class": {
+          "High": {
+            "precision": 0.5652173913043478,
+            "recall": 0.7222222222222222,
+            "f1": 0.6341463414634146
+          },
+          "Low": {
+            "precision": 0.375,
+            "recall": 0.375,
+            "f1": 0.375
+          },
+          "Medium": {
+            "precision": 0.5714285714285714,
+            "recall": 0.36363636363636365,
+            "f1": 0.4444444444444444
+          },
+          "Urgent": {
+            "precision": 0.6190476190476191,
+            "recall": 0.7222222222222222,
+            "f1": 0.6666666666666666
+          }
+        }
+      },
+      {
+        "fold": 3,
+        "accuracy": 0.6,
+        "macro_f1": 0.552880452880453,
+        "precision": 0.5702380952380952,
+        "recall": 0.586046918767507,
+        "per_class": {
+          "High": {
+            "precision": 0.4,
+            "recall": 0.7142857142857143,
+            "f1": 0.5128205128205128
+          },
+          "Low": {
+            "precision": 0.42857142857142855,
+            "recall": 0.375,
+            "f1": 0.4
+          },
+          "Medium": {
+            "precision": 0.5,
+            "recall": 0.6666666666666666,
+            "f1": 0.5714285714285714
+          },
+          "Urgent": {
+            "precision": 0.9523809523809523,
+            "recall": 0.5882352941176471,
+            "f1": 0.7272727272727273
+          }
+        }
+      },
+      {
+        "fold": 4,
+        "accuracy": 0.5230769230769231,
+        "macro_f1": 0.4150574031322144,
+        "precision": 0.428202614379085,
+        "recall": 0.41558441558441556,
+        "per_class": {
+          "High": {
+            "precision": 0.7222222222222222,
+            "recall": 0.5,
+            "f1": 0.5909090909090909
+          },
+          "Low": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "Medium": {
+            "precision": 0.52,
+            "recall": 0.5909090909090909,
+            "f1": 0.5531914893617021
+          },
+          "Urgent": {
+            "precision": 0.47058823529411764,
+            "recall": 0.5714285714285714,
+            "f1": 0.5161290322580645
+          }
+        }
+      },
+      {
+        "fold": 5,
+        "accuracy": 0.7230769230769231,
+        "macro_f1": 0.7133030990173848,
+        "precision": 0.7547727272727274,
+        "recall": 0.6937500000000001,
+        "per_class": {
+          "High": {
+            "precision": 0.9090909090909091,
+            "recall": 0.625,
+            "f1": 0.7407407407407407
+          },
+          "Low": {
+            "precision": 0.75,
+            "recall": 0.6,
+            "f1": 0.6666666666666666
+          },
+          "Medium": {
+            "precision": 0.64,
+            "recall": 0.8,
+            "f1": 0.7111111111111111
+          },
+          "Urgent": {
+            "precision": 0.72,
+            "recall": 0.75,
+            "f1": 0.7346938775510204
+          }
+        }
+      }
+    ],
+    "svm": [
+      {
+        "fold": 1,
+        "accuracy": 0.5,
+        "macro_f1": 0.43892642642642643,
+        "precision": 0.501984126984127,
+        "recall": 0.40328385065227174,
+        "per_class": {
+          "High": {
+            "precision": 0.6111111111111112,
+            "recall": 0.5789473684210527,
+            "f1": 0.5945945945945946
+          },
+          "Low": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "Medium": {
+            "precision": 0.7857142857142857,
+            "recall": 0.4230769230769231,
+            "f1": 0.55
+          },
+          "Urgent": {
+            "precision": 0.6111111111111112,
+            "recall": 0.6111111111111112,
+            "f1": 0.6111111111111112
+          }
+        }
+      },
+      {
+        "fold": 2,
+        "accuracy": 0.5151515151515151,
+        "macro_f1": 0.45509464168000757,
+        "precision": 0.4496885329265192,
+        "recall": 0.46938131313131315,
+        "per_class": {
+          "High": {
+            "precision": 0.6086956521739131,
+            "recall": 0.7777777777777778,
+            "f1": 0.6829268292682927
+          },
+          "Low": {
+            "precision": 0.16666666666666666,
+            "recall": 0.125,
+            "f1": 0.14285714285714285
+          },
+          "Medium": {
+            "precision": 0.4444444444444444,
+            "recall": 0.36363636363636365,
+            "f1": 0.4
+          },
+          "Urgent": {
+            "precision": 0.5789473684210527,
+            "recall": 0.6111111111111112,
+            "f1": 0.5945945945945946
+          }
+        }
+      },
+      {
+        "fold": 3,
+        "accuracy": 0.6153846153846154,
+        "macro_f1": 0.5746150779045516,
+        "precision": 0.6089285714285715,
+        "recall": 0.6138246965452848,
+        "per_class": {
+          "High": {
+            "precision": 0.4166666666666667,
+            "recall": 0.7142857142857143,
+            "f1": 0.5263157894736842
+          },
+          "Low": {
+            "precision": 0.6,
+            "recall": 0.375,
+            "f1": 0.46153846153846156
+          },
+          "Medium": {
+            "precision": 0.4666666666666667,
+            "recall": 0.7777777777777778,
+            "f1": 0.5833333333333334
+          },
+          "Urgent": {
+            "precision": 0.9523809523809523,
+            "recall": 0.5882352941176471,
+            "f1": 0.7272727272727273
+          }
+        }
+      },
+      {
+        "fold": 4,
+        "accuracy": 0.5076923076923077,
+        "macro_f1": 0.4065256875973015,
+        "precision": 0.42777777777777776,
+        "recall": 0.40946553446553446,
+        "per_class": {
+          "High": {
+            "precision": 0.6666666666666666,
+            "recall": 0.38461538461538464,
+            "f1": 0.4878048780487805
+          },
+          "Low": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "Medium": {
+            "precision": 0.6,
+            "recall": 0.6818181818181818,
+            "f1": 0.6382978723404256
+          },
+          "Urgent": {
+            "precision": 0.4444444444444444,
+            "recall": 0.5714285714285714,
+            "f1": 0.5
+          }
+        }
+      },
+      {
+        "fold": 5,
+        "accuracy": 0.7384615384615385,
+        "macro_f1": 0.727513842746401,
+        "precision": 0.7624024526198439,
+        "recall": 0.7072916666666667,
+        "per_class": {
+          "High": {
+            "precision": 0.9166666666666666,
+            "recall": 0.6875,
+            "f1": 0.7857142857142857
+          },
+          "Low": {
+            "precision": 0.75,
+            "recall": 0.6,
+            "f1": 0.6666666666666666
+          },
+          "Medium": {
+            "precision": 0.6521739130434783,
+            "recall": 0.75,
+            "f1": 0.6976744186046512
+          },
+          "Urgent": {
+            "precision": 0.7307692307692307,
+            "recall": 0.7916666666666666,
+            "f1": 0.76
+          }
+        }
+      }
+    ]
+  },
+  "confusion_matrices": {
+    "logreg": [
+      [
+        [
+          11,
+          5,
+          0,
+          3
+        ],
+        [
+          3,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          11,
+          10,
+          3
+        ],
+        [
+          5,
+          0,
+          2,
+          11
+        ]
+      ],
+      [
+        [
+          13,
+          2,
+          2,
+          1
+        ],
+        [
+          2,
+          3,
+          2,
+          1
+        ],
+        [
+          6,
+          2,
+          8,
+          6
+        ],
+        [
+          2,
+          1,
+          2,
+          13
+        ]
+      ],
+      [
+        [
+          10,
+          0,
+          3,
+          1
+        ],
+        [
+          4,
+          3,
+          1,
+          0
+        ],
+        [
+          2,
+          1,
+          6,
+          0
+        ],
+        [
+          9,
+          3,
+          2,
+          20
+        ]
+      ],
+      [
+        [
+          13,
+          2,
+          7,
+          4
+        ],
+        [
+          1,
+          0,
+          2,
+          0
+        ],
+        [
+          3,
+          1,
+          13,
+          5
+        ],
+        [
+          1,
+          2,
+          3,
+          8
+        ]
+      ],
+      [
+        [
+          10,
+          0,
+          2,
+          4
+        ],
+        [
+          0,
+          3,
+          2,
+          0
+        ],
+        [
+          0,
+          1,
+          16,
+          3
+        ],
+        [
+          1,
+          0,
+          5,
+          18
+        ]
+      ]
+    ],
+    "svm": [
+      [
+        [
+          11,
+          5,
+          0,
+          3
+        ],
+        [
+          1,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          11,
+          11,
+          3
+        ],
+        [
+          5,
+          0,
+          2,
+          11
+        ]
+      ],
+      [
+        [
+          14,
+          2,
+          2,
+          0
+        ],
+        [
+          1,
+          1,
+          4,
+          2
+        ],
+        [
+          6,
+          2,
+          8,
+          6
+        ],
+        [
+          2,
+          1,
+          4,
+          11
+        ]
+      ],
+      [
+        [
+          10,
+          0,
+          3,
+          1
+        ],
+        [
+          4,
+          3,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          7,
+          0
+        ],
+        [
+          9,
+          1,
+          4,
+          20
+        ]
+      ],
+      [
+        [
+          10,
+          4,
+          5,
+          7
+        ],
+        [
+          1,
+          0,
+          2,
+          0
+        ],
+        [
+          3,
+          1,
+          15,
+          3
+        ],
+        [
+          1,
+          2,
+          3,
+          8
+        ]
+      ],
+      [
+        [
+          11,
+          0,
+          2,
+          3
+        ],
+        [
+          0,
+          3,
+          2,
+          0
+        ],
+        [
+          0,
+          1,
+          15,
+          4
+        ],
+        [
+          1,
+          0,
+          4,
+          19
+        ]
+      ]
+    ]
+  },
+  "misclassifications": {
+    "logreg": [
+      {
+        "text": "need a seperate female prayer room which is not just a sub portion of female common room",
+        "true_label": "Medium",
+        "pred_label": "Low",
+        "fold": 1
+      },
+      {
+        "text": "drinking water system on the 6th floor(CSE dpt) is no longer working.",
+        "true_label": "Urgent",
+        "pred_label": "High",
+        "fold": 1
+      },
+      {
+        "text": "We need more research facilities in our university and also we need more experienced professors",
+        "true_label": "High",
+        "pred_label": "Low",
+        "fold": 1
+      },
+      {
+        "text": "Library and study room spaces are insufficient and remain overcrowded during peak hours.",
+        "true_label": "Medium",
+        "pred_label": "Low",
+        "fold": 1
+      },
+      {
+        "text": "Plaster dust is falling from the classroom wall.",
+        "true_label": "Urgent",
+        "pred_label": "Medium",
+        "fold": 1
+      },
+      {
+        "text": "are in need of a seperate female prayer room which is not just a sub portion of female common room. Please look into it.",
+        "true_label": "Medium",
+        "pred_label": "Low",
+        "fold": 1
+      },
+      {
+        "text": "drinking water system on the 6th floor(CSE dpt) is no longer working. Kindly verify and take action.",
+        "true_label": "Urgent",
+        "pred_label": "High",
+        "fold": 1
+      },
+      {
+        "text": "We would benefit from more research facilities in our university and also we would benefit from more experienced professors.",
+        "true_label": "High",
+        "pred_label": "Low",
+        "fold": 1
+      },
+      {
+        "text": "We require more research facilities in our university and also we require more experienced professors.",
+        "true_label": "High",
+        "pred_label": "Low",
+        "fold": 1
+      },
+      {
+        "text": "Library and study room spaces are insufficient and remain overcrowded during peak hours. This is affecting regular activities.",
+        "true_label": "Medium",
+        "pred_label": "Low",
+        "fold": 1
+      },
+      {
+        "text": "More female washrooms would be really appreciated. Requesting a quick check.",
+        "true_label": "Medium",
+        "pred_label": "High",
+        "fold": 1
+      },
+      {
+        "text": "Plaster dust is falling from the classroom wall. Please look into it.",
+        "true_label": "Urgent",
+        "pred_label": "Medium",
+        "fold": 1
+      },
+      {
+        "text": "are in need of a seperate female prayer room which is not just a sub portion of female common room. Kindly verify and take action.",
+        "true_label": "Medium",
+        "pred_label": "Low",
+        "fold": 1
+      },
+      {
+        "text": "drinking water system on the 6th floor(CSE dpt) is no longer working. Requesting a quick check.",
+        "true_label": "Urgent",
+        "pred_label": "High",
+        "fold": 1
+      },
+      {
+        "text": "We are in need of more research facilities in our university and also we are in need of more experienced professors.",
+        "true_label": "High",
+        "pred_label": "Low",
+        "fold": 1
+      },
+      {
+        "text": "Library and study room spaces are insufficient and remain overcrowded during peak hours. Kindly verify and take action.",
+        "true_label": "Medium",
+        "pred_label": "Low",
+        "fold": 1
+      },
+      {
+        "text": "require a seperate female prayer room which is not just a sub portion of female common room. Needs attention.",
+        "true_label": "Medium",
+        "pred_label": "Low",
+        "fold": 1
+      },
+      {
+        "text": "drinking water system on the 6th floor(CSE dpt) is no longer working. Please look into it.",
+        "true_label": "Urgent",
+        "pred_label": "High",
+        "fold": 1
+      },
+      {
+        "text": "We require more research facilities in our university and also we require more experienced professors. Needs attention.",
+        "true_label": "High",
+        "pred_label": "Urgent",
+        "fold": 1
+      },
+      {
+        "text": "We are in need of more research facilities in our university and also we are in need of more experienced professors. Needs attention.",
+        "true_label": "High",
+        "pred_label": "Urgent",
+        "fold": 1
+      },
+      {
+        "text": "Library and study room spaces are insufficient and remain overcrowded during peak hours. Requesting a quick check.",
+        "true_label": "Medium",
+        "pred_label": "Low",
+        "fold": 1
+      },
+      {
+        "text": "Projector power outlets are loose in multiple rooms.",
+        "true_label": "Low",
+        "pred_label": "High",
+        "fold": 1
+      },
+      {
+        "text": "Some classrooms remain very hot due to non\u2010working fans.",
+        "true_label": "Urgent",
+        "pred_label": "High",
+        "fold": 1
+      },
+      {
+        "text": "Switchboards in lecture halls are broken.",
+        "true_label": "Medium",
+        "pred_label": "High",
+        "fold": 1
+      },
+      {
+        "text": "Several bulbs in corridors have not been replaced.",
+        "true_label": "High",
+        "pred_label": "Urgent",
+        "fold": 1
+      },
+      {
+        "text": "Extension cables in labs are damaged.",
+        "true_label": "Low",
+        "pred_label": "High",
+        "fold": 1
+      },
+      {
+        "text": "Fee clearance process takes too long before registration.",
+        "true_label": "Medium",
+        "pred_label": "Urgent",
+        "fold": 1
+      },
+      {
+        "text": "Payment verification requires multiple office visits.",
+        "true_label": "High",
+        "pred_label": "Low",
+        "fold": 1
+      },
+      {
+        "text": "No shade in motorcycle parking areas.",
+        "true_label": "Medium",
+        "pred_label": "Low",
+        "fold": 1
+      },
+      {
+        "text": "No clear signboards for visitor parking.",
+        "true_label": "Medium",
+        "pred_label": "Low",
+        "fold": 1
+      },
+      {
+        "text": "Parking area drainage system is poor.",
+        "true_label": "Medium",
+        "pred_label": "Low",
+        "fold": 1
+      },
+      {
+        "text": "Classroom windows cannot be opened.",
+        "true_label": "Medium",
+        "pred_label": "Urgent",
+        "fold": 1
+      },
+      {
+        "text": "Cars are parked in restricted areas.",
+        "true_label": "Medium",
+        "pred_label": "Urgent",
+        "fold": 1
+      },
+      {
+        "text": "Washrooms sometimes have unpleasant odors.",
+        "true_label": "Low",
+        "pred_label": "High",
+        "fold": 1
+      },
+      {
+        "text": "A studentship certificate costs a student 500taka which should be of free from the versity as a current student of the institute.",
+        "true_label": "Medium",
+        "pred_label": "Urgent",
+        "fold": 2
+      },
+      {
+        "text": "The size for the teacup in the cafeteria should be larger.",
+        "true_label": "Low",
+        "pred_label": "Medium",
+        "fold": 2
+      },
+      {
+        "text": "Forming groups ourselves often leads to conflicts. It would be better if the teacher assigned the groups first to avoid any problems.",
+        "true_label": "Medium",
+        "pred_label": "High",
+        "fold": 2
+      },
+      {
+        "text": "It is difficult to evaluate students fairly when quizzes have uneven difficulty levels, with some sets being hard and others easy.",
+        "true_label": "High",
+        "pred_label": "Medium",
+        "fold": 2
+      },
+      {
+        "text": "A studentship certificate costs a student 500taka which should be of free from the versity as a current student of the institute. This is affecting regular activities.",
+        "true_label": "Medium",
+        "pred_label": "Urgent",
+        "fold": 2
+      },
+      {
+        "text": "The size for the teacup at the cafeteria should be larger.",
+        "true_label": "Low",
+        "pred_label": "Medium",
+        "fold": 2
+      },
+      {
+        "text": "The group members for group projects should be selected by the teachers. The students with no groups have to suffer. This is affecting regular activities.",
+        "true_label": "Medium",
+        "pred_label": "High",
+        "fold": 2
+      },
+      {
+        "text": "Forming groups ourselves regularly leads to conflicts. It would be better if the teacher assigned the groups first to avoid any problems. This is affecting regular activities.",
+        "true_label": "Medium",
+        "pred_label": "High",
+        "fold": 2
+      },
+      {
+        "text": "It is difficult to evaluate students fairly when quizzes have uneven difficulty levels, with some sets being hard and others easy. Requesting a quick check.",
+        "true_label": "High",
+        "pred_label": "Medium",
+        "fold": 2
+      },
+      {
+        "text": "A studentship certificate costs a student 500taka which should be of free from the versity as a current student of the institute. Please look into it.",
+        "true_label": "Medium",
+        "pred_label": "Urgent",
+        "fold": 2
+      },
+      {
+        "text": "The size for the teacup in the cafeteria should be larger. Please look into it.",
+        "true_label": "Low",
+        "pred_label": "High",
+        "fold": 2
+      },
+      {
+        "text": "Forming groups ourselves frequently leads to conflicts. It would be better if the teacher assigned the groups first to avoid any problems. Please look into it.",
+        "true_label": "Medium",
+        "pred_label": "High",
+        "fold": 2
+      },
+      {
+        "text": "Classroom lights and ACs are not properly maintained; some are faulty, and there appears to be little concern regarding timely repairs. Needs attention.",
+        "true_label": "Urgent",
+        "pred_label": "Medium",
+        "fold": 2
+      },
+      {
+        "text": "A studentship certificate costs a student 500taka which should be of free from the versity as a current student of the institute. Needs attention.",
+        "true_label": "Medium",
+        "pred_label": "Urgent",
+        "fold": 2
+      },
+      {
+        "text": "Faculties whose voices cannot be heard loudly or find it difficult to speak loudly in large classrooms should use personal headset microphones for their ease as well as ours. This is affecting regular activities.",
+        "true_label": "Medium",
+        "pred_label": "High",
+        "fold": 2
+      },
+      {
+        "text": "Forming groups ourselves regularly leads to conflicts. It would be better if the teacher assigned the groups first to avoid any problems.",
+        "true_label": "Medium",
+        "pred_label": "High",
+        "fold": 2
+      },
+      {
+        "text": "Outdoor campus lights remain off at night.",
+        "true_label": "High",
+        "pred_label": "Urgent",
+        "fold": 2
+      },
+      {
+        "text": "Electrical maintenance requests take too long to resolve.",
+        "true_label": "Low",
+        "pred_label": "High",
+        "fold": 2
+      },
+      {
+        "text": "Lights in the parking basement flicker frequently.",
+        "true_label": "Urgent",
+        "pred_label": "Low",
+        "fold": 2
+      },
+      {
+        "text": "Incorrect late fee added to student accounts.",
+        "true_label": "Urgent",
+        "pred_label": "High",
+        "fold": 2
+      },
+      {
+        "text": "Scholarship adjustments are not reflected in fee statements.",
+        "true_label": "Urgent",
+        "pred_label": "Medium",
+        "fold": 2
+      },
+      {
+        "text": "Vehicles sometimes block emergency exits.",
+        "true_label": "High",
+        "pred_label": "Low",
+        "fold": 2
+      },
+      {
+        "text": "Parking layout causes difficulty exiting during rush hours.",
+        "true_label": "Medium",
+        "pred_label": "Low",
+        "fold": 2
+      },
+      {
+        "text": "Hand dryers in washrooms are not functioning.",
+        "true_label": "Medium",
+        "pred_label": "Urgent",
+        "fold": 2
+      },
+      {
+        "text": "Toilet paper dispensers are empty frequently.",
+        "true_label": "Urgent",
+        "pred_label": "High",
+        "fold": 2
+      },
+      {
+        "text": "Some stair railings are loose.",
+        "true_label": "High",
+        "pred_label": "Low",
+        "fold": 2
+      },
+      {
+        "text": "Water taps in washrooms are leaking",
+        "true_label": "Medium",
+        "pred_label": "Urgent",
+        "fold": 2
+      },
+      {
+        "text": "Duplicate charges appeared in some student accounts.",
+        "true_label": "Low",
+        "pred_label": "Urgent",
+        "fold": 2
+      },
+      {
+        "text": "Parking rules are not clearly communicated",
+        "true_label": "Medium",
+        "pred_label": "Low",
+        "fold": 2
+      },
+      {
+        "text": "It would be good if there is a bKash or Nagad merchant available inside the university.",
+        "true_label": "Low",
+        "pred_label": "High",
+        "fold": 3
+      },
+      {
+        "text": "The transparent glass of washroom windows should be replaced with non-transparent glass, especially in lower floors, as it is a matter of privacy.",
+        "true_label": "Urgent",
+        "pred_label": "Medium",
+        "fold": 3
+      },
+      {
+        "text": "It would be good if there is a bKash or Nagad merchant in service inside the university.",
+        "true_label": "Low",
+        "pred_label": "High",
+        "fold": 3
+      },
+      {
+        "text": "The transparent glass of washroom windows should be replaced with non-transparent glass, especially in lower floors, as it is a matter of privacy. Kindly verify and take action.",
+        "true_label": "Urgent",
+        "pred_label": "Medium",
+        "fold": 3
+      },
+      {
+        "text": "I have complain regarding the routing system of the bus.... Students go through a lot of problems to track location of the bus during arrival and departure . We know we have a msngr group where sometimes update is given but sometimes there is no update so it's a hassle... I would be better if and app system is give to know about the location of the bus upon arrival and departure. As during departure the bus doesn't always remain in same place as a result students get confused. Would appreciate a resolution soon.",
+        "true_label": "Medium",
+        "pred_label": "High",
+        "fold": 3
+      },
+      {
+        "text": "It would be good if there is a bKash or Nagad merchant ready inside the university. Requesting a quick check.",
+        "true_label": "Low",
+        "pred_label": "High",
+        "fold": 3
+      },
+      {
+        "text": "The transparent glass of washroom windows should be replaced with non-transparent glass, especially in lower floors, as it is a matter of privacy. This is affecting regular activities.",
+        "true_label": "Urgent",
+        "pred_label": "High",
+        "fold": 3
+      },
+      {
+        "text": "I have complain regarding the routing system of the bus.... Students go through a lot of problems to track location of the bus during arrival and departure . We know we have a msngr group where sometimes update is given but sometimes there is no update so it's a hassle... I would be better if and app system is give to know about the location of the bus upon arrival and departure. As during departure the bus doesn't always remain in same place as a result students get confused. This is affecting regular activities.",
+        "true_label": "Medium",
+        "pred_label": "High",
+        "fold": 3
+      },
+      {
+        "text": "It would be good if there is a bKash or Nagad merchant in service inside the university. Kindly verify and take action.",
+        "true_label": "Low",
+        "pred_label": "High",
+        "fold": 3
+      },
+      {
+        "text": "The transparent glass of washroom windows should be replaced with non-transparent glass, especially in lower floors, as it is a matter of privacy. Would appreciate a resolution soon.",
+        "true_label": "Urgent",
+        "pred_label": "High",
+        "fold": 3
+      },
+      {
+        "text": "I am dissatisfied because students are required to pay substantial fees by the organizer, even if they do not take part in the event. Needs attention.",
+        "true_label": "High",
+        "pred_label": "Medium",
+        "fold": 3
+      },
+      {
+        "text": "Electrical wiring near the lab entrance is exposed.",
+        "true_label": "High",
+        "pred_label": "Urgent",
+        "fold": 3
+      },
+      {
+        "text": "Air conditioning in the auditorium stops suddenly.",
+        "true_label": "Urgent",
+        "pred_label": "High",
+        "fold": 3
+      },
+      {
+        "text": "Online fee payment portal often fails during transactions.",
+        "true_label": "Medium",
+        "pred_label": "Low",
+        "fold": 3
+      },
+      {
+        "text": "Fee payment confirmation takes several days to appear.",
+        "true_label": "Low",
+        "pred_label": "Medium",
+        "fold": 3
+      },
+      {
+        "text": "Refund process after course withdrawal is too slow.",
+        "true_label": "Urgent",
+        "pred_label": "High",
+        "fold": 3
+      },
+      {
+        "text": "Students cannot download digital payment receipts.",
+        "true_label": "Urgent",
+        "pred_label": "Low",
+        "fold": 3
+      },
+      {
+        "text": "No clear parking markings for vehicles.",
+        "true_label": "Urgent",
+        "pred_label": "Low",
+        "fold": 3
+      },
+      {
+        "text": "Parking fee collection process is confusing.",
+        "true_label": "Urgent",
+        "pred_label": "Low",
+        "fold": 3
+      },
+      {
+        "text": "Washrooms on the third floor lack proper cleaning.",
+        "true_label": "Urgent",
+        "pred_label": "High",
+        "fold": 3
+      },
+      {
+        "text": "Washroom drainage is slow causing water pooling.",
+        "true_label": "High",
+        "pred_label": "Medium",
+        "fold": 3
+      },
+      {
+        "text": "There is no female washroom on the 7th floor, which causes inconvenience; we respectfully request that one of the two existing washrooms be converted into a female washroom.",
+        "true_label": "Urgent",
+        "pred_label": "High",
+        "fold": 3
+      },
+      {
+        "text": "There is no female washroom on the 7th floor, which causes inconvenience; we respectfully request that one of the two existing washrooms be converted into a female washroom. Would appreciate a resolution soon.",
+        "true_label": "Urgent",
+        "pred_label": "High",
+        "fold": 3
+      },
+      {
+        "text": "There is no female washroom on the 7th floor, which causes inconvenience; we respectfully request that one of the two existing washrooms be converted into a female washroom. Needs attention.",
+        "true_label": "Urgent",
+        "pred_label": "High",
+        "fold": 3
+      },
+      {
+        "text": "There is no female washroom on the 7th floor, which causes inconvenience; we respectfully request that one of the two existing washrooms be converted into a female washroom. This is affecting regular activities.",
+        "true_label": "Urgent",
+        "pred_label": "High",
+        "fold": 3
+      },
+      {
+        "text": "Broken mirrors in washrooms remain unrepaired.",
+        "true_label": "High",
+        "pred_label": "Medium",
+        "fold": 3
+      },
+      {
+        "text": "Pressure is applied to participate in co-curricular activities by seniors, even if students are unwilling or facing problems.",
+        "true_label": "High",
+        "pred_label": "Medium",
+        "fold": 4
+      },
+      {
+        "text": "Pressure is applied to participate in co-curricular activities by seniors, even if students are unwilling or facing problems. Needs attention.",
+        "true_label": "High",
+        "pred_label": "Urgent",
+        "fold": 4
+      },
+      {
+        "text": "The routine does not allocate time for prayers and lunch. Please look into it.",
+        "true_label": "Medium",
+        "pred_label": "Urgent",
+        "fold": 4
+      },
+      {
+        "text": "at the CSE 1206 course, classes are frequently ended significantly earlier than the allocated time. Requesting a quick check.",
+        "true_label": "High",
+        "pred_label": "Urgent",
+        "fold": 4
+      },
+      {
+        "text": "Because of the long line for the lift, it becomes difficult to attend classes on time. This is affecting regular activities.",
+        "true_label": "Medium",
+        "pred_label": "High",
+        "fold": 4
+      },
+      {
+        "text": "The routine does not allocate time for prayers and lunch. This is affecting regular activities.",
+        "true_label": "Medium",
+        "pred_label": "High",
+        "fold": 4
+      },
+      {
+        "text": "Projectors have subpar resolution and do not display colors properly, which causes issues in several lectures. Requesting a quick check.",
+        "true_label": "High",
+        "pred_label": "Urgent",
+        "fold": 4
+      },
+      {
+        "text": "Pressure is applied to participate in co-curricular activities by seniors, even if students are unwilling or facing problems. Kindly verify and take action.",
+        "true_label": "High",
+        "pred_label": "Medium",
+        "fold": 4
+      },
+      {
+        "text": "The routine does not allocate time for prayers and lunch. Needs attention.",
+        "true_label": "Medium",
+        "pred_label": "Urgent",
+        "fold": 4
+      },
+      {
+        "text": "Electrical sockets in the library are damaged.",
+        "true_label": "Urgent",
+        "pred_label": "High",
+        "fold": 4
+      },
+      {
+        "text": "Power supply in the seminar room is unstable.",
+        "true_label": "Urgent",
+        "pred_label": "Medium",
+        "fold": 4
+      },
+      {
+        "text": "Students must stand in very long queues for payment.",
+        "true_label": "Medium",
+        "pred_label": "Low",
+        "fold": 4
+      },
+      {
+        "text": "Fee receipt not issued immediately after payment.",
+        "true_label": "Urgent",
+        "pred_label": "Medium",
+        "fold": 4
+      },
+      {
+        "text": "Semester fee breakdown is not clearly explained.",
+        "true_label": "High",
+        "pred_label": "Medium",
+        "fold": 4
+      },
+      {
+        "text": "Late fee applied even when payment was submitted earlier.",
+        "true_label": "High",
+        "pred_label": "Medium",
+        "fold": 4
+      },
+      {
+        "text": "Installment payment requests are often ignored.",
+        "true_label": "Urgent",
+        "pred_label": "Low",
+        "fold": 4
+      },
+      {
+        "text": "Security monitoring in parking areas is weak.",
+        "true_label": "Low",
+        "pred_label": "Medium",
+        "fold": 4
+      },
+      {
+        "text": "Parking space for bicycles is too small.",
+        "true_label": "Urgent",
+        "pred_label": "Medium",
+        "fold": 4
+      },
+      {
+        "text": "Motorcycle parking area is overcrowded.",
+        "true_label": "Low",
+        "pred_label": "Medium",
+        "fold": 4
+      },
+      {
+        "text": "Parking entrance becomes jammed during morning classes.",
+        "true_label": "Urgent",
+        "pred_label": "Low",
+        "fold": 4
+      },
+      {
+        "text": "The maximum obtainable grade point for the Improvement Exam of any course has been set to 3.5. It should be increased to 4.00.",
+        "true_label": "Medium",
+        "pred_label": "Urgent",
+        "fold": 4
+      },
+      {
+        "text": "The projector screen is not visible from the back of the classroom and the light of the projector is not good in quality.",
+        "true_label": "High",
+        "pred_label": "Low",
+        "fold": 4
+      },
+      {
+        "text": "The quiz questions often do not align with the lecture material, which unfairly puts students at a disadvantage and reflects poor planning or oversight by the course organizers.",
+        "true_label": "High",
+        "pred_label": "Medium",
+        "fold": 4
+      },
+      {
+        "text": "The maximum obtainable grade point for the Improvement Exam of any course has been set to 3.5. It should be increased to 4.00. Needs attention.",
+        "true_label": "Medium",
+        "pred_label": "Urgent",
+        "fold": 4
+      },
+      {
+        "text": "The projector screen is not visible from the back of the classroom and the light of the projector is not good in quality. Would appreciate a resolution soon.",
+        "true_label": "High",
+        "pred_label": "Low",
+        "fold": 4
+      },
+      {
+        "text": "The quiz questions regularly do not align with the lecture material, which inequitably puts students at a setback and reflects inadequate planning or oversight by the course organizers.",
+        "true_label": "High",
+        "pred_label": "Medium",
+        "fold": 4
+      },
+      {
+        "text": "The maximum obtainable grade point for the Improvement Exam of any course has been set to 3.5. It should be increased to 4.00. Requesting a quick check.",
+        "true_label": "Medium",
+        "pred_label": "Urgent",
+        "fold": 4
+      },
+      {
+        "text": "The maximum obtainable grade point for the Improvement Exam of any course has been set to 3.5. It should be increased to 4.00. This is affecting regular activities.",
+        "true_label": "Medium",
+        "pred_label": "High",
+        "fold": 4
+      },
+      {
+        "text": "The projector screen is not visible from the back of the classroom and the light of the projector is not good in quality. Kindly verify and take action.",
+        "true_label": "High",
+        "pred_label": "Medium",
+        "fold": 4
+      },
+      {
+        "text": "The quiz questions frequently do not align with the lecture material, which in an unfair way puts students at a setback and reflects inadequate planning or oversight by the course organizers.",
+        "true_label": "High",
+        "pred_label": "Urgent",
+        "fold": 4
+      },
+      {
+        "text": "Emergency lights in staircases are not operational.",
+        "true_label": "Low",
+        "pred_label": "High",
+        "fold": 4
+      },
+      {
+        "text": "Due to server problems in the IUMS system, I was unable to check my result on the publication day and had to wait until the next day",
+        "true_label": "Urgent",
+        "pred_label": "Medium",
+        "fold": 5
+      },
+      {
+        "text": "Due to server problems at the IUMS system, I was unable to check my result on the publication day and had to wait until the next day. Please look into it.",
+        "true_label": "Urgent",
+        "pred_label": "Medium",
+        "fold": 5
+      },
+      {
+        "text": "It feels unfair that students with access to alternative sections or materials can perform better in quizzes, while others without these resources struggle. Requesting a quick check.",
+        "true_label": "High",
+        "pred_label": "Medium",
+        "fold": 5
+      },
+      {
+        "text": "Due to server problems in the IUMS system, I was unable to check my result on the publication day and had to wait until the next day. Kindly verify and take action.",
+        "true_label": "Urgent",
+        "pred_label": "Medium",
+        "fold": 5
+      },
+      {
+        "text": "Due to server problems in the IUMS system, I was unable to check my result on the publication day and had to wait until the next day.",
+        "true_label": "Urgent",
+        "pred_label": "Medium",
+        "fold": 5
+      },
+      {
+        "text": "Lights in the hallway of the academic building are not working.",
+        "true_label": "High",
+        "pred_label": "Urgent",
+        "fold": 5
+      },
+      {
+        "text": "Frequent power interruptions during lab sessions.",
+        "true_label": "High",
+        "pred_label": "Urgent",
+        "fold": 5
+      },
+      {
+        "text": "Generator does not cover all floors during outages.",
+        "true_label": "Medium",
+        "pred_label": "Urgent",
+        "fold": 5
+      },
+      {
+        "text": "Online portal shows payment error despite deduction.",
+        "true_label": "Low",
+        "pred_label": "Medium",
+        "fold": 5
+      },
+      {
+        "text": "Parking area surveillance cameras are not functioning.",
+        "true_label": "Medium",
+        "pred_label": "Low",
+        "fold": 5
+      },
+      {
+        "text": "Elevator waiting time is extremely long.",
+        "true_label": "Urgent",
+        "pred_label": "Medium",
+        "fold": 5
+      },
+      {
+        "text": "Classroom floors remain dirty after cleaning.",
+        "true_label": "Medium",
+        "pred_label": "Urgent",
+        "fold": 5
+      },
+      {
+        "text": "Air conditioners stop working during afternoon classes.",
+        "true_label": "High",
+        "pred_label": "Urgent",
+        "fold": 5
+      },
+      {
+        "text": "Students cannot check payment history easily.",
+        "true_label": "Low",
+        "pred_label": "Medium",
+        "fold": 5
+      },
+      {
+        "text": "Students park vehicles outside designated zones.",
+        "true_label": "Urgent",
+        "pred_label": "High",
+        "fold": 5
+      },
+      {
+        "text": "Broken door locks in several washrooms.",
+        "true_label": "Medium",
+        "pred_label": "Urgent",
+        "fold": 5
+      },
+      {
+        "text": "Washroom lights remain off most of the time.",
+        "true_label": "High",
+        "pred_label": "Medium",
+        "fold": 5
+      },
+      {
+        "text": "Broken sinks in several washrooms.",
+        "true_label": "High",
+        "pred_label": "Urgent",
+        "fold": 5
+      }
+    ],
+    "svm": [
+      {
+        "text": "need a seperate female prayer room which is not just a sub portion of female common room",
+        "true_label": "Medium",
+        "pred_label": "Low",
+        "fold": 1
+      },
+      {
+        "text": "drinking water system on the 6th floor(CSE dpt) is no longer working.",
+        "true_label": "Urgent",
+        "pred_label": "High",
+        "fold": 1
+      },
+      {
+        "text": "We need more research facilities in our university and also we need more experienced professors",
+        "true_label": "High",
+        "pred_label": "Low",
+        "fold": 1
+      },
+      {
+        "text": "Library and study room spaces are insufficient and remain overcrowded during peak hours.",
+        "true_label": "Medium",
+        "pred_label": "Low",
+        "fold": 1
+      },
+      {
+        "text": "Plaster dust is falling from the classroom wall.",
+        "true_label": "Urgent",
+        "pred_label": "Medium",
+        "fold": 1
+      },
+      {
+        "text": "are in need of a seperate female prayer room which is not just a sub portion of female common room. Please look into it.",
+        "true_label": "Medium",
+        "pred_label": "Low",
+        "fold": 1
+      },
+      {
+        "text": "drinking water system on the 6th floor(CSE dpt) is no longer working. Kindly verify and take action.",
+        "true_label": "Urgent",
+        "pred_label": "High",
+        "fold": 1
+      },
+      {
+        "text": "We would benefit from more research facilities in our university and also we would benefit from more experienced professors.",
+        "true_label": "High",
+        "pred_label": "Low",
+        "fold": 1
+      },
+      {
+        "text": "We require more research facilities in our university and also we require more experienced professors.",
+        "true_label": "High",
+        "pred_label": "Low",
+        "fold": 1
+      },
+      {
+        "text": "Library and study room spaces are insufficient and remain overcrowded during peak hours. This is affecting regular activities.",
+        "true_label": "Medium",
+        "pred_label": "Low",
+        "fold": 1
+      },
+      {
+        "text": "Plaster dust is falling from the classroom wall. Please look into it.",
+        "true_label": "Urgent",
+        "pred_label": "Medium",
+        "fold": 1
+      },
+      {
+        "text": "are in need of a seperate female prayer room which is not just a sub portion of female common room. Kindly verify and take action.",
+        "true_label": "Medium",
+        "pred_label": "Low",
+        "fold": 1
+      },
+      {
+        "text": "drinking water system on the 6th floor(CSE dpt) is no longer working. Requesting a quick check.",
+        "true_label": "Urgent",
+        "pred_label": "High",
+        "fold": 1
+      },
+      {
+        "text": "We are in need of more research facilities in our university and also we are in need of more experienced professors.",
+        "true_label": "High",
+        "pred_label": "Low",
+        "fold": 1
+      },
+      {
+        "text": "Library and study room spaces are insufficient and remain overcrowded during peak hours. Kindly verify and take action.",
+        "true_label": "Medium",
+        "pred_label": "Low",
+        "fold": 1
+      },
+      {
+        "text": "require a seperate female prayer room which is not just a sub portion of female common room. Needs attention.",
+        "true_label": "Medium",
+        "pred_label": "Low",
+        "fold": 1
+      },
+      {
+        "text": "drinking water system on the 6th floor(CSE dpt) is no longer working. Please look into it.",
+        "true_label": "Urgent",
+        "pred_label": "High",
+        "fold": 1
+      },
+      {
+        "text": "We require more research facilities in our university and also we require more experienced professors. Needs attention.",
+        "true_label": "High",
+        "pred_label": "Urgent",
+        "fold": 1
+      },
+      {
+        "text": "We are in need of more research facilities in our university and also we are in need of more experienced professors. Needs attention.",
+        "true_label": "High",
+        "pred_label": "Urgent",
+        "fold": 1
+      },
+      {
+        "text": "Library and study room spaces are insufficient and remain overcrowded during peak hours. Requesting a quick check.",
+        "true_label": "Medium",
+        "pred_label": "Low",
+        "fold": 1
+      },
+      {
+        "text": "Projector power outlets are loose in multiple rooms.",
+        "true_label": "Low",
+        "pred_label": "High",
+        "fold": 1
+      },
+      {
+        "text": "Some classrooms remain very hot due to non\u2010working fans.",
+        "true_label": "Urgent",
+        "pred_label": "High",
+        "fold": 1
+      },
+      {
+        "text": "Switchboards in lecture halls are broken.",
+        "true_label": "Medium",
+        "pred_label": "High",
+        "fold": 1
+      },
+      {
+        "text": "Several bulbs in corridors have not been replaced.",
+        "true_label": "High",
+        "pred_label": "Urgent",
+        "fold": 1
+      },
+      {
+        "text": "Extension cables in labs are damaged.",
+        "true_label": "Low",
+        "pred_label": "Urgent",
+        "fold": 1
+      },
+      {
+        "text": "Fee clearance process takes too long before registration.",
+        "true_label": "Medium",
+        "pred_label": "Urgent",
+        "fold": 1
+      },
+      {
+        "text": "Payment verification requires multiple office visits.",
+        "true_label": "High",
+        "pred_label": "Low",
+        "fold": 1
+      },
+      {
+        "text": "No shade in motorcycle parking areas.",
+        "true_label": "Medium",
+        "pred_label": "Low",
+        "fold": 1
+      },
+      {
+        "text": "No clear signboards for visitor parking.",
+        "true_label": "Medium",
+        "pred_label": "Low",
+        "fold": 1
+      },
+      {
+        "text": "Parking area drainage system is poor.",
+        "true_label": "Medium",
+        "pred_label": "Low",
+        "fold": 1
+      },
+      {
+        "text": "Classroom windows cannot be opened.",
+        "true_label": "Medium",
+        "pred_label": "Urgent",
+        "fold": 1
+      },
+      {
+        "text": "Cars are parked in restricted areas.",
+        "true_label": "Medium",
+        "pred_label": "Urgent",
+        "fold": 1
+      },
+      {
+        "text": "Washrooms sometimes have unpleasant odors.",
+        "true_label": "Low",
+        "pred_label": "Medium",
+        "fold": 1
+      },
+      {
+        "text": "Classroom lights and ACs are not properly maintained; some are faulty, and there appears to be little concern regarding timely repairs.",
+        "true_label": "Urgent",
+        "pred_label": "Medium",
+        "fold": 2
+      },
+      {
+        "text": "A studentship certificate costs a student 500taka which should be of free from the versity as a current student of the institute.",
+        "true_label": "Medium",
+        "pred_label": "Urgent",
+        "fold": 2
+      },
+      {
+        "text": "The size for the teacup in the cafeteria should be larger.",
+        "true_label": "Low",
+        "pred_label": "Medium",
+        "fold": 2
+      },
+      {
+        "text": "Forming groups ourselves often leads to conflicts. It would be better if the teacher assigned the groups first to avoid any problems.",
+        "true_label": "Medium",
+        "pred_label": "High",
+        "fold": 2
+      },
+      {
+        "text": "It is difficult to evaluate students fairly when quizzes have uneven difficulty levels, with some sets being hard and others easy.",
+        "true_label": "High",
+        "pred_label": "Medium",
+        "fold": 2
+      },
+      {
+        "text": "A studentship certificate costs a student 500taka which should be of free from the versity as a current student of the institute. This is affecting regular activities.",
+        "true_label": "Medium",
+        "pred_label": "Urgent",
+        "fold": 2
+      },
+      {
+        "text": "The size for the teacup at the cafeteria should be larger.",
+        "true_label": "Low",
+        "pred_label": "Medium",
+        "fold": 2
+      },
+      {
+        "text": "The group members for group projects should be selected by the teachers. The students with no groups have to suffer. This is affecting regular activities.",
+        "true_label": "Medium",
+        "pred_label": "High",
+        "fold": 2
+      },
+      {
+        "text": "Forming groups ourselves regularly leads to conflicts. It would be better if the teacher assigned the groups first to avoid any problems. This is affecting regular activities.",
+        "true_label": "Medium",
+        "pred_label": "High",
+        "fold": 2
+      },
+      {
+        "text": "It is difficult to evaluate students fairly when quizzes have uneven difficulty levels, with some sets being hard and others easy. Requesting a quick check.",
+        "true_label": "High",
+        "pred_label": "Medium",
+        "fold": 2
+      },
+      {
+        "text": "Classroom lights and ACs are not properly maintained; some are faulty, and there appears to be little concern regarding timely repairs. Kindly verify and take action.",
+        "true_label": "Urgent",
+        "pred_label": "Medium",
+        "fold": 2
+      },
+      {
+        "text": "A studentship certificate costs a student 500taka which should be of free from the versity as a current student of the institute. Please look into it.",
+        "true_label": "Medium",
+        "pred_label": "Urgent",
+        "fold": 2
+      },
+      {
+        "text": "The size for the teacup in the cafeteria should be larger. Please look into it.",
+        "true_label": "Low",
+        "pred_label": "High",
+        "fold": 2
+      },
+      {
+        "text": "Forming groups ourselves frequently leads to conflicts. It would be better if the teacher assigned the groups first to avoid any problems. Please look into it.",
+        "true_label": "Medium",
+        "pred_label": "High",
+        "fold": 2
+      },
+      {
+        "text": "Classroom lights and ACs are not properly maintained; some are faulty, and there appears to be little concern regarding timely repairs. Needs attention.",
+        "true_label": "Urgent",
+        "pred_label": "Medium",
+        "fold": 2
+      },
+      {
+        "text": "A studentship certificate costs a student 500taka which should be of free from the versity as a current student of the institute. Needs attention.",
+        "true_label": "Medium",
+        "pred_label": "Urgent",
+        "fold": 2
+      },
+      {
+        "text": "Faculties whose voices cannot be heard loudly or find it difficult to speak loudly in large classrooms should use personal headset microphones for their ease as well as ours. This is affecting regular activities.",
+        "true_label": "Medium",
+        "pred_label": "High",
+        "fold": 2
+      },
+      {
+        "text": "Forming groups ourselves regularly leads to conflicts. It would be better if the teacher assigned the groups first to avoid any problems.",
+        "true_label": "Medium",
+        "pred_label": "High",
+        "fold": 2
+      },
+      {
+        "text": "Electrical maintenance requests take too long to resolve.",
+        "true_label": "Low",
+        "pred_label": "Urgent",
+        "fold": 2
+      },
+      {
+        "text": "Lights in the parking basement flicker frequently.",
+        "true_label": "Urgent",
+        "pred_label": "Low",
+        "fold": 2
+      },
+      {
+        "text": "Incorrect late fee added to student accounts.",
+        "true_label": "Urgent",
+        "pred_label": "High",
+        "fold": 2
+      },
+      {
+        "text": "Scholarship adjustments are not reflected in fee statements.",
+        "true_label": "Urgent",
+        "pred_label": "Medium",
+        "fold": 2
+      },
+      {
+        "text": "Parking area lighting is very poor at night.",
+        "true_label": "Low",
+        "pred_label": "Medium",
+        "fold": 2
+      },
+      {
+        "text": "Vehicles sometimes block emergency exits.",
+        "true_label": "High",
+        "pred_label": "Low",
+        "fold": 2
+      },
+      {
+        "text": "Parking layout causes difficulty exiting during rush hours.",
+        "true_label": "Medium",
+        "pred_label": "Low",
+        "fold": 2
+      },
+      {
+        "text": "Hand dryers in washrooms are not functioning.",
+        "true_label": "Medium",
+        "pred_label": "Urgent",
+        "fold": 2
+      },
+      {
+        "text": "Toilet paper dispensers are empty frequently.",
+        "true_label": "Urgent",
+        "pred_label": "High",
+        "fold": 2
+      },
+      {
+        "text": "Some stair railings are loose.",
+        "true_label": "High",
+        "pred_label": "Low",
+        "fold": 2
+      },
+      {
+        "text": "Water taps in washrooms are leaking",
+        "true_label": "Medium",
+        "pred_label": "Urgent",
+        "fold": 2
+      },
+      {
+        "text": "Duplicate charges appeared in some student accounts.",
+        "true_label": "Low",
+        "pred_label": "Urgent",
+        "fold": 2
+      },
+      {
+        "text": "Insufficient parking spaces during peak hours.",
+        "true_label": "Low",
+        "pred_label": "Medium",
+        "fold": 2
+      },
+      {
+        "text": "Parking rules are not clearly communicated",
+        "true_label": "Medium",
+        "pred_label": "Low",
+        "fold": 2
+      },
+      {
+        "text": "It would be good if there is a bKash or Nagad merchant available inside the university.",
+        "true_label": "Low",
+        "pred_label": "High",
+        "fold": 3
+      },
+      {
+        "text": "The transparent glass of washroom windows should be replaced with non-transparent glass, especially in lower floors, as it is a matter of privacy.",
+        "true_label": "Urgent",
+        "pred_label": "Medium",
+        "fold": 3
+      },
+      {
+        "text": "It would be good if there is a bKash or Nagad merchant in service inside the university.",
+        "true_label": "Low",
+        "pred_label": "High",
+        "fold": 3
+      },
+      {
+        "text": "The transparent glass of washroom windows should be replaced with non-transparent glass, especially in lower floors, as it is a matter of privacy. Kindly verify and take action.",
+        "true_label": "Urgent",
+        "pred_label": "Medium",
+        "fold": 3
+      },
+      {
+        "text": "I have complain regarding the routing system of the bus.... Students go through a lot of problems to track location of the bus during arrival and departure . We know we have a msngr group where sometimes update is given but sometimes there is no update so it's a hassle... I would be better if and app system is give to know about the location of the bus upon arrival and departure. As during departure the bus doesn't always remain in same place as a result students get confused. Would appreciate a resolution soon.",
+        "true_label": "Medium",
+        "pred_label": "High",
+        "fold": 3
+      },
+      {
+        "text": "It would be good if there is a bKash or Nagad merchant ready inside the university. Requesting a quick check.",
+        "true_label": "Low",
+        "pred_label": "High",
+        "fold": 3
+      },
+      {
+        "text": "The transparent glass of washroom windows should be replaced with non-transparent glass, especially in lower floors, as it is a matter of privacy. This is affecting regular activities.",
+        "true_label": "Urgent",
+        "pred_label": "Medium",
+        "fold": 3
+      },
+      {
+        "text": "It would be good if there is a bKash or Nagad merchant in service inside the university. Kindly verify and take action.",
+        "true_label": "Low",
+        "pred_label": "High",
+        "fold": 3
+      },
+      {
+        "text": "The transparent glass of washroom windows should be replaced with non-transparent glass, especially in lower floors, as it is a matter of privacy. Would appreciate a resolution soon.",
+        "true_label": "Urgent",
+        "pred_label": "High",
+        "fold": 3
+      },
+      {
+        "text": "I am dissatisfied because students are required to pay substantial fees by the organizer, even if they do not take part in the event. Needs attention.",
+        "true_label": "High",
+        "pred_label": "Medium",
+        "fold": 3
+      },
+      {
+        "text": "Electrical wiring near the lab entrance is exposed.",
+        "true_label": "High",
+        "pred_label": "Urgent",
+        "fold": 3
+      },
+      {
+        "text": "Air conditioning in the auditorium stops suddenly.",
+        "true_label": "Urgent",
+        "pred_label": "High",
+        "fold": 3
+      },
+      {
+        "text": "Online fee payment portal often fails during transactions.",
+        "true_label": "Medium",
+        "pred_label": "Low",
+        "fold": 3
+      },
+      {
+        "text": "Fee payment confirmation takes several days to appear.",
+        "true_label": "Low",
+        "pred_label": "Medium",
+        "fold": 3
+      },
+      {
+        "text": "Refund process after course withdrawal is too slow.",
+        "true_label": "Urgent",
+        "pred_label": "High",
+        "fold": 3
+      },
+      {
+        "text": "Students cannot download digital payment receipts.",
+        "true_label": "Urgent",
+        "pred_label": "Low",
+        "fold": 3
+      },
+      {
+        "text": "No clear parking markings for vehicles.",
+        "true_label": "Urgent",
+        "pred_label": "High",
+        "fold": 3
+      },
+      {
+        "text": "Parking fee collection process is confusing.",
+        "true_label": "Urgent",
+        "pred_label": "Medium",
+        "fold": 3
+      },
+      {
+        "text": "Washrooms on the third floor lack proper cleaning.",
+        "true_label": "Urgent",
+        "pred_label": "High",
+        "fold": 3
+      },
+      {
+        "text": "Washroom drainage is slow causing water pooling.",
+        "true_label": "High",
+        "pred_label": "Medium",
+        "fold": 3
+      },
+      {
+        "text": "There is no female washroom on the 7th floor, which causes inconvenience; we respectfully request that one of the two existing washrooms be converted into a female washroom.",
+        "true_label": "Urgent",
+        "pred_label": "High",
+        "fold": 3
+      },
+      {
+        "text": "There is no female washroom on the 7th floor, which causes inconvenience; we respectfully request that one of the two existing washrooms be converted into a female washroom. Would appreciate a resolution soon.",
+        "true_label": "Urgent",
+        "pred_label": "High",
+        "fold": 3
+      },
+      {
+        "text": "There is no female washroom on the 7th floor, which causes inconvenience; we respectfully request that one of the two existing washrooms be converted into a female washroom. Needs attention.",
+        "true_label": "Urgent",
+        "pred_label": "High",
+        "fold": 3
+      },
+      {
+        "text": "There is no female washroom on the 7th floor, which causes inconvenience; we respectfully request that one of the two existing washrooms be converted into a female washroom. This is affecting regular activities.",
+        "true_label": "Urgent",
+        "pred_label": "High",
+        "fold": 3
+      },
+      {
+        "text": "Broken mirrors in washrooms remain unrepaired.",
+        "true_label": "High",
+        "pred_label": "Medium",
+        "fold": 3
+      },
+      {
+        "text": "Pressure is applied to participate in co-curricular activities by seniors, even if students are unwilling or facing problems.",
+        "true_label": "High",
+        "pred_label": "Medium",
+        "fold": 4
+      },
+      {
+        "text": "In the CSE 1206 course, classes are frequently ended significantly earlier than the allocated time.",
+        "true_label": "High",
+        "pred_label": "Urgent",
+        "fold": 4
+      },
+      {
+        "text": "Pressure is applied to participate in co-curricular activities by seniors, even if students are unwilling or facing problems. Needs attention.",
+        "true_label": "High",
+        "pred_label": "Urgent",
+        "fold": 4
+      },
+      {
+        "text": "at the CSE 1206 course, classes are frequently ended significantly earlier than the allocated time. Requesting a quick check.",
+        "true_label": "High",
+        "pred_label": "Urgent",
+        "fold": 4
+      },
+      {
+        "text": "Because of the long line for the lift, it becomes difficult to attend classes on time. This is affecting regular activities.",
+        "true_label": "Medium",
+        "pred_label": "High",
+        "fold": 4
+      },
+      {
+        "text": "The routine does not allocate time for prayers and lunch. This is affecting regular activities.",
+        "true_label": "Medium",
+        "pred_label": "High",
+        "fold": 4
+      },
+      {
+        "text": "Projectors have subpar resolution and do not display colors properly, which causes issues in several lectures. Requesting a quick check.",
+        "true_label": "High",
+        "pred_label": "Urgent",
+        "fold": 4
+      },
+      {
+        "text": "Pressure is applied to participate in co-curricular activities by seniors, even if students are unwilling or facing problems. Kindly verify and take action.",
+        "true_label": "High",
+        "pred_label": "Medium",
+        "fold": 4
+      },
+      {
+        "text": "In the CSE 1206 course, classes are frequently ended significantly earlier than the allocated time. Please look into it.",
+        "true_label": "High",
+        "pred_label": "Urgent",
+        "fold": 4
+      },
+      {
+        "text": "Electrical sockets in the library are damaged.",
+        "true_label": "Urgent",
+        "pred_label": "High",
+        "fold": 4
+      },
+      {
+        "text": "Power supply in the seminar room is unstable.",
+        "true_label": "Urgent",
+        "pred_label": "Medium",
+        "fold": 4
+      },
+      {
+        "text": "Students must stand in very long queues for payment.",
+        "true_label": "Medium",
+        "pred_label": "Low",
+        "fold": 4
+      },
+      {
+        "text": "Fee receipt not issued immediately after payment.",
+        "true_label": "Urgent",
+        "pred_label": "Medium",
+        "fold": 4
+      },
+      {
+        "text": "Semester fee breakdown is not clearly explained.",
+        "true_label": "High",
+        "pred_label": "Medium",
+        "fold": 4
+      },
+      {
+        "text": "Late fee applied even when payment was submitted earlier.",
+        "true_label": "High",
+        "pred_label": "Urgent",
+        "fold": 4
+      },
+      {
+        "text": "Installment payment requests are often ignored.",
+        "true_label": "Urgent",
+        "pred_label": "Low",
+        "fold": 4
+      },
+      {
+        "text": "Security monitoring in parking areas is weak.",
+        "true_label": "Low",
+        "pred_label": "Medium",
+        "fold": 4
+      },
+      {
+        "text": "Parking space for bicycles is too small.",
+        "true_label": "Urgent",
+        "pred_label": "Medium",
+        "fold": 4
+      },
+      {
+        "text": "Motorcycle parking area is overcrowded.",
+        "true_label": "Low",
+        "pred_label": "Medium",
+        "fold": 4
+      },
+      {
+        "text": "Parking entrance becomes jammed during morning classes.",
+        "true_label": "Urgent",
+        "pred_label": "Low",
+        "fold": 4
+      },
+      {
+        "text": "The maximum obtainable grade point for the Improvement Exam of any course has been set to 3.5. It should be increased to 4.00.",
+        "true_label": "Medium",
+        "pred_label": "Urgent",
+        "fold": 4
+      },
+      {
+        "text": "The projector screen is not visible from the back of the classroom and the light of the projector is not good in quality.",
+        "true_label": "High",
+        "pred_label": "Low",
+        "fold": 4
+      },
+      {
+        "text": "The quiz questions often do not align with the lecture material, which unfairly puts students at a disadvantage and reflects poor planning or oversight by the course organizers.",
+        "true_label": "High",
+        "pred_label": "Medium",
+        "fold": 4
+      },
+      {
+        "text": "The maximum obtainable grade point for the Improvement Exam of any course has been set to 3.5. It should be increased to 4.00. Needs attention.",
+        "true_label": "Medium",
+        "pred_label": "Urgent",
+        "fold": 4
+      },
+      {
+        "text": "The projector screen is not visible from the back of the classroom and the light of the projector is not good in quality. Would appreciate a resolution soon.",
+        "true_label": "High",
+        "pred_label": "Low",
+        "fold": 4
+      },
+      {
+        "text": "The quiz questions regularly do not align with the lecture material, which inequitably puts students at a setback and reflects inadequate planning or oversight by the course organizers.",
+        "true_label": "High",
+        "pred_label": "Medium",
+        "fold": 4
+      },
+      {
+        "text": "The maximum obtainable grade point for the Improvement Exam of any course has been set to 3.5. It should be increased to 4.00. Requesting a quick check.",
+        "true_label": "Medium",
+        "pred_label": "Urgent",
+        "fold": 4
+      },
+      {
+        "text": "The projector screen is not visible from the back of the classroom and the light of the projector is not good in quality. This is affecting regular activities.",
+        "true_label": "High",
+        "pred_label": "Low",
+        "fold": 4
+      },
+      {
+        "text": "The maximum obtainable grade point for the Improvement Exam of any course has been set to 3.5. It should be increased to 4.00. This is affecting regular activities.",
+        "true_label": "Medium",
+        "pred_label": "High",
+        "fold": 4
+      },
+      {
+        "text": "The projector screen is not visible from the back of the classroom and the light of the projector is not good in quality. Kindly verify and take action.",
+        "true_label": "High",
+        "pred_label": "Low",
+        "fold": 4
+      },
+      {
+        "text": "The quiz questions frequently do not align with the lecture material, which in an unfair way puts students at a setback and reflects inadequate planning or oversight by the course organizers.",
+        "true_label": "High",
+        "pred_label": "Urgent",
+        "fold": 4
+      },
+      {
+        "text": "Emergency lights in staircases are not operational.",
+        "true_label": "Low",
+        "pred_label": "High",
+        "fold": 4
+      },
+      {
+        "text": "Due to server problems in the IUMS system, I was unable to check my result on the publication day and had to wait until the next day",
+        "true_label": "Urgent",
+        "pred_label": "Medium",
+        "fold": 5
+      },
+      {
+        "text": "Due to server problems at the IUMS system, I was unable to check my result on the publication day and had to wait until the next day. Please look into it.",
+        "true_label": "Urgent",
+        "pred_label": "Medium",
+        "fold": 5
+      },
+      {
+        "text": "It feels unfair that students with access to alternative sections or materials can perform better in quizzes, while others without these resources struggle. Requesting a quick check.",
+        "true_label": "High",
+        "pred_label": "Medium",
+        "fold": 5
+      },
+      {
+        "text": "Just like there is a space for prayer in front of the Mechanical Department, a similar space should be provided in front of almost every department for prayers. Please look into it.",
+        "true_label": "Medium",
+        "pred_label": "Urgent",
+        "fold": 5
+      },
+      {
+        "text": "Just like there is a space for prayer in front of the Mechanical Department, a similar space should be provided in front of almost every department for prayers. Kindly verify and take action.",
+        "true_label": "Medium",
+        "pred_label": "Urgent",
+        "fold": 5
+      },
+      {
+        "text": "Due to server problems in the IUMS system, I was unable to check my result on the publication day and had to wait until the next day.",
+        "true_label": "Urgent",
+        "pred_label": "Medium",
+        "fold": 5
+      },
+      {
+        "text": "Lights in the hallway of the academic building are not working.",
+        "true_label": "High",
+        "pred_label": "Urgent",
+        "fold": 5
+      },
+      {
+        "text": "Frequent power interruptions during lab sessions.",
+        "true_label": "High",
+        "pred_label": "Urgent",
+        "fold": 5
+      },
+      {
+        "text": "Generator does not cover all floors during outages.",
+        "true_label": "Medium",
+        "pred_label": "Urgent",
+        "fold": 5
+      },
+      {
+        "text": "Online portal shows payment error despite deduction.",
+        "true_label": "Low",
+        "pred_label": "Medium",
+        "fold": 5
+      },
+      {
+        "text": "Parking area surveillance cameras are not functioning.",
+        "true_label": "Medium",
+        "pred_label": "Low",
+        "fold": 5
+      },
+      {
+        "text": "Elevator waiting time is extremely long.",
+        "true_label": "Urgent",
+        "pred_label": "Medium",
+        "fold": 5
+      },
+      {
+        "text": "Classroom floors remain dirty after cleaning.",
+        "true_label": "Medium",
+        "pred_label": "Urgent",
+        "fold": 5
+      },
+      {
+        "text": "Air conditioners stop working during afternoon classes.",
+        "true_label": "High",
+        "pred_label": "Urgent",
+        "fold": 5
+      },
+      {
+        "text": "Students cannot check payment history easily.",
+        "true_label": "Low",
+        "pred_label": "Medium",
+        "fold": 5
+      },
+      {
+        "text": "Students park vehicles outside designated zones.",
+        "true_label": "Urgent",
+        "pred_label": "High",
+        "fold": 5
+      },
+      {
+        "text": "Broken sinks in several washrooms.",
+        "true_label": "High",
+        "pred_label": "Medium",
+        "fold": 5
+      }
+    ]
+  }
+}

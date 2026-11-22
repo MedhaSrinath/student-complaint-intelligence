@@ -4,6 +4,7 @@ import json
 import html
 from datetime import datetime
 import re
+from sklearn.feature_extraction.text import TfidfVectorizer
 
 from complaint_database import (
     add_complaint_support,
@@ -473,18 +474,8 @@ with st.sidebar:
     )
 
 
-# =====================================================
-# PAGE-CHANGE STATE CLEANUP
-# Clear submission state when navigating away from Submit & Analyze
-# so the form always starts clean on a fresh visit.
-# =====================================================
 
-_prev_page = st.session_state.get("_active_page", page)
-if _prev_page != page:
-    st.session_state.pop("last_submission", None)
-    st.session_state.pop("pending_submission", None)
-    st.session_state.pop("just_supported_id", None)
-st.session_state["_active_page"] = page
+
 
 
 # =====================================================
@@ -521,9 +512,9 @@ if page == "Dashboard":
     else:
         pending = progress = resolved = 0
 
-    dash_c1, dash_c2, dash_c3, dash_c4 = st.columns(4)
+    c1, c2, c3, c4 = st.columns(4)
 
-    with dash_c1:
+    with c1:
         metric_card(
             "TOTAL COMPLAINTS",
             total,
@@ -532,7 +523,7 @@ if page == "Dashboard":
             "All recorded submissions"
         )
 
-    with dash_c2:
+    with c2:
         metric_card(
             "PENDING",
             pending,
@@ -541,7 +532,7 @@ if page == "Dashboard":
             "Awaiting attention"
         )
 
-    with dash_c3:
+    with c3:
         metric_card(
             "IN PROGRESS",
             progress,
@@ -550,7 +541,7 @@ if page == "Dashboard":
             "Currently being addressed"
         )
 
-    with dash_c4:
+    with c4:
         metric_card(
             "RESOLVED",
             resolved,
@@ -842,12 +833,16 @@ elif page in ["Submit & Analyze", "Submit Complaint"]:
         with c1:
             dept_name = departments[0]["department"] if departments else "Unknown"
             dept_conf = departments[0]["confidence"] if departments else 0
+            dept_note = departments[0].get(
+                "routing_reason",
+                f"Model score: {float(dept_conf):.0f}%",
+            ) if departments else "No prediction available"
             metric_card(
                 "DEPARTMENT",
                 dept_name,
                 "🏢",
                 "#E8EDF8",
-                f"Confidence: {float(dept_conf):.0f}%"
+                dept_note
             )
 
         with c2:
@@ -904,7 +899,16 @@ elif page in ["Submit & Analyze", "Submit Complaint"]:
                         use_container_width=True,
                         hide_index=True
                     )
-                    st.caption("Model scores are not guaranteed probabilities.")
+                    if departments[0].get("routing_reason"):
+                        st.caption(
+                            "Maintenance was selected by a matching "
+                            "lift/elevator repair rule. Scores are the "
+                            "classifier's original model outputs."
+                        )
+                    else:
+                        st.caption(
+                            "Model scores are not guaranteed probabilities."
+                        )
                 else:
                     st.info("No department predictions available.")
             with col_u:
@@ -1002,30 +1006,57 @@ elif page in ["Submit & Analyze", "Submit Complaint"]:
     st.divider()
     with st.expander("🔍 Browse Open Recurring Issues on Campus (+1 Endorsements)"):
         st.caption("Active campus complaints grouped by recurring topics. You can add a +1 to any problem you are also experiencing.")
-        try:
-            from nlp_pipeline import find_recurring_submitted_complaint_groups
-            recurring_groups = find_recurring_submitted_complaint_groups(complaints)
-            if recurring_groups:
-                for group in recurring_groups:
-                    with st.container(border=True):
-                        st.markdown(f"**{group['topic_label']}** — *{group['count']} report(s)*")
-                        representative = group["complaints"][0]
-                        st.write(representative["complaint"])
-                        st.caption(
-                            f"Status: **{representative['status']}** · "
-                            f"{representative['support_count']} additional +1 report(s)"
-                        )
-                        if st.button(
-                            "👍 +1 I'm affected too",
-                            key=f"rec_support_{representative['id']}"
-                        ):
-                            add_complaint_support(int(representative["id"]))
-                            st.session_state["just_supported_id"] = representative["id"]
-                            st.rerun()
+        complaint_texts = [
+            str(complaint.get("complaint_text", "")).strip()
+            for complaint in complaints
+            if str(complaint.get("complaint_text", "")).strip()
+        ]
+        if complaint_texts:
+            from duplicate_detection import find_recurring_complaint_groups
+
+            vectorizer = TfidfVectorizer(
+                lowercase=True,
+                stop_words="english",
+                ngram_range=(1, 2),
+            )
+            try:
+                vectorizer.fit(complaint_texts)
+            except ValueError:
+                st.info("There are not enough searchable words to group issues yet.")
             else:
-                st.info("No open recurring issue clusters found.")
-        except Exception as e:
-            st.caption(f"Recurring clustering unavailable: {e}")
+                recurring_groups = find_recurring_complaint_groups(
+                    complaints,
+                    vectorizer,
+                )
+                if recurring_groups:
+                    for group in recurring_groups:
+                        with st.container(border=True):
+                            st.markdown(
+                                f"**{group['topic_label']}** — "
+                                f"*{group['count']} report(s)*"
+                            )
+                            representative = group["complaints"][0]
+                            st.write(representative["complaint"])
+                            st.caption(
+                                f"Status: **{representative['status']}** · "
+                                f"{representative['support_count']} "
+                                "additional +1 report(s)"
+                            )
+                            if st.button(
+                                "👍 +1 I'm affected too",
+                                key=f"rec_support_{representative['id']}"
+                            ):
+                                add_complaint_support(
+                                    int(representative["id"])
+                                )
+                                st.session_state["just_supported_id"] = (
+                                    representative["id"]
+                                )
+                                st.rerun()
+                else:
+                    st.info("No open recurring issue clusters found.")
+        else:
+            st.info("No open recurring issue clusters found.")
 
 
 # =====================================================
@@ -1055,7 +1086,7 @@ elif page == "Complaint Management":
             placeholder="Search complaint text or ID..."
         )
 
-        c1, c2, c3 = st.columns(3)
+        c1, c2, c3, c4 = st.columns(4)
 
         with c1:
             departments = ["All"] + sorted(
@@ -1077,6 +1108,16 @@ elif page == "Complaint Management":
             statuses = ["All", "Pending", "In Progress", "Resolved"]
             selected_status = st.selectbox(
                 "Status", statuses
+            )
+
+        with c4:
+            sentiments = ["All"] + sorted(
+                df["sentiment"].dropna().astype(str).unique().tolist()
+            )
+            if df["sentiment"].isna().any():
+                sentiments.append("Not analyzed")
+            selected_sentiment = st.selectbox(
+                "Sentiment", sentiments
             )
 
         filtered = df.copy()
@@ -1107,6 +1148,13 @@ elif page == "Complaint Management":
                 filtered["status"] == selected_status
             ]
 
+        if selected_sentiment == "Not analyzed":
+            filtered = filtered[filtered["sentiment"].isna()]
+        elif selected_sentiment != "All":
+            filtered = filtered[
+                filtered["sentiment"] == selected_sentiment
+            ]
+
         st.caption(
             f"Showing {len(filtered)} of {len(df)} complaints"
         )
@@ -1121,11 +1169,22 @@ elif page == "Complaint Management":
 
                 st.write(complaint["complaint_text"])
 
-                a, b, c = st.columns(3)
+                a, b, c, d = st.columns(4)
 
                 a.write(f"**Department:** {complaint['department']}")
                 b.write(f"**Urgency:** {complaint['urgency']}")
                 c.write(f"**Priority:** {complaint['priority']}")
+                sentiment = complaint.get("sentiment")
+                sentiment_confidence = complaint.get("sentiment_confidence")
+                if pd.notna(sentiment):
+                    confidence_text = (
+                        f" ({float(sentiment_confidence):.0f}%)"
+                        if pd.notna(sentiment_confidence)
+                        else ""
+                    )
+                    d.write(f"**Sentiment:** {sentiment}{confidence_text}")
+                else:
+                    d.write("**Sentiment:** Not analyzed")
 
                 st.write(
                     f"**Submitted:** {complaint['submitted_at']}"
@@ -1378,7 +1437,9 @@ elif page == "Reports":
                     )
                 else:
                     st.info(
-                        "Emotion results will appear as new complaints are analyzed."
+                        "No emotion results are stored for these complaints yet. "
+                        "Older complaints are not analyzed retroactively; "
+                        "new submissions will appear here."
                     )
 
         st.divider()

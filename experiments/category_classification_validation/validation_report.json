@@ -1,0 +1,422 @@
+{
+  "standard_cv": {
+    "logreg_std": {
+      "accuracy": 0.9847094801223242,
+      "macro_f1": 0.9856687485955777,
+      "precision": 0.9866958041958043,
+      "recall": 0.9846754375567934,
+      "confusion_matrix": [
+        [
+          58,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          27,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          32,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          141,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          64
+        ]
+      ],
+      "error_count": 5,
+      "misclassifications": [
+        {
+          "text": "Refund process after course withdrawal is too slow.",
+          "true_label": "Finance",
+          "pred_label": "Infrastructure",
+          "fold": 1
+        },
+        {
+          "text": "The supervisor finding procedure for thesis is so frustrating. Would appreciate a resolution soon.",
+          "true_label": "Academic",
+          "pred_label": "Infrastructure",
+          "fold": 2
+        },
+        {
+          "text": "Voltage fluctuation is affecting computer lab equipment.",
+          "true_label": "Infrastructure",
+          "pred_label": "Technical",
+          "fold": 2
+        },
+        {
+          "text": "Most of the computers at the labs have problems; they should be fixed. Kindly verify and take action.",
+          "true_label": "Technical",
+          "pred_label": "Infrastructure",
+          "fold": 4
+        },
+        {
+          "text": "Parking fee collection process is confusing.",
+          "true_label": "Infrastructure",
+          "pred_label": "Finance",
+          "fold": 5
+        }
+      ],
+      "per_class": {
+        "Academic": {
+          "precision": 1.0,
+          "recall": 0.9830508474576272,
+          "f1": 0.9914529914529915
+        },
+        "Administrative": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "Finance": {
+          "precision": 0.9696969696969697,
+          "recall": 0.9696969696969697,
+          "f1": 0.9696969696969697
+        },
+        "Infrastructure": {
+          "precision": 0.9791666666666666,
+          "recall": 0.986013986013986,
+          "f1": 0.9825783972125436
+        },
+        "Technical": {
+          "precision": 0.9846153846153847,
+          "recall": 0.9846153846153847,
+          "f1": 0.9846153846153847
+        }
+      }
+    },
+    "svm_std": {
+      "accuracy": 0.9908256880733946,
+      "macro_f1": 0.9901393998954975,
+      "precision": 0.9911616161616162,
+      "recall": 0.989150962032318,
+      "confusion_matrix": [
+        [
+          58,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          27,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          32,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          142,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          65
+        ]
+      ],
+      "error_count": 3,
+      "misclassifications": [
+        {
+          "text": "Refund process after course withdrawal is too slow.",
+          "true_label": "Finance",
+          "pred_label": "Infrastructure",
+          "fold": 1
+        },
+        {
+          "text": "The supervisor finding procedure for thesis is so frustrating. Would appreciate a resolution soon.",
+          "true_label": "Academic",
+          "pred_label": "Infrastructure",
+          "fold": 2
+        },
+        {
+          "text": "Parking fee collection process is confusing.",
+          "true_label": "Infrastructure",
+          "pred_label": "Finance",
+          "fold": 5
+        }
+      ],
+      "per_class": {
+        "Academic": {
+          "precision": 1.0,
+          "recall": 0.9830508474576272,
+          "f1": 0.9914529914529915
+        },
+        "Administrative": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "Finance": {
+          "precision": 0.9696969696969697,
+          "recall": 0.9696969696969697,
+          "f1": 0.9696969696969697
+        },
+        "Infrastructure": {
+          "precision": 0.9861111111111112,
+          "recall": 0.993006993006993,
+          "f1": 0.9895470383275261
+        },
+        "Technical": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      }
+    }
+  },
+  "duplicate_aware_cv": {
+    "logreg_dup": {
+      "accuracy": 0.981651376146789,
+      "macro_f1": 0.9834540353624324,
+      "precision": 0.9836829836829837,
+      "recall": 0.9832768361581922,
+      "confusion_matrix": [
+        [
+          58,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          27,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          32,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          140,
+          2
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          64
+        ]
+      ],
+      "error_count": 6,
+      "misclassifications": [
+        {
+          "text": "Voltage fluctuation is affecting computer lab equipment.",
+          "true_label": "Infrastructure",
+          "pred_label": "Technical",
+          "fold": 1
+        },
+        {
+          "text": "Parking fee collection process is confusing.",
+          "true_label": "Infrastructure",
+          "pred_label": "Finance",
+          "fold": 1
+        },
+        {
+          "text": "AC's don't work properly. Would appreciate a resolution soon.",
+          "true_label": "Infrastructure",
+          "pred_label": "Technical",
+          "fold": 2
+        },
+        {
+          "text": "Refund process after course withdrawal is too slow.",
+          "true_label": "Finance",
+          "pred_label": "Infrastructure",
+          "fold": 3
+        },
+        {
+          "text": "Most of the computers at the labs have problems; they should be fixed. Kindly verify and take action.",
+          "true_label": "Technical",
+          "pred_label": "Infrastructure",
+          "fold": 5
+        },
+        {
+          "text": "The supervisor finding procedure for thesis is so frustrating. Would appreciate a resolution soon.",
+          "true_label": "Academic",
+          "pred_label": "Infrastructure",
+          "fold": 5
+        }
+      ],
+      "per_class": {
+        "Academic": {
+          "precision": 1.0,
+          "recall": 0.9830508474576272,
+          "f1": 0.9914529914529915
+        },
+        "Administrative": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "Finance": {
+          "precision": 0.9696969696969697,
+          "recall": 0.9696969696969697,
+          "f1": 0.9696969696969697
+        },
+        "Infrastructure": {
+          "precision": 0.9790209790209791,
+          "recall": 0.9790209790209791,
+          "f1": 0.9790209790209791
+        },
+        "Technical": {
+          "precision": 0.9696969696969697,
+          "recall": 0.9846153846153847,
+          "f1": 0.9770992366412213
+        }
+      }
+    },
+    "svm_dup": {
+      "accuracy": 0.9877675840978594,
+      "macro_f1": 0.9879018268553154,
+      "precision": 0.9898014629049111,
+      "recall": 0.986074038955395,
+      "confusion_matrix": [
+        [
+          58,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          27,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          32,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          142,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          64
+        ]
+      ],
+      "error_count": 4,
+      "misclassifications": [
+        {
+          "text": "Parking fee collection process is confusing.",
+          "true_label": "Infrastructure",
+          "pred_label": "Finance",
+          "fold": 1
+        },
+        {
+          "text": "Refund process after course withdrawal is too slow.",
+          "true_label": "Finance",
+          "pred_label": "Infrastructure",
+          "fold": 3
+        },
+        {
+          "text": "Most of the computers at the labs have problems; they should be fixed. Kindly verify and take action.",
+          "true_label": "Technical",
+          "pred_label": "Infrastructure",
+          "fold": 5
+        },
+        {
+          "text": "The supervisor finding procedure for thesis is so frustrating. Would appreciate a resolution soon.",
+          "true_label": "Academic",
+          "pred_label": "Infrastructure",
+          "fold": 5
+        }
+      ],
+      "per_class": {
+        "Academic": {
+          "precision": 1.0,
+          "recall": 0.9830508474576272,
+          "f1": 0.9914529914529915
+        },
+        "Administrative": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "Finance": {
+          "precision": 0.9696969696969697,
+          "recall": 0.9696969696969697,
+          "f1": 0.9696969696969697
+        },
+        "Infrastructure": {
+          "precision": 0.9793103448275862,
+          "recall": 0.993006993006993,
+          "f1": 0.9861111111111112
+        },
+        "Technical": {
+          "precision": 1.0,
+          "recall": 0.9846153846153847,
+          "f1": 0.9922480620155039
+        }
+      }
+    }
+  },
+  "consistency_check": {
+    "logreg": {
+      "prev_reported": 5,
+      "std_error_count": 5,
+      "dup_error_count": 6
+    },
+    "svm": {
+      "prev_reported": 3,
+      "std_error_count": 3,
+      "dup_error_count": 4
+    }
+  },
+  "duplicate_stats": {
+    "total_duplicate_texts": 0,
+    "examples": {}
+  }
+}

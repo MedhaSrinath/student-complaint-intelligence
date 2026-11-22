@@ -11,7 +11,7 @@ This project aims to develop an NLP-based system that can automatically understa
 ## Key Features
 
 - **Complaint Classification**  
-  Automatically categorizes complaints into relevant areas such as Academics, Hostel, IT, Infrastructure, Transport, Food, Finance, and more.
+  Automatically categorizes complaints by department. Lift or elevator fault and repair reports are routed to Maintenance, while other complaints use the trained department classifier.
 
 - **Sentiment Analysis**  
   Identifies whether the expressed sentiment in a complaint is Positive, Neutral, or Negative.

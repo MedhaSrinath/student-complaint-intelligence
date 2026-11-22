@@ -1,0 +1,1683 @@
+text,label,split
+You’ve charged me after deactivation  ,0,train
+No warranty included  ,2,train
+This is the third time this happened  ,0,train
+Where did this mystery upgrade come from?  ,0,train
+How many times do I have to call?  ,0,train
+My name isn’t even on this account.  ,0,train
+Everything inside was melted and useless  ,1,train
+No lock mechanism  ,2,train
+I explicitly said “leave at front desk”—ignored  ,1,train
+I’m done being overcharged  ,0,train
+Received with stains  ,2,train
+Why do I always get someone else’s order?  ,1,train
+That’s not the plan I picked  ,0,train
+You gave my order to the wrong person  ,1,train
+You forgot to include the charger  ,2,train
+You delayed the delivery and didn’t tell me  ,1,train
+I’ve had enough of late deliveries  ,1,train
+They delivered to the garage without asking  ,1,train
+Why did you withdraw from my account?  ,0,train
+I was told there'd be no charge until next month.  ,0,train
+Torn fabric out of the box  ,2,train
+There’s a permanent marker line on it  ,2,train
+It looks nothing like the ad  ,2,train
+Item fell apart in shipping  ,2,train
+Items were open when I received them  ,1,train
+My usage doesn’t justify this charge.  ,0,train
+I asked for signature confirmation and it was ignored  ,1,train
+Charger cable is frayed  ,2,train
+Fan is super loud  ,2,train
+Looks nothing like the ad  ,2,train
+Driver never approached the house  ,1,train
+My order is 3 days late  ,1,train
+There are holes in the material  ,2,train
+Package was stolen because it wasn’t hidden  ,1,train
+Screen is unresponsive  ,2,train
+The box had someone else’s name on it  ,1,train
+I need a detailed bill  ,0,train
+Nothing ever arrives on time with you  ,1,train
+No padding as promised  ,2,train
+I can’t believe how badly this was handled  ,1,train
+No serial number  ,2,train
+Packaging was completely ripped  ,2,train
+Not compatible with anything I own  ,2,train
+How did my bill end up being this high?  ,0,train
+How can you bill someone without consent?  ,0,train
+The site glitched and now I’m paying more.  ,0,train
+This invoice makes absolutely no sense.  ,0,train
+Please tell me why I still don’t have my order  ,1,train
+I want a refund—nothing arrived  ,1,train
+Coating flakes off  ,2,train
+There’s no breakdown of charges  ,0,train
+The box was already open when I got it  ,1,train
+You can’t keep messing this up  ,1,train
+There’s no excuse for this delay  ,1,train
+Doesn’t inflate properly  ,2,train
+That’s not what I was told  ,0,train
+How is this fee still showing up?  ,0,train
+Where is my signature-required delivery?  ,1,train
+The trial ended early and I got charged  ,0,train
+Stickers all over the product  ,2,train
+Doesn’t attach securely  ,2,train
+Doesn’t have the advertised features  ,2,train
+The app said “delivered”—but where?  ,1,train
+Suction is very weak  ,2,train
+Tracking says delivered to a “safe place”—where?!  ,1,train
+I’ve already complained and nothing changed  ,1,train
+Please stop debiting my account  ,0,train
+This delay cost me a client  ,1,train
+Why is the statement blank?  ,0,train
+"The charge was declined, but still pending  ",0,train
+Spout is bent  ,2,train
+This is the worst delivery service  ,1,train
+Hinge is wobbly  ,2,train
+You billed the wrong department.  ,0,train
+I never approved this change in delivery  ,1,train
+I see a fee that shouldn’t be there.  ,0,train
+This is clearly a cheap knockoff  ,2,train
+Why did the price go up?  ,0,train
+The zipper broke immediately  ,2,train
+I never gave you permission to charge  ,0,train
+I expected better from your company  ,0,train
+Driver dumped it in a random hallway  ,1,train
+Driver refused to hand it to me  ,1,train
+The stitching is coming undone  ,2,train
+You didn’t apply the store credit I had.  ,0,train
+They just threw it over the gate  ,1,train
+No plug adapter included  ,2,train
+This isn't even my package  ,1,train
+Too many missing parts  ,2,train
+Left at the wrong building  ,1,train
+Still no sign of my package  ,1,train
+This isn’t my order  ,1,train
+Paint is rubbing off already  ,2,train
+You keep increasing the amount without telling me.  ,0,train
+You sent a different color entirely  ,2,train
+The cord is frayed and unsafe  ,2,train
+You keep charging me even after I left  ,0,train
+It was supposed to be wireless  ,2,train
+One side doesn’t function  ,2,train
+Item looks like it’s been returned before  ,2,train
+The battery exploded  ,2,train
+Still no sign of my groceries—what's going on?  ,1,train
+The app won’t even let me report missing items  ,1,train
+The clasp is broken  ,2,train
+Still being billed after refund request  ,0,train
+There’s a chip in the ceramic  ,2,train
+Why charge me before the trial ends?  ,0,train
+Tracking hasn't updated in over a week  ,1,train
+"Advertised as metal, it’s plastic  ",2,train
+It makes a weird buzzing sound  ,2,train
+My signature was forged on the delivery confirmation  ,1,train
+I’m tired of repeating myself  ,0,train
+This is ruining my finances  ,0,train
+You keep charging me for nothing  ,0,train
+"This is clearly used, not new  ",2,train
+I want a replacement immediately  ,2,train
+Package smells like it went bad  ,1,train
+That’s not what my receipt says.  ,0,train
+This should be free for members  ,0,train
+Please stop leaving my packages in unsafe spots  ,1,train
+It doesn’t match the description at all  ,2,train
+This was supposed to renew at a lower price.  ,0,train
+It arrived broken in the box  ,2,train
+This is the third time you've delayed my order  ,1,train
+Item was thrown over my fence  ,2,train
+Power cord doesn’t fit  ,2,train
+Zipper ripped the first day  ,2,train
+Sticker is off-center  ,2,train
+I want proof of this charge  ,0,train
+I signed up with a discount that never applied.  ,0,train
+I was home all day and still missed the delivery  ,1,train
+"Wrong package, wrong address  ",1,train
+Your system auto-charged before confirmation.  ,0,train
+Power switch gets stuck  ,2,train
+That was supposed to be waived.  ,0,train
+It says signed by me—I never signed anything  ,1,train
+Tracking shows delivered five days ago—nothing here  ,1,train
+I’ve never seen this charge before  ,0,train
+I left delivery instructions that weren’t followed  ,1,train
+This delay is messing up my plans  ,1,train
+You sent the wrong version number  ,2,train
+Why does this happen every time I order?  ,1,train
+This isn’t even my account  ,0,train
+My profile shows zero usage.  ,0,train
+Spilled inside the packaging  ,2,train
+This is the last time I order from you  ,1,train
+No protective wrapping included  ,2,train
+Can’t download the app  ,2,train
+They claimed I canceled the delivery—false  ,1,train
+I demand an immediate reversal  ,0,train
+It was left outside and someone stole it  ,1,train
+I'm tired of chasing my deliveries  ,1,train
+All the pages are stuck together  ,2,train
+The dates don’t match the billing cycle.  ,0,train
+You’re charging me more than advertised  ,0,train
+Unexplained fee showed up  ,0,train
+Why is my delivery three days late?  ,1,train
+My order is melted  ,1,train
+This isn’t the payment plan I selected.  ,0,train
+The package is missing pieces  ,1,train
+How can the total be more than the subtotal?  ,0,train
+I caught the driver on camera skipping my house  ,1,train
+Item was crushed during transit—completely unacceptable  ,1,train
+Package was torn open  ,1,train
+Smells weird and seems unsafe  ,2,train
+Doesn’t match the description at all  ,2,train
+You charged me before my free trial ended.  ,0,train
+Paint smells toxic and unbearable  ,2,train
+Wobbly out of the box  ,2,train
+Cheap plastic feel  ,2,train
+My order is incomplete  ,1,train
+Why am I paying for another user’s error?  ,0,train
+Loud and annoying noise  ,2,train
+Zipper jammed instantly  ,2,train
+They never rang the bell  ,1,train
+Items are missing from the bag  ,1,train
+Why leave packages where anyone can steal them?  ,1,train
+Tracking number isn’t even valid  ,1,train
+Your system is out of sync  ,0,train
+You didn’t get authorization for that charge.  ,0,train
+There’s no explanation on the bill.  ,0,train
+Wrong serial number  ,2,train
+I rejected the terms and still got billed.  ,0,train
+I need this urgently and it’s nowhere  ,1,train
+You sent it to an old address despite my update  ,1,train
+Driver refused to wait even 30 seconds  ,1,train
+Stitches are already loose  ,2,train
+Your driver gave it to a neighbor without asking  ,1,train
+This wasn’t even in my cart.  ,0,train
+I never opted in for this service  ,0,train
+This is obviously a used item  ,2,train
+I feel cheated  ,2,train
+Stop charging me for features I don’t use.  ,0,train
+The charging cable sparks  ,2,train
+My payment plan isn’t reflected here  ,0,train
+Still not fixed after chat with support  ,0,train
+Takes forever to boot  ,2,train
+I didn’t make this purchase  ,0,train
+This isn’t compatible as claimed  ,2,train
+You charged me for shipping twice  ,2,train
+Can’t even assemble it properly  ,2,train
+Came without the power cable included  ,2,train
+I already paid—why charge again?  ,0,train
+Device overheats within minutes  ,2,train
+Unstable connection  ,2,train
+I feel like I’m being scammed  ,0,train
+This is not the time I selected  ,1,train
+Came with cracked parts  ,2,train
+This delay messed up my whole schedule  ,1,train
+Is this how you treat loyal customers?  ,0,train
+No one told me the price changed.  ,0,train
+The box is soaked and smells bad  ,1,train
+Cracked mirror  ,2,train
+Sticky residue on surface  ,2,train
+No delivery note was left  ,1,train
+The drawer doesn’t close all the way  ,2,train
+You’ve lost me as a customer  ,2,train
+Package left in the wrong mailbox  ,1,train
+Wobbly and unstable  ,2,train
+I asked to cancel before renewal  ,0,train
+Your math doesn’t check out.  ,0,train
+My usage graph is flat—why the charge?  ,0,train
+Package says fragile but it wasn’t protected  ,2,train
+It tears just from touching it  ,2,train
+Speaker is muffled  ,2,train
+Your driver blocked my driveway and then left  ,1,train
+Received the wrong pattern  ,2,train
+Driver left it in the hallway—stolen  ,1,train
+This service should’ve been paused  ,0,train
+Where’s the credit you promised?  ,0,train
+Just a piece of junk  ,2,train
+I expected way better quality  ,2,train
+The dial is stuck  ,2,train
+It falls apart when touched  ,2,train
+Nothing fits like it should  ,2,train
+Why do your drivers skip buildings entirely?  ,1,train
+The charge date is incorrect  ,0,train
+Item does not power  ,2,train
+They dumped it in front of someone else’s unit  ,1,train
+Left it in a snowbank  ,1,train
+Wheels fall off easily  ,2,train
+I paid in full—why another charge?  ,0,train
+Still missing one of my boxes  ,1,train
+The instructions are completely useless  ,2,train
+Parts arrived dirty  ,2,train
+Glass has bubbles inside  ,2,train
+I asked for back door—they ignored it  ,1,train
+This isn’t a premium feature  ,0,train
+You charged me even though I used a gift card.  ,0,train
+It squeaks constantly  ,2,train
+Misaligned buttons  ,2,train
+Cable doesn’t fit the device  ,2,train
+Battery compartment won’t open  ,2,train
+No one mentioned this in the agreement.  ,0,train
+This has become a monthly headache  ,0,train
+Why is my balance negative?  ,0,train
+Buckle popped off  ,2,train
+Wrong measurement units  ,2,train
+Not as soft as described  ,2,train
+It doesn’t recognize input  ,2,train
+My pet’s food arrived two days late  ,1,train
+Lights flicker and won’t stay on  ,2,train
+Your “free” trial is a joke  ,0,train
+It’s showing a monthly fee I never agreed to.  ,0,train
+Why was my package left in the rain?  ,1,train
+I got a used product  ,2,train
+What is this processing fee for?  ,0,train
+Your delivery window is useless—it never shows up  ,1,train
+This fee isn’t mine.  ,0,train
+You forgot to remove the security tag  ,2,train
+Backlight not working  ,2,train
+Your email receipt shows a different amount  ,0,train
+Why am I being overcharged constantly?  ,0,train
+Why am I paying for this twice?  ,0,train
+"Package left on the curb, completely unacceptable  ",1,train
+One earbud doesn’t work  ,2,train
+Item looks used and has scratches everywhere  ,2,train
+Another missing delivery—this is ridiculous  ,1,train
+Items inside are smashed  ,1,train
+Please stop charging my card  ,0,train
+I paid in store—why the online charge?  ,0,train
+I can’t find my order anywhere  ,1,train
+Already showing rust spots  ,2,train
+Driver didn’t come up to my door  ,1,train
+Everything rattles inside  ,2,train
+Doesn’t work at all out of the box  ,2,train
+The refund still hasn’t arrived  ,0,train
+No one told me about this extra cost  ,0,train
+I never got an invoice  ,0,train
+Where’s the student discount?  ,0,train
+You owe me an explanation  ,0,train
+This charge was unexpected and unexplained  ,0,train
+Not Alexa compatible  ,2,train
+Item smells moldy  ,2,train
+No tracking updates for days—what’s going on?  ,1,train
+Received a completely different item  ,2,train
+Straps broke immediately  ,2,train
+Get this off my bill  ,0,train
+"I asked for a downgrade, not an upgrade.  ",0,train
+I called support—no one helped  ,1,train
+It was marked delivered before it even left  ,1,train
+Nothing aligns properly  ,2,train
+You’re charging me for something I didn’t receive  ,0,train
+My item was delivered to the wrong door  ,1,train
+It’s 10pm and still no delivery  ,1,train
+Fix this or I’ll file a complaint  ,0,train
+I received only part of my order  ,1,train
+The driver never made it past the gate  ,1,train
+You billed me for a service I haven’t touched.  ,0,train
+This needs immediate attention  ,0,train
+The delivery photo is not my house  ,1,train
+This service keeps failing me  ,1,train
+Hose is too short  ,2,train
+It smells like cigarette smoke  ,2,train
+I didn’t receive everything I paid for  ,1,train
+The display flickers constantly  ,2,train
+This is getting ridiculous  ,0,train
+My order was given to the wrong person  ,1,train
+Arrived late despite paying for fast shipping  ,2,train
+Food was upside down and leaking  ,1,train
+I’m seeing extra charges again  ,0,train
+I never asked for this add-on  ,0,train
+You sent the wrong voltage version  ,2,train
+It was the wrong delivery altogether  ,1,train
+Arrived three weeks late  ,2,train
+The mechanism is stuck  ,2,train
+Wheels don’t roll smoothly  ,2,train
+Rust forming already  ,2,train
+Your free trial is a scam  ,0,train
+You auto-filled the wrong plan.  ,0,train
+The delivery guy dropped it and drove off  ,1,train
+I’m being double-billed.  ,0,train
+Arrived covered in dust and grime  ,2,train
+It was delivered hours late and destroyed  ,1,train
+Driver pretended to attempt delivery  ,1,train
+My payment wasn’t applied correctly  ,0,train
+It won’t even open  ,2,train
+This has been mishandled completely  ,0,train
+There’s nothing in the order summary about this.  ,0,train
+Driver went to a different street  ,1,train
+Switch doesn’t toggle  ,2,train
+This doesn’t match the email confirmation  ,0,train
+Stop billing me for a closed account.  ,0,train
+Where is the itemized breakdown?  ,0,train
+"I asked for a pause, not cancellation and charge.  ",0,train
+Why did it go to another city first?  ,1,train
+They said “delivered” but nothing is here  ,1,train
+Phone holder is crooked  ,2,train
+Doesn’t hold a charge  ,2,train
+Fell apart within a day  ,2,train
+You ignored my cancellation  ,2,train
+Hard to assemble with no guide  ,2,train
+These upsells are sneaky  ,0,train
+It looks like fraud  ,0,train
+Why charge a fee for canceling a trial?  ,0,train
+You keep delivering to the wrong house  ,1,train
+Package is leaking  ,1,train
+You skipped my delivery altogether  ,1,train
+Already rusting after two days  ,2,train
+Your calculator is way off.  ,0,train
+Why can’t anyone get this right?  ,1,train
+"This is the wrong amount, plain and simple.  ",0,train
+Driver said no one was home but I was  ,1,train
+No text or call before arrival  ,1,train
+Why was my item dumped at the leasing office?  ,1,train
+Still no help from customer service  ,1,train
+Nothing about this charge is right.  ,0,train
+No one contacted me before dropping it  ,1,train
+Driver didn’t wait for me to answer  ,1,train
+Why am I paying for premium?  ,0,train
+I regret this purchase  ,2,train
+My food was delivered to the wrong building  ,1,train
+The motor makes grinding sounds  ,2,train
+No support materials included  ,2,train
+You said it was fixed. It’s not.  ,0,train
+This is unacceptable service  ,1,train
+Why was I billed for something I never used?  ,0,train
+Doesn’t play audio correctly  ,2,train
+"The tracking just says ""delayed"" forever  ",1,train
+"Wrong color, wrong size, wrong everything  ",2,train
+It keeps disconnecting from Wi-Fi  ,2,train
+Please correct your mistake  ,0,train
+The lid doesn’t close properly  ,2,train
+Fix your mistake immediately  ,0,train
+"Tracking says it’s here, but it’s not  ",1,train
+I canceled and still got a bill.  ,0,train
+Cracked charger brick  ,2,train
+Clearly a return  ,2,train
+Stop billing me for paused services.  ,0,train
+I expect this to be fixed today  ,0,train
+They just left it in the elevator  ,1,train
+Button fell off the first day  ,2,train
+One piece was warped  ,2,train
+Glue is visible everywhere  ,2,train
+Package was marked delivered but it’s nowhere  ,1,train
+My card was charged multiple times  ,0,train
+This is a complete mess—do better  ,1,train
+Why was it delivered at midnight?  ,1,train
+"Wrong time, wrong date, wrong address  ",1,train
+One leg is shorter than the others  ,2,train
+I’ve called three times and nothing’s fixed  ,0,train
+Item is completely warped  ,2,train
+The charge is completely invalid  ,0,train
+You’ve overdrawn my account  ,0,train
+I won’t tolerate this again  ,0,train
+"You promised 3 items, I got one  ",2,train
+The package is completely destroyed  ,1,train
+The breakdown is totally inaccurate  ,0,train
+Came in the wrong packaging  ,2,train
+This is the third late delivery this week  ,1,train
+I asked for a specific date—why ignore that?  ,1,train
+Grill top is warped  ,2,train
+That feature was supposed to be included.  ,0,train
+Doesn’t come with the advertised remote  ,2,train
+You ruined a surprise gift by delivering early  ,1,train
+This isn’t what I agreed to pay  ,0,train
+You charged me for something I didn’t get  ,1,train
+Driver was extremely careless  ,1,train
+The box is empty—what kind of joke is this?  ,1,train
+It won’t even turn on  ,2,train
+They didn’t even try to contact me  ,1,train
+The app crashed and still charged me.  ,0,train
+The charge is higher than the quote  ,0,train
+The app required to use it is broken  ,2,train
+The rep I spoke to gave me different info.  ,0,train
+There’s no receipt for this transaction.  ,0,train
+"No notification, just a charge out of nowhere.  ",0,train
+This amount is higher than what I approved.  ,0,train
+You marked it delivered at 2AM  ,1,train
+Horrible aftertaste  ,2,train
+This charge is dated after I canceled  ,0,train
+The mechanism sticks constantly  ,2,train
+"Still waiting, it's been over ten days now  ",1,train
+Driver marked it delivered from another city  ,1,train
+Still no resolution after three emails  ,0,train
+My kid cut themselves on a sharp edge  ,2,train
+Feels greasy to touch  ,2,train
+Torn pages in the book  ,2,train
+Lens is scratched  ,2,train
+Case doesn’t close properly  ,2,train
+I don’t trust your billing anymore  ,0,train
+"Supposed to be leather, but it’s not  ",2,train
+The driver never came to my door  ,1,train
+I’m being ignored  ,2,train
+My subscription ended last month  ,0,train
+You didn’t mention an activation fee  ,0,train
+No instructions were included  ,2,train
+The product was soaking wet when opened  ,2,train
+I stayed home and waited—what a waste  ,1,train
+I canceled two weeks ago—why was I billed?  ,0,train
+It’s way too sharp  ,2,train
+You’ve lost my order for the second time  ,1,train
+Sound quality is terrible  ,2,train
+This bill has someone else’s email on it.  ,0,train
+There’s no way this passed quality control  ,1,train
+The zipper broke the first time I used it  ,2,train
+It was dumped on the stairs  ,1,train
+Still waiting and no one responds  ,1,train
+You sent the demo unit  ,2,train
+This makes absolutely no sense.  ,0,train
+Delivery person didn’t even try to find my unit  ,1,train
+I didn’t agree to monthly billing  ,0,train
+I got charged after I opted out  ,0,train
+Every part feels misaligned  ,2,train
+Your billing system is a mess  ,0,train
+This shouldn’t even be sellable  ,2,train
+You never got my permission  ,0,train
+Package was dumped behind a bush  ,1,train
+You left it where anyone could grab it  ,1,train
+The lock mechanism doesn’t work  ,2,train
+Power button recessed  ,2,train
+You promised this would be free  ,0,train
+The driver mixed up units again  ,1,train
+I caught this charge too late.  ,0,train
+Outdated version sent  ,2,train
+This bill is full of mistakes  ,0,train
+Package left in puddle  ,1,train
+You promised no charges until activation.  ,0,train
+I received an empty box—completely unacceptable  ,1,train
+You said it’d be here today. It’s not.  ,1,train
+The total jumped at checkout without explanation.  ,0,train
+Billing history looks suspicious  ,0,train
+Looks counterfeit  ,2,train
+Your invoice has errors—again.  ,0,train
+I don’t owe this amount  ,0,train
+The numbers on the invoice just don’t match.  ,0,train
+"No one rang the bell, again  ",1,train
+"No transparency, just more fees  ",0,train
+I keep receiving damaged goods  ,1,train
+Your chatbot confirmed there’d be no charge.  ,0,train
+I received a torn-up box with missing items  ,1,train
+Device constantly restarts  ,2,train
+No tracking updates were available  ,2,train
+I didn’t approve that delivery location  ,1,train
+Came with missing screws  ,2,train
+You said this would be fixed last week  ,0,train
+You charged me during the grace period.  ,0,train
+The driver didn’t even slow down  ,1,train
+They left it in the lobby—again  ,1,train
+This is a complete shipping failure  ,1,train
+Fan blades bent  ,2,train
+I didn’t receive an invoice  ,0,train
+This doesn’t match the agreed-upon rate  ,0,train
+I got someone else’s bill.  ,0,train
+They didn’t wait long enough  ,1,train
+Not rechargeable as claimed  ,2,train
+The blade is dull and chipped  ,2,train
+I didn’t ask for expedited shipping  ,0,train
+Returns are being ignored  ,2,train
+Driver never entered the building  ,1,train
+The device shocked me on use  ,2,train
+That upgrade wasn’t authorized.  ,0,train
+The clip broke in my hand  ,2,train
+This was a gift and now it’s ruined  ,1,train
+I asked for signature but got none  ,1,train
+Your website said no charges during trial  ,0,train
+Why am I being punished for your error?  ,0,train
+Batteries leak  ,2,train
+I was logged out and still charged.  ,0,train
+The hose leaks  ,2,train
+I asked to cancel. You said it was done.  ,0,train
+This late fee is outrageous.  ,0,train
+"Advertised as waterproof, but it’s not  ",2,train
+No way to turn it off  ,2,train
+Buttons don’t press  ,2,train
+How can you mess this up again?  ,0,train
+This bill is a mess.  ,0,train
+You never fixed the original delivery issue  ,1,train
+No one mentioned auto-renewal  ,0,train
+The inner lining is torn  ,2,train
+Battery compartment doesn’t open  ,2,train
+Why does it say I received it?  ,1,train
+My parcel got delivered to the wrong state  ,1,train
+Driver dropped it while walking away  ,1,train
+Stop changing the terms after the fact.  ,0,train
+The package arrived soaking wet and unusable  ,1,train
+That feature isn’t even active.  ,0,train
+You delivered to the wrong apartment again  ,1,train
+Delivery driver sped away without stopping  ,1,train
+This has now happened three times  ,1,train
+You charged me and then canceled the service.  ,0,train
+Don’t charge me again  ,0,train
+I thought I canceled successfully  ,0,train
+Package arrived soaked  ,2,train
+My order melted on the doorstep  ,1,train
+Doesn’t detect touch  ,2,train
+Pen tip is broken  ,2,train
+I never received my birthday gift  ,1,train
+Someone else signed for my package  ,1,train
+I gave instructions to come to my door which were not followed  ,1,train
+Your system keeps charging my old card.  ,0,train
+It’s always something with your billing  ,0,train
+My account doesn’t reflect the changes.  ,0,train
+Buttons pop off with minimal pressure  ,2,train
+Lights don’t sync  ,2,train
+Why is there a service fee again?  ,0,train
+Still waiting for last month’s correction  ,0,train
+It’s been delayed three times now  ,1,train
+I didn’t approve this payment  ,0,train
+Pieces don’t fit together  ,2,train
+Tracking shows it’s in a different city  ,1,train
+Only works intermittently  ,2,train
+Mounting hardware missing  ,2,train
+Why do I have a late fee?  ,0,train
+You said the first month was free  ,0,train
+I gave clear instructions—they were ignored  ,1,train
+Fix your records before billing me.  ,0,train
+The wrong items were thrown into a box  ,1,train
+The plug doesn’t fit US sockets  ,2,train
+The magnet doesn’t hold  ,2,train
+Too much background noise  ,2,train
+Fix your billing system.  ,0,train
+Why is the charge split in two?  ,0,train
+How can it be delivered if I have nothing?  ,1,train
+"No one knocked, no note, no package  ",1,train
+Why does this charge keep reappearing every month?  ,0,train
+Glue already peeling  ,2,train
+Stop blaming me for your mistake  ,1,train
+They took a photo of someone else’s porch  ,1,train
+Mouse doesn’t click  ,2,train
+Why is my food cold and soggy?  ,1,train
+It’s been “out for delivery” for 3 days  ,1,train
+Why is there a random fee here?  ,0,train
+Driver ignored my note completely  ,1,train
+My order is sitting in a facility two towns over  ,1,train
+I got charged twice for one item  ,2,train
+Still not fixed after multiple tickets  ,0,train
+I want a full refund  ,2,train
+Very stiff and uncomfortable  ,2,train
+How can you charge without verification?  ,0,train
+Where’s the promised promotional rate?  ,0,train
+You marked my order completed without delivery  ,1,train
+"This is the third ""lost"" delivery this month  ",1,train
+This is not what I ordered  ,2,train
+Where’s my subscription status update?  ,0,train
+Color started bleeding in the wash  ,2,train
+I already disputed this charge.  ,0,train
+Footrest fell off  ,2,train
+There’s no explanation for this random charge.  ,0,train
+Padding is lumpy  ,2,train
+My medication was delayed—this is serious  ,1,train
+There are sharp edges on the product  ,2,train
+Why are you using such unreliable couriers?  ,1,train
+Buttons are stuck and don’t respond  ,2,train
+My groceries are spoiled  ,1,train
+It says $0 on the confirmation page.  ,0,train
+This is not the model I ordered  ,2,train
+This isn’t what your website said.  ,0,train
+The breakdown doesn’t match the actual bill.  ,0,train
+I found food crumbs inside  ,2,train
+I didn’t authorize this delivery location  ,1,train
+No cable included  ,2,train
+Food arrived rotten  ,2,train
+I was told it’d be fixed—it's not  ,0,train
+Battery died after ten minutes of use  ,2,train
+Poorly assembled  ,2,train
+"I downgraded, but I’m still paying the full rate.  ",0,train
+I paused the service but still got charged  ,0,train
+Tracking stopped updating  ,1,train
+Wrong size and doesn’t fit at all  ,2,train
+Cloth is fraying at the edges  ,2,train
+This was clearly returned by someone else  ,2,train
+This was declined—why was it processed anyway?  ,0,train
+Doesn’t support my device  ,2,train
+Completely the wrong shade of blue  ,2,train
+Why’s my bill always changing?  ,0,train
+It was left in plain sight  ,1,train
+Your breakdown doesn’t match the total.  ,0,train
+This is the second time this month.  ,0,train
+The box was torn open on arrival  ,1,train
+You said it was free for early users.  ,0,train
+I disputed this already—why is it back?  ,0,train
+Said waterproof but it leaks  ,2,train
+You’ve messed up my budget  ,0,train
+Why is no one responding?  ,2,train
+Shuts off randomly  ,2,train
+You’ve delivered to the wrong address AGAIN  ,1,train
+Items were clearly tampered with  ,1,train
+My invoice doesn’t match the total  ,0,train
+How did this pass quality check?  ,2,train
+The box was clearly tampered with  ,1,train
+Still no update after promised delivery time  ,1,train
+Arrived without a charger  ,2,train
+Driver left it by the wrong door  ,1,train
+"Nothing has arrived, again  ",1,train
+You made another billing error  ,0,train
+You sent a child’s size  ,2,train
+Label says refurbished  ,2,train
+Nothing has changed—why is the charge higher?  ,0,train
+You added features I didn’t ask for.  ,0,train
+Why do they keep messing up my address?  ,1,train
+Driver used the wrong entrance  ,1,train
+Wristband too short  ,2,train
+Squeaks loudly  ,2,train
+"You said ""attempted delivery"" but never came  ",1,train
+"Wrong time, again  ",1,train
+Driver didn’t speak to anyone  ,1,train
+You sent it to a closed store  ,1,train
+I didn’t finish signing up.  ,0,train
+You charged me for a month I didn’t use.  ,0,train
+You’ve now made it worse  ,0,train
+You rescheduled without my consent  ,1,train
+You sent me the wrong product entirely  ,2,train
+How can a free trial cost money?  ,0,train
+This isn’t what I signed up for  ,0,train
+How does a package go missing this often?  ,1,train
+You keep delivering broken stuff  ,1,train
+The box is crushed and taped poorly  ,1,train
+This is my fourth complaint this month  ,1,train
+Doesn’t match product images  ,2,train
+I caught another charge from last week.  ,0,train
+Driver walked away before I opened the door  ,1,train
+Package is crushed and soaked  ,1,train
+Sound is distorted and tinny  ,2,train
+You billed me before the contract start.  ,0,train
+You sent me someone else’s stuff  ,1,train
+Where’s the rest of my order?  ,1,train
+They didn’t even try the correct unit  ,1,train
+No one ever answers my complaints  ,1,train
+Where is my weekend delivery?  ,1,train
+Even the email confirmation has the wrong total.  ,0,train
+They left it behind the trash cans  ,1,train
+This is worse than my last experience  ,1,train
+You’ve delayed my order four times now  ,1,train
+It’s missing the remote control  ,2,train
+Driver refused to come upstairs  ,1,train
+There’s a double charge on my card  ,0,train
+The motor makes a grinding sound  ,2,train
+You billed the wrong customer  ,0,train
+I paid in full. Why am I being charged again?  ,0,train
+Just fix this now  ,2,train
+I’ve been waiting weeks for this  ,1,train
+The screen is completely unresponsive  ,2,train
+My subscription was supposed to end  ,0,train
+The strap snapped instantly  ,2,train
+The velcro won’t stick  ,2,train
+I watched the driver leave without delivering  ,1,train
+Handle snapped right off while opening  ,2,train
+Your website misled me.  ,0,train
+How did my basic plan turn into premium pricing?  ,0,train
+You delayed it again without informing me  ,1,train
+The service has gone downhill  ,1,train
+I didn’t sign up for this plan  ,0,train
+Someone else’s name is on this bill.  ,0,train
+I never got a confirmation email for this charge.  ,0,train
+Why does this keep happening?  ,0,train
+Why am I getting billed in advance?  ,0,train
+Fell apart after one use  ,2,train
+All accessories are missing  ,2,train
+The sale price did not register correctly.  ,0,train
+I followed up three times  ,2,train
+Delivered to the wrong address  ,2,train
+I never got notified about this charge  ,0,train
+I had to repair it myself  ,2,train
+"I never clicked confirm, yet you charged me.  ",0,train
+That amount is nowhere on the site.  ,0,train
+This is the worst shipping experience I’ve had  ,1,train
+Item was wet on arrival  ,2,train
+Delivery support is impossible to reach  ,1,train
+Can’t update the firmware  ,2,train
+The driver clearly didn’t care  ,1,train
+Wrong manual included  ,2,train
+The packaging was torn open  ,2,train
+I’m furious about this order  ,2,train
+I only used it for one day  ,0,train
+No sound from left speaker  ,2,train
+You dropped it off at the wrong block  ,1,train
+Driver didn’t follow the instructions for safe drop-off  ,1,train
+Something’s off with my bank statement  ,0,train
+My name isn’t even on the box  ,1,train
+There’s no explanation for this charge  ,0,train
+You forgot the accessories listed in the description  ,2,train
+Power bank won’t charge  ,2,train
+Refuses to pair with my phone  ,2,train
+Your records are wrong.  ,0,train
+Not adjustable as claimed  ,2,train
+I had to retrieve my parcel from a neighbor  ,1,train
+I’ve contacted support five times with no resolution  ,1,train
+Clock is inaccurate  ,2,train
+Paint smeared all over  ,2,train
+This charge caught me by surprise  ,0,train
+I was billed during a system outage.  ,0,train
+I never enabled this option.  ,0,train
+Unstable when standing  ,2,train
+The cable frays instantly  ,2,train
+Arrived without instructions or labeling  ,2,train
+Missing parts inside the package  ,2,train
+Driver took a picture of someone else’s house  ,1,train
+Your pricing chart is misleading.  ,0,train
+Your billing system is broken  ,0,train
+"No updates, no delivery, no apology  ",1,train
+Why was my package delivered to a business address?  ,1,train
+Delivery came after midnight—are you serious?  ,1,train
+The color is totally different than advertised  ,2,train
+Package contained someone else’s return  ,2,train
+Driver refused to come to the door  ,1,train
+I canceled two months ago.  ,0,train
+Package arrived open  ,2,train
+Your driver left my order in the rain  ,1,train
+Received completely wrong product  ,2,train
+The delivery time keeps getting pushed back  ,1,train
+Springs are popping out  ,2,train
+Already stained straight out of the box  ,2,train
+I used a gift card—why am I still being charged?  ,0,train
+It came in the wrong language  ,2,train
+Wasn’t this included in my subscription?  ,0,train
+It was thrown over my fence  ,1,train
+"It said one-time payment, not recurring!  ",0,train
+I want this reviewed immediately  ,0,train
+Nothing was communicated beforehand  ,0,train
+I had to chase down the delivery driver  ,1,train
+Can’t hear anything through the speakers  ,2,train
+Everything inside was scattered and loose  ,2,train
+Why am I being charged while suspended?  ,0,train
+The delivery guy was rude and rushed  ,1,train
+It’s been sitting at a warehouse for days  ,1,train
+Scuffed and dented  ,2,train
+Adhesive doesn’t stick  ,2,train
+Doesn’t sync with the app  ,2,train
+Handle doesn’t lock in place  ,2,train
+Hinges are loose  ,2,train
+Your courier ignored delivery instructions completely  ,1,train
+This bill just showed up with no explanation.  ,0,train
+You charged me in error  ,0,train
+Someone else’s name is on my box  ,1,train
+I never got my refund or my item  ,1,train
+Package said it was delivered but it’s clearly not  ,1,train
+Wasn’t this supposed to be prorated?  ,0,train
+"This was a gift, now ruined  ",2,train
+Everything about this is wrong  ,2,train
+I don’t even use your service anymore.  ,0,train
+Arrived wet and moldy  ,2,train
+The label was ripped off during shipping  ,1,train
+Why was my package redirected without permission?  ,1,train
+All lights flicker randomly  ,2,train
+Who leaves a package in a storm drain?  ,1,train
+You marked it as delivered late at night  ,1,train
+You sent me someone’s return  ,2,train
+Battery started leaking inside the compartment  ,2,train
+Doesn’t even power on  ,2,train
+I had credit left in my account.  ,0,train
+Bubbles under the screen  ,2,train
+My account shows usage I never made.  ,0,train
+Can’t get it to stay upright  ,2,train
+Timer doesn’t count down  ,2,train
+Still waiting for a delivery that’s overdue  ,1,train
+My account balance should be zero.  ,0,train
+This line item is fabricated.  ,0,train
+Wrong language on packaging  ,2,train
+The invoice lacks basic details.  ,0,train
+My order keeps getting delayed  ,1,train
+I had to go find my delivery  ,1,train
+This has gone on too long  ,0,train
+The stitching is all over the place  ,2,train
+Why does this happen every time?  ,1,train
+I said no to auto-renew.  ,0,train
+The seams are loose  ,2,train
+You sent me someone else’s order  ,2,train
+I need a real explanation  ,0,train
+Won’t sync to cloud  ,2,train
+the driver never came  ,1,train
+Why did you cancel my delivery without telling me?  ,1,train
+Already expired when I opened it  ,2,train
+The seam burst while trying it on  ,2,train
+You overcharged me this month!  ,0,train
+Frame is bent  ,2,train
+It was left at the wrong building entirely  ,1,train
+This bill has more items than I ordered.  ,0,train
+You said it was left at the front door—nothing there  ,1,train
+What’s this “maintenance fee”?  ,0,train
+Half the features don’t work  ,2,train
+What is this “processing charge”?  ,0,train
+The package was damaged beyond recognition  ,1,train
+Why is there tape residue all over?  ,2,train
+Keeps freezing and lagging  ,2,train
+I don’t recognize this item  ,0,train
+Why does my neighbor have my package?  ,1,train
+Driver left the gate wide open  ,1,train
+Why am I being billed again?  ,0,train
+Only one earbud works  ,2,train
+That’s not what my contract says  ,0,train
+"Still waiting, even though it was “on truck”  ",1,train
+This keeps happening—I'm done ordering from you  ,1,train
+I never agreed to this extra fee.  ,0,train
+Cooling system doesn’t work  ,2,train
+Delivery was rescheduled again without notice  ,1,train
+Battery won’t hold a charge  ,2,train
+Filter came already dirty  ,2,train
+Light never turns off  ,2,train
+Item was mislabeled  ,2,train
+Only half the product arrived  ,2,train
+Can’t even plug it in  ,2,train
+Driver claimed to leave it—nothing there  ,1,train
+The delivery guy went to the wrong house  ,1,train
+I can’t believe you lost my order again  ,1,train
+I downgraded but still paid full price  ,0,train
+Scratches on all surfaces  ,2,train
+The tax calculation is clearly wrong.  ,0,train
+This was a time-sensitive delivery  ,1,train
+Pieces are misaligned and won’t fit  ,2,train
+Package went back to sender without trying me  ,1,train
+Makes loud clicking noise  ,2,train
+Why wasn’t I notified of the delay?  ,1,train
+Stop charging me for things I didn’t agree to  ,0,train
+"My receipt says one price, the charge is another.  ",0,train
+The product is warped  ,2,train
+Item is scratched beyond repair  ,2,train
+The magnet is so weak it’s useless  ,2,train
+Why are you charging me in advance?  ,0,train
+You sent the wrong accessories  ,2,train
+It’s way more than last month  ,0,train
+This was supposed to be corrected  ,0,train
+The box was ripped open  ,1,train
+I have no idea where it was delivered  ,1,train
+Won’t hold temperature  ,2,train
+This has become a regular issue with you  ,1,train
+You didn’t send an invoice. Just took the money.  ,0,train
+The driver damaged my property  ,1,train
+My package is covered in dirt  ,1,train
+The box is empty  ,1,train
+Shipping box was empty  ,2,train
+Armrest broke  ,2,train
+I found my package in the bushes  ,1,train
+My bill includes features I never used  ,0,train
+I got the wrong color  ,2,train
+Support gave me copy-paste answers  ,2,train
+"I clicked “no,” but it went through anyway.  ",0,train
+My delivery was split and now half is missing  ,1,train
+Driver said I refused the delivery—false  ,1,train
+No one has explained what happened to my order  ,1,train
+I got billed for a feature test.  ,0,train
+Very poor signal  ,2,train
+None of the buttons respond  ,2,train
+"No proof of delivery, just a message  ",1,train
+This bill is higher than usual  ,0,train
+My package has disappeared  ,1,train
+Why didn’t I get a delivery confirmation?  ,1,train
+"You ignored the ""leave with doorman"" note  ",1,train
+Software is outdated  ,2,train
+They delivered to a vacant property  ,1,train
+You lost my delivery  ,1,train
+There’s no justification for this fee  ,0,train
+"The label says fragile, but it was thrown around  ",1,train
+I feel like I’m being tricked  ,0,train
+"You charged me twice, on different days.  ",0,train
+Was clearly repackaged  ,2,train
+"I waited and waited, and nothing showed up  ",1,train
+"Said eco-friendly, came in plastic  ",2,train
+This is a total scam  ,2,train
+Stop misbilling me  ,0,train
+There’s no paper trail for this bill.  ,0,train
+My account should be closed  ,0,train
+You never sent a renewal notice.  ,0,train
+Why was my account debited today?  ,0,train
+There was no delivery window provided  ,1,train
+Driver keeps skipping my unit  ,1,train
+That wasn’t in the contract.  ,0,train
+Where’s the adjustment from last time?  ,0,train
+I caught an error on this statement again.  ,0,train
+"I used points, but you charged me anyway.  ",0,train
+It buzzes even when turned off  ,2,train
+I’m being charged for someone else’s account  ,0,train
+How is my total more than the item price?  ,0,train
+All the lights are out  ,2,train
+Locks don’t click properly  ,2,train
+No mounting instructions  ,2,train
+Sprayer doesn’t work  ,2,train
+Sound is distorted  ,2,train
+Not stainless steel as claimed  ,2,train
+There’s no breakdown—just a giant total.  ,0,train
+Driver said I wasn’t home—false  ,1,train
+Delivery left at a random address  ,1,train
+No carrying case included  ,2,train
+The screen protector was already used  ,2,train
+Why do I need to contact you to cancel?  ,0,train
+They left it out in a storm  ,1,train
+Driver didn’t follow any instructions  ,1,train
+Not even close to what’s in the photos  ,2,train
+I stayed home just for this and nothing came  ,1,train
+I needed that for today’s event  ,1,train
+It says it’s delivered but the package vanished  ,1,train
+No one told me about a service fee.  ,0,train
+They said I wasn’t available—I was  ,1,train
+There’s a huge scratch across the screen  ,2,train
+Item was clearly returned and resold  ,2,train
+"I only ordered one, why charge me for three?  ",0,train
+This amount is inflated  ,0,train
+Too loud to even use  ,2,train
+Why deliver late at night with no notice?  ,1,train
+Material is nothing like what you described  ,2,train
+Where’s the discount you promised?  ,0,train
+Paint has visible brush strokes  ,2,train
+There’s a duplicate payment  ,0,train
+"Package is torn, items falling out  ",1,train
+My receipt doesn’t match what was charged.  ,0,train
+Stop using photos as proof when nothing was there  ,1,train
+Half my package is missing again  ,1,train
+Paint is peeling  ,2,train
+Nothing about this charge is what I expected.  ,0,train
+I want a supervisor now  ,0,train
+Your courier clearly lost my package  ,1,train
+Driver didn’t follow the map  ,1,train
+It came way after the event I needed it for  ,1,train
+Nothing lines up properly  ,2,train
+Panel won’t close  ,2,train
+This charge is fraudulent  ,0,train
+My apartment number was ignored  ,1,train
+Parcel was tossed into my bushes  ,1,train
+Tool rusted after one use  ,2,train
+It says delivered but I received nothing at all  ,1,train
+The box was crushed flat  ,2,train
+The stitching is completely uneven  ,2,train
+I’ve been patient—this is ridiculous now  ,1,train
+This is not a premium plan  ,0,train
+Grips are missing  ,2,train
+This was not worth the money  ,2,train
+Stop charging before the renewal date  ,0,train
+Still waiting for refund  ,2,train
+"They didn’t even attempt to deliver, just marked it done  ",1,train
+The fragile item was smashed into pieces  ,1,train
+"I paid for express shipping, where is it?  ",1,train
+I never signed up for automatic payments.  ,0,train
+Driver ignored the callbox entirely  ,1,train
+I requested contactless delivery and it was handed off  ,1,train
+I’m done dealing with your billing errors  ,0,train
+The mounting holes don’t line up  ,2,train
+Won’t stay in place  ,2,train
+Order is damaged and incomplete  ,1,train
+Material is already pilling  ,2,train
+Warranty card missing  ,2,train
+Plastic melted in heat  ,2,train
+The settings don’t save  ,2,train
+Your system glitched and now I’m out $100.  ,0,train
+The package was left wide open outside  ,1,train
+That’s not the amount I saw before clicking purchase.  ,0,train
+I've been waiting for 2 hours and nothing arrived  ,1,train
+This wasn’t part of the original deal  ,0,train
+I was home but no one knocked  ,1,train
+It doesn’t stand upright like it should  ,2,train
+I only used it for one day.  ,0,train
+You didn’t include batteries  ,2,train
+Why is this happening every week?  ,1,train
+Plastic is cracked and sharp  ,2,train
+Color bleeds when washed  ,2,train
+Fix this or I’m closing my account. ,0,train
+This isn’t what the sales rep told me.  ,0,train
+Where’s the refund you promised last week?  ,0,train
+You sent the wrong item entirely  ,2,train
+I’ve had enough of this nonsense  ,0,train
+These taxes seem way too high  ,0,train
+That isn’t the price I saw online.  ,0,train
+The amount is way off  ,0,train
+Fix this or I’m leaving  ,0,train
+Battery exploded  ,2,train
+No one has responded to my delivery complaint  ,1,train
+I waited at home for absolutely nothing  ,1,train
+The box looks like it went through a war  ,1,train
+Box was smashed  ,2,train
+My card was charged even though I canceled last week.  ,0,train
+Already had cracks on it  ,2,train
+The billing support is useless  ,0,train
+Touchscreen is totally inaccurate  ,2,train
+"It’s been ""out for delivery"" for three days  ",1,train
+Refund my money and cancel everything  ,0,train
+Never buying from here again  ,2,train
+My package says delivered but nothing’s here  ,1,train
+My apartment was skipped entirely  ,1,train
+Nothing I signed up for included this cost.  ,0,train
+Switch doesn’t work  ,2,train
+"Parcel dumped on the sidewalk, unbelievable  ",1,train
+Very low resolution  ,2,train
+Package was half-open on arrival  ,1,train
+It’s stuck in transit and no one cares  ,1,train
+Product failed instantly  ,2,train
+Missing remote  ,2,train
+Why is this not sorted yet?  ,0,train
+Nozzle clogs instantly  ,2,train
+They delivered at 6am with no notice  ,1,train
+The photo proof is a different house  ,1,train
+Why is this still pending on my card?  ,0,train
+Overheats after short use  ,2,train
+"Every time I order, it gets delayed  ",1,train
+There’s no sign of the box anywhere  ,1,train
+How did this charge get approved?  ,0,train
+Half my order is missing  ,1,train
+I got someone else's order instead  ,1,train
+The knob is loose  ,2,train
+Ink cartridge missing  ,2,train
+Feels very flimsy and cheap  ,2,train
+My package is completely destroyed  ,1,train
+The driver left before I could reach them  ,1,train
+Wrong billing cycle  ,0,train
+No tracking update in 48 hours  ,1,train
+Enough is enough  ,0,train
+The box was clearly opened before I got it  ,1,train
+Keyboard keys are broken  ,2,train
+Where’s the bill history? This came out of nowhere.  ,0,train
+I didn’t click subscribe.  ,0,train
+The price looks incorrect.  ,0,train
+This is an unauthorized transaction  ,0,train
+Sticker residue all over  ,2,train
+My package looks like it was run over  ,1,train
+What’s this mystery fee on my statement?  ,0,train
+You keep misdelivering my orders  ,1,train
+You promised same-day delivery and lied  ,1,train
+I didn’t get what I paid for  ,1,train
+You promised to fix this last time  ,0,train
+"No photo proof, no package, no delivery  ",1,train
+You promised no extra fees  ,0,train
+Lid doesn’t stay closed  ,2,train
+This isn’t adding up  ,0,train
+This is really unprofessional  ,0,train
+Didn’t I cancel last month?  ,0,train
+Package jammed in my mailbox and bent  ,1,train
+Too bulky for advertised use  ,2,train
+It was left outside in the rain  ,1,train
+No way to contact support  ,2,train
+The wrong items were dropped off  ,1,train
+Only works when plugged in  ,2,train
+Please stop delivering to my neighbor  ,1,train
+You’re billing me for something I canceled last year.  ,0,train
+Missing key features listed in the description  ,2,train
+Why is this always happening to me?  ,1,train
+The app lied about the time  ,1,train
+I already paid for this  ,0,train
+Plastic is cracked on arrival  ,2,train
+Still no replacement sent  ,1,train
+The display is flickering  ,2,train
+Instruction video doesn’t load  ,2,train
+Stop billing me for someone else  ,0,train
+I got someone else’s order  ,2,train
+This charge appeared out of nowhere  ,0,train
+I was charged twice for the same thing and I want a refund!  ,0,train
+I’m seeing an unfamiliar transaction  ,0,train
+Alarm doesn’t go off  ,2,train
+"This was a gift, and now it’s ruined  ",1,train
+You billed the wrong person.  ,0,train
+Fix your billing process  ,0,train
+Why was it delivered to someone else’s house?  ,1,train
+There’s no transparency in these charges  ,0,train
+The product stopped working in a week  ,2,train
+Wi-Fi constantly disconnects  ,2,train
+The fabric is rough and uncomfortable  ,2,train
+My loyalty discount didn’t apply  ,0,train
+You said two days—it's been two weeks  ,1,train
+The switch fell off  ,2,train
+Couldn’t install software  ,2,train
+This was supposed to arrive yesterday  ,1,train
+Why did this charge reappear?  ,0,train
+You sent me the European plug version  ,2,train
+Why did this renew without warning?  ,0,train
+Item feels cheap and flimsy  ,2,train
+You charged my expired card.  ,0,train
+Please credit this back ASAP  ,0,train
+Still no action on my request  ,0,train
+You never mentioned a renewal fee  ,0,train
+I got charged before the due date  ,0,train
+Why does my neighbor have all my packages?  ,1,train
+One side is crushed  ,2,train
+"You promised metal, this is plastic  ",2,train
+Food arrived spilled and cold  ,1,train
+That price is way above what’s reasonable.  ,0,train
+I received a used item  ,2,train
+Tracking says delivered but mailbox is empty  ,1,train
+I was home—no one knocked  ,1,train
+This isn’t my purchase  ,0,train
+Everything is covered in sticky residue  ,2,train
+Zipper stuck right away  ,2,train
+The price changed mid-cycle  ,0,train
+The plan changed without consent  ,0,train
+Your customer service said this would be fixed.  ,0,train
+I don’t see this product on my order history.  ,0,train
+There’s no logic to your charges  ,0,train
+Every order I place ends up delayed  ,1,train
+Clearly a cheap knockoff  ,2,train
+Stop trying to sneak in extra charges  ,0,train
+Light never turns off  ,2,train
+Why can’t they just read the instructions?  ,1,train
+I’ve had it with your delivery screw-ups  ,1,train
+"Your system says delivered, but I have nothing  ",1,train
+They delivered without confirming my address  ,1,train
+No customer service response  ,2,train
+Why is this so difficult to resolve?  ,0,train
+"The driver didn’t knock, just left a slip  ",1,train
+Adhesive already dried out  ,2,train
+They didn’t knock or ring  ,1,train
+I paid on time—why the late charge?  ,0,train
+Smells terrible and made my hands itch  ,2,train
+Power button is stuck  ,2,train
+Driver ignored my gate code  ,1,train
+One side is missing entirely  ,2,train
+The tracking keeps changing and it’s confusing  ,1,train
+Gave me a rash  ,2,train
+You’re ignoring my requests for redelivery  ,1,train
+You didn’t follow any of the delivery instructions  ,1,train
+Not the first time this has happened  ,1,train
+It’s missing key items I paid for  ,1,train
+I wasn’t even notified it had shipped  ,1,train
+The app said it was free.  ,0,train
+No updates on my delayed delivery  ,1,train
+You split my order and lost half  ,1,train
+No attempt to deliver was made  ,1,train
+Screen has dead pixels  ,2,train
+The box is completely smashed  ,1,train
+This is just garbage  ,2,train
+Please stop using this delivery company  ,1,train
+Cable doesn’t fit the device  ,2,train
+They never followed special delivery instructions  ,1,train
+That late fee shouldn’t be there.  ,0,train
+Doesn’t stay connected via Bluetooth  ,2,train
+It was placed in a puddle  ,1,train
+I updated my plan—why is it still wrong?  ,0,train
+How hard is it to follow simple directions?  ,1,train
+Paint started bubbling  ,2,train
+Legs don’t align  ,2,train
+I’m done paying for your mistakes.  ,0,train
+Was expecting better quality for the price  ,2,train
+"I downgraded, why am I still paying the full amount?  ",0,train
+You sent something completely different  ,2,train
+How many times do I have to ask?  ,0,train
+They marked it delivered and it’s missing  ,1,train
+My hand got cut opening it  ,2,train
+I checked the fine print—this wasn’t in there.  ,0,train
+This has happened three times now.  ,0,train
+Your delivery times are completely unreliable  ,1,train
+I found my package in the neighbor’s yard  ,1,train
+The seal was broken when it arrived  ,2,train
+You billed me after I deleted the app.  ,0,train
+I see a foreign transaction fee  ,0,train
+It made a loud pop and stopped working  ,2,train
+I never received the service  ,0,train
+Why are you billing in advance?  ,0,train
+I didn’t upgrade my plan  ,0,train
+This monthly charge is unexpected  ,0,train
+Discs are unreadable  ,2,train
+This was supposed to be overnight  ,1,train
+Mirror warps image  ,2,train
+I canceled the order and you sent it anyway  ,1,train
+"No one rang the bell, and now it's gone  ",1,train
+This was supposed to be a one-time purchase.  ,0,train
+Nothing was explained clearly  ,0,train
+Why does no one take responsibility?  ,1,train
+I didn’t get what I paid for  ,0,train
+That isn’t what I authorized  ,0,train
+Your support team is ignoring my messages  ,2,train
+I canceled and still got billed  ,0,train
+The tool bent instantly  ,2,train
+There’s a giant hole in the package  ,1,train
+This is the wrong currency.  ,0,train
+Only one setting works  ,2,train
+Your team confirmed there’d be no charges.  ,0,train
+Don’t bill me again until this is fixed  ,0,train
+They refused to deliver to my floor  ,1,train
+This fee came out of nowhere  ,0,train
+You messed up my statement  ,0,train
+Your billing practices are shady  ,0,train
+The box looks like it’s been kicked  ,1,train
+You ignored the delivery instructions  ,1,train
+Wrong app linked in instructions  ,2,train
+Color is totally different in person  ,2,train
+The package arrived ripped and leaking  ,1,train
+Instructions are not in English  ,2,train
+Package dumped at the end of my driveway  ,1,train
+Your billing portal is broken.  ,0,train
+Doesn’t turn on  ,2,train
+You didn’t include the warranty card  ,2,train
+I told you not to leave it unattended  ,1,train
+Dust inside the box  ,2,train
+Stop charging me every week  ,0,train
+Everything arrived shattered  ,1,train
+I didn’t renew anything  ,0,train
+How many times must I complain?  ,0,train
+It’s sitting at some facility with no movement  ,1,train
+You keep making the same mistake.  ,0,train
+You never fixed the last mistake  ,1,train
+It doesn’t inflate  ,2,train
+All the settings reset randomly  ,2,train
+I want a full statement now  ,0,train
+Too tight and uncomfortable  ,2,train
+You billed for a service I never used  ,0,train
+"I ordered two, only got one  ",2,train
+Order is marked delivered but I never got it  ,1,train
+"Said new, but came in old packaging  ",2,train
+The handle fell off during first use  ,2,train
+You shipped to the wrong ZIP code  ,1,train
+The invoice date is incorrect.  ,0,train
+Unbearable chemical smell  ,2,train
+Clips broke immediately  ,2,train
+Where’s the updated invoice?  ,0,train
+I waited all day for this?  ,1,train
+No one can tell me where it is  ,1,train
+LEDs are already dim  ,2,train
+No one takes responsibility  ,0,train
+This isn't even my email.  ,0,train
+Left under my car?!  ,1,train
+Screen is cracked  ,2,train
+I got charged for something that never came  ,1,train
+Product is crooked and off-center  ,2,train
+Where is my overnight shipment?  ,1,train
+You shipped it without any padding  ,2,train
+"I ordered two, only received one  ",1,train
+"No one attempted to deliver, just a fake update  ",1,validation
+I specifically declined that add-on.  ,0,validation
+It makes a loud buzzing noise constantly  ,2,validation
+Keyboard missing keys  ,2,validation
+You left out all the screws  ,2,validation
+It smells like gasoline  ,2,validation
+Why is this so complicated every month?  ,0,validation
+I didn’t authorize a delivery to my neighbor  ,1,validation
+Why leave perishables in 90-degree heat?  ,1,validation
+"How can something be ""delivered"" when I was home all day?  ",1,validation
+I missed work for a delivery that didn’t show  ,1,validation
+Feet are uneven  ,2,validation
+I can’t afford this mistake  ,0,validation
+I found hair stuck to the item  ,2,validation
+The food arrived cold and spilled everywhere  ,1,validation
+The item was clearly stolen in transit  ,1,validation
+This delay completely ruined my plans  ,1,validation
+Everything inside the box was broken  ,1,validation
+Why is it so hard to deliver a package?  ,1,validation
+There’s a hidden service fee  ,0,validation
+Nothing in this bill is correct  ,0,validation
+You billed my backup card without asking.  ,0,validation
+There’s a weird rattle inside  ,2,validation
+Nothing happens when I turn it on  ,2,validation
+Even your manager agreed it was wrong.  ,0,validation
+Stop charging me for extra services  ,0,validation
+This statement looks completely wrong.  ,0,validation
+This is not the address I typed  ,1,validation
+The coating is peeling  ,2,validation
+How are you still charging me?  ,0,validation
+Item smells burnt  ,2,validation
+Way too noisy  ,2,validation
+The buttons are stuck  ,2,validation
+The keyboard is missing keys  ,2,validation
+Case doesn’t fit  ,2,validation
+Your pricing page is misleading  ,0,validation
+Camera won’t focus  ,2,validation
+Sort this out now  ,0,validation
+You promised this wouldn’t happen again.  ,0,validation
+You took money from my account without notice.  ,0,validation
+There are deep gouges  ,2,validation
+Hinges are bent and don’t close  ,2,validation
+There's a mystery charge on my bank statement.  ,0,validation
+I’ve lost count of how many delays I’ve had  ,1,validation
+Your support keeps giving different answers  ,0,validation
+Stop using unreliable couriers  ,1,validation
+Your invoice is completely wrong  ,0,validation
+This is not acceptable  ,0,validation
+I can’t find this charge in my history.  ,0,validation
+I live on the 5th floor—why leave it downstairs?  ,1,validation
+Package arrived wet and destroyed  ,1,validation
+You billed me after I closed my account  ,0,validation
+This isn’t the right invoice  ,0,validation
+The package was torn open when I got it  ,1,validation
+Heating element not working  ,2,validation
+This isn't even my purchase.  ,0,validation
+I want to speak to someone immediately  ,0,validation
+I was quoted something else  ,0,validation
+Food spilled inside the bag  ,1,validation
+"My subscription was paused, yet I was still charged.  ",0,validation
+Rattling noise from inside  ,2,validation
+Fix this before I escalate  ,0,validation
+You said I wouldn’t be charged during maintenance.  ,0,validation
+Buttons don’t respond at all  ,2,validation
+Delivery service keeps getting worse  ,1,validation
+Very uncomfortable fit  ,2,validation
+Hidden fees? Really?  ,0,validation
+The total changed after submission.  ,0,validation
+I can’t keep dealing with this  ,1,validation
+Plug doesn’t match outlet  ,2,validation
+I never agreed to automatic renewal  ,0,validation
+Your invoice lists the wrong plan.  ,0,validation
+They dropped it and drove off  ,1,validation
+Missing half the parts I paid for  ,2,validation
+"Delivery window passed, still nothing  ",1,validation
+Terrible customer service experience  ,2,validation
+The item keeps restarting itself  ,2,validation
+One side longer than the other  ,2,validation
+The glass is shattered  ,2,validation
+I stayed home all day for nothing  ,1,validation
+Still seeing old charges  ,0,validation
+Package was just tossed on the driveway  ,1,validation
+They delivered to the completely wrong city  ,1,validation
+This came through after I moved accounts.  ,0,validation
+This is unacceptable  ,2,validation
+It stopped working after one use  ,2,validation
+I never authorized this transaction  ,0,validation
+Fabric is see-through  ,2,validation
+You charged me for express and didn’t deliver  ,1,validation
+Can someone competent handle this?  ,0,validation
+Spray cap missing  ,2,validation
+They left it with someone I don't even know  ,1,validation
+Driver reported “delivered” while I was watching the street  ,1,validation
+The wheels are jammed  ,2,validation
+Surface peels after wiping  ,2,validation
+Received broken glass  ,2,validation
+The promo expired early.  ,0,validation
+I never got a billing email.  ,0,validation
+Doesn’t fit my phone like advertised  ,2,validation
+Product arrived in pieces  ,2,validation
+It was delivered to a business that’s closed  ,1,validation
+Lights flicker constantly  ,2,validation
+That’s not what the support agent said.  ,0,validation
+The lights don’t work  ,2,validation
+I thought this was paused  ,0,validation
+No batteries included  ,2,validation
+You completely ignored my preferred drop-off location  ,1,validation
+It’s not at the front desk like claimed  ,1,validation
+The mount doesn’t stay attached  ,2,validation
+I was promised a credit. Where is it?  ,0,validation
+You billed me after I switched providers  ,0,validation
+You dropped my order off at the wrong location again  ,1,validation
+There’s an error in the breakdown  ,0,validation
+Incorrect expiration date  ,2,validation
+Still being billed after I moved  ,0,validation
+They rang once and ran  ,1,validation
+Only works when held upside down  ,2,validation
+I don’t use that feature you’re charging for.  ,0,validation
+My fragile items arrived broken  ,1,validation
+You sent the wrong item and it’s late  ,1,validation
+Flickers and then dies  ,2,validation
+I waited 4 hours and it never came  ,1,validation
+The order was missing half the items  ,1,validation
+Driver lied about attempted delivery  ,1,validation
+The adapter doesn’t fit  ,2,validation
+Incorrect voltage for my region  ,2,validation
+Driver didn’t wait for me to come to the door  ,1,validation
+How do I get this removed?  ,0,validation
+Packaging said something completely different  ,2,validation
+Cover doesn’t stay on  ,2,validation
+The seal was broken on arrival  ,2,validation
+I canceled during the trial period  ,0,validation
+They skipped my house completely  ,1,validation
+The charge happened before I even made an account.  ,0,validation
+The stitching ripped just taking it out  ,2,validation
+The foot pedal snapped off  ,2,validation
+Driver lied about delivery attempt  ,1,validation
+Product overheats after five minutes  ,2,validation
+Bag zipper broke instantly  ,2,validation
+You owe me an adjustment.  ,0,validation
+The package was torn and rained on  ,1,validation
+One side doesn’t light up  ,2,validation
+The blade is dull  ,2,validation
+Driver dropped the box and ran  ,1,validation
+I had to hunt my own package down  ,1,validation
+I selected a different plan at checkout.  ,0,validation
+Why am I being billed during suspension?  ,0,validation
+Charges don’t match what your support told me  ,0,validation
+Still showing as “in transit”  ,2,validation
+Package left in a random mailbox  ,1,validation
+You ignored my cancellation  ,0,validation
+This wasn’t even my account.  ,0,validation
+It’s missing a crucial part  ,2,validation
+Your rep promised this was resolved  ,0,validation
+Your system billed me twice in the same day.  ,0,validation
+The fees keep increasing  ,0,validation
+Stop blaming the carrier—it’s your logistics  ,1,validation
+Paint is chipped and peeling off  ,2,validation
+Why is my package bouncing between cities?  ,1,validation
+The final bill isn’t what you quoted.  ,0,validation
+It came without a box or label  ,2,validation
+No response from support  ,2,validation
+Wrong plug type for my region  ,2,validation
+I had to file a claim just to get attention  ,1,validation
+Headphones are bent  ,2,validation
+This entire billing cycle is wrong  ,0,validation
+You’ve ruined a surprise gift  ,1,validation
+You charged the wrong card  ,0,validation
+Mats are uneven  ,2,validation
+"I was home all day, no one rang the bell  ",1,validation
+Feels like it's going to fall apart  ,2,validation
+They walked right past my door  ,1,validation
+Manual is unreadable  ,2,validation
+I never received a receipt  ,0,validation
+I got a delivery notification but nothing came  ,1,validation
+They marked it delivered at 3am  ,1,validation
+This charge hit my account overnight without warning.  ,0,validation
+Parcel was signed for by a stranger  ,1,validation
+Parcel was jammed into my mailbox and broke  ,1,validation
+I paid for a year in advance  ,0,validation
+Screws stripped  ,2,validation
+The rate changed without warning  ,0,validation
+"Food was soggy, cold, and late  ",1,validation
+You shipped it without confirmation  ,1,validation
+The clasp won’t lock  ,2,validation
+The driver never showed up—stop lying  ,1,validation
+Still missing my replacement package  ,1,validation
+"The charge reversed, then hit again.  ",0,validation
+I only used it once—what is this charge?  ,0,validation
+The items inside are broken  ,1,validation
+You said it was free!  ,0,validation
+The screws don’t match the threads  ,2,validation
+You never confirmed this change  ,0,validation
+This is taking way too long to fix  ,0,validation
+"Every time I contact support, nothing changes  ",0,validation
+I watched the truck skip my house entirely  ,1,validation
+Keeps falling over  ,2,validation
+This is not what I agreed to pay  ,0,validation
+No confirmation received  ,2,validation
+I never activated this feature.  ,0,validation
+You dropped it off hours late with no notice  ,1,validation
+Monitor flickers constantly  ,2,validation
+I caught this by chance.  ,0,validation
+No way I’m paying this  ,0,validation
+Package left in a puddle—are you kidding?  ,1,validation
+Item was loose in the box  ,2,validation
+Item started leaking after one use  ,2,validation
+"Your website says one price, your bill says another.  ",0,validation
+Doesn’t hold any weight  ,2,validation
+It smells like mildew  ,2,validation
+Billing period is wrong  ,0,test
+I only selected one product.  ,0,test
+The stitching is already coming apart  ,2,test
+You charged me in the wrong currency  ,0,test
+I just want my package—why is that hard?  ,1,test
+The display is super dim  ,2,test
+Broke during first use  ,2,test
+I called already—this should’ve been resolved.  ,0,test
+Paint bubbles forming  ,2,test
+My groceries were left in the sun  ,1,test
+I never finished creating the account.  ,0,test
+"Said “premium,” but feels dollar store  ",2,test
+The tag says a completely different brand  ,2,test
+Why is the amount different every month?  ,0,test
+Handle was taped on  ,2,test
+"I requested a signature, none was taken  ",1,test
+You keep blaming the carrier but do nothing  ,1,test
+Way smaller than the pictures  ,2,test
+There are dents all over the product  ,2,test
+Won’t hold suction  ,2,test
+Where is my replacement? Still nothing  ,1,test
+My package is stuck in transit with no update  ,1,test
+You can't even get the basics right  ,1,test
+Product melted when plugged in  ,2,test
+The wrong item was billed  ,0,test
+The delivery window keeps changing  ,1,test
+The auto-renewal charged me before I could cancel.  ,0,test
+"Your platform doesn’t show any charges, yet I was billed  ",0,test
+They delivered to an old address  ,1,test
+There’s mold growing inside the container  ,2,test
+I waited all day and got nothing  ,1,test
+Handle snapped off  ,2,test
+Screen protector was shattered  ,2,test
+Device keeps shutting off  ,2,test
+There’s no transparency in your billing  ,0,test
+Driver marked it delivered without even arriving  ,1,test
+Why was the box left in the pouring rain?  ,1,test
+They left it on the sidewalk  ,1,test
+They marked it delivered—no package here  ,1,test
+That’s not what your ad said  ,0,test
+You charged the wrong user ID.  ,0,test
+I paid extra for fast shipping and it’s late  ,1,test
+It’s been weeks and no fix  ,0,test
+You can’t mark something delivered without actually delivering it  ,1,test
+It’s smaller than described  ,2,test
+The photo proof isn’t even my house  ,1,test
+Horrible buzzing noise  ,2,test
+Package arrived weeks late with no explanation  ,2,test
+I’m sick of chasing your team  ,0,test
+My package was stolen after you left it outside  ,1,test
+I didn’t authorize any payment today.  ,0,test
+This total keeps changing.  ,0,test
+No explanation for this delay  ,1,test
+"Still waiting, still nothing  ",1,test
+Someone else signed for my package  ,1,test
+This delay cost me money  ,1,test
+Why can’t you get it right the first time?  ,0,test
+"Nobody knocked, just dumped it outside  ",1,test
+Where’s the billing correction note?  ,0,test
+The display is dim  ,2,test
+Every bill has a new surprise.  ,0,test
+Your courier threw the package over the fence  ,1,test
+Color started fading after a day  ,2,test
+I only clicked once—how’d I get charged twice?  ,0,test
+Came with hair and dirt on it  ,2,test
+I never got what I paid for  ,1,test
+I don’t even use this anymore  ,0,test
+Tracking hasn’t updated in 3 days  ,1,test
+You billed me for an inactive product.  ,0,test
+They keep missing my unit  ,1,test
+This payment hit my account twice.  ,0,test
+I needed that today—not next week  ,1,test
+You shipped me an old model  ,2,test
+Tracking makes no sense at all  ,1,test
+Vents are jammed  ,2,test
+"No proof, no call, no package  ",1,test
+Left at neighbor’s by mistake again  ,1,test
+Nothing works like the ad showed  ,2,test
+Everything inside was broken  ,1,test
+The app didn’t show this charge  ,0,test
+Takes forever to charge  ,2,test
+This is not even close to on time  ,1,test
+My order has been delayed multiple times without notice  ,1,test
+This price doesn’t match the ad.  ,0,test
+I waited outside and still missed the delivery  ,1,test
+Plastic looks burned  ,2,test
+I thought I was on a different plan  ,0,test
+Even your agent agreed this was an error.  ,0,test
+Smells like mold and chemicals  ,2,test
+Battery dies in minutes  ,2,test
+Nothing matches what I ordered  ,1,test
+Leaking fluid out of the box  ,2,test
+The item is defective  ,2,test
+"Late again, every single time  ",1,test
+This should’ve been paused last month  ,0,test
+Instructions are in the wrong language  ,2,test
+Plastic parts keep snapping off  ,2,test
+The driver was rude and unprofessional  ,1,test
+My billing address is wrong again  ,0,test
+Totally defective out of the box  ,2,test
+The delivery person argued with me  ,1,test
+You never sent a notice  ,0,test
+Your sizing chart is totally wrong  ,2,test
+Totally different than what’s pictured  ,2,test
+Doesn’t recognize my fingerprint  ,2,test
+Entire device gets hot  ,2,test
+They delivered to the wrong apartment  ,1,test
+My discount code didn’t apply like it should have.  ,0,test
+This is not what I paid for  ,1,test
+You said this issue was resolved  ,0,test
+No way to return it  ,2,test
+Nothing adds up here  ,0,test
+Your system charged me incorrectly  ,0,test
+I was charged for delivery that never came  ,1,test
+Tracking says delivered yesterday—no sign of it  ,1,test
+Unit won’t charge at all  ,2,test
+There’s a gap in my billing history.  ,0,test
+I received the wrong size  ,2,test
+This is not what I ordered  ,1,test
+Still waiting on a refund from last month  ,0,test
+It broke within the first hour  ,2,test
+Billing shouldn’t be this confusing  ,0,test
+Buttons are mislabeled and confusing  ,2,test
+App crashes constantly  ,2,test
+Glue stains everywhere  ,2,test
+The software won’t install  ,2,test
+This isn't what I signed up for.  ,0,test
+My name is not even on the label  ,1,test
+Still waiting for the correction you promised  ,0,test
+How did my bill triple overnight?  ,0,test
+I paid extra for express and it’s late  ,1,test
+No one ever came  ,1,test
+No way I’m paying this nonsense  ,0,test
+Your billing is impossible to follow.  ,0,test
+You left my expensive item in plain sight  ,1,test
+The discount never applied  ,0,test
+Clips won’t lock  ,2,test
+Left my box by a trash can  ,1,test
+Please fix this error  ,0,test
+What happened to my next-day delivery?  ,1,test
+Paint smudges on the edges  ,2,test
+It’s been rescheduled four times  ,1,test
+You sent me the display model  ,2,test
+I didn’t buy anything recently.  ,0,test
+The metal is rusted  ,2,test
+The box looks like it was chewed on  ,1,test
+The strap tore off instantly  ,2,test
+I’m losing patience here  ,0,test
+They left it with a neighbor without asking  ,1,test
+Completely fell apart in my hands  ,2,test
+I got someone else's name on my box  ,1,test
+Paint rubs off on hands  ,2,test
+Only half of it works  ,2,test
+Missing the user manual  ,2,test
+You never updated me with a new ETA  ,1,test
+The invoice is all wrong  ,0,test
+Buttons are mislabeled  ,2,test
+I found my package in the trash area  ,1,test
+You never notified me it was arriving  ,1,test
+I’ve emailed multiple times. Still no fix.  ,0,test
+No English option available  ,2,test
+They delivered the wrong size  ,1,test
+The box was completely crushed when it arrived  ,2,test
+You misled me on the pricing  ,0,test
+There’s no record of this on my dashboard  ,0,test
+I opted out of this charge  ,0,test
+Why does this charge appear before the billing cycle?  ,0,test
+That fee wasn’t mentioned anywhere.  ,0,test
+Support asked me to “wait and see”  ,2,test
+Food was delivered in horrible condition  ,1,test
+The product looks cheap and fake  ,2,test
+I specifically asked for a different model  ,2,test
+No heads-up before this deduction  ,0,test
+I found bugs inside the packaging  ,2,test
+This does not work according to the website  ,2,test
+It smells like someone’s cologne  ,2,test
+The charge doesn’t align with the usage.  ,0,test
+You sent me an empty box  ,2,test
+I shouldn’t have to keep asking  ,0,test
+I expected better from this brand  ,2,test
+Why does this keep happening?  ,0,test
+These extra charges are absurd  ,0,test
+There’s no way this was delivered  ,1,test
+Paint is chipped and scratched  ,2,test
+"No confirmation, but you still charged me  ",0,test
+Package looked like it was run over  ,1,test
+This isn’t the agreed package  ,0,test
+How is this so difficult?  ,1,test
+You promised today—where is it?  ,1,test
+This was extremely disappointing  ,2,test
+Doesn’t sit flat  ,2,test
+I just want what I paid for  ,0,test
+Still missing the rest of my order  ,1,test
+This total makes no sense  ,0,test
+I was told I wouldn’t be charged yet  ,0,test
+Why did they leave it at the back door?  ,1,test
+Fan wobbles when spinning  ,2,test
+Screen scratched under plastic  ,2,test
+I was told that trial was completely free.  ,0,test
+I see a duplicate charge for the same order.  ,0,test
+Food arrived frozen instead of fresh  ,1,test
+I feel scammed right now  ,2,test
+"Looks refurbished, not new  ",2,test
+USB port doesn’t function  ,2,test
+My account is locked and I still got billed.  ,0,test
+Sensor doesn’t detect movement  ,2,test
+You delivered to an address I never gave  ,1,test
+You didn’t even bother notifying me  ,1,test
+Billing support is ignoring me  ,0,test
+Item was already expired  ,2,test
+The lid won’t close  ,2,test

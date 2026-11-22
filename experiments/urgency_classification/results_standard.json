@@ -1,0 +1,1385 @@
+{
+  "split": "standard",
+  "overall_metrics": {
+    "logreg": {
+      "accuracy": 0.8012232415902141,
+      "macro_f1": 0.7541074312370688,
+      "precision": 0.7496154453268307,
+      "recall": 0.7630131964809385,
+      "per_class": {
+        "High": {
+          "precision": 0.8941176470588236,
+          "recall": 0.8172043010752689,
+          "f1": 0.8539325842696629
+        },
+        "Low": {
+          "precision": 0.47058823529411764,
+          "recall": 0.5925925925925926,
+          "f1": 0.5245901639344263
+        },
+        "Medium": {
+          "precision": 0.801980198019802,
+          "recall": 0.8181818181818182,
+          "f1": 0.81
+        },
+        "Urgent": {
+          "precision": 0.8317757009345794,
+          "recall": 0.8240740740740741,
+          "f1": 0.827906976744186
+        }
+      }
+    },
+    "svm": {
+      "accuracy": 0.8134556574923547,
+      "macro_f1": 0.7617112413162221,
+      "precision": 0.7649364524364525,
+      "recall": 0.7597615944390138,
+      "per_class": {
+        "High": {
+          "precision": 0.8863636363636364,
+          "recall": 0.8387096774193549,
+          "f1": 0.861878453038674
+        },
+        "Low": {
+          "precision": 0.5384615384615384,
+          "recall": 0.5185185185185185,
+          "f1": 0.5283018867924528
+        },
+        "Medium": {
+          "precision": 0.7777777777777778,
+          "recall": 0.8484848484848485,
+          "f1": 0.8115942028985508
+        },
+        "Urgent": {
+          "precision": 0.8571428571428571,
+          "recall": 0.8333333333333334,
+          "f1": 0.8450704225352113
+        }
+      }
+    }
+  },
+  "mean_fold_metrics": {
+    "logreg": [
+      {
+        "fold": 1,
+        "accuracy": 0.8333333333333334,
+        "macro_f1": 0.8168801918801919,
+        "precision": 0.8191459276018099,
+        "recall": 0.831439393939394,
+        "per_class": {
+          "High": {
+            "precision": 1.0,
+            "recall": 0.8333333333333334,
+            "f1": 0.9090909090909091
+          },
+          "Low": {
+            "precision": 0.625,
+            "recall": 0.8333333333333334,
+            "f1": 0.7142857142857143
+          },
+          "Medium": {
+            "precision": 0.8823529411764706,
+            "recall": 0.75,
+            "f1": 0.8108108108108109
+          },
+          "Urgent": {
+            "precision": 0.7692307692307693,
+            "recall": 0.9090909090909091,
+            "f1": 0.8333333333333334
+          }
+        }
+      },
+      {
+        "fold": 2,
+        "accuracy": 0.7727272727272727,
+        "macro_f1": 0.7368082368082367,
+        "precision": 0.7332338732594487,
+        "recall": 0.7545454545454546,
+        "per_class": {
+          "High": {
+            "precision": 0.8823529411764706,
+            "recall": 0.8333333333333334,
+            "f1": 0.8571428571428571
+          },
+          "Low": {
+            "precision": 0.4444444444444444,
+            "recall": 0.6666666666666666,
+            "f1": 0.5333333333333333
+          },
+          "Medium": {
+            "precision": 0.8235294117647058,
+            "recall": 0.7,
+            "f1": 0.7567567567567568
+          },
+          "Urgent": {
+            "precision": 0.782608695652174,
+            "recall": 0.8181818181818182,
+            "f1": 0.8
+          }
+        }
+      },
+      {
+        "fold": 3,
+        "accuracy": 0.7384615384615385,
+        "macro_f1": 0.6985465116279069,
+        "precision": 0.6949404761904762,
+        "recall": 0.7133971291866028,
+        "per_class": {
+          "High": {
+            "precision": 0.875,
+            "recall": 0.7368421052631579,
+            "f1": 0.8
+          },
+          "Low": {
+            "precision": 0.42857142857142855,
+            "recall": 0.6,
+            "f1": 0.5
+          },
+          "Medium": {
+            "precision": 0.7142857142857143,
+            "recall": 0.7894736842105263,
+            "f1": 0.75
+          },
+          "Urgent": {
+            "precision": 0.7619047619047619,
+            "recall": 0.7272727272727273,
+            "f1": 0.7441860465116279
+          }
+        }
+      },
+      {
+        "fold": 4,
+        "accuracy": 0.8615384615384616,
+        "macro_f1": 0.7704526774294216,
+        "precision": 0.7696703880914407,
+        "recall": 0.7736215538847118,
+        "per_class": {
+          "High": {
+            "precision": 0.8888888888888888,
+            "recall": 0.8421052631578947,
+            "f1": 0.8648648648648649
+          },
+          "Low": {
+            "precision": 0.3333333333333333,
+            "recall": 0.4,
+            "f1": 0.36363636363636365
+          },
+          "Medium": {
+            "precision": 0.9473684210526315,
+            "recall": 0.9,
+            "f1": 0.9230769230769231
+          },
+          "Urgent": {
+            "precision": 0.9090909090909091,
+            "recall": 0.9523809523809523,
+            "f1": 0.9302325581395349
+          }
+        }
+      },
+      {
+        "fold": 5,
+        "accuracy": 0.8,
+        "macro_f1": 0.7320984198083862,
+        "precision": 0.7614522417153996,
+        "recall": 0.7265977443609022,
+        "per_class": {
+          "High": {
+            "precision": 0.8421052631578947,
+            "recall": 0.8421052631578947,
+            "f1": 0.8421052631578947
+          },
+          "Low": {
+            "precision": 0.5,
+            "recall": 0.4,
+            "f1": 0.4444444444444444
+          },
+          "Medium": {
+            "precision": 0.7037037037037037,
+            "recall": 0.95,
+            "f1": 0.8085106382978723
+          },
+          "Urgent": {
+            "precision": 1.0,
+            "recall": 0.7142857142857143,
+            "f1": 0.8333333333333334
+          }
+        }
+      }
+    ],
+    "svm": [
+      {
+        "fold": 1,
+        "accuracy": 0.8484848484848485,
+        "macro_f1": 0.8356388462795785,
+        "precision": 0.8305322128851541,
+        "recall": 0.8453282828282829,
+        "per_class": {
+          "High": {
+            "precision": 0.9411764705882353,
+            "recall": 0.8888888888888888,
+            "f1": 0.9142857142857143
+          },
+          "Low": {
+            "precision": 0.7142857142857143,
+            "recall": 0.8333333333333334,
+            "f1": 0.7692307692307693
+          },
+          "Medium": {
+            "precision": 0.8333333333333334,
+            "recall": 0.75,
+            "f1": 0.7894736842105263
+          },
+          "Urgent": {
+            "precision": 0.8333333333333334,
+            "recall": 0.9090909090909091,
+            "f1": 0.8695652173913043
+          }
+        }
+      },
+      {
+        "fold": 2,
+        "accuracy": 0.803030303030303,
+        "macro_f1": 0.7503968253968255,
+        "precision": 0.7521099744245525,
+        "recall": 0.7492424242424244,
+        "per_class": {
+          "High": {
+            "precision": 0.8823529411764706,
+            "recall": 0.8333333333333334,
+            "f1": 0.8571428571428571
+          },
+          "Low": {
+            "precision": 0.5,
+            "recall": 0.5,
+            "f1": 0.5
+          },
+          "Medium": {
+            "precision": 0.8,
+            "recall": 0.8,
+            "f1": 0.8
+          },
+          "Urgent": {
+            "precision": 0.8260869565217391,
+            "recall": 0.8636363636363636,
+            "f1": 0.8444444444444444
+          }
+        }
+      },
+      {
+        "fold": 3,
+        "accuracy": 0.7384615384615385,
+        "macro_f1": 0.6834054834054835,
+        "precision": 0.7037500000000001,
+        "recall": 0.676555023923445,
+        "per_class": {
+          "High": {
+            "precision": 0.875,
+            "recall": 0.7368421052631579,
+            "f1": 0.8
+          },
+          "Low": {
+            "precision": 0.5,
+            "recall": 0.4,
+            "f1": 0.4444444444444444
+          },
+          "Medium": {
+            "precision": 0.64,
+            "recall": 0.8421052631578947,
+            "f1": 0.7272727272727273
+          },
+          "Urgent": {
+            "precision": 0.8,
+            "recall": 0.7272727272727273,
+            "f1": 0.7619047619047619
+          }
+        }
+      },
+      {
+        "fold": 4,
+        "accuracy": 0.8615384615384616,
+        "macro_f1": 0.7711732711732713,
+        "precision": 0.772860860591376,
+        "recall": 0.7736215538847118,
+        "per_class": {
+          "High": {
+            "precision": 0.9411764705882353,
+            "recall": 0.8421052631578947,
+            "f1": 0.8888888888888888
+          },
+          "Low": {
+            "precision": 0.3333333333333333,
+            "recall": 0.4,
+            "f1": 0.36363636363636365
+          },
+          "Medium": {
+            "precision": 0.9473684210526315,
+            "recall": 0.9,
+            "f1": 0.9230769230769231
+          },
+          "Urgent": {
+            "precision": 0.8695652173913043,
+            "recall": 0.9523809523809523,
+            "f1": 0.9090909090909091
+          }
+        }
+      },
+      {
+        "fold": 5,
+        "accuracy": 0.8153846153846154,
+        "macro_f1": 0.7523550724637682,
+        "precision": 0.8017399267399268,
+        "recall": 0.7397556390977444,
+        "per_class": {
+          "High": {
+            "precision": 0.8095238095238095,
+            "recall": 0.8947368421052632,
+            "f1": 0.85
+          },
+          "Low": {
+            "precision": 0.6666666666666666,
+            "recall": 0.4,
+            "f1": 0.5
+          },
+          "Medium": {
+            "precision": 0.7307692307692307,
+            "recall": 0.95,
+            "f1": 0.8260869565217391
+          },
+          "Urgent": {
+            "precision": 1.0,
+            "recall": 0.7142857142857143,
+            "f1": 0.8333333333333334
+          }
+        }
+      }
+    ]
+  },
+  "confusion_matrices": {
+    "logreg": [
+      [
+        [
+          15,
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          5,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          15,
+          4
+        ],
+        [
+          0,
+          2,
+          0,
+          20
+        ]
+      ],
+      [
+        [
+          15,
+          0,
+          1,
+          2
+        ],
+        [
+          1,
+          4,
+          1,
+          0
+        ],
+        [
+          1,
+          2,
+          14,
+          3
+        ],
+        [
+          0,
+          3,
+          1,
+          18
+        ]
+      ],
+      [
+        [
+          14,
+          0,
+          2,
+          3
+        ],
+        [
+          0,
+          3,
+          2,
+          0
+        ],
+        [
+          0,
+          2,
+          15,
+          2
+        ],
+        [
+          2,
+          2,
+          2,
+          16
+        ]
+      ],
+      [
+        [
+          16,
+          2,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          1,
+          1
+        ],
+        [
+          0,
+          2,
+          18,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          20
+        ]
+      ],
+      [
+        [
+          16,
+          0,
+          3,
+          0
+        ],
+        [
+          1,
+          2,
+          2,
+          0
+        ],
+        [
+          0,
+          1,
+          19,
+          0
+        ],
+        [
+          2,
+          1,
+          3,
+          15
+        ]
+      ]
+    ],
+    "svm": [
+      [
+        [
+          16,
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          5,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          15,
+          3
+        ],
+        [
+          0,
+          1,
+          1,
+          20
+        ]
+      ],
+      [
+        [
+          15,
+          0,
+          1,
+          2
+        ],
+        [
+          1,
+          3,
+          2,
+          0
+        ],
+        [
+          1,
+          1,
+          16,
+          2
+        ],
+        [
+          0,
+          2,
+          1,
+          19
+        ]
+      ],
+      [
+        [
+          14,
+          0,
+          2,
+          3
+        ],
+        [
+          0,
+          2,
+          3,
+          0
+        ],
+        [
+          0,
+          2,
+          16,
+          1
+        ],
+        [
+          2,
+          0,
+          4,
+          16
+        ]
+      ],
+      [
+        [
+          16,
+          2,
+          0,
+          1
+        ],
+        [
+          0,
+          2,
+          1,
+          2
+        ],
+        [
+          0,
+          2,
+          18,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          20
+        ]
+      ],
+      [
+        [
+          17,
+          0,
+          2,
+          0
+        ],
+        [
+          1,
+          2,
+          2,
+          0
+        ],
+        [
+          0,
+          1,
+          19,
+          0
+        ],
+        [
+          3,
+          0,
+          3,
+          15
+        ]
+      ]
+    ]
+  },
+  "misclassifications": {
+    "logreg": [
+      {
+        "text": "Lights in the hallway of the academic building are not working.",
+        "true_label": "High",
+        "pred_label": "Urgent",
+        "fold": 1
+      },
+      {
+        "text": "Fee payment confirmation takes several days to appear.",
+        "true_label": "Low",
+        "pred_label": "Medium",
+        "fold": 1
+      },
+      {
+        "text": "Semester fee breakdown is not clearly explained.",
+        "true_label": "High",
+        "pred_label": "Medium",
+        "fold": 1
+      },
+      {
+        "text": "Parking space for bicycles is too small.",
+        "true_label": "Urgent",
+        "pred_label": "Low",
+        "fold": 1
+      },
+      {
+        "text": "Parking area surveillance cameras are not functioning.",
+        "true_label": "Medium",
+        "pred_label": "Low",
+        "fold": 1
+      },
+      {
+        "text": "Parking entrance becomes jammed during morning classes.",
+        "true_label": "Urgent",
+        "pred_label": "Low",
+        "fold": 1
+      },
+      {
+        "text": "Hand dryers in washrooms are not functioning.",
+        "true_label": "Medium",
+        "pred_label": "Urgent",
+        "fold": 1
+      },
+      {
+        "text": "Elevator capacity is insufficient during class change time.",
+        "true_label": "Medium",
+        "pred_label": "Urgent",
+        "fold": 1
+      },
+      {
+        "text": "Water taps in washrooms are leaking",
+        "true_label": "Medium",
+        "pred_label": "Urgent",
+        "fold": 1
+      },
+      {
+        "text": "Broken door locks in several washrooms.",
+        "true_label": "Medium",
+        "pred_label": "Urgent",
+        "fold": 1
+      },
+      {
+        "text": "Broken sinks in several washrooms.",
+        "true_label": "High",
+        "pred_label": "Urgent",
+        "fold": 1
+      },
+      {
+        "text": "Frequent power interruptions during lab sessions.",
+        "true_label": "High",
+        "pred_label": "Urgent",
+        "fold": 2
+      },
+      {
+        "text": "Switchboards in lecture halls are broken.",
+        "true_label": "Medium",
+        "pred_label": "High",
+        "fold": 2
+      },
+      {
+        "text": "Lights in the parking basement flicker frequently.",
+        "true_label": "Urgent",
+        "pred_label": "Low",
+        "fold": 2
+      },
+      {
+        "text": "Online fee payment portal often fails during transactions.",
+        "true_label": "Medium",
+        "pred_label": "Low",
+        "fold": 2
+      },
+      {
+        "text": "Fee clearance process takes too long before registration.",
+        "true_label": "Medium",
+        "pred_label": "Urgent",
+        "fold": 2
+      },
+      {
+        "text": "Students cannot download digital payment receipts.",
+        "true_label": "Urgent",
+        "pred_label": "Low",
+        "fold": 2
+      },
+      {
+        "text": "Fee portal crashes near payment deadlines.",
+        "true_label": "Medium",
+        "pred_label": "Low",
+        "fold": 2
+      },
+      {
+        "text": "Installment payment requests are often ignored.",
+        "true_label": "Urgent",
+        "pred_label": "Low",
+        "fold": 2
+      },
+      {
+        "text": "Security monitoring in parking areas is weak.",
+        "true_label": "Low",
+        "pred_label": "Medium",
+        "fold": 2
+      },
+      {
+        "text": "Elevator waiting time is extremely long.",
+        "true_label": "Urgent",
+        "pred_label": "Medium",
+        "fold": 2
+      },
+      {
+        "text": "Water accumulates near washroom entrances.",
+        "true_label": "Medium",
+        "pred_label": "Urgent",
+        "fold": 2
+      },
+      {
+        "text": "Washroom drainage is slow causing water pooling.",
+        "true_label": "High",
+        "pred_label": "Urgent",
+        "fold": 2
+      },
+      {
+        "text": "Emergency lights in staircases are not operational.",
+        "true_label": "Low",
+        "pred_label": "High",
+        "fold": 2
+      },
+      {
+        "text": "Cars are parked in restricted areas.",
+        "true_label": "Medium",
+        "pred_label": "Urgent",
+        "fold": 2
+      },
+      {
+        "text": "Broken mirrors in washrooms remain unrepaired.",
+        "true_label": "High",
+        "pred_label": "Medium",
+        "fold": 2
+      },
+      {
+        "text": "Electrical sockets in the library are damaged.",
+        "true_label": "Urgent",
+        "pred_label": "Medium",
+        "fold": 3
+      },
+      {
+        "text": "Outdoor campus lights remain off at night.",
+        "true_label": "High",
+        "pred_label": "Urgent",
+        "fold": 3
+      },
+      {
+        "text": "Electrical wiring near the lab entrance is exposed.",
+        "true_label": "High",
+        "pred_label": "Medium",
+        "fold": 3
+      },
+      {
+        "text": "Some classrooms remain very hot due to non\u2010working fans.",
+        "true_label": "Urgent",
+        "pred_label": "Medium",
+        "fold": 3
+      },
+      {
+        "text": "Generator does not cover all floors during outages.",
+        "true_label": "Medium",
+        "pred_label": "Urgent",
+        "fold": 3
+      },
+      {
+        "text": "Several bulbs in corridors have not been replaced.",
+        "true_label": "High",
+        "pred_label": "Urgent",
+        "fold": 3
+      },
+      {
+        "text": "Electrical maintenance requests take too long to resolve.",
+        "true_label": "Low",
+        "pred_label": "Medium",
+        "fold": 3
+      },
+      {
+        "text": "Refund process after course withdrawal is too slow.",
+        "true_label": "Urgent",
+        "pred_label": "High",
+        "fold": 3
+      },
+      {
+        "text": "Fee receipt not issued immediately after payment.",
+        "true_label": "Urgent",
+        "pred_label": "Low",
+        "fold": 3
+      },
+      {
+        "text": "Parking fee collection process is confusing.",
+        "true_label": "Urgent",
+        "pred_label": "Low",
+        "fold": 3
+      },
+      {
+        "text": "Motorcycle parking area is overcrowded.",
+        "true_label": "Low",
+        "pred_label": "Medium",
+        "fold": 3
+      },
+      {
+        "text": "Parking layout causes difficulty exiting during rush hours.",
+        "true_label": "Medium",
+        "pred_label": "Low",
+        "fold": 3
+      },
+      {
+        "text": "Classroom windows cannot be opened.",
+        "true_label": "Medium",
+        "pred_label": "Urgent",
+        "fold": 3
+      },
+      {
+        "text": "Air conditioners stop working during afternoon classes.",
+        "true_label": "High",
+        "pred_label": "Urgent",
+        "fold": 3
+      },
+      {
+        "text": "Students park vehicles outside designated zones.",
+        "true_label": "Urgent",
+        "pred_label": "High",
+        "fold": 3
+      },
+      {
+        "text": "Parking rules are not clearly communicated",
+        "true_label": "Medium",
+        "pred_label": "Low",
+        "fold": 3
+      },
+      {
+        "text": "Washroom lights remain off most of the time.",
+        "true_label": "High",
+        "pred_label": "Medium",
+        "fold": 3
+      },
+      {
+        "text": "Air conditioning in the auditorium stops suddenly.",
+        "true_label": "Urgent",
+        "pred_label": "High",
+        "fold": 4
+      },
+      {
+        "text": "Extension cables in labs are damaged.",
+        "true_label": "Low",
+        "pred_label": "High",
+        "fold": 4
+      },
+      {
+        "text": "Payment verification requires multiple office visits.",
+        "true_label": "High",
+        "pred_label": "Low",
+        "fold": 4
+      },
+      {
+        "text": "No shade in motorcycle parking areas.",
+        "true_label": "Medium",
+        "pred_label": "Low",
+        "fold": 4
+      },
+      {
+        "text": "Vehicles sometimes block emergency exits.",
+        "true_label": "High",
+        "pred_label": "Low",
+        "fold": 4
+      },
+      {
+        "text": "Parking area drainage system is poor.",
+        "true_label": "Medium",
+        "pred_label": "Low",
+        "fold": 4
+      },
+      {
+        "text": "Elevator maintenance seems irregular.",
+        "true_label": "High",
+        "pred_label": "Urgent",
+        "fold": 4
+      },
+      {
+        "text": "Students cannot check payment history easily.",
+        "true_label": "Low",
+        "pred_label": "Medium",
+        "fold": 4
+      },
+      {
+        "text": "Washrooms sometimes have unpleasant odors.",
+        "true_label": "Low",
+        "pred_label": "Urgent",
+        "fold": 4
+      },
+      {
+        "text": "Projector power outlets are loose in multiple rooms.",
+        "true_label": "Low",
+        "pred_label": "High",
+        "fold": 5
+      },
+      {
+        "text": "Power supply in the seminar room is unstable.",
+        "true_label": "Urgent",
+        "pred_label": "Medium",
+        "fold": 5
+      },
+      {
+        "text": "Incorrect late fee added to student accounts.",
+        "true_label": "Urgent",
+        "pred_label": "Medium",
+        "fold": 5
+      },
+      {
+        "text": "Scholarship adjustments are not reflected in fee statements.",
+        "true_label": "Urgent",
+        "pred_label": "Medium",
+        "fold": 5
+      },
+      {
+        "text": "Online portal shows payment error despite deduction.",
+        "true_label": "Low",
+        "pred_label": "Medium",
+        "fold": 5
+      },
+      {
+        "text": "Late fee applied even when payment was submitted earlier.",
+        "true_label": "High",
+        "pred_label": "Medium",
+        "fold": 5
+      },
+      {
+        "text": "Fee refund policy is unclear for many students.",
+        "true_label": "High",
+        "pred_label": "Medium",
+        "fold": 5
+      },
+      {
+        "text": "No clear parking markings for vehicles.",
+        "true_label": "Urgent",
+        "pred_label": "Low",
+        "fold": 5
+      },
+      {
+        "text": "No clear signboards for visitor parking.",
+        "true_label": "Medium",
+        "pred_label": "Low",
+        "fold": 5
+      },
+      {
+        "text": "Toilet paper dispensers are empty frequently.",
+        "true_label": "Urgent",
+        "pred_label": "High",
+        "fold": 5
+      },
+      {
+        "text": "Some stair railings are loose.",
+        "true_label": "High",
+        "pred_label": "Medium",
+        "fold": 5
+      },
+      {
+        "text": "Duplicate charges appeared in some student accounts.",
+        "true_label": "Low",
+        "pred_label": "Medium",
+        "fold": 5
+      },
+      {
+        "text": "Elevator displays incorrect floor numbers.",
+        "true_label": "Urgent",
+        "pred_label": "High",
+        "fold": 5
+      }
+    ],
+    "svm": [
+      {
+        "text": "Lights in the hallway of the academic building are not working.",
+        "true_label": "High",
+        "pred_label": "Urgent",
+        "fold": 1
+      },
+      {
+        "text": "Fee payment confirmation takes several days to appear.",
+        "true_label": "Low",
+        "pred_label": "Medium",
+        "fold": 1
+      },
+      {
+        "text": "Semester fee breakdown is not clearly explained.",
+        "true_label": "High",
+        "pred_label": "Medium",
+        "fold": 1
+      },
+      {
+        "text": "Parking space for bicycles is too small.",
+        "true_label": "Urgent",
+        "pred_label": "Medium",
+        "fold": 1
+      },
+      {
+        "text": "Parking area surveillance cameras are not functioning.",
+        "true_label": "Medium",
+        "pred_label": "Low",
+        "fold": 1
+      },
+      {
+        "text": "Parking entrance becomes jammed during morning classes.",
+        "true_label": "Urgent",
+        "pred_label": "Low",
+        "fold": 1
+      },
+      {
+        "text": "Hand dryers in washrooms are not functioning.",
+        "true_label": "Medium",
+        "pred_label": "Urgent",
+        "fold": 1
+      },
+      {
+        "text": "Elevator capacity is insufficient during class change time.",
+        "true_label": "Medium",
+        "pred_label": "Urgent",
+        "fold": 1
+      },
+      {
+        "text": "Water taps in washrooms are leaking",
+        "true_label": "Medium",
+        "pred_label": "Urgent",
+        "fold": 1
+      },
+      {
+        "text": "Broken door locks in several washrooms.",
+        "true_label": "Medium",
+        "pred_label": "High",
+        "fold": 1
+      },
+      {
+        "text": "Frequent power interruptions during lab sessions.",
+        "true_label": "High",
+        "pred_label": "Urgent",
+        "fold": 2
+      },
+      {
+        "text": "Switchboards in lecture halls are broken.",
+        "true_label": "Medium",
+        "pred_label": "High",
+        "fold": 2
+      },
+      {
+        "text": "Online fee payment portal often fails during transactions.",
+        "true_label": "Medium",
+        "pred_label": "Low",
+        "fold": 2
+      },
+      {
+        "text": "Fee clearance process takes too long before registration.",
+        "true_label": "Medium",
+        "pred_label": "Urgent",
+        "fold": 2
+      },
+      {
+        "text": "Students cannot download digital payment receipts.",
+        "true_label": "Urgent",
+        "pred_label": "Low",
+        "fold": 2
+      },
+      {
+        "text": "Installment payment requests are often ignored.",
+        "true_label": "Urgent",
+        "pred_label": "Low",
+        "fold": 2
+      },
+      {
+        "text": "Security monitoring in parking areas is weak.",
+        "true_label": "Low",
+        "pred_label": "Medium",
+        "fold": 2
+      },
+      {
+        "text": "Parking area lighting is very poor at night.",
+        "true_label": "Low",
+        "pred_label": "Medium",
+        "fold": 2
+      },
+      {
+        "text": "Elevator waiting time is extremely long.",
+        "true_label": "Urgent",
+        "pred_label": "Medium",
+        "fold": 2
+      },
+      {
+        "text": "Washroom drainage is slow causing water pooling.",
+        "true_label": "High",
+        "pred_label": "Urgent",
+        "fold": 2
+      },
+      {
+        "text": "Emergency lights in staircases are not operational.",
+        "true_label": "Low",
+        "pred_label": "High",
+        "fold": 2
+      },
+      {
+        "text": "Cars are parked in restricted areas.",
+        "true_label": "Medium",
+        "pred_label": "Urgent",
+        "fold": 2
+      },
+      {
+        "text": "Broken mirrors in washrooms remain unrepaired.",
+        "true_label": "High",
+        "pred_label": "Medium",
+        "fold": 2
+      },
+      {
+        "text": "Electrical sockets in the library are damaged.",
+        "true_label": "Urgent",
+        "pred_label": "Medium",
+        "fold": 3
+      },
+      {
+        "text": "Outdoor campus lights remain off at night.",
+        "true_label": "High",
+        "pred_label": "Urgent",
+        "fold": 3
+      },
+      {
+        "text": "Electrical wiring near the lab entrance is exposed.",
+        "true_label": "High",
+        "pred_label": "Medium",
+        "fold": 3
+      },
+      {
+        "text": "Some classrooms remain very hot due to non\u2010working fans.",
+        "true_label": "Urgent",
+        "pred_label": "Medium",
+        "fold": 3
+      },
+      {
+        "text": "Several bulbs in corridors have not been replaced.",
+        "true_label": "High",
+        "pred_label": "Urgent",
+        "fold": 3
+      },
+      {
+        "text": "Electrical maintenance requests take too long to resolve.",
+        "true_label": "Low",
+        "pred_label": "Medium",
+        "fold": 3
+      },
+      {
+        "text": "Refund process after course withdrawal is too slow.",
+        "true_label": "Urgent",
+        "pred_label": "High",
+        "fold": 3
+      },
+      {
+        "text": "Fee receipt not issued immediately after payment.",
+        "true_label": "Urgent",
+        "pred_label": "Medium",
+        "fold": 3
+      },
+      {
+        "text": "Parking fee collection process is confusing.",
+        "true_label": "Urgent",
+        "pred_label": "Medium",
+        "fold": 3
+      },
+      {
+        "text": "Motorcycle parking area is overcrowded.",
+        "true_label": "Low",
+        "pred_label": "Medium",
+        "fold": 3
+      },
+      {
+        "text": "Parking layout causes difficulty exiting during rush hours.",
+        "true_label": "Medium",
+        "pred_label": "Low",
+        "fold": 3
+      },
+      {
+        "text": "Classroom windows cannot be opened.",
+        "true_label": "Medium",
+        "pred_label": "Urgent",
+        "fold": 3
+      },
+      {
+        "text": "Air conditioners stop working during afternoon classes.",
+        "true_label": "High",
+        "pred_label": "Urgent",
+        "fold": 3
+      },
+      {
+        "text": "Insufficient parking spaces during peak hours.",
+        "true_label": "Low",
+        "pred_label": "Medium",
+        "fold": 3
+      },
+      {
+        "text": "Students park vehicles outside designated zones.",
+        "true_label": "Urgent",
+        "pred_label": "High",
+        "fold": 3
+      },
+      {
+        "text": "Parking rules are not clearly communicated",
+        "true_label": "Medium",
+        "pred_label": "Low",
+        "fold": 3
+      },
+      {
+        "text": "Washroom lights remain off most of the time.",
+        "true_label": "High",
+        "pred_label": "Medium",
+        "fold": 3
+      },
+      {
+        "text": "Air conditioning in the auditorium stops suddenly.",
+        "true_label": "Urgent",
+        "pred_label": "High",
+        "fold": 4
+      },
+      {
+        "text": "Extension cables in labs are damaged.",
+        "true_label": "Low",
+        "pred_label": "Urgent",
+        "fold": 4
+      },
+      {
+        "text": "Payment verification requires multiple office visits.",
+        "true_label": "High",
+        "pred_label": "Low",
+        "fold": 4
+      },
+      {
+        "text": "No shade in motorcycle parking areas.",
+        "true_label": "Medium",
+        "pred_label": "Low",
+        "fold": 4
+      },
+      {
+        "text": "Vehicles sometimes block emergency exits.",
+        "true_label": "High",
+        "pred_label": "Low",
+        "fold": 4
+      },
+      {
+        "text": "Parking area drainage system is poor.",
+        "true_label": "Medium",
+        "pred_label": "Low",
+        "fold": 4
+      },
+      {
+        "text": "Elevator maintenance seems irregular.",
+        "true_label": "High",
+        "pred_label": "Urgent",
+        "fold": 4
+      },
+      {
+        "text": "Students cannot check payment history easily.",
+        "true_label": "Low",
+        "pred_label": "Medium",
+        "fold": 4
+      },
+      {
+        "text": "Washrooms sometimes have unpleasant odors.",
+        "true_label": "Low",
+        "pred_label": "Urgent",
+        "fold": 4
+      },
+      {
+        "text": "Projector power outlets are loose in multiple rooms.",
+        "true_label": "Low",
+        "pred_label": "High",
+        "fold": 5
+      },
+      {
+        "text": "Power supply in the seminar room is unstable.",
+        "true_label": "Urgent",
+        "pred_label": "Medium",
+        "fold": 5
+      },
+      {
+        "text": "Incorrect late fee added to student accounts.",
+        "true_label": "Urgent",
+        "pred_label": "Medium",
+        "fold": 5
+      },
+      {
+        "text": "Scholarship adjustments are not reflected in fee statements.",
+        "true_label": "Urgent",
+        "pred_label": "Medium",
+        "fold": 5
+      },
+      {
+        "text": "Online portal shows payment error despite deduction.",
+        "true_label": "Low",
+        "pred_label": "Medium",
+        "fold": 5
+      },
+      {
+        "text": "Late fee applied even when payment was submitted earlier.",
+        "true_label": "High",
+        "pred_label": "Medium",
+        "fold": 5
+      },
+      {
+        "text": "No clear parking markings for vehicles.",
+        "true_label": "Urgent",
+        "pred_label": "High",
+        "fold": 5
+      },
+      {
+        "text": "No clear signboards for visitor parking.",
+        "true_label": "Medium",
+        "pred_label": "Low",
+        "fold": 5
+      },
+      {
+        "text": "Toilet paper dispensers are empty frequently.",
+        "true_label": "Urgent",
+        "pred_label": "High",
+        "fold": 5
+      },
+      {
+        "text": "Some stair railings are loose.",
+        "true_label": "High",
+        "pred_label": "Medium",
+        "fold": 5
+      },
+      {
+        "text": "Duplicate charges appeared in some student accounts.",
+        "true_label": "Low",
+        "pred_label": "Medium",
+        "fold": 5
+      },
+      {
+        "text": "Elevator displays incorrect floor numbers.",
+        "true_label": "Urgent",
+        "pred_label": "High",
+        "fold": 5
+      }
+    ]
+  }
+}

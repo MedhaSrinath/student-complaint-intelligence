@@ -1,0 +1,123 @@
+{
+  "manifest_version": "2.0",
+  "generation_date": "2026-11-22",
+  "project": "CampusPulse 2.0 - Student Complaint Intelligence System",
+  "datasets": [
+    {
+      "id": "1_alaminxpro",
+      "name": "University Students Complaints",
+      "source_url": "https://huggingface.co/datasets/alaminxpro/university-students-complaints",
+      "license": "Research CC / Open Community (Academic Use)",
+      "license_flag": "FLAG_UNSPECIFIED_UPSTREAM: Upstream dataset card does not specify a named license. Safe for university research / coursework; verify before commercial redistribution.",
+      "raw_rows": 332,
+      "cleaned_rows": 327,
+      "target_tasks": [
+        "Department Classification",
+        "Category Classification",
+        "Urgency/Severity Classification",
+        "Duplicate Detection Benchmark"
+      ],
+      "key_columns": [
+        "cleaned_text",
+        "Primary_Department",
+        "Severity",
+        "Category",
+        "Complaint_Group_ID"
+      ]
+    },
+    {
+      "id": "2_omarsobhy",
+      "name": "University Students Complaints and Reports",
+      "source_url": "https://www.kaggle.com/datasets/omarsobhy14/university-students-complaints-and-reports",
+      "license": "CC BY-SA 4.0",
+      "license_flag": "FLAG_SHARE_ALIKE: Requires attribution and derivative works shared under identical license.",
+      "raw_rows": 1005,
+      "cleaned_rows": 999,
+      "target_tasks": [
+        "Student Life Category/Topic Classification",
+        "Vocabulary Diversity"
+      ],
+      "key_columns": [
+        "cleaned_text",
+        "Genre",
+        "Age",
+        "Gpa",
+        "Year",
+        "Gender"
+      ]
+    },
+    {
+      "id": "3_nlpc_uom",
+      "name": "Student Feedback Analysis Dataset",
+      "source_url": "https://huggingface.co/datasets/NLPC-UOM/Student_feedback_analysis_dataset",
+      "license": "MIT License",
+      "license_flag": "PERMISSIVE_OPEN_SOURCE: Full commercial and academic rights granted.",
+      "aspect_level_rows": 6420,
+      "sentence_level_rows": 2615,
+      "target_tasks": [
+        "Post-Resolution Feedback Sentiment",
+        "Aspect-Based Evaluation (Faculty, Project, Facility)"
+      ],
+      "key_columns": [
+        "sentence",
+        "aspect_phrase",
+        "opinion_phrase",
+        "aspect_list",
+        "opinion_list"
+      ]
+    },
+    {
+      "id": "4_crowdflower",
+      "name": "Twitter US Airline Sentiment",
+      "source_url": "https://www.kaggle.com/datasets/crowdflower/twitter-airline-sentiment",
+      "license": "CC0 Public Domain (Data for Everyone)",
+      "license_flag": "PERMISSIVE_PUBLIC_DOMAIN: Zero restrictions.",
+      "raw_rows": 14640,
+      "cleaned_rows": 14337,
+      "target_tasks": [
+        "Sentiment Classification",
+        "Service Dissatisfaction & Delay Phrasing"
+      ],
+      "key_columns": [
+        "cleaned_text",
+        "airline_sentiment",
+        "negativereason"
+      ]
+    },
+    {
+      "id": "5_cfpb",
+      "name": "CFPB Consumer Complaints (Curated Narrative Sample)",
+      "source_url": "https://huggingface.co/datasets/claritystorm/cfpb-consumer-complaints",
+      "license": "CC0 Public Domain (US Federal Government Work)",
+      "license_flag": "PERMISSIVE_PUBLIC_DOMAIN: Zero restrictions.",
+      "raw_rows": 1000,
+      "cleaned_rows": 263,
+      "target_tasks": [
+        "Financial Dispute Language Diversity",
+        "Administrative Bottleneck Phrasing"
+      ],
+      "key_columns": [
+        "cleaned_text",
+        "product",
+        "issue"
+      ]
+    },
+    {
+      "id": "6_hblim",
+      "name": "Customer Complaints Text Classification",
+      "source_url": "https://huggingface.co/datasets/hblim/customer-complaints",
+      "license": "MIT License",
+      "license_flag": "PERMISSIVE_OPEN_SOURCE: Full commercial and academic rights granted.",
+      "raw_rows": 1682,
+      "cleaned_rows": 1675,
+      "target_tasks": [
+        "Short Complaint Expressions (Mobile Diversity)",
+        "Billing & Technical Language"
+      ],
+      "key_columns": [
+        "cleaned_text",
+        "label_name"
+      ]
+    }
+  ]
+}

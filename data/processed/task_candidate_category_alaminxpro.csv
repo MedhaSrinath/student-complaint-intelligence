@@ -1,0 +1,328 @@
+original_id,source_dataset,text,category
+1,alaminxpro/university-students-complaints,"On most parts of the 8th/9th floor, WiFi is not available at all.",Technical
+4,alaminxpro/university-students-complaints,need a seperate female prayer room which is not just a sub portion of female common room,Infrastructure
+5,alaminxpro/university-students-complaints,drinking water system on the 6th floor(CSE dpt) is no longer working.,Infrastructure
+6,alaminxpro/university-students-complaints,Some projectors are not clear,Infrastructure
+8,alaminxpro/university-students-complaints,Campus WiFi does not work in all areas and is also very slow.,Technical
+9,alaminxpro/university-students-complaints,"Due to continuous loud talking by some students in the library, it has become very difficult to study and maintain concentration",Administrative
+10,alaminxpro/university-students-complaints,We can never find our adviser,Academic
+11,alaminxpro/university-students-complaints,No hand wash in most of the washrooms,Infrastructure
+12,alaminxpro/university-students-complaints,"Because of the long line for the lift, it becomes difficult to attend classes on time",Infrastructure
+13,alaminxpro/university-students-complaints,I have complain regarding the routing system of the bus.... Students go through a lot of problems to track location of the bus during arrival and departure . We know we have a msngr group where sometimes update is given but sometimes there is no update so it's a hassle... I would be better if and app system is give to know about the location of the bus upon arrival and departure. As during departure the bus doesn't always remain in same place as a result students get confused,Technical
+15,alaminxpro/university-students-complaints,zero Wifi facilities in peak hour,Technical
+16,alaminxpro/university-students-complaints,Inadequate Charging ports in library /reading room,Infrastructure
+19,alaminxpro/university-students-complaints,The classroom projectors doesnt work well,Technical
+20,alaminxpro/university-students-complaints,CSE Dept doesnt have qualified teachers,Academic
+21,alaminxpro/university-students-complaints,We need more research facilities in our university and also we need more experienced professors,Academic
+25,alaminxpro/university-students-complaints,Campus Wi-Fi speed and coverage are insufficient; the signal does not reach inside classrooms.,Technical
+27,alaminxpro/university-students-complaints,"Projectors have poor resolution and do not display colors properly, which causes issues in several lectures.",Technical
+28,alaminxpro/university-students-complaints,"Classroom lights and ACs are not properly maintained; some are faulty, and there appears to be little concern regarding timely repairs.",Infrastructure
+29,alaminxpro/university-students-complaints,"HDMI cables in theory classrooms are mostly faulty, causing inconvenience for faculty members and resulting in loss of lecture time.",Technical
+30,alaminxpro/university-students-complaints,Library and study room spaces are insufficient and remain overcrowded during peak hours.,Administrative
+36,alaminxpro/university-students-complaints,"When student occupancy in the library increases, the Wi-Fi connection becomes very slow and frequently disconnects. This severely disrupts academic activities, research work,and online learning, making the library ineffective as a study environment during peak hours.",Infrastructure
+37,alaminxpro/university-students-complaints,A studentship certificate costs a student 500taka which should be of free from the versity as a current student of the institute.,Finance
+38,alaminxpro/university-students-complaints,Every floor should have separate male and female washrooms.,Infrastructure
+40,alaminxpro/university-students-complaints,"Just like there is a space for prayer in front of the Mechanical Department, a similar space should be provided in front of almost every department for prayers.",Administrative
+41,alaminxpro/university-students-complaints,It would be good if there is a bKash or Nagad merchant available inside the university.,Finance
+43,alaminxpro/university-students-complaints,"Pressure is applied to participate in co-curricular activities by seniors, even if students are unwilling or facing problems.",Administrative
+44,alaminxpro/university-students-complaints,The 7th floor (6 of lift) does not have Wi-Fi routers. Thus the Wi-Fi connection disappears when a student enters a classroom in the 7th floor. This is extremely inconvenient as it can cause a student to miss their attendance in their class for the lack of internet connectivity despite being present in the class.,Technical
+46,alaminxpro/university-students-complaints,There is no proper wifi in campus. We should be provided with a working campus wifi,Technical
+47,alaminxpro/university-students-complaints,The routine does not allocate time for prayers and lunch.,Academic
+51,alaminxpro/university-students-complaints,Plaster dust is falling from the classroom wall.,Infrastructure
+52,alaminxpro/university-students-complaints,"Some labs do not have sufficient equipment, and in many cases, the equipment does not work properly.",Technical
+53,alaminxpro/university-students-complaints,"Besides, the Wi-Fi does not function well across the entire campus.",Technical
+54,alaminxpro/university-students-complaints,Faculties whose voices cannot be heard loudly or find it difficult to speak loudly in large classrooms should use personal headset microphones for their ease as well as ours.,Technical
+57,alaminxpro/university-students-complaints,"The transparent glass of washroom windows should be replaced with non-transparent glass, especially in lower floors, as it is a matter of privacy.",Infrastructure
+60,alaminxpro/university-students-complaints,The size for the teacup in the cafeteria should be larger.,Administrative
+62,alaminxpro/university-students-complaints,"The ShaPa day should be organized every semester within 2-3 weeks after midterm exams. ShaPa being in the last week of the semester amidst lab finals and quizzes is not student friendly. Furthermore, if ShaPa is organized within 8th-10th week this semester, then it can be during the spring season i.e. before the unpredictable heat and rain of the summer season starts. The date of the day should also be fixed right after midterm exams so that students can organize their quizzes around that date.",Academic
+63,alaminxpro/university-students-complaints,"In the CSE 1206 course, classes are frequently ended significantly earlier than the allocated time.",Academic
+64,alaminxpro/university-students-complaints,"The round tube lights in the university, especially those in the washrooms and on the Architecture stairs, should be repaired or replaced with new ones.",Infrastructure
+65,alaminxpro/university-students-complaints,The exhaust fans in the washrooms and other areas should be repaired or replaced with new ones.,Infrastructure
+66,alaminxpro/university-students-complaints,"Due to server problems in the IUMS system, I was unable to check my result on the publication day and had to wait until the next day",Technical
+67,alaminxpro/university-students-complaints,The group members for group projects should be selected by the teachers. The students with no groups have to suffer,Academic
+68,alaminxpro/university-students-complaints,Some boys think they can talk in whatever way they want with the girls .,Administrative
+70,alaminxpro/university-students-complaints,"I am dissatisfied because students are required to pay substantial fees by the organizer, even if they do not take part in the event.",Finance
+71,alaminxpro/university-students-complaints,Forming groups ourselves often leads to conflicts. It would be better if the teacher assigned the groups first to avoid any problems.,Academic
+72,alaminxpro/university-students-complaints,"It is difficult to evaluate students fairly when quizzes have uneven difficulty levels, with some sets being hard and others easy.",Academic
+73,alaminxpro/university-students-complaints,"It feels unfair that students with access to alternative sections or materials can perform better in quizzes, while others without these resources struggle.",Academic
+75,alaminxpro/university-students-complaints,"On most parts of the 8th/9th floor, WiFi is missing at all.",Technical
+76,alaminxpro/university-students-complaints,out of focus Projectors.,Infrastructure
+77,alaminxpro/university-students-complaints,are in need of bookshelf in female prayer room. This is affecting regular activities.,Infrastructure
+78,alaminxpro/university-students-complaints,are in need of a seperate female prayer room which is not just a sub portion of female common room. Please look into it.,Infrastructure
+79,alaminxpro/university-students-complaints,drinking water system on the 6th floor(CSE dpt) is no longer working. Kindly verify and take action.,Infrastructure
+80,alaminxpro/university-students-complaints,Some projectors are not clear. Would appreciate a resolution soon.,Infrastructure
+82,alaminxpro/university-students-complaints,Campus WiFi does not work in all areas and is also very slow. Please look into it.,Technical
+83,alaminxpro/university-students-complaints,"Due to continuous loud talking by some students at the library, it has become very difficult to study and maintain concentration. Please look into it.",Administrative
+84,alaminxpro/university-students-complaints,We can never find our adviser.,Academic
+85,alaminxpro/university-students-complaints,No hand wash in most of the washrooms. This is affecting regular activities.,Infrastructure
+86,alaminxpro/university-students-complaints,"Because of the long line for the lift, it becomes difficult to attend classes on time. Please look into it.",Infrastructure
+87,alaminxpro/university-students-complaints,I have complain regarding the routing system of the bus.... Students go through a lot of problems to track location of the bus during arrival and departure . We know we have a msngr group where sometimes update is given but sometimes there is no update so it's a hassle... I would be better if and app system is give to know about the location of the bus upon arrival and departure. As during departure the bus doesn't always remain in same place as a result students get confused.,Technical
+89,alaminxpro/university-students-complaints,zero Wifi facilities in peak hour. This is affecting regular activities.,Technical
+90,alaminxpro/university-students-complaints,Inadequate Charging ports in library /reading room. Kindly verify and take action.,Infrastructure
+93,alaminxpro/university-students-complaints,The classroom projectors doesnt work well. Needs attention.,Technical
+94,alaminxpro/university-students-complaints,CSE Dept doesnt have qualified teachers. Please look into it.,Academic
+95,alaminxpro/university-students-complaints,We would benefit from more research facilities in our university and also we would benefit from more experienced professors.,Academic
+96,alaminxpro/university-students-complaints,The campus wifi disconnects repeatedly and doesnt have enough speed while doing any important work.. Requesting a quick check.,Technical
+97,alaminxpro/university-students-complaints,CSE Dept doesnt have qualified teachers.,Academic
+98,alaminxpro/university-students-complaints,We require more research facilities in our university and also we require more experienced professors.,Academic
+99,alaminxpro/university-students-complaints,Campus Wi-Fi speed and coverage are insufficient; the signal does not reach inside classrooms. Needs attention.,Technical
+101,alaminxpro/university-students-complaints,"Projectors have subpar resolution and do not display colors properly, which causes issues in several lectures.",Technical
+102,alaminxpro/university-students-complaints,"Classroom lights and ACs are not properly maintained; some are faulty, and there appears to be little concern regarding timely repairs. Please look into it.",Infrastructure
+103,alaminxpro/university-students-complaints,"HDMI cables in theory classrooms are mostly faulty, causing inconvenience for faculty members and resulting in loss of lecture time. Please look into it.",Technical
+104,alaminxpro/university-students-complaints,Library and study room spaces are insufficient and remain overcrowded during peak hours. This is affecting regular activities.,Administrative
+107,alaminxpro/university-students-complaints,More female washrooms would be really appreciated. Requesting a quick check.,Infrastructure
+110,alaminxpro/university-students-complaints,"When student occupancy at the library increases, the Wi-Fi connection becomes very slow and frequently disconnects. This severely disrupts academic activities, research work,and online learning, making the library ineffective as a study environment during peak hours. Kindly verify and take action.",Infrastructure
+111,alaminxpro/university-students-complaints,A studentship certificate costs a student 500taka which should be of free from the versity as a current student of the institute. This is affecting regular activities.,Finance
+112,alaminxpro/university-students-complaints,Every floor should have separate male and female washrooms. This is affecting regular activities.,Infrastructure
+114,alaminxpro/university-students-complaints,"Just like there is a space for prayer in front of the Mechanical Department, a similar space should be provided in front of almost every department for prayers. Requesting a quick check.",Administrative
+115,alaminxpro/university-students-complaints,It would be good if there is a bKash or Nagad merchant in service inside the university.,Finance
+116,alaminxpro/university-students-complaints,Most of the computers at the labs have problems; they should be fixed. Kindly verify and take action.,Technical
+117,alaminxpro/university-students-complaints,"Pressure is applied to participate in co-curricular activities by seniors, even if students are unwilling or facing problems. Needs attention.",Administrative
+118,alaminxpro/university-students-complaints,The 7th floor (6 of lift) does not have Wi-Fi routers. Thus the Wi-Fi connection disappears when a student enters a classroom at the 7th floor. This is extremely inconvenient as it can cause a student to miss their attendance in their class for the lack of internet connectivity despite being present at the class. Requesting a quick check.,Technical
+119,alaminxpro/university-students-complaints,AC's don't work properly. Would appreciate a resolution soon.,Infrastructure
+120,alaminxpro/university-students-complaints,There is no proper wifi in campus. We should be provided with a working campus wifi. Would appreciate a resolution soon.,Technical
+121,alaminxpro/university-students-complaints,The routine does not allocate time for prayers and lunch. Please look into it.,Academic
+124,alaminxpro/university-students-complaints,The floor of the classroom is not clean. Kindly verify and take action.,Infrastructure
+125,alaminxpro/university-students-complaints,Plaster dust is falling from the classroom wall. Please look into it.,Infrastructure
+126,alaminxpro/university-students-complaints,"Some labs do not have sufficient equipment, and in many cases, the equipment does not work properly. This is affecting regular activities.",Technical
+127,alaminxpro/university-students-complaints,"Besides, the Wi-Fi does not function well across the entire campus. Needs attention.",Technical
+128,alaminxpro/university-students-complaints,Faculties whose voices cannot be heard loudly or find it difficult to speak loudly in large classrooms should use personal headset microphones for their ease as well as ours. Kindly verify and take action.,Technical
+131,alaminxpro/university-students-complaints,"The transparent glass of washroom windows should be replaced with non-transparent glass, especially in lower floors, as it is a matter of privacy. Kindly verify and take action.",Infrastructure
+134,alaminxpro/university-students-complaints,The size for the teacup at the cafeteria should be larger.,Administrative
+136,alaminxpro/university-students-complaints,"The ShaPa day should be organized every semester within 2-3 weeks after midterm exams. ShaPa being at the last week of the semester amidst lab finals and quizzes is not student friendly. Furthermore, if ShaPa is organized within 8th-10th week this semester, then it can be during the spring season i.e. before the unpredictable heat and rain of the summer season starts. The date of the day should also be fixed right after midterm exams so that students can organize their quizzes around that date.",Academic
+137,alaminxpro/university-students-complaints,"at the CSE 1206 course, classes are frequently ended significantly earlier than the allocated time. Requesting a quick check.",Academic
+138,alaminxpro/university-students-complaints,"The round tube lights at the university, especially those at the washrooms and on the Architecture stairs, should be repaired or replaced with new ones. Requesting a quick check.",Infrastructure
+139,alaminxpro/university-students-complaints,The exhaust fans at the washrooms and other areas should be repaired or replaced with new ones.,Infrastructure
+140,alaminxpro/university-students-complaints,"Due to server problems at the IUMS system, I was unable to check my result on the publication day and had to wait until the next day. Please look into it.",Technical
+141,alaminxpro/university-students-complaints,The group members for group projects should be selected by the teachers. The students with no groups have to suffer. This is affecting regular activities.,Academic
+142,alaminxpro/university-students-complaints,Some boys think they can talk in whatever way they want with the girls . This is affecting regular activities.,Administrative
+143,alaminxpro/university-students-complaints,The supervisor finding procedure for thesis is so frustrating. Would appreciate a resolution soon.,Academic
+144,alaminxpro/university-students-complaints,"I am dissatisfied because students are required to pay substantial fees by the organizer, even if they do not take part in the event. Please look into it.",Finance
+145,alaminxpro/university-students-complaints,Forming groups ourselves regularly leads to conflicts. It would be better if the teacher assigned the groups first to avoid any problems. This is affecting regular activities.,Academic
+146,alaminxpro/university-students-complaints,"It is difficult to evaluate students fairly when quizzes have uneven difficulty levels, with some sets being hard and others easy. Requesting a quick check.",Academic
+147,alaminxpro/university-students-complaints,"It feels unfair that students with access to alternative sections or materials can perform better in quizzes, while others without these resources struggle. Requesting a quick check.",Academic
+149,alaminxpro/university-students-complaints,"On most parts of the 8th/9th floor, WiFi is unavailable at all. Please look into it.",Technical
+150,alaminxpro/university-students-complaints,unclear Projectors. This is affecting regular activities.,Infrastructure
+151,alaminxpro/university-students-complaints,would benefit from bookshelf in female prayer room. Would appreciate a resolution soon.,Infrastructure
+152,alaminxpro/university-students-complaints,are in need of a seperate female prayer room which is not just a sub portion of female common room. Kindly verify and take action.,Infrastructure
+153,alaminxpro/university-students-complaints,drinking water system on the 6th floor(CSE dpt) is no longer working. Requesting a quick check.,Infrastructure
+155,alaminxpro/university-students-complaints,some computers in LAB is very very laggy (7B01-7B08). Requesting a quick check.,Technical
+156,alaminxpro/university-students-complaints,Campus WiFi does not work in all areas and is also very slow. Would appreciate a resolution soon.,Technical
+157,alaminxpro/university-students-complaints,"Due to continuous loud talking by some students in the library, it has become very difficult to study and maintain concentration.",Administrative
+158,alaminxpro/university-students-complaints,We can never find our adviser. This is affecting regular activities.,Academic
+159,alaminxpro/university-students-complaints,No hand wash in most of the washrooms.,Infrastructure
+160,alaminxpro/university-students-complaints,"Because of the long line for the lift, it becomes difficult to attend classes on time. This is affecting regular activities.",Infrastructure
+161,alaminxpro/university-students-complaints,I have complain regarding the routing system of the bus.... Students go through a lot of problems to track location of the bus during arrival and departure . We know we have a msngr group where sometimes update is given but sometimes there is no update so it's a hassle... I would be better if and app system is give to know about the location of the bus upon arrival and departure. As during departure the bus doesn't always remain in same place as a result students get confused. Would appreciate a resolution soon.,Technical
+163,alaminxpro/university-students-complaints,zero Wifi facilities in peak hour. Would appreciate a resolution soon.,Technical
+164,alaminxpro/university-students-complaints,Inadequate Charging ports in library /reading room.,Infrastructure
+169,alaminxpro/university-students-complaints,We are in need of more research facilities in our university and also we are in need of more experienced professors.,Academic
+173,alaminxpro/university-students-complaints,Campus Wi-Fi speed and coverage are insufficient; the signal does not reach inside classrooms. Would appreciate a resolution soon.,Technical
+174,alaminxpro/university-students-complaints,Whiteboards in theory classrooms are damaged. Please look into it.,Infrastructure
+175,alaminxpro/university-students-complaints,"Projectors have inadequate resolution and do not display colors properly, which causes issues in several lectures. Please look into it.",Technical
+176,alaminxpro/university-students-complaints,"Classroom lights and ACs are not properly maintained; some are faulty, and there appears to be little concern regarding timely repairs. Kindly verify and take action.",Infrastructure
+177,alaminxpro/university-students-complaints,"HDMI cables in theory classrooms are mostly faulty, causing inconvenience for faculty members and resulting in loss of lecture time. Requesting a quick check.",Technical
+178,alaminxpro/university-students-complaints,Library and study room spaces are insufficient and remain overcrowded during peak hours. Kindly verify and take action.,Administrative
+184,alaminxpro/university-students-complaints,"When student occupancy in the library increases, the Wi-Fi connection becomes very slow and frequently disconnects. This severely disrupts academic activities, research work,and online learning, making the library ineffective as a study environment during peak hours. Requesting a quick check.",Infrastructure
+185,alaminxpro/university-students-complaints,A studentship certificate costs a student 500taka which should be of free from the versity as a current student of the institute. Please look into it.,Finance
+186,alaminxpro/university-students-complaints,Every floor should have separate male and female washrooms. Kindly verify and take action.,Infrastructure
+188,alaminxpro/university-students-complaints,"Just like there is a space for prayer in front of the Mechanical Department, a similar space should be provided in front of almost every department for prayers. Please look into it.",Administrative
+189,alaminxpro/university-students-complaints,It would be good if there is a bKash or Nagad merchant ready inside the university. Requesting a quick check.,Finance
+191,alaminxpro/university-students-complaints,"Pressure is applied to participate in co-curricular activities by seniors, even if students are unwilling or facing problems. Would appreciate a resolution soon.",Administrative
+192,alaminxpro/university-students-complaints,The 7th floor (6 of lift) does not have Wi-Fi routers. Thus the Wi-Fi connection disappears when a student enters a classroom at the 7th floor. This is extremely inconvenient as it can cause a student to miss their attendance in their class for the lack of internet connectivity despite being present at the class. Kindly verify and take action.,Technical
+193,alaminxpro/university-students-complaints,AC's don't work properly. Needs attention.,Infrastructure
+194,alaminxpro/university-students-complaints,There is no proper wifi in campus. We should be provided with a working campus wifi. Kindly verify and take action.,Technical
+195,alaminxpro/university-students-complaints,The routine does not allocate time for prayers and lunch. This is affecting regular activities.,Academic
+196,alaminxpro/university-students-complaints,The lab classes lack regular maintenance which hampers the studies. Would appreciate a resolution soon.,Technical
+200,alaminxpro/university-students-complaints,"Some labs do not have sufficient equipment, and in many cases, the equipment does not work properly. Please look into it.",Technical
+201,alaminxpro/university-students-complaints,"Besides, the Wi-Fi does not function well across the entire campus. This is affecting regular activities.",Technical
+202,alaminxpro/university-students-complaints,Faculties whose voices cannot be heard loudly or find it difficult to speak loudly in large classrooms should use personal headset microphones for their ease as well as ours. Please look into it.,Technical
+205,alaminxpro/university-students-complaints,"The transparent glass of washroom windows should be replaced with non-transparent glass, especially in lower floors, as it is a matter of privacy. This is affecting regular activities.",Infrastructure
+208,alaminxpro/university-students-complaints,The size for the teacup in the cafeteria should be larger. Please look into it.,Administrative
+210,alaminxpro/university-students-complaints,"The ShaPa day should be organized every semester within 2-3 weeks after midterm exams. ShaPa being at the last week of the semester amidst lab finals and quizzes is not student friendly. Furthermore, if ShaPa is organized within 8th-10th week this semester, then it can be during the spring season i.e. before the unpredictable heat and rain of the summer season starts. The date of the day should also be fixed right after midterm exams so that students can organize their quizzes around that date. Please look into it.",Academic
+211,alaminxpro/university-students-complaints,"at the CSE 1206 course, classes are frequently ended significantly earlier than the allocated time. This is affecting regular activities.",Academic
+212,alaminxpro/university-students-complaints,"The round tube lights at the university, especially those at the washrooms and on the Architecture stairs, should be repaired or replaced with new ones. Please look into it.",Infrastructure
+213,alaminxpro/university-students-complaints,The exhaust fans in the washrooms and other areas should be repaired or replaced with new ones. This is affecting regular activities.,Infrastructure
+214,alaminxpro/university-students-complaints,"Due to server problems in the IUMS system, I was unable to check my result on the publication day and had to wait until the next day. Kindly verify and take action.",Technical
+215,alaminxpro/university-students-complaints,The group members for group projects should be selected by the teachers. The students with no groups have to suffer. Requesting a quick check.,Academic
+216,alaminxpro/university-students-complaints,Some boys think they can talk in whatever way they want with the girls . Needs attention.,Administrative
+218,alaminxpro/university-students-complaints,"I am dissatisfied because students are required to pay substantial fees by the organizer, even if they do not take part at the event. Would appreciate a resolution soon.",Finance
+219,alaminxpro/university-students-complaints,Forming groups ourselves frequently leads to conflicts. It would be better if the teacher assigned the groups first to avoid any problems. Please look into it.,Academic
+220,alaminxpro/university-students-complaints,"It is difficult to evaluate students fairly when quizzes have uneven difficulty levels, with some sets being hard and others easy. This is affecting regular activities.",Academic
+221,alaminxpro/university-students-complaints,"It feels unfair that students with access to alternative sections or materials can perform better in quizzes, while others without these resources struggle. Kindly verify and take action.",Academic
+224,alaminxpro/university-students-complaints,out of focus Projectors. This is affecting regular activities.,Infrastructure
+225,alaminxpro/university-students-complaints,require bookshelf in female prayer room. Kindly verify and take action.,Infrastructure
+226,alaminxpro/university-students-complaints,require a seperate female prayer room which is not just a sub portion of female common room. Needs attention.,Infrastructure
+227,alaminxpro/university-students-complaints,drinking water system on the 6th floor(CSE dpt) is no longer working. Please look into it.,Infrastructure
+228,alaminxpro/university-students-complaints,Some projectors are not clear. This is affecting regular activities.,Infrastructure
+230,alaminxpro/university-students-complaints,Campus WiFi does not work in all areas and is also very slow. This is affecting regular activities.,Technical
+231,alaminxpro/university-students-complaints,"Due to continuous loud talking by some students at the library, it has become very difficult to study and maintain concentration. Kindly verify and take action.",Administrative
+232,alaminxpro/university-students-complaints,We can never find our adviser. Please look into it.,Academic
+233,alaminxpro/university-students-complaints,No hand wash in most of the washrooms. Please look into it.,Infrastructure
+234,alaminxpro/university-students-complaints,"Because of the long line for the lift, it becomes difficult to attend classes on time.",Infrastructure
+235,alaminxpro/university-students-complaints,I have complain regarding the routing system of the bus.... Students go through a lot of problems to track location of the bus during arrival and departure . We know we have a msngr group where sometimes update is given but sometimes there is no update so it's a hassle... I would be better if and app system is give to know about the location of the bus upon arrival and departure. As during departure the bus doesn't always remain in same place as a result students get confused. This is affecting regular activities.,Technical
+237,alaminxpro/university-students-complaints,zero Wifi facilities in peak hour. Requesting a quick check.,Technical
+238,alaminxpro/university-students-complaints,Inadequate Charging ports in library /reading room. Needs attention.,Infrastructure
+241,alaminxpro/university-students-complaints,The classroom projectors doesnt work well. Requesting a quick check.,Technical
+242,alaminxpro/university-students-complaints,CSE Dept doesnt have qualified teachers. Would appreciate a resolution soon.,Academic
+243,alaminxpro/university-students-complaints,We require more research facilities in our university and also we require more experienced professors. Needs attention.,Academic
+246,alaminxpro/university-students-complaints,We are in need of more research facilities in our university and also we are in need of more experienced professors. Needs attention.,Academic
+247,alaminxpro/university-students-complaints,Campus Wi-Fi speed and coverage are insufficient; the signal does not reach inside classrooms. This is affecting regular activities.,Technical
+249,alaminxpro/university-students-complaints,"Projectors have subpar resolution and do not display colors properly, which causes issues in several lectures. Requesting a quick check.",Technical
+250,alaminxpro/university-students-complaints,"Classroom lights and ACs are not properly maintained; some are faulty, and there appears to be little concern regarding timely repairs. Needs attention.",Infrastructure
+251,alaminxpro/university-students-complaints,"HDMI cables in theory classrooms are mostly faulty, causing inconvenience for faculty members and resulting in loss of lecture time. Kindly verify and take action.",Technical
+252,alaminxpro/university-students-complaints,Library and study room spaces are insufficient and remain overcrowded during peak hours. Requesting a quick check.,Administrative
+255,alaminxpro/university-students-complaints,More female washrooms would be really appreciated. Kindly verify and take action.,Infrastructure
+258,alaminxpro/university-students-complaints,"When student occupancy in the library increases, the Wi-Fi connection becomes very slow and frequently disconnects. This severely disrupts academic activities, research work,and online learning, making the library ineffective as a study environment during peak hours. Kindly verify and take action.",Infrastructure
+259,alaminxpro/university-students-complaints,A studentship certificate costs a student 500taka which should be of free from the versity as a current student of the institute. Needs attention.,Finance
+260,alaminxpro/university-students-complaints,Every floor should have separate male and female washrooms. Requesting a quick check.,Infrastructure
+261,alaminxpro/university-students-complaints,Each floor should have one wheelchair in service. Please look into it.,Administrative
+262,alaminxpro/university-students-complaints,"Just like there is a space for prayer in front of the Mechanical Department, a similar space should be provided in front of almost every department for prayers. Kindly verify and take action.",Administrative
+263,alaminxpro/university-students-complaints,It would be good if there is a bKash or Nagad merchant in service inside the university. Kindly verify and take action.,Finance
+265,alaminxpro/university-students-complaints,"Pressure is applied to participate in co-curricular activities by seniors, even if students are unwilling or facing problems. Kindly verify and take action.",Administrative
+266,alaminxpro/university-students-complaints,The 7th floor (6 of lift) does not have Wi-Fi routers. Thus the Wi-Fi connection disappears when a student enters a classroom in the 7th floor. This is extremely inconvenient as it can cause a student to miss their attendance in their class for the lack of internet connectivity despite being present in the class. Please look into it.,Technical
+268,alaminxpro/university-students-complaints,There is no proper wifi in campus. We should be provided with a working campus wifi. Requesting a quick check.,Technical
+269,alaminxpro/university-students-complaints,The routine does not allocate time for prayers and lunch. Needs attention.,Academic
+274,alaminxpro/university-students-complaints,"Some labs do not have sufficient equipment, and in many cases, the equipment does not work properly. Needs attention.",Technical
+275,alaminxpro/university-students-complaints,"Besides, the Wi-Fi does not function well across the entire campus. Please look into it.",Technical
+276,alaminxpro/university-students-complaints,Faculties whose voices cannot be heard loudly or find it difficult to speak loudly in large classrooms should use personal headset microphones for their ease as well as ours. This is affecting regular activities.,Technical
+279,alaminxpro/university-students-complaints,"The transparent glass of washroom windows should be replaced with non-transparent glass, especially in lower floors, as it is a matter of privacy. Would appreciate a resolution soon.",Infrastructure
+284,alaminxpro/university-students-complaints,"The ShaPa day should be organized every semester within 2-3 weeks after midterm exams. ShaPa being in the last week of the semester amidst lab finals and quizzes is not student friendly. Furthermore, if ShaPa is organized within 8th-10th week this semester, then it can be during the spring season i.e. before the unpredictable heat and rain of the summer season starts. The date of the day should also be fixed right after midterm exams so that students can organize their quizzes around that date. Please look into it.",Academic
+285,alaminxpro/university-students-complaints,"In the CSE 1206 course, classes are frequently ended significantly earlier than the allocated time. Please look into it.",Academic
+286,alaminxpro/university-students-complaints,"The round tube lights at the university, especially those at the washrooms and on the Architecture stairs, should be repaired or replaced with new ones. Needs attention.",Infrastructure
+287,alaminxpro/university-students-complaints,The exhaust fans at the washrooms and other areas should be repaired or replaced with new ones. Please look into it.,Infrastructure
+288,alaminxpro/university-students-complaints,"Due to server problems in the IUMS system, I was unable to check my result on the publication day and had to wait until the next day.",Technical
+289,alaminxpro/university-students-complaints,The group members for group projects should be selected by the teachers. The students with no groups have to suffer.,Academic
+290,alaminxpro/university-students-complaints,Some boys think they can talk in whatever way they want with the girls . Please look into it.,Administrative
+292,alaminxpro/university-students-complaints,"I am dissatisfied because students are required to pay substantial fees by the organizer, even if they do not take part in the event. Needs attention.",Finance
+293,alaminxpro/university-students-complaints,Forming groups ourselves regularly leads to conflicts. It would be better if the teacher assigned the groups first to avoid any problems.,Academic
+294,alaminxpro/university-students-complaints,"It is difficult to evaluate students fairly when quizzes have uneven difficulty levels, with some sets being hard and others easy. Would appreciate a resolution soon.",Academic
+295,alaminxpro/university-students-complaints,"It feels unfair that students with access to alternative sections or materials can perform better in quizzes, while others without these resources struggle. This is affecting regular activities.",Academic
+298,alaminxpro/university-students-complaints,Lights in the hallway of the academic building are not working.,Infrastructure
+299,alaminxpro/university-students-complaints,Backup generator failed during a recent power cut.,Infrastructure
+300,alaminxpro/university-students-complaints,Several classroom ceiling fans are not functioning.,Infrastructure
+301,alaminxpro/university-students-complaints,Voltage fluctuation is affecting computer lab equipment.,Infrastructure
+302,alaminxpro/university-students-complaints,Electrical sockets in the library are damaged.,Infrastructure
+304,alaminxpro/university-students-complaints,Projector power outlets are loose in multiple rooms.,Infrastructure
+305,alaminxpro/university-students-complaints,Outdoor campus lights remain off at night.,Infrastructure
+306,alaminxpro/university-students-complaints,Electrical wiring near the lab entrance is exposed.,Infrastructure
+308,alaminxpro/university-students-complaints,Frequent power interruptions during lab sessions.,Infrastructure
+309,alaminxpro/university-students-complaints,Some classrooms remain very hot due to non‐working fans.,Infrastructure
+310,alaminxpro/university-students-complaints,Switchboards in lecture halls are broken.,Infrastructure
+311,alaminxpro/university-students-complaints,Electric sparks noticed near an old switchboard.,Infrastructure
+312,alaminxpro/university-students-complaints,Power supply in the seminar room is unstable.,Infrastructure
+313,alaminxpro/university-students-complaints,Generator does not cover all floors during outages.,Infrastructure
+314,alaminxpro/university-students-complaints,Several bulbs in corridors have not been replaced.,Infrastructure
+315,alaminxpro/university-students-complaints,Computer lab loses electricity during peak hours.,Infrastructure
+316,alaminxpro/university-students-complaints,Air conditioning in the auditorium stops suddenly.,Infrastructure
+317,alaminxpro/university-students-complaints,Charging ports for students are not working.,Infrastructure
+318,alaminxpro/university-students-complaints,Electrical maintenance requests take too long to resolve.,Infrastructure
+319,alaminxpro/university-students-complaints,Lights in the parking basement flicker frequently.,Infrastructure
+320,alaminxpro/university-students-complaints,Extension cables in labs are damaged.,Infrastructure
+321,alaminxpro/university-students-complaints,Some switches in classrooms produce burning smell,Infrastructure
+322,alaminxpro/university-students-complaints,Online fee payment portal often fails during transactions.,Finance
+323,alaminxpro/university-students-complaints,Fee payment confirmation takes several days to appear.,Finance
+324,alaminxpro/university-students-complaints,Students must stand in very long queues for payment.,Finance
+325,alaminxpro/university-students-complaints,Incorrect late fee added to student accounts.,Finance
+326,alaminxpro/university-students-complaints,Refund process after course withdrawal is too slow.,Finance
+327,alaminxpro/university-students-complaints,Fee receipt not issued immediately after payment.,Finance
+328,alaminxpro/university-students-complaints,Scholarship adjustments are not reflected in fee statements.,Finance
+330,alaminxpro/university-students-complaints,Semester fee breakdown is not clearly explained.,Finance
+332,alaminxpro/university-students-complaints,Online portal shows payment error despite deduction.,Finance
+333,alaminxpro/university-students-complaints,Fee clearance process takes too long before registration.,Finance
+337,alaminxpro/university-students-complaints,Students cannot download digital payment receipts.,Finance
+338,alaminxpro/university-students-complaints,Late fee applied even when payment was submitted earlier.,Finance
+339,alaminxpro/university-students-complaints,Fee portal crashes near payment deadlines.,Finance
+340,alaminxpro/university-students-complaints,Payment verification requires multiple office visits.,Finance
+342,alaminxpro/university-students-complaints,Fee refund policy is unclear for many students.,Finance
+343,alaminxpro/university-students-complaints,Payment portal does not support several mobile banking apps.,Finance
+344,alaminxpro/university-students-complaints,Installment payment requests are often ignored.,Finance
+349,alaminxpro/university-students-complaints,No clear parking markings for vehicles.,Infrastructure
+351,alaminxpro/university-students-complaints,Security monitoring in parking areas is weak.,Infrastructure
+353,alaminxpro/university-students-complaints,No shade in motorcycle parking areas.,Infrastructure
+354,alaminxpro/university-students-complaints,Parking area lighting is very poor at night.,Infrastructure
+355,alaminxpro/university-students-complaints,Unauthorized vehicles occupy student parking spots.,Infrastructure
+356,alaminxpro/university-students-complaints,Parking space for bicycles is too small.,Infrastructure
+358,alaminxpro/university-students-complaints,Parking attendants are not always present.,Infrastructure
+359,alaminxpro/university-students-complaints,No clear signboards for visitor parking.,Infrastructure
+360,alaminxpro/university-students-complaints,Vehicles sometimes block emergency exits.,Infrastructure
+361,alaminxpro/university-students-complaints,Parking fee collection process is confusing.,Infrastructure
+363,alaminxpro/university-students-complaints,Motorcycle parking area is overcrowded.,Infrastructure
+364,alaminxpro/university-students-complaints,Parking area surveillance cameras are not functioning.,Infrastructure
+366,alaminxpro/university-students-complaints,Parking layout causes difficulty exiting during rush hours.,Infrastructure
+367,alaminxpro/university-students-complaints,Students report minor scratches due to crowded parking.,Infrastructure
+368,alaminxpro/university-students-complaints,Parking entrance becomes jammed during morning classes.,Infrastructure
+369,alaminxpro/university-students-complaints,No digital system to track available parking spaces.,Infrastructure
+370,alaminxpro/university-students-complaints,Parking area drainage system is poor.,Infrastructure
+373,alaminxpro/university-students-complaints,Washrooms on the third floor lack proper cleaning.,Infrastructure
+374,alaminxpro/university-students-complaints,Water leakage from ceiling in classroom corridor.,Infrastructure
+376,alaminxpro/university-students-complaints,Elevator waiting time is extremely long.,Infrastructure
+378,alaminxpro/university-students-complaints,Classroom windows cannot be opened.,Infrastructure
+379,alaminxpro/university-students-complaints,Hand dryers in washrooms are not functioning.,Infrastructure
+381,alaminxpro/university-students-complaints,Broken tiles near the staircases are dangerous.,Infrastructure
+384,alaminxpro/university-students-complaints,Water accumulates near washroom entrances.,Infrastructure
+385,alaminxpro/university-students-complaints,Toilet paper dispensers are empty frequently.,Infrastructure
+387,alaminxpro/university-students-complaints,Elevator capacity is insufficient during class change time.,Infrastructure
+391,alaminxpro/university-students-complaints,Some stair railings are loose.,Infrastructure
+392,alaminxpro/university-students-complaints,Washroom drainage is slow causing water pooling.,Infrastructure
+393,alaminxpro/university-students-complaints,Elevator maintenance seems irregular.,Infrastructure
+394,alaminxpro/university-students-complaints,Classroom floors remain dirty after cleaning.,Infrastructure
+396,alaminxpro/university-students-complaints,Water taps in washrooms are leaking,Infrastructure
+2,alaminxpro/university-students-complaints,Blurry Projectors,Infrastructure
+7,alaminxpro/university-students-complaints,some computers in LAB is very very laggy (7B01-7B08),Technical
+14,alaminxpro/university-students-complaints,The maximum obtainable grade point for the Improvement Exam of any course has been set to 3.5. It should be increased to 4.00.,Academic
+26,alaminxpro/university-students-complaints,Whiteboards in theory classrooms are damaged,Infrastructure
+31,alaminxpro/university-students-complaints,"There is no female washroom on the 7th floor, which causes inconvenience; we respectfully request that one of the two existing washrooms be converted into a female washroom.",Infrastructure
+39,alaminxpro/university-students-complaints,Each floor should have one wheelchair available.,Administrative
+48,alaminxpro/university-students-complaints,The lab classes lack regular maintenance which hampers the studies.,Technical
+49,alaminxpro/university-students-complaints,The projector screen is not visible from the back of the classroom and the light of the projector is not good in quality.,Infrastructure
+50,alaminxpro/university-students-complaints,The floor of the classroom is not clean.,Infrastructure
+55,alaminxpro/university-students-complaints,"Teacher's evaluation must be taken when semester final results are being processed or after they have been published. For the faculties who get poor evaluations, they may attend demo classes of faculties who get good evaluations to understand in real time how they teach.",Academic
+61,alaminxpro/university-students-complaints,"All families get holidays during the month of December, but after the semester finals of the Fall semester, students of AUST get one month of semester break in November. Therefore, one week of semester break, followed up later by a two-week winter break during December would be more preferrable and student friendly.",Academic
+74,alaminxpro/university-students-complaints,"The quiz questions often do not align with the lecture material, which unfairly puts students at a disadvantage and reflects poor planning or oversight by the course organizers.",Academic
+81,alaminxpro/university-students-complaints,some computers in LAB is very very laggy (7B01-7B08).,Technical
+88,alaminxpro/university-students-complaints,The maximum obtainable grade point for the Improvement Exam of any course has been set to 3.5. It should be increased to 4.00. Needs attention.,Academic
+100,alaminxpro/university-students-complaints,Whiteboards in theory classrooms are damaged.,Infrastructure
+105,alaminxpro/university-students-complaints,"There is no female washroom on the 7th floor, which causes inconvenience; we respectfully request that one of the two existing washrooms be converted into a female washroom. Would appreciate a resolution soon.",Infrastructure
+113,alaminxpro/university-students-complaints,Each floor should have one wheelchair accessible.,Administrative
+122,alaminxpro/university-students-complaints,The lab classes lack regular maintenance which hampers the studies. Please look into it.,Technical
+123,alaminxpro/university-students-complaints,The projector screen is not visible from the back of the classroom and the light of the projector is not good in quality. Would appreciate a resolution soon.,Infrastructure
+129,alaminxpro/university-students-complaints,"Teacher's evaluation must be taken when semester final results are being processed or after they have been published. For the faculties who get subpar evaluations, they may attend demo classes of faculties who get good evaluations to understand in real time how they teach. Kindly verify and take action.",Academic
+135,alaminxpro/university-students-complaints,"All families get holidays during the month of December, but after the semester finals of the Fall semester, students of AUST get one month of semester break in November. Therefore, one week of semester break, followed up later by a two-week winter break during December would be more preferrable and student friendly. Needs attention.",Academic
+148,alaminxpro/university-students-complaints,"The quiz questions regularly do not align with the lecture material, which inequitably puts students at a setback and reflects inadequate planning or oversight by the course organizers.",Academic
+154,alaminxpro/university-students-complaints,Some projectors are not clear. Please look into it.,Infrastructure
+162,alaminxpro/university-students-complaints,The maximum obtainable grade point for the Improvement Exam of any course has been set to 3.5. It should be increased to 4.00. Requesting a quick check.,Academic
+167,alaminxpro/university-students-complaints,The classroom projectors doesnt work well. This is affecting regular activities.,Technical
+179,alaminxpro/university-students-complaints,"There is no female washroom on the 7th floor, which causes inconvenience; we respectfully request that one of the two existing washrooms be converted into a female washroom. Needs attention.",Infrastructure
+187,alaminxpro/university-students-complaints,Each floor should have one wheelchair ready.,Administrative
+197,alaminxpro/university-students-complaints,The projector screen is not visible from the back of the classroom and the light of the projector is not good in quality. This is affecting regular activities.,Infrastructure
+203,alaminxpro/university-students-complaints,"Teacher's evaluation must be taken when semester final results are being processed or after they have been published. For the faculties who get inadequate evaluations, they may attend demo classes of faculties who get good evaluations to understand in real time how they teach. Would appreciate a resolution soon.",Academic
+209,alaminxpro/university-students-complaints,"All families get holidays during the month of December, but after the semester finals of the Fall semester, students of AUST get one month of semester break in November. Therefore, one week of semester break, followed up later by a two-week winter break during December would be more preferrable and student friendly. Please look into it.",Academic
+229,alaminxpro/university-students-complaints,some computers in LAB is very very laggy (7B01-7B08). Please look into it.,Technical
+236,alaminxpro/university-students-complaints,The maximum obtainable grade point for the Improvement Exam of any course has been set to 3.5. It should be increased to 4.00. This is affecting regular activities.,Academic
+245,alaminxpro/university-students-complaints,CSE Dept doesnt have qualified teachers. This is affecting regular activities.,Academic
+248,alaminxpro/university-students-complaints,Whiteboards in theory classrooms are damaged. Needs attention.,Infrastructure
+253,alaminxpro/university-students-complaints,"There is no female washroom on the 7th floor, which causes inconvenience; we respectfully request that one of the two existing washrooms be converted into a female washroom. This is affecting regular activities.",Infrastructure
+267,alaminxpro/university-students-complaints,AC's don't work properly. Kindly verify and take action.,Infrastructure
+270,alaminxpro/university-students-complaints,The lab classes lack regular maintenance which hampers the studies. (variation-3),Technical
+271,alaminxpro/university-students-complaints,The projector screen is not visible from the back of the classroom and the light of the projector is not good in quality. Kindly verify and take action.,Infrastructure
+272,alaminxpro/university-students-complaints,The floor of the classroom is not clean. Needs attention.,Infrastructure
+277,alaminxpro/university-students-complaints,"Teacher's evaluation must be taken when semester final results are being processed or after they have been published. For the faculties who get inadequate evaluations, they may attend demo classes of faculties who get good evaluations to understand in real time how they teach. Needs attention.",Academic
+283,alaminxpro/university-students-complaints,"All families get holidays during the month of December, but after the semester finals of the Fall semester, students of AUST get one month of semester break in November. Therefore, one week of semester break, followed up later by a two-week winter break during December would be more preferrable and student friendly. This is affecting regular activities.",Academic
+296,alaminxpro/university-students-complaints,"The quiz questions frequently do not align with the lecture material, which in an unfair way puts students at a setback and reflects inadequate planning or oversight by the course organizers.",Academic
+303,alaminxpro/university-students-complaints,Air conditioners stop working during afternoon classes.,Infrastructure
+307,alaminxpro/university-students-complaints,Emergency lights in staircases are not operational.,Infrastructure
+329,alaminxpro/university-students-complaints,Different staff members provide conflicting fee information.,Finance
+335,alaminxpro/university-students-complaints,Duplicate charges appeared in some student accounts.,Finance
+345,alaminxpro/university-students-complaints,Students cannot check payment history easily.,Finance
+346,alaminxpro/university-students-complaints,Staff availability is limited during peak payment time,Finance
+347,alaminxpro/university-students-complaints,Insufficient parking spaces during peak hours.,Infrastructure
+352,alaminxpro/university-students-complaints,Students park vehicles outside designated zones.,Infrastructure
+365,alaminxpro/university-students-complaints,Cars are parked in restricted areas.,Infrastructure
+371,alaminxpro/university-students-complaints,Parking rules are not clearly communicated,Infrastructure
+375,alaminxpro/university-students-complaints,Broken door locks in several washrooms.,Infrastructure
+382,alaminxpro/university-students-complaints,Washroom lights remain off most of the time.,Infrastructure
+383,alaminxpro/university-students-complaints,Elevator displays incorrect floor numbers.,Infrastructure
+386,alaminxpro/university-students-complaints,Classroom doors make loud noises when opening.,Infrastructure
+388,alaminxpro/university-students-complaints,Washrooms sometimes have unpleasant odors.,Infrastructure
+389,alaminxpro/university-students-complaints,Broken sinks in several washrooms.,Infrastructure
+395,alaminxpro/university-students-complaints,Broken mirrors in washrooms remain unrepaired.,Infrastructure

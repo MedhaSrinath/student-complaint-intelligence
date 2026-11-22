@@ -1,0 +1,188 @@
+{
+  "logreg": {
+    "total_samples": 327,
+    "correct": 321,
+    "errors": 6,
+    "confusion_matrix": [
+      [
+        58,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        27,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        32,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        140,
+        2
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        64
+      ]
+    ],
+    "confusion_sum": 327,
+    "off_diagonal_sum": 6,
+    "accuracy": 0.981651376146789,
+    "macro_f1": 0.9834540353624324,
+    "precision": 0.9836829836829837,
+    "recall": 0.9832768361581922,
+    "per_class": {
+      "Academic": {
+        "precision": 1.0,
+        "recall": 0.9830508474576272,
+        "f1-score": 0.9914529914529915,
+        "support": 59.0
+      },
+      "Administrative": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 27.0
+      },
+      "Finance": {
+        "precision": 0.9696969696969697,
+        "recall": 0.9696969696969697,
+        "f1-score": 0.9696969696969697,
+        "support": 33.0
+      },
+      "Infrastructure": {
+        "precision": 0.9790209790209791,
+        "recall": 0.9790209790209791,
+        "f1-score": 0.9790209790209791,
+        "support": 143.0
+      },
+      "Technical": {
+        "precision": 0.9696969696969697,
+        "recall": 0.9846153846153847,
+        "f1-score": 0.9770992366412213,
+        "support": 65.0
+      },
+      "accuracy": 0.981651376146789,
+      "macro avg": {
+        "precision": 0.9836829836829837,
+        "recall": 0.9832768361581922,
+        "f1-score": 0.9834540353624324,
+        "support": 327.0
+      },
+      "weighted avg": {
+        "precision": 0.9817440459642294,
+        "recall": 0.981651376146789,
+        "f1-score": 0.9816733237841158,
+        "support": 327.0
+      }
+    }
+  },
+  "svm": {
+    "total_samples": 327,
+    "correct": 323,
+    "errors": 4,
+    "confusion_matrix": [
+      [
+        58,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        27,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        32,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        142,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        64
+      ]
+    ],
+    "confusion_sum": 327,
+    "off_diagonal_sum": 4,
+    "accuracy": 0.9877675840978594,
+    "macro_f1": 0.9879018268553154,
+    "precision": 0.9898014629049111,
+    "recall": 0.986074038955395,
+    "per_class": {
+      "Academic": {
+        "precision": 1.0,
+        "recall": 0.9830508474576272,
+        "f1-score": 0.9914529914529915,
+        "support": 59.0
+      },
+      "Administrative": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 27.0
+      },
+      "Finance": {
+        "precision": 0.9696969696969697,
+        "recall": 0.9696969696969697,
+        "f1-score": 0.9696969696969697,
+        "support": 33.0
+      },
+      "Infrastructure": {
+        "precision": 0.9793103448275862,
+        "recall": 0.993006993006993,
+        "f1-score": 0.9861111111111112,
+        "support": 143.0
+      },
+      "Technical": {
+        "precision": 1.0,
+        "recall": 0.9846153846153847,
+        "f1-score": 0.9922480620155039,
+        "support": 65.0
+      },
+      "accuracy": 0.9877675840978594,
+      "macro avg": {
+        "precision": 0.9898014629049111,
+        "recall": 0.986074038955395,
+        "f1-score": 0.9879018268553154,
+        "support": 327.0
+      },
+      "weighted avg": {
+        "precision": 0.9878941263313298,
+        "recall": 0.9877675840978594,
+        "f1-score": 0.9877851358275936,
+        "support": 327.0
+      }
+    }
+  }
+}

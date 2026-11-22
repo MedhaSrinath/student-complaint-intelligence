@@ -1,0 +1,496 @@
+{
+  "overall_metrics": {
+    "logreg": {
+      "fold": 3.0,
+      "accuracy": 0.9755710955710957,
+      "macro_f1": 0.9708430734919411,
+      "precision": 0.9859567111605487,
+      "recall": 0.9616849816849818
+    },
+    "svm": {
+      "fold": 3.0,
+      "accuracy": 0.9756177156177156,
+      "macro_f1": 0.9699919020644984,
+      "precision": 0.9897093993325917,
+      "recall": 0.9573992673992674
+    }
+  },
+  "confusion_matrices": {
+    "logreg": [
+      [
+        [
+          12,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          5,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          6,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          29,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          13
+        ]
+      ],
+      [
+        [
+          11,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          5,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          5,
+          2,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          29,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          13
+        ]
+      ],
+      [
+        [
+          12,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          5,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          4,
+          2,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          29,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          13
+        ]
+      ],
+      [
+        [
+          12,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          6,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          6,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          28,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          12
+        ]
+      ],
+      [
+        [
+          11,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          6,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          7,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          27,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          13
+        ]
+      ]
+    ],
+    "svm": [
+      [
+        [
+          12,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          5,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          5,
+          2,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          29,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          13
+        ]
+      ],
+      [
+        [
+          11,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          5,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          5,
+          2,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          29,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          13
+        ]
+      ],
+      [
+        [
+          12,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          5,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          4,
+          2,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          29,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          13
+        ]
+      ],
+      [
+        [
+          12,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          6,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          6,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          28,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          12
+        ]
+      ],
+      [
+        [
+          11,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          6,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          7,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          28,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          13
+        ]
+      ]
+    ]
+  },
+  "misclassifications": {
+    "logreg": [
+      {
+        "text": "Refund process after course withdrawal is too slow.",
+        "true_label": "Finance",
+        "pred_label": "Infrastructure",
+        "fold": 1
+      },
+      {
+        "text": "The supervisor finding procedure for thesis is so frustrating. Would appreciate a resolution soon.",
+        "true_label": "Academic",
+        "pred_label": "Infrastructure",
+        "fold": 2
+      },
+      {
+        "text": "Scholarship adjustments are not reflected in fee statements.",
+        "true_label": "Finance",
+        "pred_label": "Infrastructure",
+        "fold": 2
+      },
+      {
+        "text": "Different staff members provide conflicting fee information.",
+        "true_label": "Finance",
+        "pred_label": "Infrastructure",
+        "fold": 2
+      },
+      {
+        "text": "Semester fee breakdown is not clearly explained.",
+        "true_label": "Finance",
+        "pred_label": "Infrastructure",
+        "fold": 3
+      },
+      {
+        "text": "Duplicate charges appeared in some student accounts.",
+        "true_label": "Finance",
+        "pred_label": "Infrastructure",
+        "fold": 3
+      },
+      {
+        "text": "Most of the computers at the labs have problems; they should be fixed. Kindly verify and take action.",
+        "true_label": "Technical",
+        "pred_label": "Infrastructure",
+        "fold": 4
+      },
+      {
+        "text": "Parking fee collection process is confusing.",
+        "true_label": "Infrastructure",
+        "pred_label": "Finance",
+        "fold": 5
+      }
+    ],
+    "svm": [
+      {
+        "text": "Refund process after course withdrawal is too slow.",
+        "true_label": "Finance",
+        "pred_label": "Infrastructure",
+        "fold": 1
+      },
+      {
+        "text": "Payment verification requires multiple office visits.",
+        "true_label": "Finance",
+        "pred_label": "Infrastructure",
+        "fold": 1
+      },
+      {
+        "text": "The supervisor finding procedure for thesis is so frustrating. Would appreciate a resolution soon.",
+        "true_label": "Academic",
+        "pred_label": "Infrastructure",
+        "fold": 2
+      },
+      {
+        "text": "Scholarship adjustments are not reflected in fee statements.",
+        "true_label": "Finance",
+        "pred_label": "Infrastructure",
+        "fold": 2
+      },
+      {
+        "text": "Different staff members provide conflicting fee information.",
+        "true_label": "Finance",
+        "pred_label": "Infrastructure",
+        "fold": 2
+      },
+      {
+        "text": "Semester fee breakdown is not clearly explained.",
+        "true_label": "Finance",
+        "pred_label": "Infrastructure",
+        "fold": 3
+      },
+      {
+        "text": "Duplicate charges appeared in some student accounts.",
+        "true_label": "Finance",
+        "pred_label": "Infrastructure",
+        "fold": 3
+      },
+      {
+        "text": "Most of the computers at the labs have problems; they should be fixed. Kindly verify and take action.",
+        "true_label": "Technical",
+        "pred_label": "Infrastructure",
+        "fold": 4
+      }
+    ]
+  }
+}

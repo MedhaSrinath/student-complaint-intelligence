@@ -17,6 +17,7 @@ from duplicate_detection import (
     find_similar_submitted_complaints as match_submitted_complaints,
 )
 from duration_extraction import extract_duration_mentions
+from department_routing import rank_department_predictions
 from emotion_detection import detect_emotion
 
 
@@ -76,15 +77,15 @@ def classify_department(text):
     probabilities = department_model.predict_proba([text])[0]
     classes = department_model.classes_
 
-    top_indices = probabilities.argsort()[::-1][:3]
-
-    return [
+    predictions = [
         {
             "department": classes[i],
             "confidence": round(probabilities[i] * 100, 2)
         }
-        for i in top_indices
+        for i in probabilities.argsort()[::-1]
     ]
+
+    return rank_department_predictions(text, predictions)
 
 
 def analyze_urgency(text):

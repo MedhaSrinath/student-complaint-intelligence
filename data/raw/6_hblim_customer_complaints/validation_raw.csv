@@ -1,0 +1,211 @@
+text,label,split
+"No one attempted to deliver, just a fake update  ",1,validation
+I specifically declined that add-on.  ,0,validation
+It makes a loud buzzing noise constantly  ,2,validation
+Keyboard missing keys  ,2,validation
+You left out all the screws  ,2,validation
+It smells like gasoline  ,2,validation
+Why is this so complicated every month?  ,0,validation
+I didn’t authorize a delivery to my neighbor  ,1,validation
+Why leave perishables in 90-degree heat?  ,1,validation
+"How can something be ""delivered"" when I was home all day?  ",1,validation
+I missed work for a delivery that didn’t show  ,1,validation
+Feet are uneven  ,2,validation
+I can’t afford this mistake  ,0,validation
+I found hair stuck to the item  ,2,validation
+The food arrived cold and spilled everywhere  ,1,validation
+The item was clearly stolen in transit  ,1,validation
+This delay completely ruined my plans  ,1,validation
+Everything inside the box was broken  ,1,validation
+Why is it so hard to deliver a package?  ,1,validation
+There’s a hidden service fee  ,0,validation
+Nothing in this bill is correct  ,0,validation
+You billed my backup card without asking.  ,0,validation
+There’s a weird rattle inside  ,2,validation
+Nothing happens when I turn it on  ,2,validation
+Even your manager agreed it was wrong.  ,0,validation
+Stop charging me for extra services  ,0,validation
+This statement looks completely wrong.  ,0,validation
+This is not the address I typed  ,1,validation
+The coating is peeling  ,2,validation
+How are you still charging me?  ,0,validation
+Item smells burnt  ,2,validation
+Way too noisy  ,2,validation
+The buttons are stuck  ,2,validation
+The keyboard is missing keys  ,2,validation
+Case doesn’t fit  ,2,validation
+Your pricing page is misleading  ,0,validation
+Camera won’t focus  ,2,validation
+Sort this out now  ,0,validation
+You promised this wouldn’t happen again.  ,0,validation
+You took money from my account without notice.  ,0,validation
+There are deep gouges  ,2,validation
+Hinges are bent and don’t close  ,2,validation
+There's a mystery charge on my bank statement.  ,0,validation
+I’ve lost count of how many delays I’ve had  ,1,validation
+Your support keeps giving different answers  ,0,validation
+Stop using unreliable couriers  ,1,validation
+Your invoice is completely wrong  ,0,validation
+This is not acceptable  ,0,validation
+I can’t find this charge in my history.  ,0,validation
+I live on the 5th floor—why leave it downstairs?  ,1,validation
+Package arrived wet and destroyed  ,1,validation
+You billed me after I closed my account  ,0,validation
+This isn’t the right invoice  ,0,validation
+The package was torn open when I got it  ,1,validation
+Heating element not working  ,2,validation
+This isn't even my purchase.  ,0,validation
+I want to speak to someone immediately  ,0,validation
+I was quoted something else  ,0,validation
+Food spilled inside the bag  ,1,validation
+"My subscription was paused, yet I was still charged.  ",0,validation
+Rattling noise from inside  ,2,validation
+Fix this before I escalate  ,0,validation
+You said I wouldn’t be charged during maintenance.  ,0,validation
+Buttons don’t respond at all  ,2,validation
+Delivery service keeps getting worse  ,1,validation
+Very uncomfortable fit  ,2,validation
+Hidden fees? Really?  ,0,validation
+The total changed after submission.  ,0,validation
+I can’t keep dealing with this  ,1,validation
+Plug doesn’t match outlet  ,2,validation
+I never agreed to automatic renewal  ,0,validation
+Your invoice lists the wrong plan.  ,0,validation
+They dropped it and drove off  ,1,validation
+Missing half the parts I paid for  ,2,validation
+"Delivery window passed, still nothing  ",1,validation
+Terrible customer service experience  ,2,validation
+The item keeps restarting itself  ,2,validation
+One side longer than the other  ,2,validation
+The glass is shattered  ,2,validation
+I stayed home all day for nothing  ,1,validation
+Still seeing old charges  ,0,validation
+Package was just tossed on the driveway  ,1,validation
+They delivered to the completely wrong city  ,1,validation
+This came through after I moved accounts.  ,0,validation
+This is unacceptable  ,2,validation
+It stopped working after one use  ,2,validation
+I never authorized this transaction  ,0,validation
+Fabric is see-through  ,2,validation
+You charged me for express and didn’t deliver  ,1,validation
+Can someone competent handle this?  ,0,validation
+Spray cap missing  ,2,validation
+They left it with someone I don't even know  ,1,validation
+Driver reported “delivered” while I was watching the street  ,1,validation
+The wheels are jammed  ,2,validation
+Surface peels after wiping  ,2,validation
+Received broken glass  ,2,validation
+The promo expired early.  ,0,validation
+I never got a billing email.  ,0,validation
+Doesn’t fit my phone like advertised  ,2,validation
+Product arrived in pieces  ,2,validation
+It was delivered to a business that’s closed  ,1,validation
+Lights flicker constantly  ,2,validation
+That’s not what the support agent said.  ,0,validation
+The lights don’t work  ,2,validation
+I thought this was paused  ,0,validation
+No batteries included  ,2,validation
+You completely ignored my preferred drop-off location  ,1,validation
+It’s not at the front desk like claimed  ,1,validation
+The mount doesn’t stay attached  ,2,validation
+I was promised a credit. Where is it?  ,0,validation
+You billed me after I switched providers  ,0,validation
+You dropped my order off at the wrong location again  ,1,validation
+There’s an error in the breakdown  ,0,validation
+Incorrect expiration date  ,2,validation
+Still being billed after I moved  ,0,validation
+They rang once and ran  ,1,validation
+Only works when held upside down  ,2,validation
+I don’t use that feature you’re charging for.  ,0,validation
+My fragile items arrived broken  ,1,validation
+You sent the wrong item and it’s late  ,1,validation
+Flickers and then dies  ,2,validation
+I waited 4 hours and it never came  ,1,validation
+The order was missing half the items  ,1,validation
+Driver lied about attempted delivery  ,1,validation
+The adapter doesn’t fit  ,2,validation
+Incorrect voltage for my region  ,2,validation
+Driver didn’t wait for me to come to the door  ,1,validation
+How do I get this removed?  ,0,validation
+Packaging said something completely different  ,2,validation
+Cover doesn’t stay on  ,2,validation
+The seal was broken on arrival  ,2,validation
+I canceled during the trial period  ,0,validation
+They skipped my house completely  ,1,validation
+The charge happened before I even made an account.  ,0,validation
+The stitching ripped just taking it out  ,2,validation
+The foot pedal snapped off  ,2,validation
+Driver lied about delivery attempt  ,1,validation
+Product overheats after five minutes  ,2,validation
+Bag zipper broke instantly  ,2,validation
+You owe me an adjustment.  ,0,validation
+The package was torn and rained on  ,1,validation
+One side doesn’t light up  ,2,validation
+The blade is dull  ,2,validation
+Driver dropped the box and ran  ,1,validation
+I had to hunt my own package down  ,1,validation
+I selected a different plan at checkout.  ,0,validation
+Why am I being billed during suspension?  ,0,validation
+Charges don’t match what your support told me  ,0,validation
+Still showing as “in transit”  ,2,validation
+Package left in a random mailbox  ,1,validation
+You ignored my cancellation  ,0,validation
+This wasn’t even my account.  ,0,validation
+It’s missing a crucial part  ,2,validation
+Your rep promised this was resolved  ,0,validation
+Your system billed me twice in the same day.  ,0,validation
+The fees keep increasing  ,0,validation
+Stop blaming the carrier—it’s your logistics  ,1,validation
+Paint is chipped and peeling off  ,2,validation
+Why is my package bouncing between cities?  ,1,validation
+The final bill isn’t what you quoted.  ,0,validation
+It came without a box or label  ,2,validation
+No response from support  ,2,validation
+Wrong plug type for my region  ,2,validation
+I had to file a claim just to get attention  ,1,validation
+Headphones are bent  ,2,validation
+This entire billing cycle is wrong  ,0,validation
+You’ve ruined a surprise gift  ,1,validation
+You charged the wrong card  ,0,validation
+Mats are uneven  ,2,validation
+"I was home all day, no one rang the bell  ",1,validation
+Feels like it's going to fall apart  ,2,validation
+They walked right past my door  ,1,validation
+Manual is unreadable  ,2,validation
+I never received a receipt  ,0,validation
+I got a delivery notification but nothing came  ,1,validation
+They marked it delivered at 3am  ,1,validation
+This charge hit my account overnight without warning.  ,0,validation
+Parcel was signed for by a stranger  ,1,validation
+Parcel was jammed into my mailbox and broke  ,1,validation
+I paid for a year in advance  ,0,validation
+Screws stripped  ,2,validation
+The rate changed without warning  ,0,validation
+"Food was soggy, cold, and late  ",1,validation
+You shipped it without confirmation  ,1,validation
+The clasp won’t lock  ,2,validation
+The driver never showed up—stop lying  ,1,validation
+Still missing my replacement package  ,1,validation
+"The charge reversed, then hit again.  ",0,validation
+I only used it once—what is this charge?  ,0,validation
+The items inside are broken  ,1,validation
+You said it was free!  ,0,validation
+The screws don’t match the threads  ,2,validation
+You never confirmed this change  ,0,validation
+This is taking way too long to fix  ,0,validation
+"Every time I contact support, nothing changes  ",0,validation
+I watched the truck skip my house entirely  ,1,validation
+Keeps falling over  ,2,validation
+This is not what I agreed to pay  ,0,validation
+No confirmation received  ,2,validation
+I never activated this feature.  ,0,validation
+You dropped it off hours late with no notice  ,1,validation
+Monitor flickers constantly  ,2,validation
+I caught this by chance.  ,0,validation
+No way I’m paying this  ,0,validation
+Package left in a puddle—are you kidding?  ,1,validation
+Item was loose in the box  ,2,validation
+Item started leaking after one use  ,2,validation
+"Your website says one price, your bill says another.  ",0,validation
+Doesn’t hold any weight  ,2,validation
+It smells like mildew  ,2,validation

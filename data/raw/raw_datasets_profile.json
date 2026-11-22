@@ -1,0 +1,459 @@
+{
+  "1_alaminxpro": {
+    "source": "https://huggingface.co/datasets/alaminxpro/university-students-complaints",
+    "license": "Not specified / Research CC",
+    "total_rows": 332,
+    "columns": [
+      "ID",
+      "Timestamp",
+      "Gender",
+      "Semester",
+      "Student_Dept",
+      "Complaint_Description",
+      "Category",
+      "Responsible_Departments",
+      "Primary_Department",
+      "Aspects",
+      "Severity",
+      "Complaint_Group_ID"
+    ],
+    "null_counts": {
+      "ID": 0,
+      "Timestamp": 0,
+      "Gender": 0,
+      "Semester": 0,
+      "Student_Dept": 0,
+      "Complaint_Description": 0,
+      "Category": 0,
+      "Responsible_Departments": 0,
+      "Primary_Department": 0,
+      "Aspects": 0,
+      "Severity": 0,
+      "Complaint_Group_ID": 0
+    },
+    "duplicate_texts": 5,
+    "word_count_stats": {
+      "count": 332.0,
+      "mean": 18.22590361445783,
+      "std": 15.682851607040286,
+      "min": 2.0,
+      "25%": 8.0,
+      "50%": 14.0,
+      "75%": 23.0,
+      "max": 94.0
+    },
+    "departments": {
+      "Maintenance": 98,
+      "IT": 69,
+      "Department Head": 60,
+      "Transport & Parking": 25,
+      "Finance": 25,
+      "Student Welfare": 20,
+      "Library": 12,
+      "Proctorial": 8,
+      "Examination": 8,
+      "Registrar": 4,
+      "Canteen": 3
+    },
+    "categories": {
+      "Infrastructure": 143,
+      "Technical": 65,
+      "Academic": 64,
+      "Finance": 33,
+      "Administrative": 27
+    },
+    "severities": {
+      "Urgent": 108,
+      "Medium": 99,
+      "High": 98,
+      "Low": 27
+    },
+    "sample_records": [
+      {
+        "Complaint_Description": "On most parts of the 8th/9th floor, WiFi is not available at all.",
+        "Primary_Department": "IT",
+        "Severity": "Urgent"
+      },
+      {
+        "Complaint_Description": "need a seperate female prayer room which is not just a sub portion of female common room",
+        "Primary_Department": "Student Welfare",
+        "Severity": "Medium"
+      },
+      {
+        "Complaint_Description": "drinking water system on the 6th floor(CSE dpt) is no longer working.",
+        "Primary_Department": "Maintenance",
+        "Severity": "Urgent"
+      }
+    ]
+  },
+  "2_omarsobhy": {
+    "source": "https://www.kaggle.com/datasets/omarsobhy14/university-students-complaints-and-reports",
+    "license": "Kaggle Open Dataset (CC BY-SA 4.0 / Community)",
+    "total_rows": 1005,
+    "columns": [
+      "Genre",
+      "Reports",
+      "Age",
+      "Gpa",
+      "Year",
+      "Count",
+      "Gender",
+      "Nationality"
+    ],
+    "null_counts": {
+      "Genre": 0,
+      "Reports": 0,
+      "Age": 0,
+      "Gpa": 0,
+      "Year": 0,
+      "Count": 0,
+      "Gender": 0,
+      "Nationality": 0
+    },
+    "duplicate_texts": 4,
+    "word_count_stats": {
+      "count": 1005.0,
+      "mean": 22.083582089552237,
+      "std": 8.449108200687803,
+      "min": 6.0,
+      "25%": 17.0,
+      "50%": 20.0,
+      "75%": 25.0,
+      "max": 62.0
+    },
+    "genres": {
+      "Academic Support and Resources": 236,
+      "Food and Cantines": 138,
+      "Financial Support": 91,
+      "Online learning": 90,
+      "Career opportunities": 89,
+      "International student experiences": 86,
+      "Athletics and sports": 85,
+      "Housing and Transportation": 64,
+      "Health and Well-being Support": 53,
+      "Activities and Travelling": 40,
+      "Student Affairs": 33
+    },
+    "sample_records": [
+      {
+        "Reports": "The limited access to research databases and materials is causing a lot of frustration among students. We need better access to be able to succeed academically.",
+        "Genre": "Academic Support and Resources"
+      },
+      {
+        "Reports": "I'm having trouble finding the course materials I need for my classes. The library doesn't have them and the bookstore is always sold out.",
+        "Genre": "Academic Support and Resources"
+      },
+      {
+        "Reports": "It's frustrating to have limited access to research databases and materials when I'm trying to write a paper or do a project. I feel like I'm at a disadvantage compared to students at other schools.",
+        "Genre": "Academic Support and Resources"
+      }
+    ]
+  },
+  "3_nlpc_uom": {
+    "source": "https://huggingface.co/datasets/NLPC-UOM/Student_feedback_analysis_dataset",
+    "license": "MIT License",
+    "downloaded_files_count": 3,
+    "tsv_breakdown": [
+      {
+        "file": "test.tsv",
+        "rows": 1519,
+        "columns": [
+          "49020",
+          "Has no real idea what she is teaching , and has no industry insights to help the students grow into the job market . Complete waste of space .",
+          "Has\\O no\\O real\\O idea\\O what\\O she\\O is\\O teaching\\B ,\\O and\\O has\\O no\\O industry\\O insights\\O to\\O help\\O the\\O students\\O grow\\O into\\O the\\O job\\O market\\O .\\O Complete\\O waste\\O of\\O space\\O .\\O",
+          "Has\\O no\\B real\\I idea\\I what\\O she\\O is\\O teaching\\O ,\\O and\\O has\\O no\\O industry\\O insights\\O to\\O help\\O the\\O students\\O grow\\O into\\O the\\O job\\O market\\O .\\O Complete\\O waste\\O of\\O space\\O .\\O"
+        ]
+      },
+      {
+        "file": "train.tsv",
+        "rows": 4899,
+        "columns": [
+          "11",
+          "Throughout the whole semester our focus was on to complete the project on time . But only 40 percent of the module 's marks were allocated to the project . So I would like to suggest that allocate at least 50 percent of the marks to the project to satisfy the effort of the students .",
+          "Throughout\\O the\\O whole\\O semester\\O our\\O focus\\O was\\O on\\O to\\O complete\\O the\\O project\\O on\\O time\\O .\\O But\\O only\\O 40\\O percent\\O of\\O the\\O module\\O 's\\O marks\\O were\\O allocated\\O to\\O the\\O project\\O .\\O So\\O I\\O would\\O like\\O to\\O suggest\\O that\\O allocate\\O at\\O least\\B 50\\I percent\\I of\\I the\\I marks\\I to\\O the\\O project\\O to\\O satisfy\\O the\\O effort\\O of\\O the\\O students\\O .\\O",
+          "Throughout\\O the\\O whole\\O semester\\O our\\O focus\\O was\\O on\\O to\\O complete\\O the\\O project\\O on\\O time\\O .\\O But\\O only\\O 40\\O percent\\O of\\O the\\O module\\O 's\\O marks\\O were\\O allocated\\O to\\O the\\O project\\O .\\O So\\O I\\O would\\O like\\O to\\O suggest\\O that\\O allocate\\O at\\O least\\O 50\\O percent\\O of\\O the\\O marks\\O to\\O the\\O project\\O to\\O satisfy\\B the\\O effort\\O of\\O the\\O students\\O .\\O"
+        ]
+      },
+      {
+        "file": "train.tsv",
+        "rows": 3997,
+        "columns": [
+          "11",
+          "Throughout the whole semester our focus was on to complete the project on time . But only 40 percent of the module 's marks were allocated to the project . So I would like to suggest that allocate at least 50 percent of the marks to the project to satisfy the effort of the students .",
+          "Throughout\\O the\\O whole\\O semester\\O our\\O focus\\O was\\O on\\O to\\O complete\\O the\\O project\\O on\\O time\\O .\\O But\\O only\\O 40\\O percent\\O of\\O the\\O module\\O 's\\O marks\\O were\\O allocated\\O to\\O the\\O project\\O .\\O So\\O I\\O would\\O like\\O to\\O suggest\\O that\\O allocate\\O at\\O least\\B 50\\I percent\\I of\\I the\\I marks\\I to\\O the\\O project\\O to\\O satisfy\\O the\\O effort\\O of\\O the\\O students\\O .\\O",
+          "Throughout\\O the\\O whole\\O semester\\O our\\O focus\\O was\\O on\\O to\\O complete\\O the\\O project\\O on\\O time\\O .\\O But\\O only\\O 40\\O percent\\O of\\O the\\O module\\O 's\\O marks\\O were\\O allocated\\O to\\O the\\O project\\O .\\O So\\O I\\O would\\O like\\O to\\O suggest\\O that\\O allocate\\O at\\O least\\O 50\\O percent\\O of\\O the\\O marks\\O to\\O the\\O project\\O to\\O satisfy\\B the\\O effort\\O of\\O the\\O students\\O .\\O"
+        ]
+      },
+      {
+        "file": "test.tsv",
+        "rows": 1713,
+        "columns": [
+          "32680",
+          "Understandable ",
+          "Understandable\\B ",
+          "Understandable\\B .1"
+        ]
+      },
+      {
+        "file": "train.tsv",
+        "rows": 4498,
+        "columns": [
+          "54320",
+          "boring , uninspiring , uptight and snappy ",
+          "boring\\B ,\\O uninspiring\\O ,\\O uptight\\O and\\O snappy\\O ",
+          "boring\\B ,\\O uninspiring\\O ,\\O uptight\\O and\\O snappy\\O .1"
+        ]
+      }
+    ],
+    "approx_feedback_entries": 3000,
+    "format": "Annotated Aspect-Based Sentiment TSV & XMI files"
+  },
+  "4_crowdflower": {
+    "source": "https://www.kaggle.com/datasets/crowdflower/twitter-airline-sentiment",
+    "license": "CC0 Public Domain (CrowdFlower Data for Everyone)",
+    "total_rows": 14640,
+    "columns": [
+      "tweet_id",
+      "airline_sentiment",
+      "airline_sentiment_confidence",
+      "negativereason",
+      "negativereason_confidence",
+      "airline",
+      "airline_sentiment_gold",
+      "name",
+      "negativereason_gold",
+      "retweet_count",
+      "text",
+      "tweet_coord",
+      "tweet_created",
+      "tweet_location",
+      "user_timezone"
+    ],
+    "null_counts": {
+      "tweet_id": 0,
+      "airline_sentiment": 0,
+      "airline_sentiment_confidence": 0,
+      "negativereason": 5462,
+      "negativereason_confidence": 4118,
+      "airline": 0,
+      "airline_sentiment_gold": 14600,
+      "name": 0,
+      "negativereason_gold": 14608,
+      "retweet_count": 0,
+      "text": 0,
+      "tweet_coord": 13621,
+      "tweet_created": 0,
+      "tweet_location": 4733,
+      "user_timezone": 4820
+    },
+    "duplicate_texts": 213,
+    "word_count_stats": {
+      "count": 14640.0,
+      "mean": 17.65341530054645,
+      "std": 6.882259181624969,
+      "min": 2.0,
+      "25%": 12.0,
+      "50%": 19.0,
+      "75%": 23.0,
+      "max": 36.0
+    },
+    "sentiment_distribution": {
+      "negative": 9178,
+      "neutral": 3099,
+      "positive": 2363
+    },
+    "negative_reasons": {
+      "Customer Service Issue": 2910,
+      "Late Flight": 1665,
+      "Can't Tell": 1190,
+      "Cancelled Flight": 847,
+      "Lost Luggage": 724,
+      "Bad Flight": 580,
+      "Flight Booking Problems": 529,
+      "Flight Attendant Complaints": 481,
+      "longlines": 178,
+      "Damaged Luggage": 74
+    },
+    "sample_records": [
+      {
+        "text": "@VirginAmerica it's really aggressive to blast obnoxious \"entertainment\" in your guests' faces &amp; they have little recourse",
+        "airline_sentiment": "negative",
+        "negativereason": "Bad Flight"
+      },
+      {
+        "text": "@VirginAmerica and it's a really big bad thing about it",
+        "airline_sentiment": "negative",
+        "negativereason": "Can't Tell"
+      },
+      {
+        "text": "@VirginAmerica seriously would pay $30 a flight for seats that didn't have this playing.\nit's really the only bad thing about flying VA",
+        "airline_sentiment": "negative",
+        "negativereason": "Can't Tell"
+      }
+    ]
+  },
+  "5_cfpb": {
+    "source": "https://huggingface.co/datasets/claritystorm/cfpb-consumer-complaints",
+    "license": "CC0 / US Federal Public Domain",
+    "total_rows": 1000,
+    "columns": [
+      "date_received",
+      "product",
+      "sub_product",
+      "issue",
+      "sub_issue",
+      "consumer_narrative",
+      "company_public_response",
+      "company",
+      "state",
+      "zip_code",
+      "tags",
+      "consumer_consent",
+      "submitted_via",
+      "date_sent_to_company",
+      "company_response",
+      "timely_response",
+      "consumer_disputed",
+      "complaint_id",
+      "year",
+      "month",
+      "has_narrative",
+      "product_normalised"
+    ],
+    "null_counts": {
+      "date_received": 0,
+      "product": 0,
+      "sub_product": 13,
+      "issue": 0,
+      "sub_issue": 75,
+      "consumer_narrative": 729,
+      "company_public_response": 448,
+      "company": 0,
+      "state": 5,
+      "zip_code": 90,
+      "tags": 942,
+      "consumer_consent": 140,
+      "submitted_via": 0,
+      "date_sent_to_company": 0,
+      "company_response": 0,
+      "timely_response": 0,
+      "consumer_disputed": 950,
+      "complaint_id": 0,
+      "year": 0,
+      "month": 0,
+      "has_narrative": 0,
+      "product_normalised": 0
+    },
+    "rows_with_narratives": 271,
+    "duplicate_narratives": 5,
+    "word_count_stats": {
+      "count": 271.0,
+      "mean": 181.14760147601476,
+      "std": 339.90834328803754,
+      "min": 6.0,
+      "25%": 50.5,
+      "50%": 103.0,
+      "75%": 202.5,
+      "max": 4855.0
+    },
+    "products": {
+      "Credit reporting or other personal consumer reports": 608,
+      "Credit reporting, credit repair services, or other personal consumer reports": 155,
+      "Debt collection": 76,
+      "Checking or savings account": 34,
+      "Mortgage": 30,
+      "Money transfer, virtual currency, or money service": 20,
+      "Credit card or prepaid card": 19,
+      "Credit card": 17,
+      "Student loan": 8,
+      "Credit reporting": 7,
+      "Vehicle loan or lease": 6,
+      "Bank account or service": 5,
+      "Consumer Loan": 4,
+      "Payday loan, title loan, or personal loan": 4,
+      "Payday loan, title loan, personal loan, or advance loan": 3,
+      "Prepaid card": 2,
+      "Debt or credit management": 1,
+      "Money transfers": 1
+    },
+    "issues_top10": {
+      "Incorrect information on your report": 435,
+      "Improper use of your report": 169,
+      "Problem with a company's investigation into an existing problem": 117,
+      "Problem with a credit reporting company's investigation into an existing problem": 40,
+      "Attempts to collect debt not owed": 26,
+      "Managing an account": 21,
+      "Written notification about debt": 16,
+      "Took or threatened to take negative or legal action": 9,
+      "False statements or representation": 7,
+      "Cont'd attempts collect debt not owed": 7
+    },
+    "sample_records": [
+      {
+        "consumer_narrative": "I have not supplied proof under the doctrine of estoppel by silence, XXXX XXXX XXXXXXXX XXXX XXXX XXXX  XXXX XXXX XXXX. I pressume that no proof of the alleged debt, nor therefore any such debt, in fact therefore exist.",
+        "product": "Credit reporting or other personal consumer reports",
+        "issue": "Incorrect information on your report"
+      },
+      {
+        "consumer_narrative": "Pursuant to 15 USC 1681a ( 2 ) ( B ) any authorization or approval of a specific extension of credit directly or indirectly by the issuer of a credit card or similar device ; Should be excluded from a consumer report. The definition of a credit card under 15 USC 1681 is the same as it is under 15 USC 1602 ( l ) which is the term credit card means any card, plate, coupon, book or other credits device existing for the purpose of obtaining, money, property, labor, or services on credit Notice, congress said ANY card. The credit card is my social security card. This is the credit card I used to originate every consumer credit transaction. \n\nI, XXXX XXXX, never granted XXXX, XXXX, or XXXX written authorization or permission to furnish harmful and inaccurate information on my credit report.",
+        "product": "Credit reporting, credit repair services, or other personal consumer reports",
+        "issue": "Incorrect information on your report"
+      },
+      {
+        "consumer_narrative": "I have a goal of getting a house as soon as possible but the stuff on my credit report will really put me in trouble, been waiting for the credit bureaus response and its really making me feel XXXX since it seems that theyre not doing anything to resolve my issue. My name is XXXX XXXX and I am filing this complaint for falsely reporting misleading information. There is no third party involved, its me personally who is filling this complaint. Please review the uploaded letters.",
+        "product": "Credit reporting or other personal consumer reports",
+        "issue": "Problem with a company's investigation into an existing problem"
+      }
+    ]
+  },
+  "6_hblim": {
+    "source": "https://huggingface.co/datasets/hblim/customer-complaints",
+    "license": "MIT License",
+    "total_rows": 1682,
+    "splits": [
+      "train: 1261 rows",
+      "validation: 210 rows",
+      "test: 211 rows"
+    ],
+    "columns": [
+      "text",
+      "label",
+      "split"
+    ],
+    "null_counts": {
+      "text": 0,
+      "label": 0,
+      "split": 0
+    },
+    "duplicate_texts": 7,
+    "word_count_stats": {
+      "count": 1682.0,
+      "mean": 5.843043995243757,
+      "std": 1.6877914166149262,
+      "min": 2.0,
+      "25%": 5.0,
+      "50%": 6.0,
+      "75%": 7.0,
+      "max": 13.0
+    },
+    "labels": {
+      "2": 590,
+      "0": 555,
+      "1": 537
+    },
+    "sample_records": [
+      {
+        "text": "You\u2019ve charged me after deactivation  ",
+        "label": 0
+      },
+      {
+        "text": "No warranty included  ",
+        "label": 2
+      },
+      {
+        "text": "This is the third time this happened  ",
+        "label": 0
+      }
+    ]
+  }
+}
