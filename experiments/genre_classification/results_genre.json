@@ -1,0 +1,2804 @@
+{
+  "overall_metrics": {
+    "logreg": {
+      "fold": 3.0,
+      "accuracy": 0.9369497487437186,
+      "macro_f1": 0.9227241572217009,
+      "precision": 0.9368421889774072,
+      "recall": 0.9183945605496753
+    },
+    "svm": {
+      "fold": 3.0,
+      "accuracy": 0.9499597989949748,
+      "macro_f1": 0.936993997801199,
+      "precision": 0.9531639385057724,
+      "recall": 0.9283871761844724
+    }
+  },
+  "confusion_matrices": {
+    "logreg": [
+      [
+        [
+          41,
+          0,
+          0,
+          0,
+          2,
+          1,
+          0,
+          0,
+          1,
+          2,
+          0
+        ],
+        [
+          0,
+          7,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          17,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          18,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          3,
+          0,
+          0,
+          1,
+          13,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          27,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          9,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          12,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          16,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          17,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          1,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          3
+        ]
+      ],
+      [
+        [
+          46,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          6,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          17,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          17,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          16,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          28,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          9,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          11,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          17,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          16,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          5
+        ]
+      ],
+      [
+        [
+          47,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          8,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          17,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          17,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          14,
+          0,
+          2,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          28,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          9,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          13,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          16,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          16,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5
+        ]
+      ],
+      [
+        [
+          42,
+          0,
+          0,
+          1,
+          2,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0
+        ],
+        [
+          1,
+          5,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          16,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          18,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          17,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          28,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          9,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          13,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          17,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          18,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          6
+        ]
+      ],
+      [
+        [
+          43,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          6,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          17,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          18,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          1,
+          0,
+          16,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          27,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          10,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          12,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          16,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          17,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          7
+        ]
+      ]
+    ],
+    "svm": [
+      [
+        [
+          44,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          7,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          17,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          18,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          3,
+          0,
+          0,
+          1,
+          13,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          27,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          8,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          12,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          17,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          17,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4
+        ]
+      ],
+      [
+        [
+          47,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          6,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          17,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          17,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          17,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          28,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          10,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          12,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          16,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          17,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          5
+        ]
+      ],
+      [
+        [
+          47,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          8,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          17,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          17,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          15,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          28,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          9,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          13,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          17,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          16,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5
+        ]
+      ],
+      [
+        [
+          43,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          5,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          16,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          18,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          16,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          28,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          10,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          13,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          17,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          18,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          6
+        ]
+      ],
+      [
+        [
+          45,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          6,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          17,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          18,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          17,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          27,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          10,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          12,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          16,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          17,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          6
+        ]
+      ]
+    ]
+  },
+  "misclassifications": {
+    "logreg": [
+      {
+        "fold": 1,
+        "text": "The cost of attending this university is outrageous. I don't know how I'm going to afford it.",
+        "true_label": "Academic Support and Resources",
+        "pred_label": "Financial Support"
+      },
+      {
+        "fold": 1,
+        "text": "I'm trying to graduate early but there are only a few courses available that I need to take. It's frustrating that my options are so limited.",
+        "true_label": "Academic Support and Resources",
+        "pred_label": "Food and Cantines"
+      },
+      {
+        "fold": 1,
+        "text": "I'm having trouble with a particular software program for one of my classes, but there's no one available to help me troubleshoot. It's frustrating to feel like I'm on my own.",
+        "true_label": "Academic Support and Resources",
+        "pred_label": "International student experiences"
+      },
+      {
+        "fold": 1,
+        "text": "I am struggling to find and access course materials needed for my classes due to limited availability in the library and online.",
+        "true_label": "Academic Support and Resources",
+        "pred_label": "Online learning"
+      },
+      {
+        "fold": 1,
+        "text": "I wish there were more opportunities to access academic resources, such as extended library hours or online resources.",
+        "true_label": "Academic Support and Resources",
+        "pred_label": "Online learning"
+      },
+      {
+        "fold": 1,
+        "text": "I'm not very good at managing my time, and it's been affecting my grades.",
+        "true_label": "Academic Support and Resources",
+        "pred_label": "Financial Support"
+      },
+      {
+        "fold": 1,
+        "text": "The cost of textbooks and other course materials is outrageous, and it's making it difficult to afford my education.",
+        "true_label": "Financial Support",
+        "pred_label": "Academic Support and Resources"
+      },
+      {
+        "fold": 1,
+        "text": "I'm constantly stressed about money and it's taking a toll on my academic performance.",
+        "true_label": "Financial Support",
+        "pred_label": "Academic Support and Resources"
+      },
+      {
+        "fold": 1,
+        "text": "I wish there were more scholarship opportunities available for students like me who don't come from wealthy backgrounds.",
+        "true_label": "Financial Support",
+        "pred_label": "Career opportunities"
+      },
+      {
+        "fold": 1,
+        "text": "The stress of paying for college is causing me to lose sleep and focus on my studies.",
+        "true_label": "Financial Support",
+        "pred_label": "Academic Support and Resources"
+      },
+      {
+        "fold": 1,
+        "text": "The constant worry and stress about finances is taking a toll on my mental health.",
+        "true_label": "Financial Support",
+        "pred_label": "Health and Well-being Support"
+      },
+      {
+        "fold": 1,
+        "text": "I'm concerned about the quality of care I can receive with the limited insurance options available to me.",
+        "true_label": "Health and Well-being Support",
+        "pred_label": "Food and Cantines"
+      },
+      {
+        "fold": 1,
+        "text": "It's frustrating when people make assumptions about me based on my race or ethnicity, without taking the time to get to know me as an individual.",
+        "true_label": "International student experiences",
+        "pred_label": "Financial Support"
+      },
+      {
+        "fold": 1,
+        "text": "The lack of networking opportunities and professional development events for online students can be a major drawback.",
+        "true_label": "Online learning",
+        "pred_label": "Career opportunities"
+      },
+      {
+        "fold": 1,
+        "text": "The process for obtaining student certificates is unnecessarily complicated and time-consuming. It's taking away from my ability to focus on my studies.",
+        "true_label": "Student Affairs",
+        "pred_label": "Financial Support"
+      },
+      {
+        "fold": 1,
+        "text": "I've been trying to update my personal information with the university, but the website keeps glitching and I can't get through to customer service. It's frustrating because this information is important for communication and academic purposes.",
+        "true_label": "Student Affairs",
+        "pred_label": "Academic Support and Resources"
+      },
+      {
+        "fold": 1,
+        "text": "The university should provide more resources for students who are applying for internships and jobs. It's difficult to navigate the job market on your own, and career services is often understaffed and overworked.",
+        "true_label": "Student Affairs",
+        "pred_label": "Career opportunities"
+      },
+      {
+        "fold": 1,
+        "text": "I've had issues with financial aid and scholarships, and it seems like the university is always changing their policies and requirements. It's frustrating because I rely on this support to continue my education.",
+        "true_label": "Student Affairs",
+        "pred_label": "Financial Support"
+      },
+      {
+        "fold": 1,
+        "text": "I've had to switch apartments multiple times because my landlord kept increasing the rent without warning. It's not fair for students who are already struggling to make ends meet.",
+        "true_label": "Housing and Transportation",
+        "pred_label": "Financial Support"
+      },
+      {
+        "fold": 1,
+        "text": "I wish there were more affordable travel options for students. It's hard to justify spending a ton of money on a trip when we're already struggling to make ends meet with tuition and living expenses.",
+        "true_label": "Activities and Travelling",
+        "pred_label": "Financial Support"
+      },
+      {
+        "fold": 2,
+        "text": "I'm struggling with mental health issues that are making it hard to focus on school. I'm working with a therapist to develop coping strategies.",
+        "true_label": "Academic Support and Resources",
+        "pred_label": "Health and Well-being Support"
+      },
+      {
+        "fold": 2,
+        "text": "I've been living on a tight budget since starting college and it's really stressful.",
+        "true_label": "Financial Support",
+        "pred_label": "Housing and Transportation"
+      },
+      {
+        "fold": 2,
+        "text": "I feel like I'm drowning in debt and there's no way out.",
+        "true_label": "Financial Support",
+        "pred_label": "International student experiences"
+      },
+      {
+        "fold": 2,
+        "text": "I feel like I'm drowning in medical debt and can't see a way out.",
+        "true_label": "Health and Well-being Support",
+        "pred_label": "International student experiences"
+      },
+      {
+        "fold": 2,
+        "text": "I'm struggling to find a medication that works for me and doesn't break the bank.",
+        "true_label": "Health and Well-being Support",
+        "pred_label": "Academic Support and Resources"
+      },
+      {
+        "fold": 2,
+        "text": "Online students have limited access to internships and job opportunities, which puts them at a disadvantage compared to on-campus students.",
+        "true_label": "Online learning",
+        "pred_label": "Career opportunities"
+      },
+      {
+        "fold": 2,
+        "text": "As an online student, I feel like I'm missing out on internship and job opportunities that are only available to in-person students.",
+        "true_label": "Online learning",
+        "pred_label": "Career opportunities"
+      },
+      {
+        "fold": 2,
+        "text": "I recently applied for a scholarship through the university, but the application process was confusing and the instructions were unclear. It's frustrating to spend so much time on an application only to find out that I didn't meet the criteria.",
+        "true_label": "Student Affairs",
+        "pred_label": "Financial Support"
+      },
+      {
+        "fold": 2,
+        "text": "The university should prioritize mental health resources for students. It's a stressful time in our lives and it's important to have access to counseling and support services when we need it.",
+        "true_label": "Student Affairs",
+        "pred_label": "Health and Well-being Support"
+      },
+      {
+        "fold": 2,
+        "text": "I've had to resort to sleeping on a friend's couch because I can't afford the rent in the university area, and it's really taking a toll on my mental health.",
+        "true_label": "Housing and Transportation",
+        "pred_label": "Health and Well-being Support"
+      },
+      {
+        "fold": 2,
+        "text": "I've been looking for ways to explore the area around campus and get to know the city better, but it's hard to find affordable and convenient transportation options. I wish there were more affordable shuttle services or student discounts for public transit.",
+        "true_label": "Activities and Travelling",
+        "pred_label": "Housing and Transportation"
+      },
+      {
+        "fold": 2,
+        "text": "I wish there were more opportunities for students to learn about and engage",
+        "true_label": "Activities and Travelling",
+        "pred_label": "International student experiences"
+      },
+      {
+        "fold": 3,
+        "text": "I'm constantly worried about money and it's affecting my mental health.",
+        "true_label": "Financial Support",
+        "pred_label": "Health and Well-being Support"
+      },
+      {
+        "fold": 3,
+        "text": "I'm struggling to balance my part-time job with my coursework and it's affecting my grades.",
+        "true_label": "Financial Support",
+        "pred_label": "Academic Support and Resources"
+      },
+      {
+        "fold": 3,
+        "text": "I'm constantly worried about how I'm going to pay for unexpected expenses, like medical bills or car repairs.",
+        "true_label": "Financial Support",
+        "pred_label": "Health and Well-being Support"
+      },
+      {
+        "fold": 3,
+        "text": "I feel like I'm constantly in a cycle of debt and it's hard to see a way out.",
+        "true_label": "Financial Support",
+        "pred_label": "International student experiences"
+      },
+      {
+        "fold": 3,
+        "text": "The cost of medication and therapy is causing me a lot of financial stress.",
+        "true_label": "Health and Well-being Support",
+        "pred_label": "Financial Support"
+      },
+      {
+        "fold": 3,
+        "text": "It's unfair that some students have to choose between their health and their education.",
+        "true_label": "Health and Well-being Support",
+        "pred_label": "Financial Support"
+      },
+      {
+        "fold": 3,
+        "text": "I wish there were more opportunities for international students to get involved in leadership positions on campus. It would be a great way to develop our skills and contribute to the university community.",
+        "true_label": "International student experiences",
+        "pred_label": "Activities and Travelling"
+      },
+      {
+        "fold": 3,
+        "text": "The limited access to online library resources and research databases made it hard to complete assignments and projects.",
+        "true_label": "Online learning",
+        "pred_label": "Academic Support and Resources"
+      },
+      {
+        "fold": 3,
+        "text": "It's frustrating to have to rely on technology for my education, especially when it's not always reliable or user-friendly.",
+        "true_label": "Online learning",
+        "pred_label": "Academic Support and Resources"
+      },
+      {
+        "fold": 3,
+        "text": "I received my training certificate from a course I took over the summer, but the university won't accept it because it's from a non-accredited institution. This is frustrating because the course was relevant to my major and I learned a lot from it.",
+        "true_label": "Student Affairs",
+        "pred_label": "Academic Support and Resources"
+      },
+      {
+        "fold": 4,
+        "text": "The lack of available courses is making it hard for me to fulfill all of my degree requirements. I'm worried I won't be able to graduate on time.",
+        "true_label": "Academic Support and Resources",
+        "pred_label": "Financial Support"
+      },
+      {
+        "fold": 4,
+        "text": "I'm an international student and I'm having trouble accessing some of the online resources because of regional restrictions. It's frustrating to feel like I'm missing out because of where I'm from.",
+        "true_label": "Academic Support and Resources",
+        "pred_label": "International student experiences"
+      },
+      {
+        "fold": 4,
+        "text": "I'm a transfer student and I feel like I'm at a disadvantage because I don't have access to all of the same resources and databases as students who started at this university.",
+        "true_label": "Academic Support and Resources",
+        "pred_label": "International student experiences"
+      },
+      {
+        "fold": 4,
+        "text": "I wish there were more academic advisors available to provide guidance and support throughout my university experience.",
+        "true_label": "Academic Support and Resources",
+        "pred_label": "Career opportunities"
+      },
+      {
+        "fold": 4,
+        "text": "Balancing my part-time job with my coursework has been a major struggle. I'm constantly exhausted and feel like I don't have enough time to focus on school.",
+        "true_label": "Academic Support and Resources",
+        "pred_label": "Financial Support"
+      },
+      {
+        "fold": 4,
+        "text": "It's frustrating that I have to work so many hours just to make ends meet, and it's taking away from my study time.",
+        "true_label": "Financial Support",
+        "pred_label": "Housing and Transportation"
+      },
+      {
+        "fold": 4,
+        "text": "I've been trying to find a specialist for a specific medical condition, but it's been really difficult. There are limited options in my area and the ones that are available are really expensive.",
+        "true_label": "Health and Well-being Support",
+        "pred_label": "Housing and Transportation"
+      },
+      {
+        "fold": 4,
+        "text": "It can be tough to balance the demands of academic work with the challenges of adapting to a new culture.",
+        "true_label": "International student experiences",
+        "pred_label": "Academic Support and Resources"
+      },
+      {
+        "fold": 4,
+        "text": "I've been feeling really burned out lately, and I think it's because I haven't had a chance to take a break and do something fun outside of class. I wish there were more social events and activities on campus that were geared towards stress relief and self-care.",
+        "true_label": "Activities and Travelling",
+        "pred_label": "Academic Support and Resources"
+      },
+      {
+        "fold": 4,
+        "text": "I wish there were more opportunities to connect with other students who have similar interests. It can be tough to find a community of like-minded individuals on such a large campus.",
+        "true_label": "Activities and Travelling",
+        "pred_label": "International student experiences"
+      },
+      {
+        "fold": 4,
+        "text": "I'm not really into partying or going out to bars, but it feels like that's the only social scene available on campus. I wish there were more options for students who want to have fun without drinking.",
+        "true_label": "Activities and Travelling",
+        "pred_label": "Food and Cantines"
+      },
+      {
+        "fold": 5,
+        "text": "The course fees and textbook costs are way too high. I can barely afford to pay for everything and it's causing me a lot of stress.",
+        "true_label": "Academic Support and Resources",
+        "pred_label": "Financial Support"
+      },
+      {
+        "fold": 5,
+        "text": "I wish there were more opportunities for extra credit in this course. It would help my grade and encourage me to learn more.",
+        "true_label": "Academic Support and Resources",
+        "pred_label": "International student experiences"
+      },
+      {
+        "fold": 5,
+        "text": "I'm feeling burnt out and exhausted from the demands of my coursework. I'm trying to find ways to recharge and take care of my mental health.",
+        "true_label": "Academic Support and Resources",
+        "pred_label": "Health and Well-being Support"
+      },
+      {
+        "fold": 5,
+        "text": "I wish there were more opportunities for students to earn money through on-campus jobs.",
+        "true_label": "Financial Support",
+        "pred_label": "Activities and Travelling"
+      },
+      {
+        "fold": 5,
+        "text": "I'm frustrated with the lack of transparency when it comes to how my tuition and fees are being spent by the university.",
+        "true_label": "Financial Support",
+        "pred_label": "Athletics and sports"
+      },
+      {
+        "fold": 5,
+        "text": "It would be great if the university could organize more events that celebrate cultural diversity and promote inclusivity.",
+        "true_label": "International student experiences",
+        "pred_label": "Activities and Travelling"
+      },
+      {
+        "fold": 5,
+        "text": "Limited access to internships and job opportunities for online students can hinder their career prospects.",
+        "true_label": "Online learning",
+        "pred_label": "Career opportunities"
+      },
+      {
+        "fold": 5,
+        "text": "The cost of rent in this area is astronomical. I'm already working a part-time job just to make ends meet, and it's frustrating to feel like I'm barely scraping by even though I'm a full-time student.",
+        "true_label": "Housing and Transportation",
+        "pred_label": "Financial Support"
+      },
+      {
+        "fold": 5,
+        "text": "I was really excited to go on a weekend trip with my friends, but the transportation ended up being a nightmare. Our bus broke down on the side of the road, and we ended up being stranded for hours.",
+        "true_label": "Activities and Travelling",
+        "pred_label": "Housing and Transportation"
+      },
+      {
+        "fold": 5,
+        "text": "I wish there were more opportunities to connect with alumni and professionals in my field. It would be great to network and get advice from people who have been through the same things I'm going through now.",
+        "true_label": "Activities and Travelling",
+        "pred_label": "Career opportunities"
+      }
+    ],
+    "svm": [
+      {
+        "fold": 1,
+        "text": "The cost of attending this university is outrageous. I don't know how I'm going to afford it.",
+        "true_label": "Academic Support and Resources",
+        "pred_label": "Financial Support"
+      },
+      {
+        "fold": 1,
+        "text": "I wish there were more opportunities to access academic resources, such as extended library hours or online resources.",
+        "true_label": "Academic Support and Resources",
+        "pred_label": "Online learning"
+      },
+      {
+        "fold": 1,
+        "text": "I'm not very good at managing my time, and it's been affecting my grades.",
+        "true_label": "Academic Support and Resources",
+        "pred_label": "Financial Support"
+      },
+      {
+        "fold": 1,
+        "text": "The cost of textbooks and other course materials is outrageous, and it's making it difficult to afford my education.",
+        "true_label": "Financial Support",
+        "pred_label": "Academic Support and Resources"
+      },
+      {
+        "fold": 1,
+        "text": "I'm constantly stressed about money and it's taking a toll on my academic performance.",
+        "true_label": "Financial Support",
+        "pred_label": "Academic Support and Resources"
+      },
+      {
+        "fold": 1,
+        "text": "I wish there were more scholarship opportunities available for students like me who don't come from wealthy backgrounds.",
+        "true_label": "Financial Support",
+        "pred_label": "Career opportunities"
+      },
+      {
+        "fold": 1,
+        "text": "The stress of paying for college is causing me to lose sleep and focus on my studies.",
+        "true_label": "Financial Support",
+        "pred_label": "Academic Support and Resources"
+      },
+      {
+        "fold": 1,
+        "text": "The constant worry and stress about finances is taking a toll on my mental health.",
+        "true_label": "Financial Support",
+        "pred_label": "Health and Well-being Support"
+      },
+      {
+        "fold": 1,
+        "text": "I'm concerned about the quality of care I can receive with the limited insurance options available to me.",
+        "true_label": "Health and Well-being Support",
+        "pred_label": "Food and Cantines"
+      },
+      {
+        "fold": 1,
+        "text": "I've been struggling with a chronic illness for years, and the cost of treatment is really starting to add up. It's hard to prioritize my health when I'm constantly worried about money.",
+        "true_label": "Health and Well-being Support",
+        "pred_label": "Financial Support"
+      },
+      {
+        "fold": 1,
+        "text": "The lack of networking opportunities and professional development events for online students can be a major drawback.",
+        "true_label": "Online learning",
+        "pred_label": "Career opportunities"
+      },
+      {
+        "fold": 1,
+        "text": "The process for obtaining student certificates is unnecessarily complicated and time-consuming. It's taking away from my ability to focus on my studies.",
+        "true_label": "Student Affairs",
+        "pred_label": "Financial Support"
+      },
+      {
+        "fold": 1,
+        "text": "The university should provide more resources for students who are applying for internships and jobs. It's difficult to navigate the job market on your own, and career services is often understaffed and overworked.",
+        "true_label": "Student Affairs",
+        "pred_label": "Career opportunities"
+      },
+      {
+        "fold": 1,
+        "text": "I've had issues with financial aid and scholarships, and it seems like the university is always changing their policies and requirements. It's frustrating because I rely on this support to continue my education.",
+        "true_label": "Student Affairs",
+        "pred_label": "Financial Support"
+      },
+      {
+        "fold": 1,
+        "text": "I've had to switch apartments multiple times because my landlord kept increasing the rent without warning. It's not fair for students who are already struggling to make ends meet.",
+        "true_label": "Housing and Transportation",
+        "pred_label": "Financial Support"
+      },
+      {
+        "fold": 1,
+        "text": "I wish there were more affordable travel options for students. It's hard to justify spending a ton of money on a trip when we're already struggling to make ends meet with tuition and living expenses.",
+        "true_label": "Activities and Travelling",
+        "pred_label": "Financial Support"
+      },
+      {
+        "fold": 2,
+        "text": "I've been living on a tight budget since starting college and it's really stressful.",
+        "true_label": "Financial Support",
+        "pred_label": "Housing and Transportation"
+      },
+      {
+        "fold": 2,
+        "text": "I'm struggling to find a medication that works for me and doesn't break the bank.",
+        "true_label": "Health and Well-being Support",
+        "pred_label": "Academic Support and Resources"
+      },
+      {
+        "fold": 2,
+        "text": "I feel like I have to work twice as hard as other students just to keep up. It's exhausting and stressful, and sometimes I wonder if it's even worth it.",
+        "true_label": "International student experiences",
+        "pred_label": "Housing and Transportation"
+      },
+      {
+        "fold": 2,
+        "text": "As an online student, I feel like I'm missing out on internship and job opportunities that are only available to in-person students.",
+        "true_label": "Online learning",
+        "pred_label": "Career opportunities"
+      },
+      {
+        "fold": 2,
+        "text": "I recently applied for a scholarship through the university, but the application process was confusing and the instructions were unclear. It's frustrating to spend so much time on an application only to find out that I didn't meet the criteria.",
+        "true_label": "Student Affairs",
+        "pred_label": "Financial Support"
+      },
+      {
+        "fold": 2,
+        "text": "The university should prioritize mental health resources for students. It's a stressful time in our lives and it's important to have access to counseling and support services when we need it.",
+        "true_label": "Student Affairs",
+        "pred_label": "Health and Well-being Support"
+      },
+      {
+        "fold": 2,
+        "text": "I've been looking for ways to explore the area around campus and get to know the city better, but it's hard to find affordable and convenient transportation options. I wish there were more affordable shuttle services or student discounts for public transit.",
+        "true_label": "Activities and Travelling",
+        "pred_label": "Housing and Transportation"
+      },
+      {
+        "fold": 2,
+        "text": "I wish there were more opportunities for students to learn about and engage",
+        "true_label": "Activities and Travelling",
+        "pred_label": "International student experiences"
+      },
+      {
+        "fold": 3,
+        "text": "I'm struggling to balance my part-time job with my coursework and it's affecting my grades.",
+        "true_label": "Financial Support",
+        "pred_label": "Academic Support and Resources"
+      },
+      {
+        "fold": 3,
+        "text": "I'm constantly worried about how I'm going to pay for unexpected expenses, like medical bills or car repairs.",
+        "true_label": "Financial Support",
+        "pred_label": "Health and Well-being Support"
+      },
+      {
+        "fold": 3,
+        "text": "I feel like I'm constantly in a cycle of debt and it's hard to see a way out.",
+        "true_label": "Financial Support",
+        "pred_label": "International student experiences"
+      },
+      {
+        "fold": 3,
+        "text": "The cost of medication and therapy is causing me a lot of financial stress.",
+        "true_label": "Health and Well-being Support",
+        "pred_label": "Financial Support"
+      },
+      {
+        "fold": 3,
+        "text": "It's unfair that some students have to choose between their health and their education.",
+        "true_label": "Health and Well-being Support",
+        "pred_label": "Financial Support"
+      },
+      {
+        "fold": 3,
+        "text": "The limited access to online library resources and research databases made it hard to complete assignments and projects.",
+        "true_label": "Online learning",
+        "pred_label": "Academic Support and Resources"
+      },
+      {
+        "fold": 3,
+        "text": "It's frustrating to have to rely on technology for my education, especially when it's not always reliable or user-friendly.",
+        "true_label": "Online learning",
+        "pred_label": "Academic Support and Resources"
+      },
+      {
+        "fold": 3,
+        "text": "I received my training certificate from a course I took over the summer, but the university won't accept it because it's from a non-accredited institution. This is frustrating because the course was relevant to my major and I learned a lot from it.",
+        "true_label": "Student Affairs",
+        "pred_label": "Academic Support and Resources"
+      },
+      {
+        "fold": 4,
+        "text": "The lack of available courses is making it hard for me to fulfill all of my degree requirements. I'm worried I won't be able to graduate on time.",
+        "true_label": "Academic Support and Resources",
+        "pred_label": "Financial Support"
+      },
+      {
+        "fold": 4,
+        "text": "I'm an international student and I'm having trouble accessing some of the online resources because of regional restrictions. It's frustrating to feel like I'm missing out because of where I'm from.",
+        "true_label": "Academic Support and Resources",
+        "pred_label": "Online learning"
+      },
+      {
+        "fold": 4,
+        "text": "I'm a transfer student and I feel like I'm at a disadvantage because I don't have access to all of the same resources and databases as students who started at this university.",
+        "true_label": "Academic Support and Resources",
+        "pred_label": "International student experiences"
+      },
+      {
+        "fold": 4,
+        "text": "Balancing my part-time job with my coursework has been a major struggle. I'm constantly exhausted and feel like I don't have enough time to focus on school.",
+        "true_label": "Academic Support and Resources",
+        "pred_label": "Financial Support"
+      },
+      {
+        "fold": 4,
+        "text": "It's frustrating that I have to work so many hours just to make ends meet, and it's taking away from my study time.",
+        "true_label": "Financial Support",
+        "pred_label": "Housing and Transportation"
+      },
+      {
+        "fold": 4,
+        "text": "I'm worried about how I'm going to afford rent and utilities once I graduate and have to start paying back my loans.",
+        "true_label": "Financial Support",
+        "pred_label": "Housing and Transportation"
+      },
+      {
+        "fold": 4,
+        "text": "It can be tough to balance the demands of academic work with the challenges of adapting to a new culture.",
+        "true_label": "International student experiences",
+        "pred_label": "Academic Support and Resources"
+      },
+      {
+        "fold": 4,
+        "text": "I've been feeling really burned out lately, and I think it's because I haven't had a chance to take a break and do something fun outside of class. I wish there were more social events and activities on campus that were geared towards stress relief and self-care.",
+        "true_label": "Activities and Travelling",
+        "pred_label": "Academic Support and Resources"
+      },
+      {
+        "fold": 4,
+        "text": "I wish there were more opportunities to connect with other students who have similar interests. It can be tough to find a community of like-minded individuals on such a large campus.",
+        "true_label": "Activities and Travelling",
+        "pred_label": "International student experiences"
+      },
+      {
+        "fold": 4,
+        "text": "I'm not really into partying or going out to bars, but it feels like that's the only social scene available on campus. I wish there were more options for students who want to have fun without drinking.",
+        "true_label": "Activities and Travelling",
+        "pred_label": "Food and Cantines"
+      },
+      {
+        "fold": 5,
+        "text": "The course fees and textbook costs are way too high. I can barely afford to pay for everything and it's causing me a lot of stress.",
+        "true_label": "Academic Support and Resources",
+        "pred_label": "Financial Support"
+      },
+      {
+        "fold": 5,
+        "text": "It's unfair that some students are able to afford all the materials they need while others can't.",
+        "true_label": "Financial Support",
+        "pred_label": "Academic Support and Resources"
+      },
+      {
+        "fold": 5,
+        "text": "It would be great if the university could organize more events that celebrate cultural diversity and promote inclusivity.",
+        "true_label": "International student experiences",
+        "pred_label": "Activities and Travelling"
+      },
+      {
+        "fold": 5,
+        "text": "Limited access to internships and job opportunities for online students can hinder their career prospects.",
+        "true_label": "Online learning",
+        "pred_label": "Career opportunities"
+      },
+      {
+        "fold": 5,
+        "text": "The process for ordering official transcripts from the university is unnecessarily complicated. It should be as simple as submitting a request online, but instead I have to navigate a confusing system and wait weeks for it to be processed.",
+        "true_label": "Student Affairs",
+        "pred_label": "Online learning"
+      },
+      {
+        "fold": 5,
+        "text": "The cost of rent in this area is astronomical. I'm already working a part-time job just to make ends meet, and it's frustrating to feel like I'm barely scraping by even though I'm a full-time student.",
+        "true_label": "Housing and Transportation",
+        "pred_label": "Financial Support"
+      },
+      {
+        "fold": 5,
+        "text": "I was really excited to go on a weekend trip with my friends, but the transportation ended up being a nightmare. Our bus broke down on the side of the road, and we ended up being stranded for hours.",
+        "true_label": "Activities and Travelling",
+        "pred_label": "Housing and Transportation"
+      },
+      {
+        "fold": 5,
+        "text": "I wish there were more opportunities to connect with alumni and professionals in my field. It would be great to network and get advice from people who have been through the same things I'm going through now.",
+        "true_label": "Activities and Travelling",
+        "pred_label": "Career opportunities"
+      }
+    ]
+  },
+  "fold_metrics": {
+    "logreg": [
+      {
+        "fold": 1,
+        "accuracy": 0.9,
+        "macro_f1": 0.8833005667586366,
+        "precision": 0.9168365239732807,
+        "recall": 0.8733483558577426,
+        "per_class": {
+          "Academic Support and Resources": {
+            "precision": 0.9111111111111111,
+            "recall": 0.8723404255319149,
+            "f1": 0.8913043478260869
+          },
+          "Activities and Travelling": {
+            "precision": 1.0,
+            "recall": 0.875,
+            "f1": 0.9333333333333333
+          },
+          "Athletics and sports": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "Career opportunities": {
+            "precision": 0.8571428571428571,
+            "recall": 1.0,
+            "f1": 0.9230769230769231
+          },
+          "Financial Support": {
+            "precision": 0.65,
+            "recall": 0.7222222222222222,
+            "f1": 0.6842105263157895
+          },
+          "Food and Cantines": {
+            "precision": 0.9310344827586207,
+            "recall": 1.0,
+            "f1": 0.9642857142857143
+          },
+          "Health and Well-being Support": {
+            "precision": 0.9,
+            "recall": 0.9,
+            "f1": 0.9
+          },
+          "Housing and Transportation": {
+            "precision": 1.0,
+            "recall": 0.9230769230769231,
+            "f1": 0.96
+          },
+          "International student experiences": {
+            "precision": 0.9411764705882353,
+            "recall": 0.9411764705882353,
+            "f1": 0.9411764705882353
+          },
+          "Online learning": {
+            "precision": 0.8947368421052632,
+            "recall": 0.9444444444444444,
+            "f1": 0.918918918918919
+          },
+          "Student Affairs": {
+            "precision": 1.0,
+            "recall": 0.42857142857142855,
+            "f1": 0.6
+          }
+        }
+      },
+      {
+        "fold": 2,
+        "accuracy": 0.94,
+        "macro_f1": 0.9136939853291817,
+        "precision": 0.9327991421002421,
+        "recall": 0.9050577619242997,
+        "per_class": {
+          "Academic Support and Resources": {
+            "precision": 0.9787234042553191,
+            "recall": 0.9787234042553191,
+            "f1": 0.9787234042553191
+          },
+          "Activities and Travelling": {
+            "precision": 1.0,
+            "recall": 0.75,
+            "f1": 0.8571428571428571
+          },
+          "Athletics and sports": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "Career opportunities": {
+            "precision": 0.8947368421052632,
+            "recall": 1.0,
+            "f1": 0.9444444444444444
+          },
+          "Financial Support": {
+            "precision": 0.9411764705882353,
+            "recall": 0.8888888888888888,
+            "f1": 0.9142857142857143
+          },
+          "Food and Cantines": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "Health and Well-being Support": {
+            "precision": 0.75,
+            "recall": 0.8181818181818182,
+            "f1": 0.782608695652174
+          },
+          "Housing and Transportation": {
+            "precision": 0.8461538461538461,
+            "recall": 0.9166666666666666,
+            "f1": 0.88
+          },
+          "International student experiences": {
+            "precision": 0.85,
+            "recall": 1.0,
+            "f1": 0.918918918918919
+          },
+          "Online learning": {
+            "precision": 1.0,
+            "recall": 0.8888888888888888,
+            "f1": 0.9411764705882353
+          },
+          "Student Affairs": {
+            "precision": 1.0,
+            "recall": 0.7142857142857143,
+            "f1": 0.8333333333333334
+          }
+        }
+      },
+      {
+        "fold": 3,
+        "accuracy": 0.95,
+        "macro_f1": 0.939410474933775,
+        "precision": 0.9495287095554474,
+        "recall": 0.9326689353427322,
+        "per_class": {
+          "Academic Support and Resources": {
+            "precision": 0.9215686274509803,
+            "recall": 1.0,
+            "f1": 0.9591836734693877
+          },
+          "Activities and Travelling": {
+            "precision": 0.8888888888888888,
+            "recall": 1.0,
+            "f1": 0.9411764705882353
+          },
+          "Athletics and sports": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "Career opportunities": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "Financial Support": {
+            "precision": 0.875,
+            "recall": 0.7777777777777778,
+            "f1": 0.8235294117647058
+          },
+          "Food and Cantines": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "Health and Well-being Support": {
+            "precision": 0.8181818181818182,
+            "recall": 0.8181818181818182,
+            "f1": 0.8181818181818182
+          },
+          "Housing and Transportation": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "International student experiences": {
+            "precision": 0.9411764705882353,
+            "recall": 0.9411764705882353,
+            "f1": 0.9411764705882353
+          },
+          "Online learning": {
+            "precision": 1.0,
+            "recall": 0.8888888888888888,
+            "f1": 0.9411764705882353
+          },
+          "Student Affairs": {
+            "precision": 1.0,
+            "recall": 0.8333333333333334,
+            "f1": 0.9090909090909091
+          }
+        }
+      },
+      {
+        "fold": 4,
+        "accuracy": 0.945,
+        "macro_f1": 0.9397574923890715,
+        "precision": 0.9526213296135752,
+        "recall": 0.9370459918332258,
+        "per_class": {
+          "Academic Support and Resources": {
+            "precision": 0.9545454545454546,
+            "recall": 0.8936170212765957,
+            "f1": 0.9230769230769231
+          },
+          "Activities and Travelling": {
+            "precision": 1.0,
+            "recall": 0.625,
+            "f1": 0.7692307692307693
+          },
+          "Athletics and sports": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "Career opportunities": {
+            "precision": 0.9473684210526315,
+            "recall": 1.0,
+            "f1": 0.972972972972973
+          },
+          "Financial Support": {
+            "precision": 0.8947368421052632,
+            "recall": 0.9444444444444444,
+            "f1": 0.918918918918919
+          },
+          "Food and Cantines": {
+            "precision": 0.9655172413793104,
+            "recall": 1.0,
+            "f1": 0.9824561403508771
+          },
+          "Health and Well-being Support": {
+            "precision": 1.0,
+            "recall": 0.9,
+            "f1": 0.9473684210526315
+          },
+          "Housing and Transportation": {
+            "precision": 0.8666666666666667,
+            "recall": 1.0,
+            "f1": 0.9285714285714286
+          },
+          "International student experiences": {
+            "precision": 0.85,
+            "recall": 0.9444444444444444,
+            "f1": 0.8947368421052632
+          },
+          "Online learning": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "Student Affairs": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          }
+        }
+      },
+      {
+        "fold": 5,
+        "accuracy": 0.949748743718593,
+        "macro_f1": 0.9374582666978395,
+        "precision": 0.9324252396444911,
+        "recall": 0.9438517577903767,
+        "per_class": {
+          "Academic Support and Resources": {
+            "precision": 1.0,
+            "recall": 0.9347826086956522,
+            "f1": 0.9662921348314607
+          },
+          "Activities and Travelling": {
+            "precision": 0.75,
+            "recall": 0.75,
+            "f1": 0.75
+          },
+          "Athletics and sports": {
+            "precision": 0.9444444444444444,
+            "recall": 1.0,
+            "f1": 0.9714285714285714
+          },
+          "Career opportunities": {
+            "precision": 0.9,
+            "recall": 1.0,
+            "f1": 0.9473684210526315
+          },
+          "Financial Support": {
+            "precision": 0.8888888888888888,
+            "recall": 0.8888888888888888,
+            "f1": 0.8888888888888888
+          },
+          "Food and Cantines": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "Health and Well-being Support": {
+            "precision": 0.9090909090909091,
+            "recall": 1.0,
+            "f1": 0.9523809523809523
+          },
+          "Housing and Transportation": {
+            "precision": 0.9230769230769231,
+            "recall": 0.9230769230769231,
+            "f1": 0.9230769230769231
+          },
+          "International student experiences": {
+            "precision": 0.9411764705882353,
+            "recall": 0.9411764705882353,
+            "f1": 0.9411764705882353
+          },
+          "Online learning": {
+            "precision": 1.0,
+            "recall": 0.9444444444444444,
+            "f1": 0.9714285714285714
+          },
+          "Student Affairs": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          }
+        }
+      }
+    ],
+    "svm": [
+      {
+        "fold": 1,
+        "accuracy": 0.92,
+        "macro_f1": 0.9029483283804773,
+        "precision": 0.9309938288661693,
+        "recall": 0.8883947612671018,
+        "per_class": {
+          "Academic Support and Resources": {
+            "precision": 0.9361702127659575,
+            "recall": 0.9361702127659575,
+            "f1": 0.9361702127659575
+          },
+          "Activities and Travelling": {
+            "precision": 1.0,
+            "recall": 0.875,
+            "f1": 0.9333333333333333
+          },
+          "Athletics and sports": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "Career opportunities": {
+            "precision": 0.8571428571428571,
+            "recall": 1.0,
+            "f1": 0.9230769230769231
+          },
+          "Financial Support": {
+            "precision": 0.65,
+            "recall": 0.7222222222222222,
+            "f1": 0.6842105263157895
+          },
+          "Food and Cantines": {
+            "precision": 0.9642857142857143,
+            "recall": 1.0,
+            "f1": 0.9818181818181818
+          },
+          "Health and Well-being Support": {
+            "precision": 0.8888888888888888,
+            "recall": 0.8,
+            "f1": 0.8421052631578947
+          },
+          "Housing and Transportation": {
+            "precision": 1.0,
+            "recall": 0.9230769230769231,
+            "f1": 0.96
+          },
+          "International student experiences": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "Online learning": {
+            "precision": 0.9444444444444444,
+            "recall": 0.9444444444444444,
+            "f1": 0.9444444444444444
+          },
+          "Student Affairs": {
+            "precision": 1.0,
+            "recall": 0.5714285714285714,
+            "f1": 0.7272727272727273
+          }
+        }
+      },
+      {
+        "fold": 2,
+        "accuracy": 0.96,
+        "macro_f1": 0.9369461573233034,
+        "precision": 0.9562111759304273,
+        "recall": 0.9275856348048861,
+        "per_class": {
+          "Academic Support and Resources": {
+            "precision": 0.9791666666666666,
+            "recall": 1.0,
+            "f1": 0.9894736842105263
+          },
+          "Activities and Travelling": {
+            "precision": 1.0,
+            "recall": 0.75,
+            "f1": 0.8571428571428571
+          },
+          "Athletics and sports": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "Career opportunities": {
+            "precision": 0.9444444444444444,
+            "recall": 1.0,
+            "f1": 0.9714285714285714
+          },
+          "Financial Support": {
+            "precision": 0.9444444444444444,
+            "recall": 0.9444444444444444,
+            "f1": 0.9444444444444444
+          },
+          "Food and Cantines": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "Health and Well-being Support": {
+            "precision": 0.9090909090909091,
+            "recall": 0.9090909090909091,
+            "f1": 0.9090909090909091
+          },
+          "Housing and Transportation": {
+            "precision": 0.8,
+            "recall": 1.0,
+            "f1": 0.8888888888888888
+          },
+          "International student experiences": {
+            "precision": 0.9411764705882353,
+            "recall": 0.9411764705882353,
+            "f1": 0.9411764705882353
+          },
+          "Online learning": {
+            "precision": 1.0,
+            "recall": 0.9444444444444444,
+            "f1": 0.9714285714285714
+          },
+          "Student Affairs": {
+            "precision": 1.0,
+            "recall": 0.7142857142857143,
+            "f1": 0.8333333333333334
+          }
+        }
+      },
+      {
+        "fold": 3,
+        "accuracy": 0.96,
+        "macro_f1": 0.9541059398966197,
+        "precision": 0.9680332739156268,
+        "recall": 0.943067033976125,
+        "per_class": {
+          "Academic Support and Resources": {
+            "precision": 0.9215686274509803,
+            "recall": 1.0,
+            "f1": 0.9591836734693877
+          },
+          "Activities and Travelling": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "Athletics and sports": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "Career opportunities": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "Financial Support": {
+            "precision": 0.8823529411764706,
+            "recall": 0.8333333333333334,
+            "f1": 0.8571428571428571
+          },
+          "Food and Cantines": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "Health and Well-being Support": {
+            "precision": 0.9,
+            "recall": 0.8181818181818182,
+            "f1": 0.8571428571428571
+          },
+          "Housing and Transportation": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "International student experiences": {
+            "precision": 0.9444444444444444,
+            "recall": 1.0,
+            "f1": 0.9714285714285714
+          },
+          "Online learning": {
+            "precision": 1.0,
+            "recall": 0.8888888888888888,
+            "f1": 0.9411764705882353
+          },
+          "Student Affairs": {
+            "precision": 1.0,
+            "recall": 0.8333333333333334,
+            "f1": 0.9090909090909091
+          }
+        }
+      },
+      {
+        "fold": 4,
+        "accuracy": 0.95,
+        "macro_f1": 0.9450747025117735,
+        "precision": 0.9562485105134834,
+        "recall": 0.9430206318504191,
+        "per_class": {
+          "Academic Support and Resources": {
+            "precision": 0.9555555555555556,
+            "recall": 0.9148936170212766,
+            "f1": 0.9347826086956522
+          },
+          "Activities and Travelling": {
+            "precision": 1.0,
+            "recall": 0.625,
+            "f1": 0.7692307692307693
+          },
+          "Athletics and sports": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "Career opportunities": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "Financial Support": {
+            "precision": 0.8888888888888888,
+            "recall": 0.8888888888888888,
+            "f1": 0.8888888888888888
+          },
+          "Food and Cantines": {
+            "precision": 0.9655172413793104,
+            "recall": 1.0,
+            "f1": 0.9824561403508771
+          },
+          "Health and Well-being Support": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "Housing and Transportation": {
+            "precision": 0.8666666666666667,
+            "recall": 1.0,
+            "f1": 0.9285714285714286
+          },
+          "International student experiences": {
+            "precision": 0.8947368421052632,
+            "recall": 0.9444444444444444,
+            "f1": 0.918918918918919
+          },
+          "Online learning": {
+            "precision": 0.9473684210526315,
+            "recall": 1.0,
+            "f1": 0.972972972972973
+          },
+          "Student Affairs": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          }
+        }
+      },
+      {
+        "fold": 5,
+        "accuracy": 0.9597989949748744,
+        "macro_f1": 0.9458948608938208,
+        "precision": 0.954332903303155,
+        "recall": 0.9398678190238293,
+        "per_class": {
+          "Academic Support and Resources": {
+            "precision": 0.9782608695652174,
+            "recall": 0.9782608695652174,
+            "f1": 0.9782608695652174
+          },
+          "Activities and Travelling": {
+            "precision": 0.8571428571428571,
+            "recall": 0.75,
+            "f1": 0.8
+          },
+          "Athletics and sports": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "Career opportunities": {
+            "precision": 0.9,
+            "recall": 1.0,
+            "f1": 0.9473684210526315
+          },
+          "Financial Support": {
+            "precision": 0.8947368421052632,
+            "recall": 0.9444444444444444,
+            "f1": 0.918918918918919
+          },
+          "Food and Cantines": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "Health and Well-being Support": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "Housing and Transportation": {
+            "precision": 0.9230769230769231,
+            "recall": 0.9230769230769231,
+            "f1": 0.9230769230769231
+          },
+          "International student experiences": {
+            "precision": 1.0,
+            "recall": 0.9411764705882353,
+            "f1": 0.9696969696969697
+          },
+          "Online learning": {
+            "precision": 0.9444444444444444,
+            "recall": 0.9444444444444444,
+            "f1": 0.9444444444444444
+          },
+          "Student Affairs": {
+            "precision": 1.0,
+            "recall": 0.8571428571428571,
+            "f1": 0.9230769230769231
+          }
+        }
+      }
+    ]
+  }
+}

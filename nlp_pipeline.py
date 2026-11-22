@@ -21,7 +21,9 @@ from department_routing import rank_department_predictions
 from emotion_detection import detect_emotion
 
 
-department_model = joblib.load("models/department_model.pkl")
+department_artifact = joblib.load("experiments/category_classification/logreg_model.pkl")
+department_model = department_artifact["model"]
+department_vectorizer = department_artifact["vectorizer"]
 urgency_model = joblib.load("models/urgency_model.pkl")
 
 sentiment_model = pipeline(
@@ -73,6 +75,21 @@ campus_locations = [
 
 
 def classify_department(text):
+
+    # Transform raw text into the feature space expected by the model
+    X = department_vectorizer.transform([text])
+    probabilities = department_model.predict_proba(X)[0]
+    classes = department_model.classes_
+
+    predictions = [
+        {
+            "department": classes[i],
+            "confidence": round(probabilities[i] * 100, 2)
+        }
+        for i in probabilities.argsort()[::-1]
+    ]
+
+    return rank_department_predictions(text, predictions)
 
     probabilities = department_model.predict_proba([text])[0]
     classes = department_model.classes_
