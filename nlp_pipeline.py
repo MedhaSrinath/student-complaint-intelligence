@@ -9,6 +9,7 @@ except Exception:
     nlp = None
 from complaint_database import create_database, save_complaint
 from transformers import pipeline
+import streamlit as st
 from sentence_transformers import SentenceTransformer, util
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
@@ -16,6 +17,9 @@ from duplicate_detection import (
     find_recurring_complaint_groups as group_submitted_complaints,
     find_similar_submitted_complaints as match_submitted_complaints,
 )
+
+# expose the name expected by app.py
+find_similar_submitted_complaints = match_submitted_complaints
 from duration_extraction import extract_duration_mentions
 from department_routing import rank_department_predictions
 from emotion_detection import detect_emotion
@@ -26,14 +30,22 @@ department_model = department_artifact["model"]
 department_vectorizer = department_artifact["vectorizer"]
 urgency_model = joblib.load("models/urgency_model.pkl")
 
-sentiment_model = pipeline(
-    "text-classification",
-    model="cardiffnlp/twitter-roberta-base-sentiment-latest"
-)
+@st.cache_resource
+def get_sentiment_model():
+    return pipeline(
+        "text-classification",
+        model="cardiffnlp/twitter-roberta-base-sentiment-latest",
+    )
 
-similarity_model = SentenceTransformer(
-    "sentence-transformers/all-MiniLM-L6-v2"
-)
+@st.cache_resource
+def get_similarity_model():
+    return SentenceTransformer(
+        "sentence-transformers/all-MiniLM-L6-v2",
+    )
+
+# Load models lazily – cached across Streamlit reruns
+sentiment_model = get_sentiment_model()
+similarity_model = get_similarity_model()
 
 df = pd.read_csv("dataset/complaints.csv")
 
