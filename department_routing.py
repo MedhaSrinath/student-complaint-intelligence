@@ -1,3 +1,4 @@
+import re
 
 # Simple mapping from department label to email address (temporary testing address).
 # Update the email values as needed for real routing.
@@ -7,11 +8,16 @@ _DEPARTMENT_EMAIL_MAP = {
     "Finance": "medhasrinathbsc24@rvu.edu.in",
     "Infrastructure": "medhasrinathbsc24@rvu.edu.in",
     "Technical": "medhasrinathbsc24@rvu.edu.in",
+    "Maintenance": "medhasrinathbsc24@rvu.edu.in",
 }
 
 
+def get_department_email(department: str) -> str | None:
+    return _DEPARTMENT_EMAIL_MAP.get(department)
+
 
 _LIFT_OR_ELEVATOR = re.compile(r"\b(?:lift|elevators?)\b", re.IGNORECASE)
+
 _MAINTENANCE_CUE = re.compile(
     r"\b(?:"
     r"broken|damaged|faulty|failed|failure|"
@@ -29,6 +35,7 @@ _MAINTENANCE_CUE = re.compile(
 def maintenance_routing_reason(text: str) -> str | None:
     if _LIFT_OR_ELEVATOR.search(text) and _MAINTENANCE_CUE.search(text):
         return "Lift/elevator fault or repair request"
+
     return None
 
 
@@ -45,13 +52,16 @@ def rank_department_predictions(text, predictions):
             ),
             None,
         )
+
         if maintenance is not None:
             maintenance["routing_reason"] = reason
+
             others = [
                 prediction
                 for prediction in ranked
                 if prediction["department"] != "Maintenance"
             ]
+
             return [maintenance, *others[:2]]
 
     return ranked[:3]

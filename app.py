@@ -15,6 +15,9 @@ from complaint_database import (
     update_complaint_status,
 )
 
+from email_utils import send_email, send_complaint_notification
+from department_routing import get_department_email
+
 # =====================================================
 # PAGE CONFIG
 # =====================================================
@@ -766,6 +769,17 @@ elif page in ["Submit & Analyze", "Submit Complaint"]:
                     pending_submission["text"],
                     pending_submission["result"],
                 )
+
+                email_sent = send_complaint_notification(
+                    complaint_id,
+                    pending_submission["text"],
+                    pending_submission["result"],
+                )
+
+
+
+
+
                 st.session_state["last_submission"] = {
                     "id": complaint_id,
                     **pending_submission,
