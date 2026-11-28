@@ -1,4 +1,5 @@
 import streamlit as st
+from sklearn.feature_extraction.text import CountVectorizer
 import pandas as pd
 import json
 import html
@@ -433,7 +434,7 @@ with st.sidebar:
     )
 
     st.markdown(
-        '<div class="sidebar-caption">STUDENT COMPLAINT INTELLIGENCE</div>',
+        '<div class="sidebar-caption">STUDENT FEEDBACK INTELLIGENCE</div>',
         unsafe_allow_html=True
     )
 
@@ -446,7 +447,8 @@ with st.sidebar:
             "Dashboard",
             "Submit & Analyze",
             "Complaint Management",
-            "Reports"
+            "Reports",
+            "N-gram Analysis"
         ],
         label_visibility="collapsed"
     )
@@ -1516,6 +1518,35 @@ CONFIDENTIAL - CAMPUSPULSE GOVERNANCE REPORT
 
         with st.expander("Preview Executive Briefing Memo"):
             st.text(executive_memo)
+
+elif page == "N-gram Analysis":
+    st.markdown("""<div class='page-heading'>N‑gram Analysis</div>""", unsafe_allow_html=True)
+    st.markdown("""<div class='page-subtitle'>Explore most frequent word sequences in the complaint corpus.</div>""", unsafe_allow_html=True)
+
+    # Use the existing DataFrame `df` loaded earlier (contains complaint_text)
+    if df.empty:
+        st.info("No complaint data available to analyze.")
+    else:
+        texts = df["complaint_text"].fillna("").astype(str).tolist()
+        ngram_option = st.selectbox(
+            "Select n‑gram size",
+            ["Unigrams", "Bigrams", "Trigrams"],
+            index=0,
+        )
+        n = {"Unigrams": 1, "Bigrams": 2, "Trigrams": 3}[ngram_option]
+        vectorizer = CountVectorizer(ngram_range=(n, n), stop_words="english")
+        X = vectorizer.fit_transform(texts)
+        # Sum frequencies of each n‑gram
+        sums = X.sum(axis=0)
+        freqs = [(ngram, int(sums[0, idx])) for ngram, idx in vectorizer.vocabulary_.items()]
+        freqs.sort(key=lambda x: x[1], reverse=True)
+        top_n = 20
+        top_ngrams = freqs[:top_n]
+        if top_ngrams:
+            ngram_df = pd.DataFrame(top_ngrams, columns=["N‑gram", "Count"]).reset_index(drop=True)
+            st.dataframe(ngram_df, use_container_width=True, hide_index=True)
+        else:
+            st.info("No n‑grams could be extracted.")
 
 # =====================================================
 # FOOTER

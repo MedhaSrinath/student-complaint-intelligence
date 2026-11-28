@@ -338,7 +338,7 @@ def calculate_priority(text, urgency_result):
         "score": score,
         "priority": priority,
         "critical_indicator": critical,
-        "time_sensitive": time_sensitive,
+        "t  ime_sensitive": time_sensitive,
         "needs_human_review": (
             priority in ["Critical", "High"]
             or urgency_result["confidence"] < 55
@@ -346,17 +346,27 @@ def calculate_priority(text, urgency_result):
     }
 
 
-def process_complaint(text):
+def process_complaint(text, progress_callback=None):
 
     departments = classify_department(text)
     urgency = analyze_urgency(text)
+    if progress_callback:
+        progress_callback("Classification complete")
     sentiment = analyze_sentiment(text)
     emotion = detect_emotion(text)
+    if progress_callback:
+        progress_callback("Sentiment and emotion analysis complete")
     priority = calculate_priority(text, urgency)
+    if progress_callback:
+        progress_callback("Priority assessment complete")
     keywords = extract_keywords(text)
     entities = extract_entities(text)
+    if progress_callback:
+        progress_callback("Keyword and entity extraction complete")
     semantic_matches = find_similar_complaints(text)
     tfidf_matches = find_tfidf_similarity(text)
+    if progress_callback:
+        progress_callback("Similarity analysis complete")
 
     return {
         "department_predictions": departments,
@@ -398,3 +408,5 @@ if __name__ == "__main__":
 
         else:
             print(values)
+
+    

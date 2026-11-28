@@ -1,4 +1,14 @@
-import re
+
+# Simple mapping from department label to email address (temporary testing address).
+# Update the email values as needed for real routing.
+_DEPARTMENT_EMAIL_MAP = {
+    "Academic": "medhasrinathbsc24@rvu.edu.in",
+    "Administrative": "medhasrinathbsc24@rvu.edu.in",
+    "Finance": "medhasrinathbsc24@rvu.edu.in",
+    "Infrastructure": "medhasrinathbsc24@rvu.edu.in",
+    "Technical": "medhasrinathbsc24@rvu.edu.in",
+}
+
 
 
 _LIFT_OR_ELEVATOR = re.compile(r"\b(?:lift|elevators?)\b", re.IGNORECASE)
